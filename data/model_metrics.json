@@ -1,0 +1,865 @@
+{
+  "difficulty_accuracy": 0.6462,
+  "gbm_accuracy": 0.6462,
+  "mlp_accuracy": 0.6463,
+  "ensemble_accuracy": 0.64,
+  "cv_mean": 0.635,
+  "cv_std": 0.012,
+  "n_features": 19,
+  "cv_strategy": "5-fold user-based CV",
+  "n_train": 94804,
+  "n_test": 23701,
+  "dropout_accuracy": 0.7177,
+  "dropout_coefs": [
+    {
+      "feature": "avg_quiz_score",
+      "coef": -0.5772,
+      "direction": "v dropout"
+    },
+    {
+      "feature": "difficulty_gap",
+      "coef": -0.4485,
+      "direction": "v dropout"
+    },
+    {
+      "feature": "skill_level",
+      "coef": 0.3901,
+      "direction": "^ dropout"
+    },
+    {
+      "feature": "avg_completion",
+      "coef": -0.2695,
+      "direction": "v dropout"
+    },
+    {
+      "feature": "difficulty_level",
+      "coef": -0.2528,
+      "direction": "v dropout"
+    },
+    {
+      "feature": "n_completed",
+      "coef": -0.1696,
+      "direction": "v dropout"
+    },
+    {
+      "feature": "archetype_enc",
+      "coef": -0.1506,
+      "direction": "v dropout"
+    },
+    {
+      "feature": "n_interactions",
+      "coef": 0.1287,
+      "direction": "^ dropout"
+    },
+    {
+      "feature": "avg_replay",
+      "coef": -0.1053,
+      "direction": "v dropout"
+    },
+    {
+      "feature": "time_efficiency",
+      "coef": 0.061,
+      "direction": "^ dropout"
+    },
+    {
+      "feature": "popularity_score",
+      "coef": -0.0551,
+      "direction": "v dropout"
+    },
+    {
+      "feature": "provider_familiarity",
+      "coef": -0.0301,
+      "direction": "v dropout"
+    },
+    {
+      "feature": "rating",
+      "coef": 0.0159,
+      "direction": "^ dropout"
+    },
+    {
+      "feature": "replay_rate",
+      "coef": 0.0154,
+      "direction": "^ dropout"
+    },
+    {
+      "feature": "weekly_hours",
+      "coef": 0.0076,
+      "direction": "^ dropout"
+    },
+    {
+      "feature": "subject_affinity",
+      "coef": -0.0068,
+      "direction": "v dropout"
+    },
+    {
+      "feature": "completion_trend",
+      "coef": 0.005,
+      "direction": "^ dropout"
+    },
+    {
+      "feature": "difficulty_history",
+      "coef": 0.0041,
+      "direction": "^ dropout"
+    },
+    {
+      "feature": "duration_mins",
+      "coef": 0.0007,
+      "direction": "^ dropout"
+    }
+  ],
+  "cf_rmse": 0.5761,
+  "report": [
+    {
+      "outcome": "Struggle",
+      "precision": 0.59,
+      "recall": 0.3,
+      "f1": 0.39,
+      "support": 2805
+    },
+    {
+      "outcome": "Match",
+      "precision": 0.54,
+      "recall": 0.58,
+      "f1": 0.56,
+      "support": 8980
+    },
+    {
+      "outcome": "Excel",
+      "precision": 0.73,
+      "recall": 0.78,
+      "f1": 0.76,
+      "support": 11916
+    },
+    {
+      "outcome": "Weighted avg",
+      "precision": 0.64,
+      "recall": 0.65,
+      "f1": 0.64,
+      "support": 23701
+    }
+  ],
+  "dropout_report": {
+    "completed": {
+      "precision": 0.5496,
+      "recall": 0.7269,
+      "f1": 0.6259,
+      "support": 7657
+    },
+    "dropped": {
+      "precision": 0.846,
+      "recall": 0.7157,
+      "f1": 0.7754,
+      "support": 16045
+    },
+    "weighted_avg": {
+      "precision": 0.7502,
+      "recall": 0.7193,
+      "f1": 0.7271
+    }
+  },
+  "ranking_eval": [
+    {
+      "config_name": "CF Only (Baseline)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 1.0,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.482,
+      "recall_std": 0.4997,
+      "ndcg_at_10": 0.2805,
+      "ndcg_std": 0.3486,
+      "ndcg_ci_95": [
+        0.2519,
+        0.3139
+      ]
+    },
+    {
+      "config_name": "CF + Semantic (70/30)",
+      "weights": {
+        "semantic": 0.3,
+        "keyword": 0.0,
+        "cf": 0.7,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.412,
+      "recall_std": 0.4922,
+      "ndcg_at_10": 0.2457,
+      "ndcg_std": 0.3447,
+      "ndcg_ci_95": [
+        0.2156,
+        0.2778
+      ]
+    },
+    {
+      "config_name": "CF + Semantic (50/50)",
+      "weights": {
+        "semantic": 0.5,
+        "keyword": 0.0,
+        "cf": 0.5,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.35,
+      "recall_std": 0.477,
+      "ndcg_at_10": 0.1982,
+      "ndcg_std": 0.3143,
+      "ndcg_ci_95": [
+        0.1722,
+        0.2251
+      ]
+    },
+    {
+      "config_name": "CF + Keyword (70/30)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.3,
+        "cf": 0.7,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.334,
+      "recall_std": 0.4716,
+      "ndcg_at_10": 0.1875,
+      "ndcg_std": 0.3046,
+      "ndcg_ci_95": [
+        0.162,
+        0.2166
+      ]
+    },
+    {
+      "config_name": "CF + Keyword (50/50)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.5,
+        "cf": 0.5,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.244,
+      "recall_std": 0.4295,
+      "ndcg_at_10": 0.1308,
+      "ndcg_std": 0.2609,
+      "ndcg_ci_95": [
+        0.107,
+        0.1541
+      ]
+    },
+    {
+      "config_name": "CF + Adaptive (70/30)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.7,
+        "adaptive": 0.3,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.44,
+      "recall_std": 0.4964,
+      "ndcg_at_10": 0.2551,
+      "ndcg_std": 0.3426,
+      "ndcg_ci_95": [
+        0.2236,
+        0.2837
+      ]
+    },
+    {
+      "config_name": "CF + Adaptive (50/50)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.5,
+        "adaptive": 0.5,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.39,
+      "recall_std": 0.4877,
+      "ndcg_at_10": 0.2151,
+      "ndcg_std": 0.3186,
+      "ndcg_ci_95": [
+        0.1861,
+        0.2422
+      ]
+    },
+    {
+      "config_name": "CF + Popularity (70/30)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.7,
+        "adaptive": 0.0,
+        "pop": 0.3
+      },
+      "recall_at_10": 0.412,
+      "recall_std": 0.4922,
+      "ndcg_at_10": 0.2371,
+      "ndcg_std": 0.3376,
+      "ndcg_ci_95": [
+        0.2095,
+        0.2655
+      ]
+    },
+    {
+      "config_name": "CF + Popularity (50/50)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.5,
+        "adaptive": 0.0,
+        "pop": 0.5
+      },
+      "recall_at_10": 0.356,
+      "recall_std": 0.4788,
+      "ndcg_at_10": 0.1944,
+      "ndcg_std": 0.308,
+      "ndcg_ci_95": [
+        0.1667,
+        0.2227
+      ]
+    },
+    {
+      "config_name": "Full Hybrid (Config B)",
+      "weights": {
+        "semantic": 0.2,
+        "keyword": 0.15,
+        "cf": 0.45,
+        "adaptive": 0.15,
+        "pop": 0.05
+      },
+      "recall_at_10": 0.322,
+      "recall_std": 0.4672,
+      "ndcg_at_10": 0.1808,
+      "ndcg_std": 0.3025,
+      "ndcg_ci_95": [
+        0.1547,
+        0.2099
+      ]
+    },
+    {
+      "config_name": "Current Default Hybrid",
+      "weights": {
+        "semantic": 0.3,
+        "keyword": 0.25,
+        "cf": 0.25,
+        "adaptive": 0.15,
+        "pop": 0.05
+      },
+      "recall_at_10": 0.206,
+      "recall_std": 0.4044,
+      "ndcg_at_10": 0.1036,
+      "ndcg_std": 0.2308,
+      "ndcg_ci_95": [
+        0.0849,
+        0.1242
+      ]
+    }
+  ],
+  "clustering_eval": {
+    "kmeans_k_search_standardized_7feat": [
+      {
+        "k": 3,
+        "silhouette": 0.3253
+      },
+      {
+        "k": 4,
+        "silhouette": 0.2822
+      },
+      {
+        "k": 5,
+        "silhouette": 0.2609
+      },
+      {
+        "k": 6,
+        "silhouette": 0.2264
+      },
+      {
+        "k": 7,
+        "silhouette": 0.2267
+      },
+      {
+        "k": 8,
+        "silhouette": 0.2158
+      },
+      {
+        "k": 9,
+        "silhouette": 0.2083
+      },
+      {
+        "k": 10,
+        "silhouette": 0.2063
+      }
+    ],
+    "gaussian_mixture_7feat": [
+      {
+        "k": 3,
+        "silhouette": 0.3191,
+        "bic": 18862.9
+      },
+      {
+        "k": 4,
+        "silhouette": 0.2128,
+        "bic": 18406.0
+      },
+      {
+        "k": 5,
+        "silhouette": 0.1887,
+        "bic": 18142.5
+      },
+      {
+        "k": 6,
+        "silhouette": 0.1939,
+        "bic": 18084.0
+      },
+      {
+        "k": 7,
+        "silhouette": 0.185,
+        "bic": 17909.5
+      }
+    ],
+    "feature_subsets_best_k3": {
+      "comp_quiz_time": {
+        "features": [
+          "completion_rate",
+          "avg_quiz_score",
+          "avg_time_spent"
+        ],
+        "silhouette": 0.3824
+      },
+      "comp_quiz_stdquiz": {
+        "features": [
+          "completion_rate",
+          "avg_quiz_score",
+          "std_quiz_score"
+        ],
+        "silhouette": 0.452
+      },
+      "comp_quiz_replay_time": {
+        "features": [
+          "completion_rate",
+          "avg_quiz_score",
+          "avg_replay_count",
+          "avg_time_spent"
+        ],
+        "silhouette": 0.3725
+      }
+    },
+    "pca_2d_kmeans": [
+      {
+        "k": 3,
+        "silhouette": 0.4745
+      },
+      {
+        "k": 4,
+        "silhouette": 0.4403
+      },
+      {
+        "k": 5,
+        "silhouette": 0.4336
+      }
+    ],
+    "interpretation_note": "Archetypes reflect a soft orientation on a continuous spectrum, not 5 discrete rigid categories."
+  },
+  "ranking_eval_uniform": [
+    {
+      "config_name": "CF Only (Baseline)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 1.0,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.818,
+      "recall_std": 0.3858,
+      "ndcg_at_10": 0.5085,
+      "ndcg_std": 0.3436,
+      "ndcg_ci_95": [
+        0.4789,
+        0.5389
+      ]
+    },
+    {
+      "config_name": "CF + Semantic (70/30)",
+      "weights": {
+        "semantic": 0.3,
+        "keyword": 0.0,
+        "cf": 0.7,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.898,
+      "recall_std": 0.3026,
+      "ndcg_at_10": 0.57,
+      "ndcg_std": 0.318,
+      "ndcg_ci_95": [
+        0.5427,
+        0.599
+      ]
+    },
+    {
+      "config_name": "CF + Semantic (50/50)",
+      "weights": {
+        "semantic": 0.5,
+        "keyword": 0.0,
+        "cf": 0.5,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.888,
+      "recall_std": 0.3154,
+      "ndcg_at_10": 0.5841,
+      "ndcg_std": 0.3252,
+      "ndcg_ci_95": [
+        0.5563,
+        0.6125
+      ]
+    },
+    {
+      "config_name": "CF + Keyword (70/30)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.3,
+        "cf": 0.7,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.774,
+      "recall_std": 0.4182,
+      "ndcg_at_10": 0.4683,
+      "ndcg_std": 0.3395,
+      "ndcg_ci_95": [
+        0.4391,
+        0.4991
+      ]
+    },
+    {
+      "config_name": "CF + Keyword (50/50)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.5,
+        "cf": 0.5,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.754,
+      "recall_std": 0.4307,
+      "ndcg_at_10": 0.4088,
+      "ndcg_std": 0.315,
+      "ndcg_ci_95": [
+        0.3819,
+        0.4364
+      ]
+    },
+    {
+      "config_name": "CF + Adaptive (70/30)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.7,
+        "adaptive": 0.3,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.696,
+      "recall_std": 0.46,
+      "ndcg_at_10": 0.4745,
+      "ndcg_std": 0.3885,
+      "ndcg_ci_95": [
+        0.4391,
+        0.5093
+      ]
+    },
+    {
+      "config_name": "CF + Adaptive (50/50)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.5,
+        "adaptive": 0.5,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.524,
+      "recall_std": 0.4994,
+      "ndcg_at_10": 0.374,
+      "ndcg_std": 0.4071,
+      "ndcg_ci_95": [
+        0.3385,
+        0.4095
+      ]
+    },
+    {
+      "config_name": "CF + Popularity (70/30)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.7,
+        "adaptive": 0.0,
+        "pop": 0.3
+      },
+      "recall_at_10": 0.756,
+      "recall_std": 0.4295,
+      "ndcg_at_10": 0.4785,
+      "ndcg_std": 0.3594,
+      "ndcg_ci_95": [
+        0.4476,
+        0.5089
+      ]
+    },
+    {
+      "config_name": "CF + Popularity (50/50)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.5,
+        "adaptive": 0.0,
+        "pop": 0.5
+      },
+      "recall_at_10": 0.664,
+      "recall_std": 0.4723,
+      "ndcg_at_10": 0.4155,
+      "ndcg_std": 0.3689,
+      "ndcg_ci_95": [
+        0.3835,
+        0.4479
+      ]
+    },
+    {
+      "config_name": "Full Hybrid (Config B)",
+      "weights": {
+        "semantic": 0.2,
+        "keyword": 0.15,
+        "cf": 0.45,
+        "adaptive": 0.15,
+        "pop": 0.05
+      },
+      "recall_at_10": 0.822,
+      "recall_std": 0.3825,
+      "ndcg_at_10": 0.531,
+      "ndcg_std": 0.3431,
+      "ndcg_ci_95": [
+        0.5038,
+        0.5607
+      ]
+    },
+    {
+      "config_name": "Current Default Hybrid",
+      "weights": {
+        "semantic": 0.3,
+        "keyword": 0.25,
+        "cf": 0.25,
+        "adaptive": 0.15,
+        "pop": 0.05
+      },
+      "recall_at_10": 0.792,
+      "recall_std": 0.4059,
+      "ndcg_at_10": 0.4557,
+      "ndcg_std": 0.3225,
+      "ndcg_ci_95": [
+        0.4274,
+        0.4855
+      ]
+    }
+  ],
+  "ranking_eval_hard_negatives": [
+    {
+      "config_name": "CF Only (Baseline)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 1.0,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.482,
+      "recall_std": 0.4997,
+      "ndcg_at_10": 0.2805,
+      "ndcg_std": 0.3486,
+      "ndcg_ci_95": [
+        0.2519,
+        0.3139
+      ]
+    },
+    {
+      "config_name": "CF + Semantic (70/30)",
+      "weights": {
+        "semantic": 0.3,
+        "keyword": 0.0,
+        "cf": 0.7,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.412,
+      "recall_std": 0.4922,
+      "ndcg_at_10": 0.2457,
+      "ndcg_std": 0.3447,
+      "ndcg_ci_95": [
+        0.2156,
+        0.2778
+      ]
+    },
+    {
+      "config_name": "CF + Semantic (50/50)",
+      "weights": {
+        "semantic": 0.5,
+        "keyword": 0.0,
+        "cf": 0.5,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.35,
+      "recall_std": 0.477,
+      "ndcg_at_10": 0.1982,
+      "ndcg_std": 0.3143,
+      "ndcg_ci_95": [
+        0.1722,
+        0.2251
+      ]
+    },
+    {
+      "config_name": "CF + Keyword (70/30)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.3,
+        "cf": 0.7,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.334,
+      "recall_std": 0.4716,
+      "ndcg_at_10": 0.1875,
+      "ndcg_std": 0.3046,
+      "ndcg_ci_95": [
+        0.162,
+        0.2166
+      ]
+    },
+    {
+      "config_name": "CF + Keyword (50/50)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.5,
+        "cf": 0.5,
+        "adaptive": 0.0,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.244,
+      "recall_std": 0.4295,
+      "ndcg_at_10": 0.1308,
+      "ndcg_std": 0.2609,
+      "ndcg_ci_95": [
+        0.107,
+        0.1541
+      ]
+    },
+    {
+      "config_name": "CF + Adaptive (70/30)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.7,
+        "adaptive": 0.3,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.44,
+      "recall_std": 0.4964,
+      "ndcg_at_10": 0.2551,
+      "ndcg_std": 0.3426,
+      "ndcg_ci_95": [
+        0.2236,
+        0.2837
+      ]
+    },
+    {
+      "config_name": "CF + Adaptive (50/50)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.5,
+        "adaptive": 0.5,
+        "pop": 0.0
+      },
+      "recall_at_10": 0.39,
+      "recall_std": 0.4877,
+      "ndcg_at_10": 0.2151,
+      "ndcg_std": 0.3186,
+      "ndcg_ci_95": [
+        0.1861,
+        0.2422
+      ]
+    },
+    {
+      "config_name": "CF + Popularity (70/30)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.7,
+        "adaptive": 0.0,
+        "pop": 0.3
+      },
+      "recall_at_10": 0.412,
+      "recall_std": 0.4922,
+      "ndcg_at_10": 0.2371,
+      "ndcg_std": 0.3376,
+      "ndcg_ci_95": [
+        0.2095,
+        0.2655
+      ]
+    },
+    {
+      "config_name": "CF + Popularity (50/50)",
+      "weights": {
+        "semantic": 0.0,
+        "keyword": 0.0,
+        "cf": 0.5,
+        "adaptive": 0.0,
+        "pop": 0.5
+      },
+      "recall_at_10": 0.356,
+      "recall_std": 0.4788,
+      "ndcg_at_10": 0.1944,
+      "ndcg_std": 0.308,
+      "ndcg_ci_95": [
+        0.1667,
+        0.2227
+      ]
+    },
+    {
+      "config_name": "Full Hybrid (Config B)",
+      "weights": {
+        "semantic": 0.2,
+        "keyword": 0.15,
+        "cf": 0.45,
+        "adaptive": 0.15,
+        "pop": 0.05
+      },
+      "recall_at_10": 0.322,
+      "recall_std": 0.4672,
+      "ndcg_at_10": 0.1808,
+      "ndcg_std": 0.3025,
+      "ndcg_ci_95": [
+        0.1547,
+        0.2099
+      ]
+    },
+    {
+      "config_name": "Current Default Hybrid",
+      "weights": {
+        "semantic": 0.3,
+        "keyword": 0.25,
+        "cf": 0.25,
+        "adaptive": 0.15,
+        "pop": 0.05
+      },
+      "recall_at_10": 0.206,
+      "recall_std": 0.4044,
+      "ndcg_at_10": 0.1036,
+      "ndcg_std": 0.2308,
+      "ndcg_ci_95": [
+        0.0849,
+        0.1242
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2001 @@
+user_id,archetype,skill_level,preferred_subjects,weekly_hours,goal,completion_base,quiz_mean,difficulty_tolerance,engagement_factor
+U0000,Steady Learner,1,Machine Learning & AI|Data Science & Analytics|Cybersecurity,8.5,Data Science & Analytics,0.65,70,0.5,1.0
+U0001,Fast Learner,1,Music & Arts,7.9,Programming & Software Dev,0.8,82,0.7,1.2
+U0002,Steady Learner,1,Graphic Design & Media|Personal Development|Cybersecurity,11.8,Law & Social Sciences,0.65,70,0.5,1.0
+U0003,Steady Learner,3,Programming & Software Dev,3.8,Personal Development,0.65,70,0.5,1.0
+U0004,Steady Learner,1,Programming & Software Dev,3.7,Music & Arts,0.65,70,0.5,1.0
+U0005,Fast Learner,1,Web Development|Data Science & Analytics|Cloud & DevOps,8.0,Health & Medicine,0.8,82,0.7,1.2
+U0006,Curious Sampler,2,Graphic Design & Media|Science & Engineering|Music & Arts,9.0,Programming & Software Dev,0.3,65,0.6,0.9
+U0007,Struggling,1,Law & Social Sciences|Cloud & DevOps,7.0,Music & Arts,0.4,52,0.25,0.75
+U0008,Steady Learner,3,Graphic Design & Media,5.4,Science & Engineering,0.65,70,0.5,1.0
+U0009,Steady Learner,1,Data Science & Analytics,10.1,Graphic Design & Media,0.65,70,0.5,1.0
+U0010,Steady Learner,3,Law & Social Sciences|Health & Medicine,7.3,Machine Learning & AI,0.65,70,0.5,1.0
+U0011,Fast Learner,2,Graphic Design & Media|Web Development|Personal Development,2.7,Personal Development,0.8,82,0.7,1.2
+U0012,Specialist,2,Health & Medicine,4.1,Music & Arts,0.75,78,0.65,1.1
+U0013,Curious Sampler,2,Cybersecurity,5.3,Science & Engineering,0.3,65,0.6,0.9
+U0014,Steady Learner,2,Law & Social Sciences,6.8,Health & Medicine,0.65,70,0.5,1.0
+U0015,Steady Learner,2,Cloud & DevOps|Personal Development,8.2,Programming & Software Dev,0.65,70,0.5,1.0
+U0016,Steady Learner,1,Graphic Design & Media|Personal Development|Business & Finance,11.7,Business & Finance,0.65,70,0.5,1.0
+U0017,Struggling,2,Machine Learning & AI,15.8,Data Science & Analytics,0.4,52,0.25,0.75
+U0018,Steady Learner,1,Health & Medicine|Cybersecurity,9.0,Cloud & DevOps,0.65,70,0.5,1.0
+U0019,Specialist,1,Health & Medicine|Cybersecurity,10.0,Cybersecurity,0.75,78,0.65,1.1
+U0020,Struggling,2,Music & Arts|Web Development,4.2,Music & Arts,0.4,52,0.25,0.75
+U0021,Steady Learner,1,Cybersecurity|Programming & Software Dev,16.9,Programming & Software Dev,0.65,70,0.5,1.0
+U0022,Steady Learner,1,Machine Learning & AI,4.3,Machine Learning & AI,0.65,70,0.5,1.0
+U0023,Curious Sampler,2,Science & Engineering,6.0,Programming & Software Dev,0.3,65,0.6,0.9
+U0024,Struggling,1,Graphic Design & Media,5.6,Cybersecurity,0.4,52,0.25,0.75
+U0025,Struggling,1,Graphic Design & Media|Law & Social Sciences,5.0,Music & Arts,0.4,52,0.25,0.75
+U0026,Fast Learner,3,Cybersecurity,6.1,Personal Development,0.8,82,0.7,1.2
+U0027,Struggling,2,Science & Engineering|Cybersecurity,10.1,Data Science & Analytics,0.4,52,0.25,0.75
+U0028,Struggling,1,Cybersecurity,5.7,Data Science & Analytics,0.4,52,0.25,0.75
+U0029,Struggling,3,Music & Arts,6.9,Graphic Design & Media,0.4,52,0.25,0.75
+U0030,Struggling,2,Science & Engineering|Cybersecurity|Data Science & Analytics,10.3,Cloud & DevOps,0.4,52,0.25,0.75
+U0031,Steady Learner,1,Music & Arts|Science & Engineering,6.5,Web Development,0.65,70,0.5,1.0
+U0032,Fast Learner,2,Personal Development|Graphic Design & Media|Machine Learning & AI,11.7,Health & Medicine,0.8,82,0.7,1.2
+U0033,Fast Learner,2,Machine Learning & AI|Web Development|Graphic Design & Media,11.0,Personal Development,0.8,82,0.7,1.2
+U0034,Struggling,3,Law & Social Sciences,3.1,Web Development,0.4,52,0.25,0.75
+U0035,Steady Learner,1,Graphic Design & Media|Machine Learning & AI|Business & Finance,3.2,Programming & Software Dev,0.65,70,0.5,1.0
+U0036,Steady Learner,2,Cybersecurity|Music & Arts,7.6,Cloud & DevOps,0.65,70,0.5,1.0
+U0037,Specialist,2,Science & Engineering,4.5,Machine Learning & AI,0.75,78,0.65,1.1
+U0038,Struggling,2,Machine Learning & AI|Programming & Software Dev,3.3,Law & Social Sciences,0.4,52,0.25,0.75
+U0039,Fast Learner,3,Data Science & Analytics|Programming & Software Dev|Personal Development,5.3,Music & Arts,0.8,82,0.7,1.2
+U0040,Specialist,1,Web Development|Business & Finance,8.8,Health & Medicine,0.75,78,0.65,1.1
+U0041,Specialist,2,Science & Engineering|Personal Development|Cybersecurity,3.8,Programming & Software Dev,0.75,78,0.65,1.1
+U0042,Struggling,1,Data Science & Analytics|Web Development,9.0,Data Science & Analytics,0.4,52,0.25,0.75
+U0043,Steady Learner,2,Cloud & DevOps,9.9,Science & Engineering,0.65,70,0.5,1.0
+U0044,Steady Learner,2,Machine Learning & AI,4.4,Data Science & Analytics,0.65,70,0.5,1.0
+U0045,Steady Learner,2,Health & Medicine|Cybersecurity,7.9,Web Development,0.65,70,0.5,1.0
+U0046,Steady Learner,3,Law & Social Sciences|Cybersecurity|Machine Learning & AI,9.8,Music & Arts,0.65,70,0.5,1.0
+U0047,Fast Learner,1,Graphic Design & Media,7.5,Personal Development,0.8,82,0.7,1.2
+U0048,Struggling,1,Business & Finance,6.3,Personal Development,0.4,52,0.25,0.75
+U0049,Struggling,1,Web Development|Music & Arts,1.9,Programming & Software Dev,0.4,52,0.25,0.75
+U0050,Steady Learner,1,Web Development,2.0,Health & Medicine,0.65,70,0.5,1.0
+U0051,Steady Learner,2,Personal Development,5.8,Data Science & Analytics,0.65,70,0.5,1.0
+U0052,Steady Learner,1,Personal Development|Business & Finance,7.6,Graphic Design & Media,0.65,70,0.5,1.0
+U0053,Struggling,2,Cloud & DevOps|Personal Development|Business & Finance,4.5,Graphic Design & Media,0.4,52,0.25,0.75
+U0054,Steady Learner,2,Data Science & Analytics|Music & Arts|Graphic Design & Media,10.8,Science & Engineering,0.65,70,0.5,1.0
+U0055,Specialist,2,Music & Arts,2.7,Machine Learning & AI,0.75,78,0.65,1.1
+U0056,Fast Learner,3,Music & Arts,11.0,Cybersecurity,0.8,82,0.7,1.2
+U0057,Fast Learner,1,Machine Learning & AI|Business & Finance,6.6,Music & Arts,0.8,82,0.7,1.2
+U0058,Struggling,1,Data Science & Analytics|Personal Development,12.6,Programming & Software Dev,0.4,52,0.25,0.75
+U0059,Steady Learner,2,Science & Engineering|Cybersecurity,7.8,Music & Arts,0.65,70,0.5,1.0
+U0060,Fast Learner,1,Health & Medicine,1.9,Music & Arts,0.8,82,0.7,1.2
+U0061,Fast Learner,2,Science & Engineering,11.1,Web Development,0.8,82,0.7,1.2
+U0062,Fast Learner,1,Cloud & DevOps|Personal Development|Web Development,5.1,Health & Medicine,0.8,82,0.7,1.2
+U0063,Steady Learner,3,Programming & Software Dev|Law & Social Sciences,16.1,Cybersecurity,0.65,70,0.5,1.0
+U0064,Steady Learner,2,Business & Finance|Cybersecurity,6.4,Data Science & Analytics,0.65,70,0.5,1.0
+U0065,Steady Learner,2,Data Science & Analytics|Personal Development|Business & Finance,10.8,Science & Engineering,0.65,70,0.5,1.0
+U0066,Struggling,2,Music & Arts,4.9,Business & Finance,0.4,52,0.25,0.75
+U0067,Steady Learner,2,Science & Engineering|Business & Finance,8.1,Cybersecurity,0.65,70,0.5,1.0
+U0068,Struggling,2,Cloud & DevOps,6.3,Health & Medicine,0.4,52,0.25,0.75
+U0069,Steady Learner,1,Personal Development,13.7,Graphic Design & Media,0.65,70,0.5,1.0
+U0070,Curious Sampler,1,Science & Engineering|Music & Arts|Personal Development,9.0,Data Science & Analytics,0.3,65,0.6,0.9
+U0071,Curious Sampler,2,Health & Medicine|Law & Social Sciences|Cloud & DevOps,12.5,Health & Medicine,0.3,65,0.6,0.9
+U0072,Steady Learner,1,Music & Arts,26.9,Business & Finance,0.65,70,0.5,1.0
+U0073,Steady Learner,2,Health & Medicine|Graphic Design & Media,11.1,Cybersecurity,0.65,70,0.5,1.0
+U0074,Fast Learner,2,Health & Medicine|Graphic Design & Media,38.7,Machine Learning & AI,0.8,82,0.7,1.2
+U0075,Steady Learner,1,Graphic Design & Media,6.5,Web Development,0.65,70,0.5,1.0
+U0076,Struggling,1,Personal Development,8.5,Science & Engineering,0.4,52,0.25,0.75
+U0077,Struggling,1,Web Development,8.5,Business & Finance,0.4,52,0.25,0.75
+U0078,Fast Learner,1,Health & Medicine,7.1,Law & Social Sciences,0.8,82,0.7,1.2
+U0079,Steady Learner,3,Health & Medicine|Web Development|Programming & Software Dev,10.7,Music & Arts,0.65,70,0.5,1.0
+U0080,Struggling,3,Science & Engineering,14.5,Business & Finance,0.4,52,0.25,0.75
+U0081,Steady Learner,2,Law & Social Sciences|Music & Arts,7.0,Graphic Design & Media,0.65,70,0.5,1.0
+U0082,Steady Learner,1,Web Development|Science & Engineering,10.9,Science & Engineering,0.65,70,0.5,1.0
+U0083,Specialist,1,Programming & Software Dev,6.7,Music & Arts,0.75,78,0.65,1.1
+U0084,Steady Learner,2,Music & Arts,10.4,Business & Finance,0.65,70,0.5,1.0
+U0085,Curious Sampler,2,Cybersecurity|Machine Learning & AI|Law & Social Sciences,2.9,Personal Development,0.3,65,0.6,0.9
+U0086,Fast Learner,3,Web Development,5.9,Data Science & Analytics,0.8,82,0.7,1.2
+U0087,Steady Learner,1,Business & Finance|Personal Development|Law & Social Sciences,3.7,Science & Engineering,0.65,70,0.5,1.0
+U0088,Fast Learner,1,Science & Engineering|Web Development|Business & Finance,7.2,Cybersecurity,0.8,82,0.7,1.2
+U0089,Specialist,2,Science & Engineering,21.7,Graphic Design & Media,0.75,78,0.65,1.1
+U0090,Struggling,3,Data Science & Analytics,8.9,Law & Social Sciences,0.4,52,0.25,0.75
+U0091,Fast Learner,2,Science & Engineering|Machine Learning & AI|Law & Social Sciences,5.1,Business & Finance,0.8,82,0.7,1.2
+U0092,Fast Learner,2,Cybersecurity,10.2,Law & Social Sciences,0.8,82,0.7,1.2
+U0093,Struggling,2,Law & Social Sciences|Cloud & DevOps|Graphic Design & Media,7.6,Machine Learning & AI,0.4,52,0.25,0.75
+U0094,Fast Learner,2,Cybersecurity,11.5,Personal Development,0.8,82,0.7,1.2
+U0095,Fast Learner,2,Music & Arts|Law & Social Sciences,14.1,Cybersecurity,0.8,82,0.7,1.2
+U0096,Fast Learner,1,Data Science & Analytics|Music & Arts|Health & Medicine,13.0,Programming & Software Dev,0.8,82,0.7,1.2
+U0097,Fast Learner,1,Personal Development|Cybersecurity,12.4,Music & Arts,0.8,82,0.7,1.2
+U0098,Fast Learner,1,Science & Engineering,9.6,Cloud & DevOps,0.8,82,0.7,1.2
+U0099,Steady Learner,3,Business & Finance|Personal Development,4.1,Health & Medicine,0.65,70,0.5,1.0
+U0100,Fast Learner,1,Cloud & DevOps|Programming & Software Dev,13.7,Machine Learning & AI,0.8,82,0.7,1.2
+U0101,Curious Sampler,2,Science & Engineering,7.8,Cybersecurity,0.3,65,0.6,0.9
+U0102,Struggling,3,Music & Arts|Machine Learning & AI,16.3,Personal Development,0.4,52,0.25,0.75
+U0103,Steady Learner,1,Music & Arts,8.3,Business & Finance,0.65,70,0.5,1.0
+U0104,Steady Learner,3,Graphic Design & Media|Machine Learning & AI,7.6,Personal Development,0.65,70,0.5,1.0
+U0105,Steady Learner,2,Music & Arts,7.9,Data Science & Analytics,0.65,70,0.5,1.0
+U0106,Curious Sampler,3,Machine Learning & AI|Science & Engineering,4.3,Programming & Software Dev,0.3,65,0.6,0.9
+U0107,Struggling,1,Music & Arts|Law & Social Sciences,3.3,Cloud & DevOps,0.4,52,0.25,0.75
+U0108,Fast Learner,1,Personal Development|Science & Engineering,20.7,Web Development,0.8,82,0.7,1.2
+U0109,Specialist,1,Data Science & Analytics|Business & Finance,18.6,Web Development,0.75,78,0.65,1.1
+U0110,Steady Learner,1,Science & Engineering|Data Science & Analytics,7.6,Web Development,0.65,70,0.5,1.0
+U0111,Fast Learner,3,Law & Social Sciences|Health & Medicine,4.9,Science & Engineering,0.8,82,0.7,1.2
+U0112,Fast Learner,1,Cloud & DevOps,7.7,Graphic Design & Media,0.8,82,0.7,1.2
+U0113,Specialist,1,Music & Arts,7.9,Personal Development,0.75,78,0.65,1.1
+U0114,Curious Sampler,1,Data Science & Analytics|Cybersecurity,13.5,Health & Medicine,0.3,65,0.6,0.9
+U0115,Fast Learner,1,Health & Medicine,6.4,Music & Arts,0.8,82,0.7,1.2
+U0116,Curious Sampler,2,Law & Social Sciences,2.0,Cybersecurity,0.3,65,0.6,0.9
+U0117,Fast Learner,1,Music & Arts|Business & Finance,21.3,Cloud & DevOps,0.8,82,0.7,1.2
+U0118,Steady Learner,1,Personal Development|Graphic Design & Media,6.3,Science & Engineering,0.65,70,0.5,1.0
+U0119,Steady Learner,2,Law & Social Sciences,9.3,Personal Development,0.65,70,0.5,1.0
+U0120,Struggling,1,Cybersecurity|Music & Arts,2.8,Web Development,0.4,52,0.25,0.75
+U0121,Steady Learner,2,Programming & Software Dev,9.6,Graphic Design & Media,0.65,70,0.5,1.0
+U0122,Steady Learner,2,Science & Engineering|Business & Finance|Cybersecurity,5.3,Business & Finance,0.65,70,0.5,1.0
+U0123,Struggling,1,Health & Medicine,9.6,Science & Engineering,0.4,52,0.25,0.75
+U0124,Steady Learner,2,Graphic Design & Media,10.4,Business & Finance,0.65,70,0.5,1.0
+U0125,Struggling,2,Data Science & Analytics,19.6,Law & Social Sciences,0.4,52,0.25,0.75
+U0126,Curious Sampler,2,Machine Learning & AI,20.2,Web Development,0.3,65,0.6,0.9
+U0127,Fast Learner,1,Cybersecurity|Data Science & Analytics,9.5,Business & Finance,0.8,82,0.7,1.2
+U0128,Steady Learner,2,Personal Development,8.8,Law & Social Sciences,0.65,70,0.5,1.0
+U0129,Struggling,1,Cybersecurity|Science & Engineering,13.5,Web Development,0.4,52,0.25,0.75
+U0130,Steady Learner,3,Cloud & DevOps|Graphic Design & Media|Music & Arts,7.8,Programming & Software Dev,0.65,70,0.5,1.0
+U0131,Struggling,1,Personal Development|Machine Learning & AI,7.0,Web Development,0.4,52,0.25,0.75
+U0132,Struggling,1,Music & Arts|Graphic Design & Media|Programming & Software Dev,5.9,Graphic Design & Media,0.4,52,0.25,0.75
+U0133,Steady Learner,1,Business & Finance|Machine Learning & AI,4.1,Cloud & DevOps,0.65,70,0.5,1.0
+U0134,Struggling,1,Cloud & DevOps|Law & Social Sciences,8.9,Law & Social Sciences,0.4,52,0.25,0.75
+U0135,Struggling,1,Law & Social Sciences|Music & Arts,5.1,Web Development,0.4,52,0.25,0.75
+U0136,Steady Learner,1,Machine Learning & AI|Web Development,16.8,Cloud & DevOps,0.65,70,0.5,1.0
+U0137,Struggling,2,Programming & Software Dev,5.9,Programming & Software Dev,0.4,52,0.25,0.75
+U0138,Steady Learner,2,Personal Development|Machine Learning & AI,6.1,Personal Development,0.65,70,0.5,1.0
+U0139,Curious Sampler,1,Cybersecurity|Programming & Software Dev|Business & Finance,13.7,Graphic Design & Media,0.3,65,0.6,0.9
+U0140,Steady Learner,1,Music & Arts|Cloud & DevOps,7.3,Graphic Design & Media,0.65,70,0.5,1.0
+U0141,Fast Learner,1,Health & Medicine,8.6,Science & Engineering,0.8,82,0.7,1.2
+U0142,Specialist,2,Machine Learning & AI|Web Development|Science & Engineering,8.2,Graphic Design & Media,0.75,78,0.65,1.1
+U0143,Struggling,3,Cloud & DevOps,8.6,Personal Development,0.4,52,0.25,0.75
+U0144,Struggling,1,Personal Development,2.0,Data Science & Analytics,0.4,52,0.25,0.75
+U0145,Specialist,1,Cybersecurity,13.3,Music & Arts,0.75,78,0.65,1.1
+U0146,Steady Learner,1,Music & Arts|Data Science & Analytics|Cloud & DevOps,5.1,Data Science & Analytics,0.65,70,0.5,1.0
+U0147,Steady Learner,3,Web Development|Data Science & Analytics,8.7,Health & Medicine,0.65,70,0.5,1.0
+U0148,Struggling,1,Business & Finance,20.1,Business & Finance,0.4,52,0.25,0.75
+U0149,Struggling,2,Cloud & DevOps|Programming & Software Dev,9.4,Cloud & DevOps,0.4,52,0.25,0.75
+U0150,Steady Learner,1,Machine Learning & AI,9.4,Cybersecurity,0.65,70,0.5,1.0
+U0151,Struggling,1,Science & Engineering,4.4,Personal Development,0.4,52,0.25,0.75
+U0152,Struggling,2,Cloud & DevOps|Web Development,13.0,Programming & Software Dev,0.4,52,0.25,0.75
+U0153,Steady Learner,3,Health & Medicine,11.1,Law & Social Sciences,0.65,70,0.5,1.0
+U0154,Steady Learner,1,Programming & Software Dev,5.4,Machine Learning & AI,0.65,70,0.5,1.0
+U0155,Specialist,3,Health & Medicine|Data Science & Analytics,11.7,Web Development,0.75,78,0.65,1.1
+U0156,Fast Learner,1,Cloud & DevOps,11.4,Health & Medicine,0.8,82,0.7,1.2
+U0157,Specialist,1,Health & Medicine,6.7,Music & Arts,0.75,78,0.65,1.1
+U0158,Steady Learner,2,Business & Finance,6.7,Graphic Design & Media,0.65,70,0.5,1.0
+U0159,Steady Learner,1,Programming & Software Dev,6.4,Business & Finance,0.65,70,0.5,1.0
+U0160,Fast Learner,1,Web Development|Graphic Design & Media,9.8,Graphic Design & Media,0.8,82,0.7,1.2
+U0161,Fast Learner,1,Programming & Software Dev|Web Development|Cloud & DevOps,23.3,Cybersecurity,0.8,82,0.7,1.2
+U0162,Curious Sampler,2,Machine Learning & AI|Health & Medicine,2.1,Cloud & DevOps,0.3,65,0.6,0.9
+U0163,Fast Learner,2,Health & Medicine,7.2,Personal Development,0.8,82,0.7,1.2
+U0164,Struggling,2,Cloud & DevOps|Business & Finance,5.7,Programming & Software Dev,0.4,52,0.25,0.75
+U0165,Steady Learner,3,Cybersecurity,14.7,Data Science & Analytics,0.65,70,0.5,1.0
+U0166,Fast Learner,1,Science & Engineering|Cybersecurity,8.8,Science & Engineering,0.8,82,0.7,1.2
+U0167,Steady Learner,1,Law & Social Sciences|Web Development,11.7,Cybersecurity,0.65,70,0.5,1.0
+U0168,Specialist,2,Business & Finance|Personal Development,9.1,Web Development,0.75,78,0.65,1.1
+U0169,Curious Sampler,1,Machine Learning & AI,6.2,Law & Social Sciences,0.3,65,0.6,0.9
+U0170,Curious Sampler,2,Music & Arts,13.5,Science & Engineering,0.3,65,0.6,0.9
+U0171,Curious Sampler,1,Health & Medicine,5.7,Programming & Software Dev,0.3,65,0.6,0.9
+U0172,Struggling,2,Data Science & Analytics|Science & Engineering,12.4,Science & Engineering,0.4,52,0.25,0.75
+U0173,Struggling,1,Data Science & Analytics,9.1,Personal Development,0.4,52,0.25,0.75
+U0174,Specialist,2,Cybersecurity,10.4,Programming & Software Dev,0.75,78,0.65,1.1
+U0175,Curious Sampler,1,Programming & Software Dev,28.2,Health & Medicine,0.3,65,0.6,0.9
+U0176,Steady Learner,1,Health & Medicine|Business & Finance,11.5,Law & Social Sciences,0.65,70,0.5,1.0
+U0177,Struggling,3,Music & Arts|Business & Finance|Cybersecurity,5.0,Web Development,0.4,52,0.25,0.75
+U0178,Curious Sampler,2,Cloud & DevOps,15.4,Music & Arts,0.3,65,0.6,0.9
+U0179,Struggling,2,Cloud & DevOps|Machine Learning & AI,21.1,Business & Finance,0.4,52,0.25,0.75
+U0180,Steady Learner,2,Science & Engineering|Health & Medicine|Business & Finance,9.7,Music & Arts,0.65,70,0.5,1.0
+U0181,Steady Learner,1,Law & Social Sciences|Cloud & DevOps,3.5,Personal Development,0.65,70,0.5,1.0
+U0182,Steady Learner,1,Data Science & Analytics|Law & Social Sciences|Web Development,6.2,Science & Engineering,0.65,70,0.5,1.0
+U0183,Fast Learner,2,Data Science & Analytics,7.9,Law & Social Sciences,0.8,82,0.7,1.2
+U0184,Curious Sampler,2,Cloud & DevOps,8.3,Graphic Design & Media,0.3,65,0.6,0.9
+U0185,Struggling,2,Web Development,4.5,Data Science & Analytics,0.4,52,0.25,0.75
+U0186,Fast Learner,3,Machine Learning & AI,10.3,Law & Social Sciences,0.8,82,0.7,1.2
+U0187,Steady Learner,3,Programming & Software Dev|Web Development,12.8,Web Development,0.65,70,0.5,1.0
+U0188,Struggling,3,Music & Arts,7.1,Graphic Design & Media,0.4,52,0.25,0.75
+U0189,Steady Learner,1,Cybersecurity,6.0,Programming & Software Dev,0.65,70,0.5,1.0
+U0190,Steady Learner,2,Health & Medicine,7.2,Graphic Design & Media,0.65,70,0.5,1.0
+U0191,Specialist,1,Law & Social Sciences|Graphic Design & Media,3.7,Personal Development,0.75,78,0.65,1.1
+U0192,Fast Learner,3,Graphic Design & Media|Law & Social Sciences|Science & Engineering,2.9,Cybersecurity,0.8,82,0.7,1.2
+U0193,Steady Learner,1,Personal Development,3.0,Cloud & DevOps,0.65,70,0.5,1.0
+U0194,Steady Learner,2,Music & Arts,8.8,Health & Medicine,0.65,70,0.5,1.0
+U0195,Struggling,2,Data Science & Analytics|Health & Medicine,12.7,Cybersecurity,0.4,52,0.25,0.75
+U0196,Steady Learner,3,Programming & Software Dev|Law & Social Sciences|Health & Medicine,4.3,Web Development,0.65,70,0.5,1.0
+U0197,Curious Sampler,2,Data Science & Analytics|Cloud & DevOps,7.5,Programming & Software Dev,0.3,65,0.6,0.9
+U0198,Curious Sampler,2,Data Science & Analytics|Health & Medicine,6.8,Music & Arts,0.3,65,0.6,0.9
+U0199,Specialist,1,Health & Medicine,13.5,Graphic Design & Media,0.75,78,0.65,1.1
+U0200,Steady Learner,2,Science & Engineering|Cloud & DevOps,9.5,Cloud & DevOps,0.65,70,0.5,1.0
+U0201,Curious Sampler,1,Health & Medicine|Cloud & DevOps|Science & Engineering,5.2,Graphic Design & Media,0.3,65,0.6,0.9
+U0202,Fast Learner,1,Business & Finance|Science & Engineering|Cloud & DevOps,13.3,Law & Social Sciences,0.8,82,0.7,1.2
+U0203,Curious Sampler,1,Programming & Software Dev|Web Development,15.5,Programming & Software Dev,0.3,65,0.6,0.9
+U0204,Steady Learner,2,Law & Social Sciences|Programming & Software Dev,4.7,Cybersecurity,0.65,70,0.5,1.0
+U0205,Struggling,1,Programming & Software Dev,4.0,Law & Social Sciences,0.4,52,0.25,0.75
+U0206,Steady Learner,2,Programming & Software Dev,5.0,Machine Learning & AI,0.65,70,0.5,1.0
+U0207,Fast Learner,3,Personal Development|Cybersecurity,6.2,Programming & Software Dev,0.8,82,0.7,1.2
+U0208,Fast Learner,3,Music & Arts|Web Development,3.9,Cloud & DevOps,0.8,82,0.7,1.2
+U0209,Steady Learner,1,Law & Social Sciences|Data Science & Analytics,13.9,Programming & Software Dev,0.65,70,0.5,1.0
+U0210,Steady Learner,2,Science & Engineering,11.1,Web Development,0.65,70,0.5,1.0
+U0211,Struggling,2,Data Science & Analytics,6.7,Machine Learning & AI,0.4,52,0.25,0.75
+U0212,Fast Learner,1,Science & Engineering|Programming & Software Dev,4.4,Law & Social Sciences,0.8,82,0.7,1.2
+U0213,Struggling,1,Cloud & DevOps,15.1,Cloud & DevOps,0.4,52,0.25,0.75
+U0214,Fast Learner,1,Web Development,13.4,Business & Finance,0.8,82,0.7,1.2
+U0215,Curious Sampler,1,Data Science & Analytics|Music & Arts,3.3,Data Science & Analytics,0.3,65,0.6,0.9
+U0216,Struggling,2,Cybersecurity|Health & Medicine,4.9,Personal Development,0.4,52,0.25,0.75
+U0217,Fast Learner,3,Data Science & Analytics,10.8,Cybersecurity,0.8,82,0.7,1.2
+U0218,Steady Learner,3,Cybersecurity|Graphic Design & Media,2.8,Music & Arts,0.65,70,0.5,1.0
+U0219,Specialist,2,Business & Finance|Personal Development|Health & Medicine,8.3,Science & Engineering,0.75,78,0.65,1.1
+U0220,Struggling,1,Science & Engineering|Business & Finance|Machine Learning & AI,24.9,Business & Finance,0.4,52,0.25,0.75
+U0221,Steady Learner,1,Health & Medicine,3.3,Graphic Design & Media,0.65,70,0.5,1.0
+U0222,Struggling,1,Health & Medicine,10.7,Personal Development,0.4,52,0.25,0.75
+U0223,Curious Sampler,2,Music & Arts,6.5,Music & Arts,0.3,65,0.6,0.9
+U0224,Fast Learner,3,Web Development|Personal Development|Music & Arts,7.8,Machine Learning & AI,0.8,82,0.7,1.2
+U0225,Struggling,1,Programming & Software Dev,10.5,Personal Development,0.4,52,0.25,0.75
+U0226,Curious Sampler,1,Programming & Software Dev|Graphic Design & Media,10.3,Personal Development,0.3,65,0.6,0.9
+U0227,Curious Sampler,2,Machine Learning & AI,35.9,Web Development,0.3,65,0.6,0.9
+U0228,Steady Learner,2,Data Science & Analytics,5.0,Web Development,0.65,70,0.5,1.0
+U0229,Fast Learner,2,Personal Development|Programming & Software Dev|Machine Learning & AI,15.3,Law & Social Sciences,0.8,82,0.7,1.2
+U0230,Steady Learner,2,Machine Learning & AI,15.3,Cloud & DevOps,0.65,70,0.5,1.0
+U0231,Struggling,2,Music & Arts|Machine Learning & AI,12.1,Graphic Design & Media,0.4,52,0.25,0.75
+U0232,Struggling,1,Cybersecurity,17.7,Health & Medicine,0.4,52,0.25,0.75
+U0233,Fast Learner,1,Web Development|Programming & Software Dev|Science & Engineering,8.9,Health & Medicine,0.8,82,0.7,1.2
+U0234,Fast Learner,3,Data Science & Analytics,1.8,Web Development,0.8,82,0.7,1.2
+U0235,Struggling,1,Health & Medicine|Cloud & DevOps,7.1,Graphic Design & Media,0.4,52,0.25,0.75
+U0236,Struggling,1,Business & Finance|Cybersecurity|Data Science & Analytics,8.6,Law & Social Sciences,0.4,52,0.25,0.75
+U0237,Steady Learner,2,Science & Engineering|Music & Arts|Personal Development,17.0,Programming & Software Dev,0.65,70,0.5,1.0
+U0238,Curious Sampler,1,Law & Social Sciences|Business & Finance|Personal Development,6.9,Law & Social Sciences,0.3,65,0.6,0.9
+U0239,Steady Learner,3,Web Development,11.3,Music & Arts,0.65,70,0.5,1.0
+U0240,Struggling,1,Science & Engineering|Law & Social Sciences,3.3,Cybersecurity,0.4,52,0.25,0.75
+U0241,Steady Learner,2,Science & Engineering|Law & Social Sciences|Cybersecurity,7.7,Data Science & Analytics,0.65,70,0.5,1.0
+U0242,Steady Learner,1,Machine Learning & AI,8.3,Web Development,0.65,70,0.5,1.0
+U0243,Fast Learner,2,Graphic Design & Media|Web Development,4.5,Science & Engineering,0.8,82,0.7,1.2
+U0244,Struggling,2,Data Science & Analytics|Science & Engineering|Music & Arts,3.1,Music & Arts,0.4,52,0.25,0.75
+U0245,Steady Learner,1,Graphic Design & Media,17.4,Cybersecurity,0.65,70,0.5,1.0
+U0246,Specialist,2,Personal Development,1.4,Programming & Software Dev,0.75,78,0.65,1.1
+U0247,Struggling,3,Cybersecurity|Science & Engineering,10.5,Machine Learning & AI,0.4,52,0.25,0.75
+U0248,Steady Learner,3,Law & Social Sciences,9.4,Programming & Software Dev,0.65,70,0.5,1.0
+U0249,Steady Learner,3,Cloud & DevOps,9.7,Cybersecurity,0.65,70,0.5,1.0
+U0250,Struggling,1,Personal Development,5.1,Web Development,0.4,52,0.25,0.75
+U0251,Steady Learner,3,Machine Learning & AI,20.7,Machine Learning & AI,0.65,70,0.5,1.0
+U0252,Struggling,3,Programming & Software Dev|Web Development,10.4,Programming & Software Dev,0.4,52,0.25,0.75
+U0253,Curious Sampler,1,Cybersecurity,13.2,Business & Finance,0.3,65,0.6,0.9
+U0254,Specialist,2,Programming & Software Dev,3.2,Cybersecurity,0.75,78,0.65,1.1
+U0255,Struggling,1,Graphic Design & Media|Science & Engineering|Data Science & Analytics,7.5,Business & Finance,0.4,52,0.25,0.75
+U0256,Steady Learner,1,Programming & Software Dev|Web Development,6.2,Personal Development,0.65,70,0.5,1.0
+U0257,Struggling,1,Music & Arts|Machine Learning & AI,9.5,Machine Learning & AI,0.4,52,0.25,0.75
+U0258,Steady Learner,3,Business & Finance|Web Development,7.2,Music & Arts,0.65,70,0.5,1.0
+U0259,Steady Learner,1,Cybersecurity,23.5,Machine Learning & AI,0.65,70,0.5,1.0
+U0260,Curious Sampler,2,Music & Arts|Data Science & Analytics,2.1,Health & Medicine,0.3,65,0.6,0.9
+U0261,Steady Learner,1,Business & Finance|Web Development,6.6,Cybersecurity,0.65,70,0.5,1.0
+U0262,Steady Learner,1,Programming & Software Dev|Science & Engineering,4.7,Graphic Design & Media,0.65,70,0.5,1.0
+U0263,Fast Learner,1,Cloud & DevOps,7.0,Health & Medicine,0.8,82,0.7,1.2
+U0264,Struggling,1,Data Science & Analytics|Cybersecurity,8.1,Music & Arts,0.4,52,0.25,0.75
+U0265,Fast Learner,2,Music & Arts,6.9,Cybersecurity,0.8,82,0.7,1.2
+U0266,Steady Learner,2,Cloud & DevOps|Music & Arts,5.0,Cybersecurity,0.65,70,0.5,1.0
+U0267,Steady Learner,2,Law & Social Sciences|Graphic Design & Media,12.3,Business & Finance,0.65,70,0.5,1.0
+U0268,Fast Learner,2,Data Science & Analytics,7.8,Cybersecurity,0.8,82,0.7,1.2
+U0269,Steady Learner,3,Health & Medicine,6.3,Science & Engineering,0.65,70,0.5,1.0
+U0270,Specialist,2,Business & Finance,14.1,Programming & Software Dev,0.75,78,0.65,1.1
+U0271,Fast Learner,1,Cybersecurity,3.4,Programming & Software Dev,0.8,82,0.7,1.2
+U0272,Struggling,1,Cloud & DevOps|Graphic Design & Media|Machine Learning & AI,14.5,Web Development,0.4,52,0.25,0.75
+U0273,Specialist,2,Graphic Design & Media|Health & Medicine,10.3,Health & Medicine,0.75,78,0.65,1.1
+U0274,Struggling,3,Cloud & DevOps,8.2,Machine Learning & AI,0.4,52,0.25,0.75
+U0275,Struggling,2,Music & Arts|Business & Finance,5.8,Data Science & Analytics,0.4,52,0.25,0.75
+U0276,Specialist,2,Business & Finance|Personal Development,7.6,Science & Engineering,0.75,78,0.65,1.1
+U0277,Curious Sampler,3,Cybersecurity,34.4,Graphic Design & Media,0.3,65,0.6,0.9
+U0278,Specialist,2,Graphic Design & Media|Programming & Software Dev,5.8,Personal Development,0.75,78,0.65,1.1
+U0279,Steady Learner,1,Music & Arts|Data Science & Analytics,16.8,Graphic Design & Media,0.65,70,0.5,1.0
+U0280,Steady Learner,1,Science & Engineering,12.3,Cloud & DevOps,0.65,70,0.5,1.0
+U0281,Steady Learner,1,Web Development|Cloud & DevOps,18.2,Health & Medicine,0.65,70,0.5,1.0
+U0282,Fast Learner,2,Law & Social Sciences,26.1,Law & Social Sciences,0.8,82,0.7,1.2
+U0283,Steady Learner,1,Cloud & DevOps|Cybersecurity|Personal Development,5.8,Machine Learning & AI,0.65,70,0.5,1.0
+U0284,Curious Sampler,1,Science & Engineering|Data Science & Analytics,6.5,Programming & Software Dev,0.3,65,0.6,0.9
+U0285,Steady Learner,1,Health & Medicine,8.5,Machine Learning & AI,0.65,70,0.5,1.0
+U0286,Struggling,2,Graphic Design & Media|Programming & Software Dev,6.8,Machine Learning & AI,0.4,52,0.25,0.75
+U0287,Fast Learner,2,Web Development|Law & Social Sciences,5.4,Cloud & DevOps,0.8,82,0.7,1.2
+U0288,Steady Learner,2,Web Development|Programming & Software Dev,14.6,Business & Finance,0.65,70,0.5,1.0
+U0289,Struggling,3,Programming & Software Dev,11.6,Law & Social Sciences,0.4,52,0.25,0.75
+U0290,Fast Learner,1,Cloud & DevOps|Data Science & Analytics,7.8,Machine Learning & AI,0.8,82,0.7,1.2
+U0291,Steady Learner,1,Web Development|Personal Development,5.0,Machine Learning & AI,0.65,70,0.5,1.0
+U0292,Steady Learner,1,Law & Social Sciences,12.5,Cloud & DevOps,0.65,70,0.5,1.0
+U0293,Curious Sampler,1,Cloud & DevOps|Cybersecurity,3.0,Programming & Software Dev,0.3,65,0.6,0.9
+U0294,Fast Learner,1,Health & Medicine,11.9,Graphic Design & Media,0.8,82,0.7,1.2
+U0295,Steady Learner,3,Law & Social Sciences|Business & Finance,4.1,Cloud & DevOps,0.65,70,0.5,1.0
+U0296,Fast Learner,1,Music & Arts|Cybersecurity|Law & Social Sciences,3.8,Health & Medicine,0.8,82,0.7,1.2
+U0297,Struggling,2,Programming & Software Dev|Law & Social Sciences|Data Science & Analytics,12.9,Personal Development,0.4,52,0.25,0.75
+U0298,Fast Learner,2,Business & Finance|Data Science & Analytics,23.1,Graphic Design & Media,0.8,82,0.7,1.2
+U0299,Steady Learner,1,Web Development,8.4,Data Science & Analytics,0.65,70,0.5,1.0
+U0300,Struggling,1,Programming & Software Dev,4.9,Data Science & Analytics,0.4,52,0.25,0.75
+U0301,Fast Learner,1,Web Development,11.6,Cloud & DevOps,0.8,82,0.7,1.2
+U0302,Struggling,2,Music & Arts,5.3,Music & Arts,0.4,52,0.25,0.75
+U0303,Struggling,2,Business & Finance|Personal Development,3.4,Cloud & DevOps,0.4,52,0.25,0.75
+U0304,Steady Learner,2,Music & Arts,8.2,Machine Learning & AI,0.65,70,0.5,1.0
+U0305,Struggling,2,Web Development,9.9,Cloud & DevOps,0.4,52,0.25,0.75
+U0306,Fast Learner,1,Health & Medicine,8.5,Health & Medicine,0.8,82,0.7,1.2
+U0307,Steady Learner,2,Music & Arts,11.2,Cybersecurity,0.65,70,0.5,1.0
+U0308,Specialist,3,Personal Development,15.7,Science & Engineering,0.75,78,0.65,1.1
+U0309,Specialist,1,Science & Engineering|Music & Arts|Law & Social Sciences,8.5,Business & Finance,0.75,78,0.65,1.1
+U0310,Steady Learner,3,Web Development|Cloud & DevOps|Law & Social Sciences,6.9,Business & Finance,0.65,70,0.5,1.0
+U0311,Steady Learner,2,Programming & Software Dev,1.5,Data Science & Analytics,0.65,70,0.5,1.0
+U0312,Fast Learner,1,Law & Social Sciences,7.8,Data Science & Analytics,0.8,82,0.7,1.2
+U0313,Curious Sampler,2,Cloud & DevOps|Machine Learning & AI,5.4,Graphic Design & Media,0.3,65,0.6,0.9
+U0314,Curious Sampler,2,Programming & Software Dev,4.0,Personal Development,0.3,65,0.6,0.9
+U0315,Struggling,3,Cybersecurity|Graphic Design & Media|Machine Learning & AI,4.1,Music & Arts,0.4,52,0.25,0.75
+U0316,Fast Learner,1,Machine Learning & AI,3.4,Cybersecurity,0.8,82,0.7,1.2
+U0317,Steady Learner,1,Cloud & DevOps,11.8,Business & Finance,0.65,70,0.5,1.0
+U0318,Struggling,2,Cloud & DevOps,13.9,Programming & Software Dev,0.4,52,0.25,0.75
+U0319,Specialist,2,Business & Finance|Health & Medicine,8.5,Business & Finance,0.75,78,0.65,1.1
+U0320,Fast Learner,3,Health & Medicine|Graphic Design & Media,5.6,Personal Development,0.8,82,0.7,1.2
+U0321,Curious Sampler,1,Business & Finance|Programming & Software Dev|Health & Medicine,12.6,Graphic Design & Media,0.3,65,0.6,0.9
+U0322,Struggling,2,Music & Arts,6.5,Law & Social Sciences,0.4,52,0.25,0.75
+U0323,Fast Learner,2,Personal Development|Graphic Design & Media,10.2,Health & Medicine,0.8,82,0.7,1.2
+U0324,Specialist,3,Machine Learning & AI,3.9,Web Development,0.75,78,0.65,1.1
+U0325,Specialist,1,Cybersecurity|Personal Development,6.2,Science & Engineering,0.75,78,0.65,1.1
+U0326,Fast Learner,2,Personal Development|Law & Social Sciences|Data Science & Analytics,7.1,Law & Social Sciences,0.8,82,0.7,1.2
+U0327,Struggling,1,Cybersecurity,11.9,Graphic Design & Media,0.4,52,0.25,0.75
+U0328,Curious Sampler,1,Personal Development|Graphic Design & Media|Machine Learning & AI,5.1,Science & Engineering,0.3,65,0.6,0.9
+U0329,Curious Sampler,1,Cloud & DevOps|Health & Medicine|Business & Finance,6.2,Music & Arts,0.3,65,0.6,0.9
+U0330,Curious Sampler,3,Data Science & Analytics|Graphic Design & Media,21.3,Music & Arts,0.3,65,0.6,0.9
+U0331,Struggling,1,Machine Learning & AI|Music & Arts,7.4,Music & Arts,0.4,52,0.25,0.75
+U0332,Steady Learner,1,Health & Medicine,7.6,Web Development,0.65,70,0.5,1.0
+U0333,Struggling,2,Cloud & DevOps,9.5,Health & Medicine,0.4,52,0.25,0.75
+U0334,Specialist,1,Law & Social Sciences|Business & Finance|Cloud & DevOps,8.4,Health & Medicine,0.75,78,0.65,1.1
+U0335,Steady Learner,2,Data Science & Analytics,4.1,Health & Medicine,0.65,70,0.5,1.0
+U0336,Steady Learner,3,Science & Engineering,7.1,Business & Finance,0.65,70,0.5,1.0
+U0337,Steady Learner,1,Health & Medicine,3.6,Machine Learning & AI,0.65,70,0.5,1.0
+U0338,Fast Learner,3,Machine Learning & AI,2.9,Programming & Software Dev,0.8,82,0.7,1.2
+U0339,Fast Learner,2,Graphic Design & Media|Law & Social Sciences,4.6,Cloud & DevOps,0.8,82,0.7,1.2
+U0340,Fast Learner,3,Cloud & DevOps|Science & Engineering,9.4,Science & Engineering,0.8,82,0.7,1.2
+U0341,Steady Learner,1,Programming & Software Dev|Science & Engineering|Cybersecurity,5.5,Data Science & Analytics,0.65,70,0.5,1.0
+U0342,Steady Learner,2,Graphic Design & Media,9.6,Health & Medicine,0.65,70,0.5,1.0
+U0343,Steady Learner,1,Web Development,14.3,Science & Engineering,0.65,70,0.5,1.0
+U0344,Steady Learner,1,Data Science & Analytics|Music & Arts,6.6,Web Development,0.65,70,0.5,1.0
+U0345,Fast Learner,2,Web Development,8.3,Law & Social Sciences,0.8,82,0.7,1.2
+U0346,Fast Learner,2,Cybersecurity|Programming & Software Dev|Cloud & DevOps,14.3,Health & Medicine,0.8,82,0.7,1.2
+U0347,Fast Learner,1,Business & Finance,12.8,Data Science & Analytics,0.8,82,0.7,1.2
+U0348,Fast Learner,1,Programming & Software Dev|Machine Learning & AI|Law & Social Sciences,14.4,Music & Arts,0.8,82,0.7,1.2
+U0349,Steady Learner,1,Graphic Design & Media,5.0,Business & Finance,0.65,70,0.5,1.0
+U0350,Struggling,2,Cybersecurity,6.4,Cybersecurity,0.4,52,0.25,0.75
+U0351,Steady Learner,1,Personal Development|Science & Engineering,3.9,Cybersecurity,0.65,70,0.5,1.0
+U0352,Steady Learner,2,Personal Development|Cybersecurity,11.1,Graphic Design & Media,0.65,70,0.5,1.0
+U0353,Steady Learner,1,Law & Social Sciences|Programming & Software Dev,4.5,Web Development,0.65,70,0.5,1.0
+U0354,Steady Learner,1,Cloud & DevOps|Business & Finance,4.9,Programming & Software Dev,0.65,70,0.5,1.0
+U0355,Fast Learner,2,Science & Engineering|Cybersecurity,6.1,Science & Engineering,0.8,82,0.7,1.2
+U0356,Struggling,1,Science & Engineering,10.1,Data Science & Analytics,0.4,52,0.25,0.75
+U0357,Steady Learner,2,Business & Finance|Web Development,5.3,Graphic Design & Media,0.65,70,0.5,1.0
+U0358,Steady Learner,2,Data Science & Analytics|Cybersecurity|Cloud & DevOps,8.2,Music & Arts,0.65,70,0.5,1.0
+U0359,Specialist,3,Business & Finance|Data Science & Analytics|Web Development,8.0,Graphic Design & Media,0.75,78,0.65,1.1
+U0360,Steady Learner,1,Science & Engineering,5.7,Business & Finance,0.65,70,0.5,1.0
+U0361,Fast Learner,1,Machine Learning & AI|Web Development,4.3,Cloud & DevOps,0.8,82,0.7,1.2
+U0362,Steady Learner,1,Cloud & DevOps|Law & Social Sciences,5.5,Cybersecurity,0.65,70,0.5,1.0
+U0363,Fast Learner,1,Health & Medicine,6.6,Graphic Design & Media,0.8,82,0.7,1.2
+U0364,Fast Learner,1,Personal Development|Science & Engineering|Law & Social Sciences,6.8,Graphic Design & Media,0.8,82,0.7,1.2
+U0365,Steady Learner,1,Data Science & Analytics|Personal Development|Science & Engineering,9.1,Graphic Design & Media,0.65,70,0.5,1.0
+U0366,Curious Sampler,2,Science & Engineering|Music & Arts|Programming & Software Dev,4.7,Music & Arts,0.3,65,0.6,0.9
+U0367,Specialist,1,Machine Learning & AI,1.8,Data Science & Analytics,0.75,78,0.65,1.1
+U0368,Struggling,1,Science & Engineering,8.3,Music & Arts,0.4,52,0.25,0.75
+U0369,Steady Learner,2,Science & Engineering|Web Development,2.7,Music & Arts,0.65,70,0.5,1.0
+U0370,Steady Learner,1,Science & Engineering|Graphic Design & Media,11.9,Programming & Software Dev,0.65,70,0.5,1.0
+U0371,Fast Learner,2,Business & Finance,6.9,Machine Learning & AI,0.8,82,0.7,1.2
+U0372,Struggling,1,Health & Medicine|Business & Finance|Law & Social Sciences,8.8,Data Science & Analytics,0.4,52,0.25,0.75
+U0373,Fast Learner,3,Web Development,8.2,Data Science & Analytics,0.8,82,0.7,1.2
+U0374,Curious Sampler,3,Health & Medicine,8.8,Health & Medicine,0.3,65,0.6,0.9
+U0375,Fast Learner,1,Health & Medicine|Business & Finance,5.3,Business & Finance,0.8,82,0.7,1.2
+U0376,Fast Learner,3,Graphic Design & Media|Music & Arts,6.8,Machine Learning & AI,0.8,82,0.7,1.2
+U0377,Steady Learner,1,Law & Social Sciences|Health & Medicine,6.1,Cloud & DevOps,0.65,70,0.5,1.0
+U0378,Steady Learner,1,Law & Social Sciences,7.4,Machine Learning & AI,0.65,70,0.5,1.0
+U0379,Curious Sampler,1,Science & Engineering|Machine Learning & AI|Health & Medicine,15.7,Law & Social Sciences,0.3,65,0.6,0.9
+U0380,Struggling,1,Business & Finance|Music & Arts,5.9,Music & Arts,0.4,52,0.25,0.75
+U0381,Curious Sampler,2,Web Development,6.9,Music & Arts,0.3,65,0.6,0.9
+U0382,Fast Learner,2,Web Development|Graphic Design & Media|Health & Medicine,4.1,Data Science & Analytics,0.8,82,0.7,1.2
+U0383,Struggling,1,Cloud & DevOps|Cybersecurity,5.8,Science & Engineering,0.4,52,0.25,0.75
+U0384,Struggling,2,Cybersecurity,5.9,Cloud & DevOps,0.4,52,0.25,0.75
+U0385,Steady Learner,1,Programming & Software Dev,6.7,Health & Medicine,0.65,70,0.5,1.0
+U0386,Steady Learner,2,Programming & Software Dev,12.0,Machine Learning & AI,0.65,70,0.5,1.0
+U0387,Steady Learner,2,Law & Social Sciences|Cybersecurity,2.8,Law & Social Sciences,0.65,70,0.5,1.0
+U0388,Steady Learner,2,Cybersecurity|Music & Arts,11.2,Programming & Software Dev,0.65,70,0.5,1.0
+U0389,Steady Learner,1,Music & Arts|Data Science & Analytics|Machine Learning & AI,10.5,Machine Learning & AI,0.65,70,0.5,1.0
+U0390,Fast Learner,1,Music & Arts,6.9,Programming & Software Dev,0.8,82,0.7,1.2
+U0391,Specialist,1,Programming & Software Dev|Health & Medicine,20.1,Web Development,0.75,78,0.65,1.1
+U0392,Fast Learner,3,Science & Engineering,2.4,Music & Arts,0.8,82,0.7,1.2
+U0393,Steady Learner,1,Personal Development|Machine Learning & AI,12.4,Business & Finance,0.65,70,0.5,1.0
+U0394,Curious Sampler,1,Cybersecurity,10.8,Graphic Design & Media,0.3,65,0.6,0.9
+U0395,Specialist,2,Web Development|Programming & Software Dev,2.4,Programming & Software Dev,0.75,78,0.65,1.1
+U0396,Steady Learner,2,Graphic Design & Media,3.4,Programming & Software Dev,0.65,70,0.5,1.0
+U0397,Steady Learner,1,Programming & Software Dev,9.3,Cybersecurity,0.65,70,0.5,1.0
+U0398,Struggling,1,Cloud & DevOps|Programming & Software Dev|Personal Development,2.1,Business & Finance,0.4,52,0.25,0.75
+U0399,Fast Learner,2,Health & Medicine,6.1,Science & Engineering,0.8,82,0.7,1.2
+U0400,Struggling,1,Cloud & DevOps|Graphic Design & Media,15.0,Data Science & Analytics,0.4,52,0.25,0.75
+U0401,Fast Learner,1,Science & Engineering,6.5,Machine Learning & AI,0.8,82,0.7,1.2
+U0402,Specialist,2,Law & Social Sciences|Personal Development|Business & Finance,4.1,Graphic Design & Media,0.75,78,0.65,1.1
+U0403,Steady Learner,2,Machine Learning & AI,3.7,Law & Social Sciences,0.65,70,0.5,1.0
+U0404,Curious Sampler,2,Machine Learning & AI|Science & Engineering,5.6,Music & Arts,0.3,65,0.6,0.9
+U0405,Struggling,1,Machine Learning & AI|Personal Development|Cybersecurity,9.5,Cybersecurity,0.4,52,0.25,0.75
+U0406,Steady Learner,3,Cybersecurity,9.4,Personal Development,0.65,70,0.5,1.0
+U0407,Fast Learner,1,Business & Finance|Personal Development,9.6,Business & Finance,0.8,82,0.7,1.2
+U0408,Specialist,1,Music & Arts|Data Science & Analytics,4.7,Music & Arts,0.75,78,0.65,1.1
+U0409,Steady Learner,2,Cloud & DevOps,3.9,Cloud & DevOps,0.65,70,0.5,1.0
+U0410,Fast Learner,1,Law & Social Sciences|Personal Development|Cybersecurity,6.4,Business & Finance,0.8,82,0.7,1.2
+U0411,Struggling,2,Law & Social Sciences,2.4,Business & Finance,0.4,52,0.25,0.75
+U0412,Fast Learner,2,Cloud & DevOps|Science & Engineering,11.2,Law & Social Sciences,0.8,82,0.7,1.2
+U0413,Steady Learner,2,Cloud & DevOps|Personal Development,7.0,Law & Social Sciences,0.65,70,0.5,1.0
+U0414,Steady Learner,2,Law & Social Sciences|Cybersecurity|Programming & Software Dev,7.6,Web Development,0.65,70,0.5,1.0
+U0415,Struggling,3,Music & Arts|Programming & Software Dev,3.4,Personal Development,0.4,52,0.25,0.75
+U0416,Steady Learner,2,Data Science & Analytics,7.0,Music & Arts,0.65,70,0.5,1.0
+U0417,Specialist,1,Law & Social Sciences|Business & Finance,3.8,Cybersecurity,0.75,78,0.65,1.1
+U0418,Curious Sampler,2,Programming & Software Dev|Data Science & Analytics,9.0,Programming & Software Dev,0.3,65,0.6,0.9
+U0419,Steady Learner,1,Web Development|Business & Finance|Cybersecurity,6.9,Law & Social Sciences,0.65,70,0.5,1.0
+U0420,Fast Learner,3,Personal Development,7.6,Machine Learning & AI,0.8,82,0.7,1.2
+U0421,Fast Learner,1,Graphic Design & Media|Music & Arts,10.3,Music & Arts,0.8,82,0.7,1.2
+U0422,Fast Learner,2,Personal Development,16.0,Programming & Software Dev,0.8,82,0.7,1.2
+U0423,Fast Learner,1,Data Science & Analytics|Business & Finance|Machine Learning & AI,5.1,Machine Learning & AI,0.8,82,0.7,1.2
+U0424,Steady Learner,2,Graphic Design & Media,4.7,Cybersecurity,0.65,70,0.5,1.0
+U0425,Steady Learner,1,Law & Social Sciences|Music & Arts,6.4,Science & Engineering,0.65,70,0.5,1.0
+U0426,Fast Learner,1,Programming & Software Dev,3.3,Law & Social Sciences,0.8,82,0.7,1.2
+U0427,Specialist,1,Law & Social Sciences,2.1,Data Science & Analytics,0.75,78,0.65,1.1
+U0428,Curious Sampler,2,Web Development,4.8,Data Science & Analytics,0.3,65,0.6,0.9
+U0429,Fast Learner,1,Business & Finance,4.5,Web Development,0.8,82,0.7,1.2
+U0430,Curious Sampler,2,Personal Development|Data Science & Analytics,5.3,Machine Learning & AI,0.3,65,0.6,0.9
+U0431,Struggling,2,Machine Learning & AI,5.0,Web Development,0.4,52,0.25,0.75
+U0432,Curious Sampler,2,Web Development,8.2,Personal Development,0.3,65,0.6,0.9
+U0433,Struggling,1,Programming & Software Dev|Graphic Design & Media,13.1,Machine Learning & AI,0.4,52,0.25,0.75
+U0434,Steady Learner,2,Health & Medicine,4.6,Data Science & Analytics,0.65,70,0.5,1.0
+U0435,Steady Learner,1,Personal Development,12.5,Cybersecurity,0.65,70,0.5,1.0
+U0436,Struggling,1,Music & Arts|Programming & Software Dev,3.4,Business & Finance,0.4,52,0.25,0.75
+U0437,Fast Learner,2,Music & Arts,10.3,Programming & Software Dev,0.8,82,0.7,1.2
+U0438,Steady Learner,1,Music & Arts|Law & Social Sciences,11.6,Programming & Software Dev,0.65,70,0.5,1.0
+U0439,Steady Learner,2,Music & Arts,9.2,Personal Development,0.65,70,0.5,1.0
+U0440,Fast Learner,1,Health & Medicine|Business & Finance,14.5,Cybersecurity,0.8,82,0.7,1.2
+U0441,Steady Learner,2,Graphic Design & Media,15.8,Personal Development,0.65,70,0.5,1.0
+U0442,Steady Learner,2,Music & Arts|Data Science & Analytics,6.5,Health & Medicine,0.65,70,0.5,1.0
+U0443,Steady Learner,2,Programming & Software Dev|Data Science & Analytics,15.0,Cybersecurity,0.65,70,0.5,1.0
+U0444,Steady Learner,2,Data Science & Analytics|Personal Development|Business & Finance,5.2,Science & Engineering,0.65,70,0.5,1.0
+U0445,Struggling,2,Cybersecurity,3.7,Personal Development,0.4,52,0.25,0.75
+U0446,Struggling,3,Music & Arts|Programming & Software Dev,7.7,Programming & Software Dev,0.4,52,0.25,0.75
+U0447,Struggling,1,Health & Medicine,5.6,Health & Medicine,0.4,52,0.25,0.75
+U0448,Steady Learner,1,Science & Engineering|Machine Learning & AI|Cybersecurity,2.9,Programming & Software Dev,0.65,70,0.5,1.0
+U0449,Steady Learner,2,Law & Social Sciences|Programming & Software Dev|Cybersecurity,9.5,Programming & Software Dev,0.65,70,0.5,1.0
+U0450,Steady Learner,2,Data Science & Analytics,6.7,Data Science & Analytics,0.65,70,0.5,1.0
+U0451,Steady Learner,2,Programming & Software Dev|Music & Arts,6.4,Programming & Software Dev,0.65,70,0.5,1.0
+U0452,Curious Sampler,1,Music & Arts|Personal Development|Cybersecurity,8.8,Web Development,0.3,65,0.6,0.9
+U0453,Struggling,1,Cybersecurity|Personal Development,9.0,Machine Learning & AI,0.4,52,0.25,0.75
+U0454,Steady Learner,1,Machine Learning & AI,5.4,Programming & Software Dev,0.65,70,0.5,1.0
+U0455,Steady Learner,2,Music & Arts|Graphic Design & Media,10.9,Web Development,0.65,70,0.5,1.0
+U0456,Curious Sampler,2,Business & Finance|Personal Development,5.0,Health & Medicine,0.3,65,0.6,0.9
+U0457,Steady Learner,2,Law & Social Sciences|Music & Arts|Cloud & DevOps,4.5,Law & Social Sciences,0.65,70,0.5,1.0
+U0458,Struggling,1,Health & Medicine,2.7,Programming & Software Dev,0.4,52,0.25,0.75
+U0459,Steady Learner,3,Music & Arts|Law & Social Sciences|Programming & Software Dev,11.2,Data Science & Analytics,0.65,70,0.5,1.0
+U0460,Fast Learner,1,Health & Medicine,5.3,Business & Finance,0.8,82,0.7,1.2
+U0461,Specialist,1,Music & Arts|Graphic Design & Media,9.5,Business & Finance,0.75,78,0.65,1.1
+U0462,Steady Learner,1,Business & Finance,3.1,Personal Development,0.65,70,0.5,1.0
+U0463,Steady Learner,2,Graphic Design & Media|Programming & Software Dev|Web Development,7.1,Health & Medicine,0.65,70,0.5,1.0
+U0464,Steady Learner,1,Cloud & DevOps,4.6,Music & Arts,0.65,70,0.5,1.0
+U0465,Steady Learner,2,Music & Arts,6.4,Personal Development,0.65,70,0.5,1.0
+U0466,Specialist,2,Personal Development|Graphic Design & Media,11.2,Music & Arts,0.75,78,0.65,1.1
+U0467,Curious Sampler,1,Science & Engineering,14.3,Personal Development,0.3,65,0.6,0.9
+U0468,Specialist,2,Web Development,5.5,Programming & Software Dev,0.75,78,0.65,1.1
+U0469,Struggling,1,Personal Development|Web Development|Graphic Design & Media,8.0,Law & Social Sciences,0.4,52,0.25,0.75
+U0470,Curious Sampler,1,Health & Medicine|Law & Social Sciences|Music & Arts,2.3,Machine Learning & AI,0.3,65,0.6,0.9
+U0471,Steady Learner,2,Web Development,14.2,Cloud & DevOps,0.65,70,0.5,1.0
+U0472,Specialist,2,Law & Social Sciences|Science & Engineering|Programming & Software Dev,6.0,Health & Medicine,0.75,78,0.65,1.1
+U0473,Fast Learner,2,Law & Social Sciences|Music & Arts,9.7,Cybersecurity,0.8,82,0.7,1.2
+U0474,Curious Sampler,1,Programming & Software Dev|Cloud & DevOps,3.0,Data Science & Analytics,0.3,65,0.6,0.9
+U0475,Struggling,1,Programming & Software Dev,15.9,Programming & Software Dev,0.4,52,0.25,0.75
+U0476,Fast Learner,2,Web Development|Graphic Design & Media,16.5,Graphic Design & Media,0.8,82,0.7,1.2
+U0477,Steady Learner,2,Law & Social Sciences|Personal Development,9.3,Cloud & DevOps,0.65,70,0.5,1.0
+U0478,Steady Learner,1,Health & Medicine|Cybersecurity,3.6,Machine Learning & AI,0.65,70,0.5,1.0
+U0479,Fast Learner,1,Cybersecurity|Machine Learning & AI,15.2,Machine Learning & AI,0.8,82,0.7,1.2
+U0480,Specialist,1,Web Development|Graphic Design & Media|Machine Learning & AI,2.9,Personal Development,0.75,78,0.65,1.1
+U0481,Fast Learner,1,Personal Development|Graphic Design & Media|Programming & Software Dev,7.9,Cybersecurity,0.8,82,0.7,1.2
+U0482,Struggling,1,Data Science & Analytics,8.6,Personal Development,0.4,52,0.25,0.75
+U0483,Steady Learner,2,Law & Social Sciences|Machine Learning & AI,19.3,Science & Engineering,0.65,70,0.5,1.0
+U0484,Struggling,1,Music & Arts,12.5,Programming & Software Dev,0.4,52,0.25,0.75
+U0485,Struggling,1,Science & Engineering|Personal Development,13.1,Personal Development,0.4,52,0.25,0.75
+U0486,Steady Learner,1,Business & Finance|Personal Development,3.3,Business & Finance,0.65,70,0.5,1.0
+U0487,Fast Learner,2,Health & Medicine,9.6,Cybersecurity,0.8,82,0.7,1.2
+U0488,Fast Learner,2,Personal Development|Machine Learning & AI|Web Development,7.3,Data Science & Analytics,0.8,82,0.7,1.2
+U0489,Struggling,1,Health & Medicine|Music & Arts,11.9,Health & Medicine,0.4,52,0.25,0.75
+U0490,Struggling,2,Personal Development,7.4,Personal Development,0.4,52,0.25,0.75
+U0491,Specialist,2,Machine Learning & AI,6.6,Programming & Software Dev,0.75,78,0.65,1.1
+U0492,Struggling,2,Cloud & DevOps,13.2,Machine Learning & AI,0.4,52,0.25,0.75
+U0493,Curious Sampler,1,Business & Finance|Music & Arts,9.8,Health & Medicine,0.3,65,0.6,0.9
+U0494,Struggling,2,Law & Social Sciences|Health & Medicine,6.7,Graphic Design & Media,0.4,52,0.25,0.75
+U0495,Fast Learner,3,Cloud & DevOps,5.1,Data Science & Analytics,0.8,82,0.7,1.2
+U0496,Curious Sampler,1,Cloud & DevOps,3.1,Law & Social Sciences,0.3,65,0.6,0.9
+U0497,Curious Sampler,2,Programming & Software Dev|Law & Social Sciences|Music & Arts,3.2,Programming & Software Dev,0.3,65,0.6,0.9
+U0498,Steady Learner,1,Cloud & DevOps|Cybersecurity,8.9,Business & Finance,0.65,70,0.5,1.0
+U0499,Steady Learner,2,Data Science & Analytics,21.5,Cybersecurity,0.65,70,0.5,1.0
+U0500,Curious Sampler,2,Personal Development|Health & Medicine,2.3,Health & Medicine,0.3,65,0.6,0.9
+U0501,Steady Learner,2,Personal Development|Cybersecurity|Law & Social Sciences,2.3,Science & Engineering,0.65,70,0.5,1.0
+U0502,Struggling,2,Data Science & Analytics|Law & Social Sciences,13.8,Business & Finance,0.4,52,0.25,0.75
+U0503,Struggling,1,Science & Engineering|Health & Medicine,16.7,Law & Social Sciences,0.4,52,0.25,0.75
+U0504,Steady Learner,1,Cybersecurity|Health & Medicine,13.0,Machine Learning & AI,0.65,70,0.5,1.0
+U0505,Fast Learner,2,Machine Learning & AI,5.8,Health & Medicine,0.8,82,0.7,1.2
+U0506,Fast Learner,2,Music & Arts|Law & Social Sciences|Cloud & DevOps,3.8,Personal Development,0.8,82,0.7,1.2
+U0507,Fast Learner,2,Machine Learning & AI|Personal Development,18.4,Science & Engineering,0.8,82,0.7,1.2
+U0508,Struggling,1,Data Science & Analytics|Web Development|Programming & Software Dev,3.4,Law & Social Sciences,0.4,52,0.25,0.75
+U0509,Curious Sampler,2,Cloud & DevOps|Personal Development|Health & Medicine,4.5,Data Science & Analytics,0.3,65,0.6,0.9
+U0510,Struggling,1,Business & Finance|Machine Learning & AI,10.9,Science & Engineering,0.4,52,0.25,0.75
+U0511,Steady Learner,1,Data Science & Analytics|Graphic Design & Media,7.3,Personal Development,0.65,70,0.5,1.0
+U0512,Struggling,3,Data Science & Analytics,6.0,Machine Learning & AI,0.4,52,0.25,0.75
+U0513,Curious Sampler,2,Cybersecurity|Graphic Design & Media,8.0,Cloud & DevOps,0.3,65,0.6,0.9
+U0514,Specialist,1,Health & Medicine,4.8,Data Science & Analytics,0.75,78,0.65,1.1
+U0515,Struggling,1,Cybersecurity,7.4,Machine Learning & AI,0.4,52,0.25,0.75
+U0516,Steady Learner,1,Law & Social Sciences|Cloud & DevOps,8.5,Music & Arts,0.65,70,0.5,1.0
+U0517,Fast Learner,2,Health & Medicine|Data Science & Analytics,13.1,Web Development,0.8,82,0.7,1.2
+U0518,Steady Learner,3,Law & Social Sciences,1.3,Machine Learning & AI,0.65,70,0.5,1.0
+U0519,Steady Learner,1,Cybersecurity,7.8,Law & Social Sciences,0.65,70,0.5,1.0
+U0520,Specialist,1,Law & Social Sciences|Personal Development,11.4,Science & Engineering,0.75,78,0.65,1.1
+U0521,Fast Learner,1,Web Development,7.7,Graphic Design & Media,0.8,82,0.7,1.2
+U0522,Fast Learner,2,Science & Engineering|Cloud & DevOps,3.9,Machine Learning & AI,0.8,82,0.7,1.2
+U0523,Specialist,3,Machine Learning & AI|Cybersecurity|Personal Development,6.3,Science & Engineering,0.75,78,0.65,1.1
+U0524,Steady Learner,1,Programming & Software Dev|Cloud & DevOps|Machine Learning & AI,10.8,Business & Finance,0.65,70,0.5,1.0
+U0525,Steady Learner,2,Business & Finance,34.3,Law & Social Sciences,0.65,70,0.5,1.0
+U0526,Struggling,1,Music & Arts,10.4,Science & Engineering,0.4,52,0.25,0.75
+U0527,Curious Sampler,2,Health & Medicine,5.9,Law & Social Sciences,0.3,65,0.6,0.9
+U0528,Struggling,2,Web Development|Science & Engineering|Health & Medicine,3.0,Data Science & Analytics,0.4,52,0.25,0.75
+U0529,Curious Sampler,2,Health & Medicine|Science & Engineering,4.3,Science & Engineering,0.3,65,0.6,0.9
+U0530,Fast Learner,1,Graphic Design & Media,5.0,Machine Learning & AI,0.8,82,0.7,1.2
+U0531,Curious Sampler,1,Music & Arts|Programming & Software Dev,6.3,Science & Engineering,0.3,65,0.6,0.9
+U0532,Steady Learner,1,Web Development,9.8,Health & Medicine,0.65,70,0.5,1.0
+U0533,Struggling,1,Graphic Design & Media,2.6,Cybersecurity,0.4,52,0.25,0.75
+U0534,Fast Learner,1,Machine Learning & AI|Programming & Software Dev|Graphic Design & Media,2.7,Personal Development,0.8,82,0.7,1.2
+U0535,Fast Learner,3,Programming & Software Dev,5.3,Health & Medicine,0.8,82,0.7,1.2
+U0536,Specialist,1,Law & Social Sciences|Graphic Design & Media|Programming & Software Dev,22.5,Programming & Software Dev,0.75,78,0.65,1.1
+U0537,Steady Learner,1,Business & Finance|Music & Arts,14.8,Web Development,0.65,70,0.5,1.0
+U0538,Curious Sampler,2,Graphic Design & Media|Business & Finance,4.5,Data Science & Analytics,0.3,65,0.6,0.9
+U0539,Steady Learner,1,Science & Engineering,11.7,Science & Engineering,0.65,70,0.5,1.0
+U0540,Fast Learner,1,Web Development|Business & Finance|Graphic Design & Media,4.9,Personal Development,0.8,82,0.7,1.2
+U0541,Steady Learner,1,Cloud & DevOps,8.1,Web Development,0.65,70,0.5,1.0
+U0542,Steady Learner,2,Cybersecurity,7.1,Personal Development,0.65,70,0.5,1.0
+U0543,Steady Learner,2,Graphic Design & Media|Science & Engineering,3.3,Science & Engineering,0.65,70,0.5,1.0
+U0544,Steady Learner,2,Personal Development|Programming & Software Dev|Cloud & DevOps,12.2,Graphic Design & Media,0.65,70,0.5,1.0
+U0545,Struggling,1,Health & Medicine,9.5,Programming & Software Dev,0.4,52,0.25,0.75
+U0546,Struggling,2,Data Science & Analytics,3.1,Personal Development,0.4,52,0.25,0.75
+U0547,Steady Learner,2,Health & Medicine,4.6,Cybersecurity,0.65,70,0.5,1.0
+U0548,Steady Learner,2,Law & Social Sciences|Personal Development,6.6,Law & Social Sciences,0.65,70,0.5,1.0
+U0549,Curious Sampler,1,Business & Finance|Data Science & Analytics,7.3,Business & Finance,0.3,65,0.6,0.9
+U0550,Curious Sampler,2,Music & Arts,8.2,Graphic Design & Media,0.3,65,0.6,0.9
+U0551,Steady Learner,1,Data Science & Analytics,3.2,Cybersecurity,0.65,70,0.5,1.0
+U0552,Fast Learner,2,Law & Social Sciences|Web Development|Cloud & DevOps,4.9,Music & Arts,0.8,82,0.7,1.2
+U0553,Steady Learner,1,Science & Engineering|Cybersecurity|Health & Medicine,15.4,Health & Medicine,0.65,70,0.5,1.0
+U0554,Curious Sampler,1,Graphic Design & Media,11.4,Graphic Design & Media,0.3,65,0.6,0.9
+U0555,Fast Learner,2,Music & Arts|Programming & Software Dev,17.6,Health & Medicine,0.8,82,0.7,1.2
+U0556,Fast Learner,2,Data Science & Analytics|Cybersecurity|Science & Engineering,6.2,Machine Learning & AI,0.8,82,0.7,1.2
+U0557,Steady Learner,1,Machine Learning & AI|Web Development,2.6,Machine Learning & AI,0.65,70,0.5,1.0
+U0558,Fast Learner,1,Music & Arts,7.8,Science & Engineering,0.8,82,0.7,1.2
+U0559,Struggling,2,Cybersecurity,5.7,Cybersecurity,0.4,52,0.25,0.75
+U0560,Steady Learner,3,Music & Arts|Programming & Software Dev|Graphic Design & Media,4.3,Programming & Software Dev,0.65,70,0.5,1.0
+U0561,Steady Learner,1,Science & Engineering,11.2,Law & Social Sciences,0.65,70,0.5,1.0
+U0562,Struggling,2,Music & Arts|Web Development,19.1,Cybersecurity,0.4,52,0.25,0.75
+U0563,Struggling,2,Cybersecurity|Graphic Design & Media|Law & Social Sciences,8.1,Cybersecurity,0.4,52,0.25,0.75
+U0564,Steady Learner,2,Music & Arts,13.5,Cybersecurity,0.65,70,0.5,1.0
+U0565,Steady Learner,2,Personal Development|Science & Engineering,4.3,Programming & Software Dev,0.65,70,0.5,1.0
+U0566,Steady Learner,1,Cybersecurity|Music & Arts,1.3,Programming & Software Dev,0.65,70,0.5,1.0
+U0567,Struggling,2,Law & Social Sciences,2.4,Health & Medicine,0.4,52,0.25,0.75
+U0568,Steady Learner,2,Web Development|Personal Development,18.6,Web Development,0.65,70,0.5,1.0
+U0569,Struggling,3,Data Science & Analytics|Cloud & DevOps,5.9,Science & Engineering,0.4,52,0.25,0.75
+U0570,Steady Learner,1,Health & Medicine|Programming & Software Dev|Law & Social Sciences,7.3,Law & Social Sciences,0.65,70,0.5,1.0
+U0571,Steady Learner,2,Cloud & DevOps|Web Development|Graphic Design & Media,6.5,Business & Finance,0.65,70,0.5,1.0
+U0572,Struggling,3,Personal Development|Data Science & Analytics,3.3,Machine Learning & AI,0.4,52,0.25,0.75
+U0573,Fast Learner,1,Law & Social Sciences,19.6,Personal Development,0.8,82,0.7,1.2
+U0574,Steady Learner,2,Health & Medicine|Programming & Software Dev|Law & Social Sciences,5.1,Science & Engineering,0.65,70,0.5,1.0
+U0575,Curious Sampler,1,Programming & Software Dev|Personal Development,7.8,Machine Learning & AI,0.3,65,0.6,0.9
+U0576,Fast Learner,1,Health & Medicine|Law & Social Sciences|Cloud & DevOps,13.2,Data Science & Analytics,0.8,82,0.7,1.2
+U0577,Fast Learner,1,Programming & Software Dev|Law & Social Sciences,4.9,Health & Medicine,0.8,82,0.7,1.2
+U0578,Steady Learner,1,Law & Social Sciences,9.7,Web Development,0.65,70,0.5,1.0
+U0579,Steady Learner,1,Web Development|Data Science & Analytics,26.0,Web Development,0.65,70,0.5,1.0
+U0580,Fast Learner,2,Law & Social Sciences|Graphic Design & Media|Music & Arts,7.1,Cybersecurity,0.8,82,0.7,1.2
+U0581,Fast Learner,1,Business & Finance|Health & Medicine|Web Development,15.1,Web Development,0.8,82,0.7,1.2
+U0582,Steady Learner,1,Web Development|Machine Learning & AI,22.6,Music & Arts,0.65,70,0.5,1.0
+U0583,Fast Learner,2,Music & Arts|Business & Finance,4.2,Law & Social Sciences,0.8,82,0.7,1.2
+U0584,Struggling,1,Music & Arts|Personal Development,11.4,Cloud & DevOps,0.4,52,0.25,0.75
+U0585,Struggling,1,Business & Finance|Law & Social Sciences|Music & Arts,5.3,Machine Learning & AI,0.4,52,0.25,0.75
+U0586,Struggling,2,Cybersecurity,6.3,Data Science & Analytics,0.4,52,0.25,0.75
+U0587,Struggling,1,Graphic Design & Media,18.2,Programming & Software Dev,0.4,52,0.25,0.75
+U0588,Struggling,3,Law & Social Sciences|Graphic Design & Media,3.2,Music & Arts,0.4,52,0.25,0.75
+U0589,Curious Sampler,2,Music & Arts|Science & Engineering|Data Science & Analytics,3.1,Personal Development,0.3,65,0.6,0.9
+U0590,Fast Learner,1,Cybersecurity|Graphic Design & Media,8.2,Graphic Design & Media,0.8,82,0.7,1.2
+U0591,Struggling,1,Programming & Software Dev|Personal Development|Web Development,8.4,Web Development,0.4,52,0.25,0.75
+U0592,Curious Sampler,2,Programming & Software Dev,8.6,Web Development,0.3,65,0.6,0.9
+U0593,Steady Learner,1,Web Development|Machine Learning & AI,4.3,Health & Medicine,0.65,70,0.5,1.0
+U0594,Struggling,1,Business & Finance,8.0,Personal Development,0.4,52,0.25,0.75
+U0595,Struggling,2,Music & Arts|Cloud & DevOps|Business & Finance,5.0,Graphic Design & Media,0.4,52,0.25,0.75
+U0596,Steady Learner,1,Business & Finance,2.8,Graphic Design & Media,0.65,70,0.5,1.0
+U0597,Fast Learner,2,Business & Finance|Science & Engineering|Cloud & DevOps,3.8,Music & Arts,0.8,82,0.7,1.2
+U0598,Steady Learner,1,Data Science & Analytics|Personal Development,8.2,Machine Learning & AI,0.65,70,0.5,1.0
+U0599,Steady Learner,3,Graphic Design & Media|Health & Medicine|Business & Finance,21.1,Cloud & DevOps,0.65,70,0.5,1.0
+U0600,Steady Learner,1,Web Development,5.3,Music & Arts,0.65,70,0.5,1.0
+U0601,Steady Learner,2,Law & Social Sciences|Data Science & Analytics,7.2,Law & Social Sciences,0.65,70,0.5,1.0
+U0602,Fast Learner,1,Cloud & DevOps|Personal Development,14.1,Business & Finance,0.8,82,0.7,1.2
+U0603,Struggling,2,Programming & Software Dev|Science & Engineering|Graphic Design & Media,3.0,Graphic Design & Media,0.4,52,0.25,0.75
+U0604,Fast Learner,2,Data Science & Analytics|Business & Finance|Health & Medicine,7.9,Cloud & DevOps,0.8,82,0.7,1.2
+U0605,Steady Learner,3,Graphic Design & Media,5.8,Science & Engineering,0.65,70,0.5,1.0
+U0606,Specialist,2,Music & Arts|Data Science & Analytics,2.5,Science & Engineering,0.75,78,0.65,1.1
+U0607,Steady Learner,2,Data Science & Analytics,7.4,Web Development,0.65,70,0.5,1.0
+U0608,Steady Learner,2,Machine Learning & AI|Cybersecurity,4.9,Cybersecurity,0.65,70,0.5,1.0
+U0609,Struggling,1,Web Development,2.4,Cybersecurity,0.4,52,0.25,0.75
+U0610,Struggling,1,Cloud & DevOps|Data Science & Analytics|Personal Development,8.2,Personal Development,0.4,52,0.25,0.75
+U0611,Steady Learner,3,Health & Medicine|Science & Engineering,13.7,Web Development,0.65,70,0.5,1.0
+U0612,Fast Learner,1,Graphic Design & Media|Business & Finance,18.5,Health & Medicine,0.8,82,0.7,1.2
+U0613,Specialist,1,Science & Engineering|Data Science & Analytics,4.6,Personal Development,0.75,78,0.65,1.1
+U0614,Steady Learner,1,Business & Finance|Science & Engineering|Cloud & DevOps,7.4,Cloud & DevOps,0.65,70,0.5,1.0
+U0615,Struggling,1,Cybersecurity|Cloud & DevOps,15.0,Law & Social Sciences,0.4,52,0.25,0.75
+U0616,Fast Learner,2,Machine Learning & AI,5.5,Programming & Software Dev,0.8,82,0.7,1.2
+U0617,Fast Learner,2,Web Development|Health & Medicine,3.1,Business & Finance,0.8,82,0.7,1.2
+U0618,Struggling,1,Music & Arts|Graphic Design & Media,28.3,Machine Learning & AI,0.4,52,0.25,0.75
+U0619,Steady Learner,1,Web Development|Health & Medicine,4.2,Personal Development,0.65,70,0.5,1.0
+U0620,Struggling,1,Music & Arts|Cybersecurity,3.0,Law & Social Sciences,0.4,52,0.25,0.75
+U0621,Fast Learner,2,Web Development,13.6,Web Development,0.8,82,0.7,1.2
+U0622,Steady Learner,1,Health & Medicine,7.3,Machine Learning & AI,0.65,70,0.5,1.0
+U0623,Steady Learner,1,Health & Medicine|Graphic Design & Media|Data Science & Analytics,11.1,Business & Finance,0.65,70,0.5,1.0
+U0624,Struggling,2,Data Science & Analytics|Music & Arts,16.8,Personal Development,0.4,52,0.25,0.75
+U0625,Fast Learner,1,Data Science & Analytics,10.3,Cloud & DevOps,0.8,82,0.7,1.2
+U0626,Struggling,3,Health & Medicine,7.8,Cybersecurity,0.4,52,0.25,0.75
+U0627,Curious Sampler,2,Cybersecurity,5.2,Cybersecurity,0.3,65,0.6,0.9
+U0628,Curious Sampler,1,Programming & Software Dev|Music & Arts,12.8,Science & Engineering,0.3,65,0.6,0.9
+U0629,Fast Learner,2,Web Development,6.6,Cloud & DevOps,0.8,82,0.7,1.2
+U0630,Steady Learner,2,Health & Medicine|Data Science & Analytics,7.9,Programming & Software Dev,0.65,70,0.5,1.0
+U0631,Steady Learner,2,Cloud & DevOps|Programming & Software Dev|Graphic Design & Media,9.4,Data Science & Analytics,0.65,70,0.5,1.0
+U0632,Curious Sampler,2,Science & Engineering|Cloud & DevOps,9.4,Music & Arts,0.3,65,0.6,0.9
+U0633,Steady Learner,1,Personal Development|Machine Learning & AI,9.7,Cloud & DevOps,0.65,70,0.5,1.0
+U0634,Fast Learner,2,Graphic Design & Media,5.1,Machine Learning & AI,0.8,82,0.7,1.2
+U0635,Curious Sampler,3,Business & Finance,12.2,Web Development,0.3,65,0.6,0.9
+U0636,Steady Learner,1,Business & Finance|Music & Arts|Personal Development,19.0,Music & Arts,0.65,70,0.5,1.0
+U0637,Steady Learner,3,Cloud & DevOps,5.2,Web Development,0.65,70,0.5,1.0
+U0638,Struggling,1,Programming & Software Dev|Machine Learning & AI|Business & Finance,6.7,Law & Social Sciences,0.4,52,0.25,0.75
+U0639,Steady Learner,1,Cybersecurity|Cloud & DevOps,11.9,Personal Development,0.65,70,0.5,1.0
+U0640,Struggling,2,Cloud & DevOps|Health & Medicine,7.2,Music & Arts,0.4,52,0.25,0.75
+U0641,Steady Learner,1,Law & Social Sciences|Machine Learning & AI|Personal Development,6.9,Music & Arts,0.65,70,0.5,1.0
+U0642,Specialist,3,Web Development|Business & Finance,3.7,Programming & Software Dev,0.75,78,0.65,1.1
+U0643,Struggling,2,Cybersecurity,4.5,Health & Medicine,0.4,52,0.25,0.75
+U0644,Steady Learner,2,Law & Social Sciences|Science & Engineering,13.1,Cybersecurity,0.65,70,0.5,1.0
+U0645,Specialist,1,Law & Social Sciences,3.2,Machine Learning & AI,0.75,78,0.65,1.1
+U0646,Steady Learner,2,Web Development,20.8,Science & Engineering,0.65,70,0.5,1.0
+U0647,Struggling,3,Web Development,11.6,Web Development,0.4,52,0.25,0.75
+U0648,Specialist,2,Health & Medicine|Cybersecurity|Science & Engineering,5.5,Machine Learning & AI,0.75,78,0.65,1.1
+U0649,Fast Learner,2,Health & Medicine|Programming & Software Dev,4.9,Science & Engineering,0.8,82,0.7,1.2
+U0650,Curious Sampler,2,Business & Finance,14.0,Graphic Design & Media,0.3,65,0.6,0.9
+U0651,Fast Learner,1,Science & Engineering,6.3,Personal Development,0.8,82,0.7,1.2
+U0652,Fast Learner,1,Law & Social Sciences,12.6,Science & Engineering,0.8,82,0.7,1.2
+U0653,Fast Learner,2,Programming & Software Dev|Graphic Design & Media|Cybersecurity,2.6,Programming & Software Dev,0.8,82,0.7,1.2
+U0654,Specialist,3,Science & Engineering|Programming & Software Dev,11.5,Business & Finance,0.75,78,0.65,1.1
+U0655,Steady Learner,1,Web Development,10.9,Health & Medicine,0.65,70,0.5,1.0
+U0656,Struggling,2,Cybersecurity,2.9,Graphic Design & Media,0.4,52,0.25,0.75
+U0657,Steady Learner,2,Graphic Design & Media|Data Science & Analytics,4.8,Science & Engineering,0.65,70,0.5,1.0
+U0658,Curious Sampler,2,Business & Finance|Data Science & Analytics,17.7,Law & Social Sciences,0.3,65,0.6,0.9
+U0659,Steady Learner,1,Graphic Design & Media|Health & Medicine,12.7,Science & Engineering,0.65,70,0.5,1.0
+U0660,Steady Learner,2,Cloud & DevOps|Health & Medicine,2.4,Music & Arts,0.65,70,0.5,1.0
+U0661,Curious Sampler,1,Programming & Software Dev|Health & Medicine|Data Science & Analytics,13.6,Science & Engineering,0.3,65,0.6,0.9
+U0662,Steady Learner,1,Graphic Design & Media|Data Science & Analytics|Cloud & DevOps,5.8,Programming & Software Dev,0.65,70,0.5,1.0
+U0663,Struggling,2,Data Science & Analytics,4.7,Science & Engineering,0.4,52,0.25,0.75
+U0664,Steady Learner,3,Business & Finance|Web Development,4.6,Graphic Design & Media,0.65,70,0.5,1.0
+U0665,Specialist,2,Data Science & Analytics,10.8,Programming & Software Dev,0.75,78,0.65,1.1
+U0666,Fast Learner,1,Science & Engineering,2.6,Science & Engineering,0.8,82,0.7,1.2
+U0667,Struggling,3,Law & Social Sciences,4.7,Web Development,0.4,52,0.25,0.75
+U0668,Steady Learner,1,Music & Arts,11.8,Music & Arts,0.65,70,0.5,1.0
+U0669,Specialist,2,Programming & Software Dev|Health & Medicine|Data Science & Analytics,8.2,Cloud & DevOps,0.75,78,0.65,1.1
+U0670,Fast Learner,2,Health & Medicine|Science & Engineering,3.1,Cloud & DevOps,0.8,82,0.7,1.2
+U0671,Steady Learner,2,Business & Finance,2.7,Business & Finance,0.65,70,0.5,1.0
+U0672,Steady Learner,2,Personal Development|Graphic Design & Media|Programming & Software Dev,10.7,Cloud & DevOps,0.65,70,0.5,1.0
+U0673,Steady Learner,3,Law & Social Sciences|Machine Learning & AI|Personal Development,10.0,Health & Medicine,0.65,70,0.5,1.0
+U0674,Steady Learner,1,Graphic Design & Media,5.5,Web Development,0.65,70,0.5,1.0
+U0675,Steady Learner,1,Machine Learning & AI|Science & Engineering,4.4,Music & Arts,0.65,70,0.5,1.0
+U0676,Struggling,2,Web Development|Graphic Design & Media,7.2,Cybersecurity,0.4,52,0.25,0.75
+U0677,Struggling,1,Cybersecurity,13.9,Cybersecurity,0.4,52,0.25,0.75
+U0678,Specialist,3,Music & Arts,13.3,Personal Development,0.75,78,0.65,1.1
+U0679,Steady Learner,1,Web Development,3.7,Music & Arts,0.65,70,0.5,1.0
+U0680,Struggling,1,Personal Development|Cybersecurity,20.4,Business & Finance,0.4,52,0.25,0.75
+U0681,Steady Learner,1,Machine Learning & AI|Business & Finance|Music & Arts,1.8,Music & Arts,0.65,70,0.5,1.0
+U0682,Fast Learner,1,Health & Medicine,19.3,Programming & Software Dev,0.8,82,0.7,1.2
+U0683,Steady Learner,2,Health & Medicine,4.3,Programming & Software Dev,0.65,70,0.5,1.0
+U0684,Fast Learner,2,Web Development|Music & Arts|Cloud & DevOps,4.7,Graphic Design & Media,0.8,82,0.7,1.2
+U0685,Struggling,2,Health & Medicine|Music & Arts,7.4,Machine Learning & AI,0.4,52,0.25,0.75
+U0686,Struggling,2,Cybersecurity|Business & Finance,9.6,Health & Medicine,0.4,52,0.25,0.75
+U0687,Specialist,2,Web Development,7.4,Web Development,0.75,78,0.65,1.1
+U0688,Struggling,1,Personal Development|Graphic Design & Media,3.9,Business & Finance,0.4,52,0.25,0.75
+U0689,Fast Learner,1,Programming & Software Dev|Science & Engineering,5.0,Cloud & DevOps,0.8,82,0.7,1.2
+U0690,Curious Sampler,1,Personal Development|Programming & Software Dev,5.2,Cloud & DevOps,0.3,65,0.6,0.9
+U0691,Struggling,1,Cybersecurity|Music & Arts,13.4,Web Development,0.4,52,0.25,0.75
+U0692,Steady Learner,2,Science & Engineering,17.6,Graphic Design & Media,0.65,70,0.5,1.0
+U0693,Fast Learner,1,Data Science & Analytics|Health & Medicine,5.6,Cybersecurity,0.8,82,0.7,1.2
+U0694,Steady Learner,2,Music & Arts|Data Science & Analytics|Health & Medicine,36.6,Cloud & DevOps,0.65,70,0.5,1.0
+U0695,Fast Learner,2,Cybersecurity|Machine Learning & AI,7.8,Personal Development,0.8,82,0.7,1.2
+U0696,Specialist,2,Cybersecurity|Science & Engineering,8.8,Cybersecurity,0.75,78,0.65,1.1
+U0697,Curious Sampler,3,Cybersecurity|Machine Learning & AI,8.7,Personal Development,0.3,65,0.6,0.9
+U0698,Fast Learner,2,Graphic Design & Media,5.1,Web Development,0.8,82,0.7,1.2
+U0699,Steady Learner,1,Data Science & Analytics,6.2,Data Science & Analytics,0.65,70,0.5,1.0
+U0700,Curious Sampler,1,Machine Learning & AI|Music & Arts,7.2,Health & Medicine,0.3,65,0.6,0.9
+U0701,Specialist,2,Personal Development|Web Development,4.4,Health & Medicine,0.75,78,0.65,1.1
+U0702,Fast Learner,1,Programming & Software Dev|Graphic Design & Media|Machine Learning & AI,5.9,Law & Social Sciences,0.8,82,0.7,1.2
+U0703,Fast Learner,1,Personal Development,2.3,Business & Finance,0.8,82,0.7,1.2
+U0704,Fast Learner,2,Health & Medicine|Machine Learning & AI,7.5,Music & Arts,0.8,82,0.7,1.2
+U0705,Curious Sampler,2,Data Science & Analytics|Programming & Software Dev,6.3,Law & Social Sciences,0.3,65,0.6,0.9
+U0706,Struggling,2,Machine Learning & AI|Business & Finance,8.0,Programming & Software Dev,0.4,52,0.25,0.75
+U0707,Steady Learner,2,Programming & Software Dev,24.1,Music & Arts,0.65,70,0.5,1.0
+U0708,Struggling,1,Business & Finance|Music & Arts|Personal Development,3.5,Programming & Software Dev,0.4,52,0.25,0.75
+U0709,Fast Learner,2,Machine Learning & AI|Graphic Design & Media,12.5,Cybersecurity,0.8,82,0.7,1.2
+U0710,Struggling,1,Graphic Design & Media,2.5,Health & Medicine,0.4,52,0.25,0.75
+U0711,Fast Learner,2,Machine Learning & AI,2.8,Machine Learning & AI,0.8,82,0.7,1.2
+U0712,Steady Learner,1,Science & Engineering|Cybersecurity|Machine Learning & AI,5.6,Cybersecurity,0.65,70,0.5,1.0
+U0713,Struggling,1,Web Development|Personal Development|Programming & Software Dev,18.5,Music & Arts,0.4,52,0.25,0.75
+U0714,Fast Learner,3,Machine Learning & AI,6.8,Health & Medicine,0.8,82,0.7,1.2
+U0715,Fast Learner,2,Cloud & DevOps|Health & Medicine|Machine Learning & AI,4.0,Cloud & DevOps,0.8,82,0.7,1.2
+U0716,Steady Learner,1,Health & Medicine,3.3,Business & Finance,0.65,70,0.5,1.0
+U0717,Curious Sampler,2,Programming & Software Dev,2.3,Web Development,0.3,65,0.6,0.9
+U0718,Steady Learner,2,Programming & Software Dev|Music & Arts,5.2,Health & Medicine,0.65,70,0.5,1.0
+U0719,Fast Learner,1,Cybersecurity|Science & Engineering|Graphic Design & Media,18.8,Health & Medicine,0.8,82,0.7,1.2
+U0720,Struggling,1,Business & Finance|Law & Social Sciences,4.2,Business & Finance,0.4,52,0.25,0.75
+U0721,Steady Learner,1,Business & Finance,4.1,Health & Medicine,0.65,70,0.5,1.0
+U0722,Fast Learner,1,Business & Finance|Music & Arts,11.4,Business & Finance,0.8,82,0.7,1.2
+U0723,Fast Learner,2,Science & Engineering|Law & Social Sciences|Personal Development,22.0,Machine Learning & AI,0.8,82,0.7,1.2
+U0724,Fast Learner,1,Health & Medicine|Machine Learning & AI,12.4,Science & Engineering,0.8,82,0.7,1.2
+U0725,Specialist,1,Machine Learning & AI|Graphic Design & Media,5.3,Graphic Design & Media,0.75,78,0.65,1.1
+U0726,Steady Learner,1,Graphic Design & Media,5.1,Health & Medicine,0.65,70,0.5,1.0
+U0727,Curious Sampler,2,Cloud & DevOps|Graphic Design & Media,4.5,Science & Engineering,0.3,65,0.6,0.9
+U0728,Struggling,2,Web Development|Law & Social Sciences,17.8,Health & Medicine,0.4,52,0.25,0.75
+U0729,Specialist,2,Programming & Software Dev|Graphic Design & Media,4.6,Graphic Design & Media,0.75,78,0.65,1.1
+U0730,Steady Learner,2,Health & Medicine,4.5,Graphic Design & Media,0.65,70,0.5,1.0
+U0731,Struggling,2,Science & Engineering,3.5,Cloud & DevOps,0.4,52,0.25,0.75
+U0732,Steady Learner,1,Personal Development|Machine Learning & AI,3.7,Machine Learning & AI,0.65,70,0.5,1.0
+U0733,Steady Learner,2,Graphic Design & Media|Personal Development,3.0,Graphic Design & Media,0.65,70,0.5,1.0
+U0734,Steady Learner,1,Personal Development,6.1,Graphic Design & Media,0.65,70,0.5,1.0
+U0735,Struggling,2,Machine Learning & AI,8.9,Personal Development,0.4,52,0.25,0.75
+U0736,Struggling,1,Law & Social Sciences|Machine Learning & AI,5.5,Business & Finance,0.4,52,0.25,0.75
+U0737,Curious Sampler,1,Science & Engineering,8.0,Science & Engineering,0.3,65,0.6,0.9
+U0738,Steady Learner,1,Graphic Design & Media,3.2,Cybersecurity,0.65,70,0.5,1.0
+U0739,Fast Learner,2,Science & Engineering|Cybersecurity,8.1,Business & Finance,0.8,82,0.7,1.2
+U0740,Specialist,2,Cybersecurity|Music & Arts,20.9,Law & Social Sciences,0.75,78,0.65,1.1
+U0741,Fast Learner,3,Programming & Software Dev|Personal Development,11.1,Cybersecurity,0.8,82,0.7,1.2
+U0742,Fast Learner,1,Graphic Design & Media,2.6,Machine Learning & AI,0.8,82,0.7,1.2
+U0743,Specialist,2,Science & Engineering|Health & Medicine|Programming & Software Dev,2.0,Business & Finance,0.75,78,0.65,1.1
+U0744,Curious Sampler,1,Law & Social Sciences,7.5,Graphic Design & Media,0.3,65,0.6,0.9
+U0745,Struggling,2,Health & Medicine,1.9,Law & Social Sciences,0.4,52,0.25,0.75
+U0746,Steady Learner,2,Science & Engineering|Law & Social Sciences|Personal Development,3.6,Personal Development,0.65,70,0.5,1.0
+U0747,Struggling,1,Programming & Software Dev,9.8,Data Science & Analytics,0.4,52,0.25,0.75
+U0748,Fast Learner,1,Data Science & Analytics|Cloud & DevOps|Web Development,3.4,Law & Social Sciences,0.8,82,0.7,1.2
+U0749,Fast Learner,2,Personal Development,3.4,Data Science & Analytics,0.8,82,0.7,1.2
+U0750,Steady Learner,1,Cybersecurity|Graphic Design & Media,14.8,Personal Development,0.65,70,0.5,1.0
+U0751,Curious Sampler,1,Cybersecurity|Graphic Design & Media,3.0,Programming & Software Dev,0.3,65,0.6,0.9
+U0752,Steady Learner,2,Machine Learning & AI,3.9,Data Science & Analytics,0.65,70,0.5,1.0
+U0753,Steady Learner,2,Cybersecurity,7.5,Data Science & Analytics,0.65,70,0.5,1.0
+U0754,Fast Learner,2,Health & Medicine,4.5,Graphic Design & Media,0.8,82,0.7,1.2
+U0755,Fast Learner,1,Web Development|Data Science & Analytics,5.4,Cloud & DevOps,0.8,82,0.7,1.2
+U0756,Struggling,2,Web Development,2.2,Law & Social Sciences,0.4,52,0.25,0.75
+U0757,Steady Learner,1,Cybersecurity,7.4,Cloud & DevOps,0.65,70,0.5,1.0
+U0758,Specialist,1,Web Development,14.1,Music & Arts,0.75,78,0.65,1.1
+U0759,Steady Learner,2,Business & Finance|Machine Learning & AI,4.4,Science & Engineering,0.65,70,0.5,1.0
+U0760,Steady Learner,1,Law & Social Sciences,14.3,Machine Learning & AI,0.65,70,0.5,1.0
+U0761,Fast Learner,1,Cybersecurity|Music & Arts,5.9,Business & Finance,0.8,82,0.7,1.2
+U0762,Steady Learner,1,Web Development|Programming & Software Dev,6.5,Cloud & DevOps,0.65,70,0.5,1.0
+U0763,Struggling,1,Programming & Software Dev,1.0,Law & Social Sciences,0.4,52,0.25,0.75
+U0764,Steady Learner,2,Health & Medicine,9.6,Personal Development,0.65,70,0.5,1.0
+U0765,Steady Learner,3,Machine Learning & AI|Personal Development,12.3,Programming & Software Dev,0.65,70,0.5,1.0
+U0766,Steady Learner,2,Cybersecurity|Science & Engineering|Personal Development,10.3,Science & Engineering,0.65,70,0.5,1.0
+U0767,Steady Learner,1,Machine Learning & AI,5.0,Law & Social Sciences,0.65,70,0.5,1.0
+U0768,Fast Learner,2,Science & Engineering|Cybersecurity,5.5,Health & Medicine,0.8,82,0.7,1.2
+U0769,Steady Learner,1,Personal Development|Science & Engineering,7.8,Health & Medicine,0.65,70,0.5,1.0
+U0770,Struggling,2,Cloud & DevOps|Machine Learning & AI,4.2,Web Development,0.4,52,0.25,0.75
+U0771,Steady Learner,1,Law & Social Sciences|Business & Finance,29.7,Data Science & Analytics,0.65,70,0.5,1.0
+U0772,Steady Learner,2,Data Science & Analytics|Business & Finance|Programming & Software Dev,9.1,Personal Development,0.65,70,0.5,1.0
+U0773,Steady Learner,3,Web Development|Personal Development|Cybersecurity,8.8,Cloud & DevOps,0.65,70,0.5,1.0
+U0774,Struggling,2,Programming & Software Dev|Science & Engineering|Web Development,3.3,Music & Arts,0.4,52,0.25,0.75
+U0775,Steady Learner,1,Business & Finance|Cloud & DevOps,6.1,Science & Engineering,0.65,70,0.5,1.0
+U0776,Struggling,2,Health & Medicine|Music & Arts,5.1,Graphic Design & Media,0.4,52,0.25,0.75
+U0777,Curious Sampler,1,Cybersecurity|Business & Finance,5.2,Personal Development,0.3,65,0.6,0.9
+U0778,Curious Sampler,3,Cloud & DevOps,6.3,Science & Engineering,0.3,65,0.6,0.9
+U0779,Curious Sampler,2,Web Development,5.9,Web Development,0.3,65,0.6,0.9
+U0780,Curious Sampler,1,Programming & Software Dev,3.5,Graphic Design & Media,0.3,65,0.6,0.9
+U0781,Steady Learner,2,Machine Learning & AI,13.2,Business & Finance,0.65,70,0.5,1.0
+U0782,Struggling,1,Programming & Software Dev,5.2,Science & Engineering,0.4,52,0.25,0.75
+U0783,Struggling,2,Law & Social Sciences|Machine Learning & AI|Personal Development,9.4,Web Development,0.4,52,0.25,0.75
+U0784,Struggling,2,Web Development|Cloud & DevOps,6.6,Machine Learning & AI,0.4,52,0.25,0.75
+U0785,Fast Learner,2,Programming & Software Dev|Machine Learning & AI,8.1,Health & Medicine,0.8,82,0.7,1.2
+U0786,Specialist,1,Cloud & DevOps,2.3,Personal Development,0.75,78,0.65,1.1
+U0787,Fast Learner,2,Health & Medicine,20.3,Health & Medicine,0.8,82,0.7,1.2
+U0788,Steady Learner,3,Science & Engineering|Graphic Design & Media|Music & Arts,5.3,Graphic Design & Media,0.65,70,0.5,1.0
+U0789,Steady Learner,1,Machine Learning & AI,28.9,Cybersecurity,0.65,70,0.5,1.0
+U0790,Steady Learner,2,Machine Learning & AI,13.3,Programming & Software Dev,0.65,70,0.5,1.0
+U0791,Specialist,3,Science & Engineering,7.4,Personal Development,0.75,78,0.65,1.1
+U0792,Fast Learner,1,Cloud & DevOps,9.5,Web Development,0.8,82,0.7,1.2
+U0793,Steady Learner,2,Business & Finance|Cybersecurity,7.3,Cybersecurity,0.65,70,0.5,1.0
+U0794,Steady Learner,1,Web Development|Graphic Design & Media,8.5,Cloud & DevOps,0.65,70,0.5,1.0
+U0795,Struggling,1,Cloud & DevOps,4.5,Health & Medicine,0.4,52,0.25,0.75
+U0796,Steady Learner,1,Science & Engineering,15.9,Law & Social Sciences,0.65,70,0.5,1.0
+U0797,Curious Sampler,1,Programming & Software Dev|Personal Development|Machine Learning & AI,10.4,Programming & Software Dev,0.3,65,0.6,0.9
+U0798,Curious Sampler,2,Cloud & DevOps|Science & Engineering|Health & Medicine,15.7,Programming & Software Dev,0.3,65,0.6,0.9
+U0799,Steady Learner,3,Law & Social Sciences|Health & Medicine,1.4,Business & Finance,0.65,70,0.5,1.0
+U0800,Steady Learner,2,Science & Engineering|Programming & Software Dev|Business & Finance,12.1,Science & Engineering,0.65,70,0.5,1.0
+U0801,Fast Learner,1,Data Science & Analytics,4.1,Graphic Design & Media,0.8,82,0.7,1.2
+U0802,Curious Sampler,3,Law & Social Sciences|Graphic Design & Media|Personal Development,5.6,Machine Learning & AI,0.3,65,0.6,0.9
+U0803,Struggling,2,Health & Medicine,28.5,Data Science & Analytics,0.4,52,0.25,0.75
+U0804,Steady Learner,3,Cloud & DevOps,11.0,Data Science & Analytics,0.65,70,0.5,1.0
+U0805,Steady Learner,1,Health & Medicine|Data Science & Analytics|Programming & Software Dev,6.8,Law & Social Sciences,0.65,70,0.5,1.0
+U0806,Steady Learner,2,Web Development,5.6,Law & Social Sciences,0.65,70,0.5,1.0
+U0807,Struggling,2,Cybersecurity|Science & Engineering|Programming & Software Dev,14.0,Cybersecurity,0.4,52,0.25,0.75
+U0808,Fast Learner,2,Health & Medicine|Graphic Design & Media,12.5,Data Science & Analytics,0.8,82,0.7,1.2
+U0809,Fast Learner,1,Business & Finance,4.2,Machine Learning & AI,0.8,82,0.7,1.2
+U0810,Fast Learner,2,Web Development|Health & Medicine,4.5,Data Science & Analytics,0.8,82,0.7,1.2
+U0811,Fast Learner,2,Programming & Software Dev,8.1,Web Development,0.8,82,0.7,1.2
+U0812,Curious Sampler,1,Cloud & DevOps|Cybersecurity,18.3,Graphic Design & Media,0.3,65,0.6,0.9
+U0813,Fast Learner,2,Web Development|Personal Development,15.3,Law & Social Sciences,0.8,82,0.7,1.2
+U0814,Fast Learner,3,Graphic Design & Media|Machine Learning & AI|Music & Arts,4.6,Science & Engineering,0.8,82,0.7,1.2
+U0815,Curious Sampler,1,Web Development,23.3,Health & Medicine,0.3,65,0.6,0.9
+U0816,Struggling,1,Science & Engineering|Cloud & DevOps,20.9,Health & Medicine,0.4,52,0.25,0.75
+U0817,Struggling,1,Programming & Software Dev|Law & Social Sciences,17.3,Science & Engineering,0.4,52,0.25,0.75
+U0818,Steady Learner,1,Data Science & Analytics,6.3,Music & Arts,0.65,70,0.5,1.0
+U0819,Specialist,2,Science & Engineering|Machine Learning & AI,8.6,Cybersecurity,0.75,78,0.65,1.1
+U0820,Struggling,3,Cloud & DevOps,6.7,Music & Arts,0.4,52,0.25,0.75
+U0821,Fast Learner,1,Machine Learning & AI|Data Science & Analytics,16.5,Business & Finance,0.8,82,0.7,1.2
+U0822,Fast Learner,1,Law & Social Sciences|Business & Finance,12.2,Music & Arts,0.8,82,0.7,1.2
+U0823,Steady Learner,1,Music & Arts,3.9,Machine Learning & AI,0.65,70,0.5,1.0
+U0824,Steady Learner,2,Cloud & DevOps,13.7,Graphic Design & Media,0.65,70,0.5,1.0
+U0825,Struggling,2,Programming & Software Dev|Data Science & Analytics|Web Development,5.1,Cybersecurity,0.4,52,0.25,0.75
+U0826,Struggling,1,Machine Learning & AI|Business & Finance,12.2,Data Science & Analytics,0.4,52,0.25,0.75
+U0827,Fast Learner,2,Business & Finance|Cybersecurity,11.9,Web Development,0.8,82,0.7,1.2
+U0828,Steady Learner,2,Graphic Design & Media,7.7,Science & Engineering,0.65,70,0.5,1.0
+U0829,Struggling,1,Music & Arts,20.0,Cybersecurity,0.4,52,0.25,0.75
+U0830,Struggling,1,Machine Learning & AI|Business & Finance,12.2,Data Science & Analytics,0.4,52,0.25,0.75
+U0831,Struggling,2,Data Science & Analytics|Music & Arts,6.3,Health & Medicine,0.4,52,0.25,0.75
+U0832,Curious Sampler,3,Programming & Software Dev|Health & Medicine,3.3,Music & Arts,0.3,65,0.6,0.9
+U0833,Specialist,2,Music & Arts,5.7,Business & Finance,0.75,78,0.65,1.1
+U0834,Fast Learner,2,Programming & Software Dev|Science & Engineering,5.2,Web Development,0.8,82,0.7,1.2
+U0835,Specialist,2,Cybersecurity|Programming & Software Dev,3.5,Law & Social Sciences,0.75,78,0.65,1.1
+U0836,Curious Sampler,1,Machine Learning & AI|Law & Social Sciences|Programming & Software Dev,11.6,Personal Development,0.3,65,0.6,0.9
+U0837,Fast Learner,1,Music & Arts|Web Development|Cloud & DevOps,10.1,Science & Engineering,0.8,82,0.7,1.2
+U0838,Struggling,2,Music & Arts|Data Science & Analytics,2.5,Graphic Design & Media,0.4,52,0.25,0.75
+U0839,Fast Learner,1,Machine Learning & AI|Health & Medicine,5.4,Web Development,0.8,82,0.7,1.2
+U0840,Fast Learner,1,Personal Development|Web Development,5.2,Health & Medicine,0.8,82,0.7,1.2
+U0841,Specialist,1,Music & Arts,9.4,Law & Social Sciences,0.75,78,0.65,1.1
+U0842,Struggling,2,Personal Development|Cybersecurity,5.5,Machine Learning & AI,0.4,52,0.25,0.75
+U0843,Fast Learner,2,Law & Social Sciences,9.3,Health & Medicine,0.8,82,0.7,1.2
+U0844,Steady Learner,1,Science & Engineering|Health & Medicine,4.4,Machine Learning & AI,0.65,70,0.5,1.0
+U0845,Struggling,1,Business & Finance,4.4,Web Development,0.4,52,0.25,0.75
+U0846,Struggling,3,Business & Finance,1.4,Cloud & DevOps,0.4,52,0.25,0.75
+U0847,Struggling,2,Programming & Software Dev|Health & Medicine,9.3,Science & Engineering,0.4,52,0.25,0.75
+U0848,Specialist,1,Business & Finance|Personal Development|Machine Learning & AI,4.0,Cloud & DevOps,0.75,78,0.65,1.1
+U0849,Steady Learner,1,Personal Development|Graphic Design & Media,9.4,Music & Arts,0.65,70,0.5,1.0
+U0850,Curious Sampler,2,Business & Finance|Web Development,5.8,Cybersecurity,0.3,65,0.6,0.9
+U0851,Curious Sampler,1,Personal Development|Graphic Design & Media,11.3,Cybersecurity,0.3,65,0.6,0.9
+U0852,Fast Learner,1,Cloud & DevOps|Music & Arts|Business & Finance,8.1,Data Science & Analytics,0.8,82,0.7,1.2
+U0853,Fast Learner,3,Music & Arts|Science & Engineering,19.7,Music & Arts,0.8,82,0.7,1.2
+U0854,Steady Learner,1,Law & Social Sciences,5.7,Law & Social Sciences,0.65,70,0.5,1.0
+U0855,Fast Learner,1,Cybersecurity,13.9,Law & Social Sciences,0.8,82,0.7,1.2
+U0856,Struggling,2,Machine Learning & AI|Cloud & DevOps|Personal Development,3.0,Data Science & Analytics,0.4,52,0.25,0.75
+U0857,Struggling,1,Music & Arts,11.4,Graphic Design & Media,0.4,52,0.25,0.75
+U0858,Struggling,1,Programming & Software Dev|Health & Medicine,11.4,Science & Engineering,0.4,52,0.25,0.75
+U0859,Specialist,2,Business & Finance,6.3,Data Science & Analytics,0.75,78,0.65,1.1
+U0860,Steady Learner,3,Business & Finance|Machine Learning & AI,11.8,Personal Development,0.65,70,0.5,1.0
+U0861,Steady Learner,2,Graphic Design & Media|Programming & Software Dev|Data Science & Analytics,3.7,Graphic Design & Media,0.65,70,0.5,1.0
+U0862,Fast Learner,1,Data Science & Analytics,8.4,Programming & Software Dev,0.8,82,0.7,1.2
+U0863,Curious Sampler,2,Cloud & DevOps|Science & Engineering,9.7,Data Science & Analytics,0.3,65,0.6,0.9
+U0864,Steady Learner,3,Programming & Software Dev|Personal Development,7.2,Cloud & DevOps,0.65,70,0.5,1.0
+U0865,Fast Learner,1,Graphic Design & Media|Cloud & DevOps|Data Science & Analytics,12.7,Music & Arts,0.8,82,0.7,1.2
+U0866,Specialist,1,Health & Medicine|Personal Development,18.8,Graphic Design & Media,0.75,78,0.65,1.1
+U0867,Struggling,1,Cybersecurity|Programming & Software Dev,7.1,Law & Social Sciences,0.4,52,0.25,0.75
+U0868,Curious Sampler,1,Web Development|Graphic Design & Media|Machine Learning & AI,17.1,Data Science & Analytics,0.3,65,0.6,0.9
+U0869,Steady Learner,1,Personal Development,6.3,Business & Finance,0.65,70,0.5,1.0
+U0870,Struggling,3,Machine Learning & AI|Music & Arts|Data Science & Analytics,5.0,Cybersecurity,0.4,52,0.25,0.75
+U0871,Steady Learner,1,Cybersecurity|Cloud & DevOps,15.8,Law & Social Sciences,0.65,70,0.5,1.0
+U0872,Curious Sampler,3,Data Science & Analytics|Machine Learning & AI|Cybersecurity,16.7,Law & Social Sciences,0.3,65,0.6,0.9
+U0873,Steady Learner,2,Personal Development|Machine Learning & AI|Science & Engineering,16.5,Personal Development,0.65,70,0.5,1.0
+U0874,Struggling,2,Cybersecurity,10.0,Data Science & Analytics,0.4,52,0.25,0.75
+U0875,Steady Learner,1,Health & Medicine|Music & Arts,4.8,Machine Learning & AI,0.65,70,0.5,1.0
+U0876,Steady Learner,1,Science & Engineering|Programming & Software Dev,4.6,Programming & Software Dev,0.65,70,0.5,1.0
+U0877,Fast Learner,2,Web Development|Machine Learning & AI,5.3,Law & Social Sciences,0.8,82,0.7,1.2
+U0878,Steady Learner,2,Business & Finance,9.3,Cybersecurity,0.65,70,0.5,1.0
+U0879,Struggling,1,Graphic Design & Media,8.5,Data Science & Analytics,0.4,52,0.25,0.75
+U0880,Steady Learner,1,Health & Medicine|Cloud & DevOps,17.0,Machine Learning & AI,0.65,70,0.5,1.0
+U0881,Struggling,1,Web Development|Personal Development|Machine Learning & AI,6.2,Programming & Software Dev,0.4,52,0.25,0.75
+U0882,Struggling,1,Graphic Design & Media,8.1,Health & Medicine,0.4,52,0.25,0.75
+U0883,Steady Learner,1,Data Science & Analytics|Personal Development|Music & Arts,12.6,Cybersecurity,0.65,70,0.5,1.0
+U0884,Curious Sampler,2,Data Science & Analytics|Machine Learning & AI,4.4,Web Development,0.3,65,0.6,0.9
+U0885,Curious Sampler,2,Cybersecurity|Cloud & DevOps,4.5,Cloud & DevOps,0.3,65,0.6,0.9
+U0886,Struggling,1,Personal Development,5.9,Graphic Design & Media,0.4,52,0.25,0.75
+U0887,Steady Learner,2,Cybersecurity|Music & Arts,8.2,Data Science & Analytics,0.65,70,0.5,1.0
+U0888,Fast Learner,2,Cloud & DevOps|Cybersecurity,12.5,Web Development,0.8,82,0.7,1.2
+U0889,Struggling,3,Machine Learning & AI,3.8,Web Development,0.4,52,0.25,0.75
+U0890,Steady Learner,2,Business & Finance,6.7,Personal Development,0.65,70,0.5,1.0
+U0891,Steady Learner,1,Graphic Design & Media|Science & Engineering,7.1,Personal Development,0.65,70,0.5,1.0
+U0892,Steady Learner,1,Graphic Design & Media,4.4,Music & Arts,0.65,70,0.5,1.0
+U0893,Fast Learner,3,Health & Medicine|Graphic Design & Media|Machine Learning & AI,16.2,Business & Finance,0.8,82,0.7,1.2
+U0894,Steady Learner,2,Health & Medicine|Programming & Software Dev|Data Science & Analytics,5.1,Science & Engineering,0.65,70,0.5,1.0
+U0895,Specialist,1,Business & Finance,8.6,Graphic Design & Media,0.75,78,0.65,1.1
+U0896,Fast Learner,2,Science & Engineering|Programming & Software Dev,4.9,Programming & Software Dev,0.8,82,0.7,1.2
+U0897,Steady Learner,1,Web Development|Health & Medicine|Cybersecurity,13.2,Health & Medicine,0.65,70,0.5,1.0
+U0898,Steady Learner,1,Programming & Software Dev|Cloud & DevOps|Science & Engineering,9.4,Cybersecurity,0.65,70,0.5,1.0
+U0899,Curious Sampler,1,Music & Arts,4.6,Web Development,0.3,65,0.6,0.9
+U0900,Steady Learner,3,Business & Finance|Cybersecurity,4.9,Science & Engineering,0.65,70,0.5,1.0
+U0901,Steady Learner,3,Business & Finance|Personal Development,2.7,Cybersecurity,0.65,70,0.5,1.0
+U0902,Curious Sampler,1,Web Development|Music & Arts|Graphic Design & Media,5.7,Business & Finance,0.3,65,0.6,0.9
+U0903,Fast Learner,2,Law & Social Sciences|Science & Engineering,3.8,Machine Learning & AI,0.8,82,0.7,1.2
+U0904,Steady Learner,2,Machine Learning & AI,2.4,Health & Medicine,0.65,70,0.5,1.0
+U0905,Steady Learner,2,Music & Arts|Programming & Software Dev|Data Science & Analytics,6.0,Cloud & DevOps,0.65,70,0.5,1.0
+U0906,Curious Sampler,1,Music & Arts|Business & Finance|Machine Learning & AI,4.2,Cloud & DevOps,0.3,65,0.6,0.9
+U0907,Curious Sampler,2,Web Development|Personal Development,7.3,Programming & Software Dev,0.3,65,0.6,0.9
+U0908,Fast Learner,2,Machine Learning & AI,7.1,Machine Learning & AI,0.8,82,0.7,1.2
+U0909,Curious Sampler,1,Web Development|Health & Medicine,8.3,Science & Engineering,0.3,65,0.6,0.9
+U0910,Struggling,2,Health & Medicine|Business & Finance|Graphic Design & Media,6.4,Personal Development,0.4,52,0.25,0.75
+U0911,Fast Learner,2,Personal Development,6.8,Cybersecurity,0.8,82,0.7,1.2
+U0912,Struggling,2,Cloud & DevOps|Music & Arts|Web Development,3.7,Health & Medicine,0.4,52,0.25,0.75
+U0913,Steady Learner,3,Graphic Design & Media|Cybersecurity,13.3,Personal Development,0.65,70,0.5,1.0
+U0914,Struggling,1,Health & Medicine|Law & Social Sciences,8.8,Data Science & Analytics,0.4,52,0.25,0.75
+U0915,Steady Learner,2,Web Development,6.6,Cloud & DevOps,0.65,70,0.5,1.0
+U0916,Specialist,3,Programming & Software Dev|Graphic Design & Media,3.0,Business & Finance,0.75,78,0.65,1.1
+U0917,Fast Learner,2,Cloud & DevOps,32.5,Data Science & Analytics,0.8,82,0.7,1.2
+U0918,Steady Learner,3,Music & Arts,38.9,Data Science & Analytics,0.65,70,0.5,1.0
+U0919,Specialist,1,Graphic Design & Media,6.4,Web Development,0.75,78,0.65,1.1
+U0920,Steady Learner,1,Data Science & Analytics|Business & Finance|Cloud & DevOps,7.8,Music & Arts,0.65,70,0.5,1.0
+U0921,Steady Learner,1,Cloud & DevOps|Programming & Software Dev,4.0,Music & Arts,0.65,70,0.5,1.0
+U0922,Curious Sampler,3,Music & Arts|Business & Finance,5.9,Business & Finance,0.3,65,0.6,0.9
+U0923,Steady Learner,1,Business & Finance|Programming & Software Dev,3.8,Machine Learning & AI,0.65,70,0.5,1.0
+U0924,Fast Learner,1,Cybersecurity|Law & Social Sciences|Graphic Design & Media,9.1,Music & Arts,0.8,82,0.7,1.2
+U0925,Struggling,2,Music & Arts|Programming & Software Dev,5.2,Web Development,0.4,52,0.25,0.75
+U0926,Fast Learner,2,Machine Learning & AI|Programming & Software Dev,7.7,Personal Development,0.8,82,0.7,1.2
+U0927,Curious Sampler,3,Music & Arts|Personal Development,12.1,Health & Medicine,0.3,65,0.6,0.9
+U0928,Specialist,2,Machine Learning & AI,10.2,Music & Arts,0.75,78,0.65,1.1
+U0929,Struggling,1,Personal Development|Machine Learning & AI|Programming & Software Dev,12.3,Graphic Design & Media,0.4,52,0.25,0.75
+U0930,Fast Learner,1,Programming & Software Dev,5.2,Machine Learning & AI,0.8,82,0.7,1.2
+U0931,Specialist,2,Health & Medicine|Law & Social Sciences,9.0,Web Development,0.75,78,0.65,1.1
+U0932,Curious Sampler,3,Business & Finance|Machine Learning & AI,4.3,Graphic Design & Media,0.3,65,0.6,0.9
+U0933,Fast Learner,1,Machine Learning & AI|Health & Medicine|Cybersecurity,11.6,Music & Arts,0.8,82,0.7,1.2
+U0934,Struggling,1,Health & Medicine,10.2,Personal Development,0.4,52,0.25,0.75
+U0935,Struggling,1,Data Science & Analytics|Health & Medicine|Programming & Software Dev,5.2,Graphic Design & Media,0.4,52,0.25,0.75
+U0936,Struggling,1,Graphic Design & Media|Business & Finance|Machine Learning & AI,8.6,Science & Engineering,0.4,52,0.25,0.75
+U0937,Steady Learner,1,Cybersecurity|Personal Development,3.9,Data Science & Analytics,0.65,70,0.5,1.0
+U0938,Steady Learner,2,Science & Engineering|Data Science & Analytics|Cybersecurity,6.2,Business & Finance,0.65,70,0.5,1.0
+U0939,Fast Learner,1,Cloud & DevOps,7.2,Cloud & DevOps,0.8,82,0.7,1.2
+U0940,Struggling,2,Music & Arts,9.6,Machine Learning & AI,0.4,52,0.25,0.75
+U0941,Struggling,1,Machine Learning & AI,6.1,Law & Social Sciences,0.4,52,0.25,0.75
+U0942,Fast Learner,2,Health & Medicine,4.7,Business & Finance,0.8,82,0.7,1.2
+U0943,Struggling,2,Cloud & DevOps,11.0,Programming & Software Dev,0.4,52,0.25,0.75
+U0944,Struggling,2,Music & Arts|Law & Social Sciences,10.5,Data Science & Analytics,0.4,52,0.25,0.75
+U0945,Struggling,1,Music & Arts|Personal Development,8.3,Law & Social Sciences,0.4,52,0.25,0.75
+U0946,Struggling,1,Programming & Software Dev|Science & Engineering,13.7,Personal Development,0.4,52,0.25,0.75
+U0947,Steady Learner,3,Health & Medicine|Law & Social Sciences,24.3,Web Development,0.65,70,0.5,1.0
+U0948,Fast Learner,1,Business & Finance,10.6,Data Science & Analytics,0.8,82,0.7,1.2
+U0949,Fast Learner,2,Business & Finance|Data Science & Analytics,8.9,Web Development,0.8,82,0.7,1.2
+U0950,Steady Learner,2,Music & Arts|Programming & Software Dev|Business & Finance,9.8,Health & Medicine,0.65,70,0.5,1.0
+U0951,Struggling,1,Graphic Design & Media|Business & Finance|Cybersecurity,15.4,Cybersecurity,0.4,52,0.25,0.75
+U0952,Steady Learner,1,Machine Learning & AI|Programming & Software Dev,11.9,Law & Social Sciences,0.65,70,0.5,1.0
+U0953,Curious Sampler,1,Science & Engineering|Law & Social Sciences,26.6,Personal Development,0.3,65,0.6,0.9
+U0954,Struggling,2,Business & Finance|Personal Development,8.4,Business & Finance,0.4,52,0.25,0.75
+U0955,Curious Sampler,2,Personal Development,31.5,Music & Arts,0.3,65,0.6,0.9
+U0956,Fast Learner,2,Music & Arts|Cloud & DevOps,4.4,Data Science & Analytics,0.8,82,0.7,1.2
+U0957,Fast Learner,2,Web Development|Science & Engineering,25.1,Health & Medicine,0.8,82,0.7,1.2
+U0958,Struggling,1,Personal Development|Programming & Software Dev|Data Science & Analytics,4.5,Music & Arts,0.4,52,0.25,0.75
+U0959,Fast Learner,2,Web Development,9.3,Cybersecurity,0.8,82,0.7,1.2
+U0960,Steady Learner,1,Cybersecurity|Graphic Design & Media,9.8,Machine Learning & AI,0.65,70,0.5,1.0
+U0961,Fast Learner,2,Science & Engineering|Data Science & Analytics|Music & Arts,5.4,Programming & Software Dev,0.8,82,0.7,1.2
+U0962,Steady Learner,1,Science & Engineering|Data Science & Analytics,7.3,Programming & Software Dev,0.65,70,0.5,1.0
+U0963,Specialist,1,Machine Learning & AI|Web Development,8.8,Web Development,0.75,78,0.65,1.1
+U0964,Steady Learner,1,Science & Engineering|Machine Learning & AI,7.1,Cloud & DevOps,0.65,70,0.5,1.0
+U0965,Fast Learner,1,Music & Arts|Health & Medicine,9.7,Machine Learning & AI,0.8,82,0.7,1.2
+U0966,Steady Learner,2,Science & Engineering,16.7,Science & Engineering,0.65,70,0.5,1.0
+U0967,Struggling,1,Science & Engineering,6.8,Cybersecurity,0.4,52,0.25,0.75
+U0968,Struggling,2,Cybersecurity,17.9,Science & Engineering,0.4,52,0.25,0.75
+U0969,Fast Learner,2,Data Science & Analytics,5.7,Health & Medicine,0.8,82,0.7,1.2
+U0970,Steady Learner,1,Cybersecurity|Cloud & DevOps,5.2,Music & Arts,0.65,70,0.5,1.0
+U0971,Struggling,1,Graphic Design & Media|Music & Arts,9.3,Personal Development,0.4,52,0.25,0.75
+U0972,Steady Learner,2,Music & Arts|Cybersecurity|Graphic Design & Media,22.2,Cloud & DevOps,0.65,70,0.5,1.0
+U0973,Fast Learner,1,Business & Finance|Law & Social Sciences,9.5,Cloud & DevOps,0.8,82,0.7,1.2
+U0974,Struggling,1,Science & Engineering,7.9,Business & Finance,0.4,52,0.25,0.75
+U0975,Steady Learner,1,Graphic Design & Media|Business & Finance,7.4,Cloud & DevOps,0.65,70,0.5,1.0
+U0976,Struggling,1,Data Science & Analytics|Graphic Design & Media,9.4,Health & Medicine,0.4,52,0.25,0.75
+U0977,Struggling,2,Machine Learning & AI,6.0,Data Science & Analytics,0.4,52,0.25,0.75
+U0978,Fast Learner,2,Science & Engineering,7.6,Science & Engineering,0.8,82,0.7,1.2
+U0979,Curious Sampler,1,Machine Learning & AI,16.4,Science & Engineering,0.3,65,0.6,0.9
+U0980,Steady Learner,3,Graphic Design & Media|Cybersecurity,9.4,Law & Social Sciences,0.65,70,0.5,1.0
+U0981,Fast Learner,2,Music & Arts,6.5,Music & Arts,0.8,82,0.7,1.2
+U0982,Steady Learner,1,Law & Social Sciences,5.8,Business & Finance,0.65,70,0.5,1.0
+U0983,Steady Learner,1,Graphic Design & Media,7.3,Business & Finance,0.65,70,0.5,1.0
+U0984,Struggling,1,Music & Arts|Data Science & Analytics|Health & Medicine,8.5,Health & Medicine,0.4,52,0.25,0.75
+U0985,Steady Learner,1,Music & Arts,4.1,Graphic Design & Media,0.65,70,0.5,1.0
+U0986,Struggling,2,Cloud & DevOps|Business & Finance,4.2,Health & Medicine,0.4,52,0.25,0.75
+U0987,Steady Learner,2,Health & Medicine|Cloud & DevOps,6.2,Cybersecurity,0.65,70,0.5,1.0
+U0988,Curious Sampler,1,Business & Finance|Machine Learning & AI,8.1,Cybersecurity,0.3,65,0.6,0.9
+U0989,Steady Learner,2,Science & Engineering,12.0,Graphic Design & Media,0.65,70,0.5,1.0
+U0990,Fast Learner,3,Business & Finance,8.3,Health & Medicine,0.8,82,0.7,1.2
+U0991,Fast Learner,3,Cybersecurity|Machine Learning & AI,8.3,Music & Arts,0.8,82,0.7,1.2
+U0992,Steady Learner,2,Machine Learning & AI,4.4,Music & Arts,0.65,70,0.5,1.0
+U0993,Fast Learner,2,Science & Engineering|Personal Development,12.1,Cybersecurity,0.8,82,0.7,1.2
+U0994,Struggling,1,Machine Learning & AI|Programming & Software Dev,2.7,Graphic Design & Media,0.4,52,0.25,0.75
+U0995,Fast Learner,1,Cloud & DevOps,7.0,Machine Learning & AI,0.8,82,0.7,1.2
+U0996,Struggling,2,Data Science & Analytics,8.6,Data Science & Analytics,0.4,52,0.25,0.75
+U0997,Steady Learner,1,Cloud & DevOps,15.5,Science & Engineering,0.65,70,0.5,1.0
+U0998,Struggling,2,Business & Finance|Cloud & DevOps,9.7,Cloud & DevOps,0.4,52,0.25,0.75
+U0999,Struggling,2,Law & Social Sciences|Business & Finance|Cybersecurity,9.9,Law & Social Sciences,0.4,52,0.25,0.75
+U1000,Steady Learner,1,Music & Arts|Health & Medicine|Cybersecurity,1.7,Cybersecurity,0.65,70,0.5,1.0
+U1001,Struggling,2,Data Science & Analytics|Programming & Software Dev,4.1,Programming & Software Dev,0.4,52,0.25,0.75
+U1002,Struggling,3,Science & Engineering|Web Development,7.1,Business & Finance,0.4,52,0.25,0.75
+U1003,Steady Learner,2,Science & Engineering,16.2,Cloud & DevOps,0.65,70,0.5,1.0
+U1004,Steady Learner,1,Personal Development|Graphic Design & Media,3.4,Web Development,0.65,70,0.5,1.0
+U1005,Curious Sampler,2,Cloud & DevOps|Health & Medicine|Programming & Software Dev,10.1,Law & Social Sciences,0.3,65,0.6,0.9
+U1006,Struggling,2,Cybersecurity,37.7,Machine Learning & AI,0.4,52,0.25,0.75
+U1007,Curious Sampler,1,Web Development|Data Science & Analytics,2.9,Graphic Design & Media,0.3,65,0.6,0.9
+U1008,Specialist,1,Data Science & Analytics|Machine Learning & AI,7.8,Machine Learning & AI,0.75,78,0.65,1.1
+U1009,Fast Learner,1,Business & Finance|Cybersecurity|Music & Arts,4.9,Personal Development,0.8,82,0.7,1.2
+U1010,Fast Learner,2,Personal Development|Cloud & DevOps,17.7,Health & Medicine,0.8,82,0.7,1.2
+U1011,Struggling,2,Business & Finance|Machine Learning & AI,22.8,Cybersecurity,0.4,52,0.25,0.75
+U1012,Steady Learner,1,Personal Development|Machine Learning & AI|Science & Engineering,13.4,Business & Finance,0.65,70,0.5,1.0
+U1013,Steady Learner,1,Health & Medicine,8.2,Cybersecurity,0.65,70,0.5,1.0
+U1014,Steady Learner,1,Science & Engineering,9.2,Business & Finance,0.65,70,0.5,1.0
+U1015,Steady Learner,1,Health & Medicine|Science & Engineering|Machine Learning & AI,5.1,Machine Learning & AI,0.65,70,0.5,1.0
+U1016,Fast Learner,1,Graphic Design & Media|Personal Development|Data Science & Analytics,4.3,Graphic Design & Media,0.8,82,0.7,1.2
+U1017,Curious Sampler,2,Cloud & DevOps,7.5,Programming & Software Dev,0.3,65,0.6,0.9
+U1018,Specialist,1,Cybersecurity|Health & Medicine|Law & Social Sciences,8.7,Cloud & DevOps,0.75,78,0.65,1.1
+U1019,Curious Sampler,2,Machine Learning & AI|Graphic Design & Media,3.4,Business & Finance,0.3,65,0.6,0.9
+U1020,Struggling,1,Programming & Software Dev|Web Development,7.9,Cloud & DevOps,0.4,52,0.25,0.75
+U1021,Steady Learner,2,Data Science & Analytics|Science & Engineering,6.3,Cybersecurity,0.65,70,0.5,1.0
+U1022,Specialist,1,Machine Learning & AI|Business & Finance,5.3,Personal Development,0.75,78,0.65,1.1
+U1023,Steady Learner,3,Graphic Design & Media,12.0,Graphic Design & Media,0.65,70,0.5,1.0
+U1024,Specialist,3,Machine Learning & AI,12.5,Programming & Software Dev,0.75,78,0.65,1.1
+U1025,Fast Learner,1,Music & Arts|Health & Medicine,5.3,Data Science & Analytics,0.8,82,0.7,1.2
+U1026,Steady Learner,2,Graphic Design & Media,6.8,Personal Development,0.65,70,0.5,1.0
+U1027,Steady Learner,2,Music & Arts,4.4,Business & Finance,0.65,70,0.5,1.0
+U1028,Fast Learner,2,Web Development|Health & Medicine|Machine Learning & AI,14.4,Science & Engineering,0.8,82,0.7,1.2
+U1029,Fast Learner,1,Science & Engineering|Cloud & DevOps|Programming & Software Dev,5.4,Cloud & DevOps,0.8,82,0.7,1.2
+U1030,Steady Learner,2,Cloud & DevOps,8.4,Music & Arts,0.65,70,0.5,1.0
+U1031,Steady Learner,1,Cybersecurity|Science & Engineering|Machine Learning & AI,3.1,Cybersecurity,0.65,70,0.5,1.0
+U1032,Struggling,1,Programming & Software Dev|Business & Finance,5.1,Law & Social Sciences,0.4,52,0.25,0.75
+U1033,Curious Sampler,2,Health & Medicine,6.6,Personal Development,0.3,65,0.6,0.9
+U1034,Steady Learner,1,Law & Social Sciences|Programming & Software Dev,11.8,Cloud & DevOps,0.65,70,0.5,1.0
+U1035,Specialist,1,Law & Social Sciences|Cloud & DevOps,13.8,Data Science & Analytics,0.75,78,0.65,1.1
+U1036,Fast Learner,1,Cybersecurity|Business & Finance,13.9,Science & Engineering,0.8,82,0.7,1.2
+U1037,Steady Learner,2,Music & Arts|Law & Social Sciences,13.0,Business & Finance,0.65,70,0.5,1.0
+U1038,Steady Learner,2,Cloud & DevOps,8.3,Law & Social Sciences,0.65,70,0.5,1.0
+U1039,Struggling,1,Law & Social Sciences|Machine Learning & AI|Science & Engineering,3.3,Personal Development,0.4,52,0.25,0.75
+U1040,Steady Learner,2,Health & Medicine|Science & Engineering,8.2,Graphic Design & Media,0.65,70,0.5,1.0
+U1041,Specialist,2,Web Development|Data Science & Analytics,5.4,Web Development,0.75,78,0.65,1.1
+U1042,Fast Learner,1,Health & Medicine|Personal Development,12.7,Personal Development,0.8,82,0.7,1.2
+U1043,Steady Learner,3,Cloud & DevOps|Science & Engineering,14.6,Music & Arts,0.65,70,0.5,1.0
+U1044,Steady Learner,1,Web Development|Business & Finance,8.4,Data Science & Analytics,0.65,70,0.5,1.0
+U1045,Fast Learner,3,Personal Development|Law & Social Sciences,15.9,Data Science & Analytics,0.8,82,0.7,1.2
+U1046,Steady Learner,3,Cybersecurity,4.6,Health & Medicine,0.65,70,0.5,1.0
+U1047,Curious Sampler,3,Cybersecurity|Law & Social Sciences|Personal Development,27.9,Law & Social Sciences,0.3,65,0.6,0.9
+U1048,Fast Learner,2,Science & Engineering|Health & Medicine,5.1,Personal Development,0.8,82,0.7,1.2
+U1049,Steady Learner,3,Cloud & DevOps,7.3,Programming & Software Dev,0.65,70,0.5,1.0
+U1050,Curious Sampler,2,Graphic Design & Media,2.3,Music & Arts,0.3,65,0.6,0.9
+U1051,Steady Learner,1,Machine Learning & AI|Cybersecurity|Programming & Software Dev,6.4,Cybersecurity,0.65,70,0.5,1.0
+U1052,Steady Learner,2,Web Development|Personal Development|Business & Finance,8.2,Graphic Design & Media,0.65,70,0.5,1.0
+U1053,Curious Sampler,2,Health & Medicine,8.8,Programming & Software Dev,0.3,65,0.6,0.9
+U1054,Fast Learner,2,Programming & Software Dev,4.6,Graphic Design & Media,0.8,82,0.7,1.2
+U1055,Steady Learner,2,Business & Finance,3.6,Law & Social Sciences,0.65,70,0.5,1.0
+U1056,Steady Learner,1,Graphic Design & Media,16.6,Graphic Design & Media,0.65,70,0.5,1.0
+U1057,Steady Learner,2,Machine Learning & AI|Personal Development,5.6,Cybersecurity,0.65,70,0.5,1.0
+U1058,Steady Learner,1,Personal Development,5.1,Programming & Software Dev,0.65,70,0.5,1.0
+U1059,Specialist,1,Cloud & DevOps|Machine Learning & AI|Graphic Design & Media,2.9,Health & Medicine,0.75,78,0.65,1.1
+U1060,Steady Learner,1,Web Development,8.4,Personal Development,0.65,70,0.5,1.0
+U1061,Struggling,3,Music & Arts|Personal Development,10.5,Science & Engineering,0.4,52,0.25,0.75
+U1062,Steady Learner,1,Health & Medicine,6.4,Web Development,0.65,70,0.5,1.0
+U1063,Specialist,3,Machine Learning & AI,3.0,Web Development,0.75,78,0.65,1.1
+U1064,Fast Learner,1,Cybersecurity,5.7,Business & Finance,0.8,82,0.7,1.2
+U1065,Fast Learner,1,Personal Development,3.0,Music & Arts,0.8,82,0.7,1.2
+U1066,Steady Learner,2,Personal Development|Business & Finance,5.5,Machine Learning & AI,0.65,70,0.5,1.0
+U1067,Steady Learner,3,Health & Medicine|Cloud & DevOps|Law & Social Sciences,6.1,Graphic Design & Media,0.65,70,0.5,1.0
+U1068,Steady Learner,1,Machine Learning & AI|Health & Medicine,25.3,Graphic Design & Media,0.65,70,0.5,1.0
+U1069,Steady Learner,3,Cybersecurity,7.4,Business & Finance,0.65,70,0.5,1.0
+U1070,Steady Learner,3,Web Development|Graphic Design & Media,4.2,Law & Social Sciences,0.65,70,0.5,1.0
+U1071,Curious Sampler,1,Graphic Design & Media|Web Development,8.8,Graphic Design & Media,0.3,65,0.6,0.9
+U1072,Specialist,1,Law & Social Sciences,7.8,Machine Learning & AI,0.75,78,0.65,1.1
+U1073,Steady Learner,1,Cloud & DevOps|Music & Arts,8.3,Cybersecurity,0.65,70,0.5,1.0
+U1074,Steady Learner,1,Programming & Software Dev,11.4,Health & Medicine,0.65,70,0.5,1.0
+U1075,Steady Learner,1,Graphic Design & Media,4.3,Cloud & DevOps,0.65,70,0.5,1.0
+U1076,Struggling,2,Music & Arts|Machine Learning & AI|Cloud & DevOps,4.4,Data Science & Analytics,0.4,52,0.25,0.75
+U1077,Steady Learner,3,Health & Medicine|Programming & Software Dev|Music & Arts,5.7,Graphic Design & Media,0.65,70,0.5,1.0
+U1078,Struggling,1,Graphic Design & Media|Cloud & DevOps,4.1,Programming & Software Dev,0.4,52,0.25,0.75
+U1079,Specialist,2,Science & Engineering,11.0,Personal Development,0.75,78,0.65,1.1
+U1080,Curious Sampler,1,Music & Arts|Machine Learning & AI|Programming & Software Dev,7.3,Health & Medicine,0.3,65,0.6,0.9
+U1081,Fast Learner,1,Music & Arts,10.1,Personal Development,0.8,82,0.7,1.2
+U1082,Steady Learner,1,Machine Learning & AI|Cybersecurity,7.7,Health & Medicine,0.65,70,0.5,1.0
+U1083,Specialist,1,Data Science & Analytics,16.6,Business & Finance,0.75,78,0.65,1.1
+U1084,Steady Learner,2,Web Development,5.7,Graphic Design & Media,0.65,70,0.5,1.0
+U1085,Curious Sampler,3,Web Development|Business & Finance,5.4,Science & Engineering,0.3,65,0.6,0.9
+U1086,Steady Learner,2,Graphic Design & Media|Business & Finance,26.0,Business & Finance,0.65,70,0.5,1.0
+U1087,Struggling,2,Programming & Software Dev|Personal Development,5.6,Web Development,0.4,52,0.25,0.75
+U1088,Struggling,2,Music & Arts|Cybersecurity,11.2,Programming & Software Dev,0.4,52,0.25,0.75
+U1089,Curious Sampler,3,Graphic Design & Media,6.5,Cybersecurity,0.3,65,0.6,0.9
+U1090,Fast Learner,2,Health & Medicine,11.6,Graphic Design & Media,0.8,82,0.7,1.2
+U1091,Struggling,1,Graphic Design & Media|Business & Finance,5.9,Graphic Design & Media,0.4,52,0.25,0.75
+U1092,Steady Learner,2,Data Science & Analytics,3.4,Machine Learning & AI,0.65,70,0.5,1.0
+U1093,Struggling,1,Cloud & DevOps|Data Science & Analytics|Health & Medicine,4.4,Science & Engineering,0.4,52,0.25,0.75
+U1094,Steady Learner,1,Web Development|Graphic Design & Media,5.5,Data Science & Analytics,0.65,70,0.5,1.0
+U1095,Struggling,1,Data Science & Analytics|Health & Medicine,11.2,Cloud & DevOps,0.4,52,0.25,0.75
+U1096,Struggling,3,Cloud & DevOps,12.4,Data Science & Analytics,0.4,52,0.25,0.75
+U1097,Curious Sampler,2,Music & Arts|Graphic Design & Media|Web Development,10.9,Cloud & DevOps,0.3,65,0.6,0.9
+U1098,Steady Learner,2,Graphic Design & Media,6.2,Machine Learning & AI,0.65,70,0.5,1.0
+U1099,Struggling,2,Programming & Software Dev,9.7,Programming & Software Dev,0.4,52,0.25,0.75
+U1100,Steady Learner,1,Data Science & Analytics,3.3,Health & Medicine,0.65,70,0.5,1.0
+U1101,Steady Learner,1,Graphic Design & Media|Machine Learning & AI|Music & Arts,31.9,Machine Learning & AI,0.65,70,0.5,1.0
+U1102,Steady Learner,1,Science & Engineering|Health & Medicine,3.4,Graphic Design & Media,0.65,70,0.5,1.0
+U1103,Fast Learner,1,Programming & Software Dev|Data Science & Analytics|Business & Finance,8.7,Graphic Design & Media,0.8,82,0.7,1.2
+U1104,Struggling,2,Programming & Software Dev|Science & Engineering,3.8,Cloud & DevOps,0.4,52,0.25,0.75
+U1105,Curious Sampler,1,Law & Social Sciences|Music & Arts,10.0,Machine Learning & AI,0.3,65,0.6,0.9
+U1106,Struggling,1,Health & Medicine,7.1,Machine Learning & AI,0.4,52,0.25,0.75
+U1107,Steady Learner,2,Personal Development|Machine Learning & AI,5.8,Science & Engineering,0.65,70,0.5,1.0
+U1108,Steady Learner,2,Web Development|Law & Social Sciences,12.7,Programming & Software Dev,0.65,70,0.5,1.0
+U1109,Struggling,1,Law & Social Sciences|Personal Development,5.5,Personal Development,0.4,52,0.25,0.75
+U1110,Steady Learner,2,Cloud & DevOps,6.7,Web Development,0.65,70,0.5,1.0
+U1111,Struggling,1,Graphic Design & Media|Data Science & Analytics|Machine Learning & AI,6.2,Machine Learning & AI,0.4,52,0.25,0.75
+U1112,Steady Learner,3,Data Science & Analytics|Health & Medicine,11.1,Personal Development,0.65,70,0.5,1.0
+U1113,Steady Learner,2,Cloud & DevOps,10.4,Cybersecurity,0.65,70,0.5,1.0
+U1114,Fast Learner,2,Data Science & Analytics,4.2,Data Science & Analytics,0.8,82,0.7,1.2
+U1115,Steady Learner,1,Machine Learning & AI|Programming & Software Dev,11.0,Graphic Design & Media,0.65,70,0.5,1.0
+U1116,Fast Learner,3,Graphic Design & Media,8.4,Data Science & Analytics,0.8,82,0.7,1.2
+U1117,Curious Sampler,3,Data Science & Analytics,7.0,Personal Development,0.3,65,0.6,0.9
+U1118,Steady Learner,1,Health & Medicine|Data Science & Analytics,19.4,Science & Engineering,0.65,70,0.5,1.0
+U1119,Fast Learner,2,Cloud & DevOps|Web Development|Science & Engineering,9.8,Cloud & DevOps,0.8,82,0.7,1.2
+U1120,Struggling,2,Web Development|Graphic Design & Media,9.1,Health & Medicine,0.4,52,0.25,0.75
+U1121,Steady Learner,2,Cloud & DevOps|Health & Medicine,11.5,Cloud & DevOps,0.65,70,0.5,1.0
+U1122,Struggling,1,Cloud & DevOps|Web Development,4.6,Cybersecurity,0.4,52,0.25,0.75
+U1123,Struggling,2,Cloud & DevOps|Law & Social Sciences,3.9,Web Development,0.4,52,0.25,0.75
+U1124,Fast Learner,2,Web Development,12.7,Cybersecurity,0.8,82,0.7,1.2
+U1125,Fast Learner,2,Personal Development,9.4,Science & Engineering,0.8,82,0.7,1.2
+U1126,Steady Learner,2,Cybersecurity,3.1,Programming & Software Dev,0.65,70,0.5,1.0
+U1127,Curious Sampler,3,Data Science & Analytics|Personal Development,4.1,Data Science & Analytics,0.3,65,0.6,0.9
+U1128,Struggling,1,Law & Social Sciences|Programming & Software Dev,7.7,Music & Arts,0.4,52,0.25,0.75
+U1129,Struggling,2,Graphic Design & Media|Data Science & Analytics|Programming & Software Dev,4.9,Music & Arts,0.4,52,0.25,0.75
+U1130,Steady Learner,2,Web Development,6.1,Personal Development,0.65,70,0.5,1.0
+U1131,Steady Learner,3,Health & Medicine|Web Development,9.8,Law & Social Sciences,0.65,70,0.5,1.0
+U1132,Steady Learner,1,Business & Finance,10.6,Science & Engineering,0.65,70,0.5,1.0
+U1133,Fast Learner,3,Science & Engineering|Health & Medicine,6.2,Law & Social Sciences,0.8,82,0.7,1.2
+U1134,Steady Learner,1,Law & Social Sciences,12.1,Cybersecurity,0.65,70,0.5,1.0
+U1135,Steady Learner,1,Graphic Design & Media,5.9,Cloud & DevOps,0.65,70,0.5,1.0
+U1136,Steady Learner,1,Cloud & DevOps|Music & Arts|Web Development,7.3,Programming & Software Dev,0.65,70,0.5,1.0
+U1137,Curious Sampler,2,Data Science & Analytics|Health & Medicine|Programming & Software Dev,3.4,Science & Engineering,0.3,65,0.6,0.9
+U1138,Steady Learner,2,Health & Medicine|Programming & Software Dev,5.2,Cybersecurity,0.65,70,0.5,1.0
+U1139,Steady Learner,3,Cloud & DevOps|Health & Medicine,4.4,Personal Development,0.65,70,0.5,1.0
+U1140,Steady Learner,1,Personal Development|Programming & Software Dev,5.6,Law & Social Sciences,0.65,70,0.5,1.0
+U1141,Curious Sampler,2,Web Development|Personal Development,17.4,Machine Learning & AI,0.3,65,0.6,0.9
+U1142,Fast Learner,2,Law & Social Sciences|Machine Learning & AI,5.6,Health & Medicine,0.8,82,0.7,1.2
+U1143,Steady Learner,1,Web Development|Cloud & DevOps,5.0,Law & Social Sciences,0.65,70,0.5,1.0
+U1144,Fast Learner,1,Personal Development|Web Development|Cloud & DevOps,10.4,Graphic Design & Media,0.8,82,0.7,1.2
+U1145,Struggling,3,Health & Medicine|Web Development,3.9,Cloud & DevOps,0.4,52,0.25,0.75
+U1146,Curious Sampler,2,Machine Learning & AI|Data Science & Analytics,2.5,Programming & Software Dev,0.3,65,0.6,0.9
+U1147,Steady Learner,1,Health & Medicine|Business & Finance,5.4,Data Science & Analytics,0.65,70,0.5,1.0
+U1148,Fast Learner,1,Science & Engineering,5.4,Science & Engineering,0.8,82,0.7,1.2
+U1149,Fast Learner,1,Law & Social Sciences|Machine Learning & AI,9.8,Music & Arts,0.8,82,0.7,1.2
+U1150,Steady Learner,2,Web Development,5.2,Science & Engineering,0.65,70,0.5,1.0
+U1151,Steady Learner,1,Web Development|Programming & Software Dev,6.9,Web Development,0.65,70,0.5,1.0
+U1152,Struggling,1,Web Development|Law & Social Sciences,7.9,Cybersecurity,0.4,52,0.25,0.75
+U1153,Curious Sampler,1,Data Science & Analytics,17.3,Machine Learning & AI,0.3,65,0.6,0.9
+U1154,Curious Sampler,1,Programming & Software Dev,6.5,Music & Arts,0.3,65,0.6,0.9
+U1155,Struggling,2,Programming & Software Dev|Cybersecurity,10.6,Machine Learning & AI,0.4,52,0.25,0.75
+U1156,Steady Learner,2,Business & Finance|Personal Development|Cybersecurity,2.1,Web Development,0.65,70,0.5,1.0
+U1157,Struggling,3,Programming & Software Dev,4.9,Law & Social Sciences,0.4,52,0.25,0.75
+U1158,Fast Learner,3,Machine Learning & AI|Data Science & Analytics,11.9,Graphic Design & Media,0.8,82,0.7,1.2
+U1159,Steady Learner,2,Graphic Design & Media,6.5,Cloud & DevOps,0.65,70,0.5,1.0
+U1160,Specialist,1,Machine Learning & AI|Music & Arts,5.1,Web Development,0.75,78,0.65,1.1
+U1161,Steady Learner,3,Graphic Design & Media,3.5,Machine Learning & AI,0.65,70,0.5,1.0
+U1162,Steady Learner,3,Music & Arts|Web Development,4.4,Business & Finance,0.65,70,0.5,1.0
+U1163,Steady Learner,2,Science & Engineering,14.5,Graphic Design & Media,0.65,70,0.5,1.0
+U1164,Struggling,3,Machine Learning & AI,6.0,Law & Social Sciences,0.4,52,0.25,0.75
+U1165,Steady Learner,1,Cloud & DevOps|Programming & Software Dev|Music & Arts,23.8,Business & Finance,0.65,70,0.5,1.0
+U1166,Struggling,2,Business & Finance|Personal Development|Programming & Software Dev,11.8,Web Development,0.4,52,0.25,0.75
+U1167,Struggling,1,Programming & Software Dev|Data Science & Analytics,3.7,Law & Social Sciences,0.4,52,0.25,0.75
+U1168,Steady Learner,1,Business & Finance,4.7,Machine Learning & AI,0.65,70,0.5,1.0
+U1169,Specialist,1,Programming & Software Dev|Science & Engineering,4.8,Cloud & DevOps,0.75,78,0.65,1.1
+U1170,Steady Learner,2,Health & Medicine|Personal Development,2.4,Science & Engineering,0.65,70,0.5,1.0
+U1171,Curious Sampler,2,Programming & Software Dev,4.7,Business & Finance,0.3,65,0.6,0.9
+U1172,Steady Learner,2,Law & Social Sciences|Data Science & Analytics,8.4,Cloud & DevOps,0.65,70,0.5,1.0
+U1173,Struggling,1,Programming & Software Dev,3.2,Science & Engineering,0.4,52,0.25,0.75
+U1174,Struggling,2,Music & Arts|Data Science & Analytics,22.8,Business & Finance,0.4,52,0.25,0.75
+U1175,Curious Sampler,3,Programming & Software Dev|Music & Arts,7.9,Cloud & DevOps,0.3,65,0.6,0.9
+U1176,Specialist,1,Cloud & DevOps,10.5,Health & Medicine,0.75,78,0.65,1.1
+U1177,Fast Learner,2,Personal Development|Machine Learning & AI,4.2,Data Science & Analytics,0.8,82,0.7,1.2
+U1178,Fast Learner,2,Health & Medicine|Music & Arts,7.8,Machine Learning & AI,0.8,82,0.7,1.2
+U1179,Steady Learner,2,Cybersecurity,6.0,Graphic Design & Media,0.65,70,0.5,1.0
+U1180,Steady Learner,1,Machine Learning & AI,6.4,Law & Social Sciences,0.65,70,0.5,1.0
+U1181,Struggling,1,Web Development|Music & Arts,34.7,Business & Finance,0.4,52,0.25,0.75
+U1182,Struggling,3,Health & Medicine,6.1,Cloud & DevOps,0.4,52,0.25,0.75
+U1183,Struggling,3,Cloud & DevOps,4.8,Programming & Software Dev,0.4,52,0.25,0.75
+U1184,Struggling,3,Graphic Design & Media,13.3,Data Science & Analytics,0.4,52,0.25,0.75
+U1185,Steady Learner,1,Data Science & Analytics,11.9,Cybersecurity,0.65,70,0.5,1.0
+U1186,Struggling,1,Graphic Design & Media,7.4,Business & Finance,0.4,52,0.25,0.75
+U1187,Steady Learner,1,Health & Medicine|Data Science & Analytics|Cybersecurity,7.9,Machine Learning & AI,0.65,70,0.5,1.0
+U1188,Struggling,2,Personal Development|Graphic Design & Media,8.8,Graphic Design & Media,0.4,52,0.25,0.75
+U1189,Curious Sampler,2,Health & Medicine,8.4,Cloud & DevOps,0.3,65,0.6,0.9
+U1190,Fast Learner,3,Programming & Software Dev|Graphic Design & Media,5.8,Music & Arts,0.8,82,0.7,1.2
+U1191,Steady Learner,2,Law & Social Sciences|Music & Arts,4.2,Cloud & DevOps,0.65,70,0.5,1.0
+U1192,Curious Sampler,1,Health & Medicine|Music & Arts,3.2,Machine Learning & AI,0.3,65,0.6,0.9
+U1193,Struggling,3,Business & Finance|Cybersecurity|Machine Learning & AI,7.7,Health & Medicine,0.4,52,0.25,0.75
+U1194,Steady Learner,1,Business & Finance,3.4,Personal Development,0.65,70,0.5,1.0
+U1195,Steady Learner,2,Data Science & Analytics|Programming & Software Dev,16.6,Web Development,0.65,70,0.5,1.0
+U1196,Curious Sampler,1,Data Science & Analytics|Programming & Software Dev|Business & Finance,2.2,Personal Development,0.3,65,0.6,0.9
+U1197,Curious Sampler,2,Cloud & DevOps,10.9,Health & Medicine,0.3,65,0.6,0.9
+U1198,Steady Learner,2,Music & Arts|Health & Medicine,20.2,Data Science & Analytics,0.65,70,0.5,1.0
+U1199,Curious Sampler,2,Cloud & DevOps,11.4,Business & Finance,0.3,65,0.6,0.9
+U1200,Fast Learner,2,Science & Engineering|Music & Arts|Graphic Design & Media,10.3,Health & Medicine,0.8,82,0.7,1.2
+U1201,Steady Learner,1,Law & Social Sciences|Business & Finance|Cloud & DevOps,3.5,Health & Medicine,0.65,70,0.5,1.0
+U1202,Fast Learner,2,Business & Finance|Personal Development,8.4,Health & Medicine,0.8,82,0.7,1.2
+U1203,Specialist,3,Web Development|Programming & Software Dev,9.5,Music & Arts,0.75,78,0.65,1.1
+U1204,Steady Learner,1,Graphic Design & Media,4.3,Cybersecurity,0.65,70,0.5,1.0
+U1205,Steady Learner,1,Science & Engineering|Business & Finance,13.4,Programming & Software Dev,0.65,70,0.5,1.0
+U1206,Struggling,2,Personal Development|Music & Arts,5.8,Machine Learning & AI,0.4,52,0.25,0.75
+U1207,Steady Learner,3,Law & Social Sciences|Science & Engineering,20.6,Web Development,0.65,70,0.5,1.0
+U1208,Steady Learner,2,Business & Finance|Programming & Software Dev,3.5,Machine Learning & AI,0.65,70,0.5,1.0
+U1209,Steady Learner,2,Cybersecurity|Programming & Software Dev|Law & Social Sciences,8.2,Personal Development,0.65,70,0.5,1.0
+U1210,Steady Learner,2,Music & Arts,9.1,Graphic Design & Media,0.65,70,0.5,1.0
+U1211,Steady Learner,1,Data Science & Analytics|Graphic Design & Media|Machine Learning & AI,8.9,Machine Learning & AI,0.65,70,0.5,1.0
+U1212,Steady Learner,1,Law & Social Sciences,16.4,Law & Social Sciences,0.65,70,0.5,1.0
+U1213,Steady Learner,2,Science & Engineering,3.2,Programming & Software Dev,0.65,70,0.5,1.0
+U1214,Struggling,3,Health & Medicine,12.9,Cybersecurity,0.4,52,0.25,0.75
+U1215,Specialist,1,Cybersecurity,3.4,Machine Learning & AI,0.75,78,0.65,1.1
+U1216,Fast Learner,2,Cybersecurity,4.9,Personal Development,0.8,82,0.7,1.2
+U1217,Steady Learner,2,Music & Arts,4.4,Health & Medicine,0.65,70,0.5,1.0
+U1218,Fast Learner,2,Law & Social Sciences|Web Development,4.6,Personal Development,0.8,82,0.7,1.2
+U1219,Fast Learner,2,Cybersecurity|Business & Finance,7.0,Personal Development,0.8,82,0.7,1.2
+U1220,Steady Learner,2,Cybersecurity|Health & Medicine|Web Development,4.3,Health & Medicine,0.65,70,0.5,1.0
+U1221,Specialist,2,Personal Development|Cybersecurity|Web Development,12.9,Programming & Software Dev,0.75,78,0.65,1.1
+U1222,Steady Learner,2,Law & Social Sciences,5.9,Web Development,0.65,70,0.5,1.0
+U1223,Struggling,2,Science & Engineering,7.1,Cybersecurity,0.4,52,0.25,0.75
+U1224,Fast Learner,1,Web Development,3.0,Programming & Software Dev,0.8,82,0.7,1.2
+U1225,Struggling,1,Cloud & DevOps|Music & Arts,4.3,Machine Learning & AI,0.4,52,0.25,0.75
+U1226,Steady Learner,3,Machine Learning & AI,30.3,Programming & Software Dev,0.65,70,0.5,1.0
+U1227,Fast Learner,3,Personal Development,4.4,Science & Engineering,0.8,82,0.7,1.2
+U1228,Steady Learner,1,Web Development,15.4,Cloud & DevOps,0.65,70,0.5,1.0
+U1229,Steady Learner,2,Cybersecurity,27.7,Programming & Software Dev,0.65,70,0.5,1.0
+U1230,Struggling,1,Law & Social Sciences,5.5,Data Science & Analytics,0.4,52,0.25,0.75
+U1231,Steady Learner,1,Health & Medicine,1.8,Graphic Design & Media,0.65,70,0.5,1.0
+U1232,Fast Learner,3,Data Science & Analytics|Cloud & DevOps,4.0,Personal Development,0.8,82,0.7,1.2
+U1233,Struggling,2,Science & Engineering,16.4,Graphic Design & Media,0.4,52,0.25,0.75
+U1234,Steady Learner,2,Graphic Design & Media,3.5,Business & Finance,0.65,70,0.5,1.0
+U1235,Struggling,2,Cloud & DevOps|Cybersecurity,4.6,Personal Development,0.4,52,0.25,0.75
+U1236,Curious Sampler,2,Music & Arts,17.9,Data Science & Analytics,0.3,65,0.6,0.9
+U1237,Steady Learner,1,Machine Learning & AI|Music & Arts|Law & Social Sciences,3.9,Web Development,0.65,70,0.5,1.0
+U1238,Struggling,1,Data Science & Analytics,19.9,Programming & Software Dev,0.4,52,0.25,0.75
+U1239,Struggling,1,Science & Engineering|Web Development|Music & Arts,6.9,Data Science & Analytics,0.4,52,0.25,0.75
+U1240,Steady Learner,3,Business & Finance,3.0,Web Development,0.65,70,0.5,1.0
+U1241,Fast Learner,2,Machine Learning & AI|Science & Engineering|Graphic Design & Media,10.3,Graphic Design & Media,0.8,82,0.7,1.2
+U1242,Steady Learner,1,Cybersecurity|Data Science & Analytics,3.9,Machine Learning & AI,0.65,70,0.5,1.0
+U1243,Specialist,1,Business & Finance,16.4,Personal Development,0.75,78,0.65,1.1
+U1244,Steady Learner,1,Cybersecurity|Cloud & DevOps,13.0,Law & Social Sciences,0.65,70,0.5,1.0
+U1245,Steady Learner,1,Health & Medicine,2.5,Cloud & DevOps,0.65,70,0.5,1.0
+U1246,Steady Learner,1,Personal Development|Science & Engineering|Cybersecurity,10.2,Programming & Software Dev,0.65,70,0.5,1.0
+U1247,Steady Learner,3,Programming & Software Dev|Cloud & DevOps,6.0,Law & Social Sciences,0.65,70,0.5,1.0
+U1248,Steady Learner,2,Law & Social Sciences,3.4,Music & Arts,0.65,70,0.5,1.0
+U1249,Struggling,3,Law & Social Sciences,6.1,Cybersecurity,0.4,52,0.25,0.75
+U1250,Steady Learner,1,Programming & Software Dev,8.4,Programming & Software Dev,0.65,70,0.5,1.0
+U1251,Fast Learner,1,Cybersecurity|Data Science & Analytics,20.1,Business & Finance,0.8,82,0.7,1.2
+U1252,Steady Learner,2,Health & Medicine|Law & Social Sciences,3.1,Health & Medicine,0.65,70,0.5,1.0
+U1253,Struggling,2,Law & Social Sciences|Cloud & DevOps|Web Development,5.5,Science & Engineering,0.4,52,0.25,0.75
+U1254,Steady Learner,1,Science & Engineering|Cloud & DevOps|Music & Arts,3.6,Cloud & DevOps,0.65,70,0.5,1.0
+U1255,Steady Learner,3,Law & Social Sciences|Graphic Design & Media,8.4,Graphic Design & Media,0.65,70,0.5,1.0
+U1256,Curious Sampler,1,Cloud & DevOps|Programming & Software Dev,8.0,Programming & Software Dev,0.3,65,0.6,0.9
+U1257,Specialist,1,Cloud & DevOps,6.1,Cybersecurity,0.75,78,0.65,1.1
+U1258,Steady Learner,2,Programming & Software Dev|Music & Arts|Data Science & Analytics,10.1,Graphic Design & Media,0.65,70,0.5,1.0
+U1259,Steady Learner,2,Machine Learning & AI,8.0,Machine Learning & AI,0.65,70,0.5,1.0
+U1260,Struggling,3,Cloud & DevOps,6.6,Business & Finance,0.4,52,0.25,0.75
+U1261,Steady Learner,3,Personal Development|Cloud & DevOps|Data Science & Analytics,10.0,Data Science & Analytics,0.65,70,0.5,1.0
+U1262,Fast Learner,1,Cloud & DevOps|Web Development,6.3,Cybersecurity,0.8,82,0.7,1.2
+U1263,Curious Sampler,2,Web Development|Business & Finance|Cloud & DevOps,7.3,Science & Engineering,0.3,65,0.6,0.9
+U1264,Steady Learner,2,Machine Learning & AI,3.5,Cybersecurity,0.65,70,0.5,1.0
+U1265,Steady Learner,2,Programming & Software Dev|Personal Development,10.8,Web Development,0.65,70,0.5,1.0
+U1266,Specialist,1,Data Science & Analytics,14.4,Personal Development,0.75,78,0.65,1.1
+U1267,Struggling,1,Law & Social Sciences,5.8,Science & Engineering,0.4,52,0.25,0.75
+U1268,Struggling,2,Personal Development|Machine Learning & AI,2.8,Science & Engineering,0.4,52,0.25,0.75
+U1269,Steady Learner,1,Programming & Software Dev,8.8,Music & Arts,0.65,70,0.5,1.0
+U1270,Specialist,2,Cloud & DevOps,4.2,Personal Development,0.75,78,0.65,1.1
+U1271,Struggling,2,Science & Engineering|Business & Finance|Law & Social Sciences,8.0,Personal Development,0.4,52,0.25,0.75
+U1272,Steady Learner,2,Music & Arts|Business & Finance,17.4,Web Development,0.65,70,0.5,1.0
+U1273,Struggling,2,Machine Learning & AI|Health & Medicine,6.2,Programming & Software Dev,0.4,52,0.25,0.75
+U1274,Struggling,2,Music & Arts|Business & Finance,10.0,Machine Learning & AI,0.4,52,0.25,0.75
+U1275,Specialist,1,Programming & Software Dev|Personal Development,3.9,Personal Development,0.75,78,0.65,1.1
+U1276,Steady Learner,1,Music & Arts|Graphic Design & Media,5.9,Cloud & DevOps,0.65,70,0.5,1.0
+U1277,Struggling,3,Cybersecurity|Health & Medicine|Web Development,4.0,Machine Learning & AI,0.4,52,0.25,0.75
+U1278,Fast Learner,1,Music & Arts,11.7,Cloud & DevOps,0.8,82,0.7,1.2
+U1279,Struggling,2,Health & Medicine|Law & Social Sciences|Personal Development,7.9,Web Development,0.4,52,0.25,0.75
+U1280,Struggling,1,Health & Medicine,5.8,Machine Learning & AI,0.4,52,0.25,0.75
+U1281,Fast Learner,1,Business & Finance,13.6,Programming & Software Dev,0.8,82,0.7,1.2
+U1282,Steady Learner,2,Programming & Software Dev|Web Development,14.1,Data Science & Analytics,0.65,70,0.5,1.0
+U1283,Struggling,2,Web Development,7.6,Cloud & DevOps,0.4,52,0.25,0.75
+U1284,Curious Sampler,2,Machine Learning & AI|Science & Engineering,5.6,Personal Development,0.3,65,0.6,0.9
+U1285,Struggling,1,Law & Social Sciences|Science & Engineering,5.1,Machine Learning & AI,0.4,52,0.25,0.75
+U1286,Steady Learner,2,Graphic Design & Media,12.6,Personal Development,0.65,70,0.5,1.0
+U1287,Struggling,2,Music & Arts|Programming & Software Dev,31.2,Cybersecurity,0.4,52,0.25,0.75
+U1288,Fast Learner,2,Law & Social Sciences,5.1,Programming & Software Dev,0.8,82,0.7,1.2
+U1289,Fast Learner,2,Machine Learning & AI|Data Science & Analytics|Health & Medicine,5.9,Cybersecurity,0.8,82,0.7,1.2
+U1290,Curious Sampler,1,Cloud & DevOps,8.8,Web Development,0.3,65,0.6,0.9
+U1291,Steady Learner,1,Programming & Software Dev,7.8,Health & Medicine,0.65,70,0.5,1.0
+U1292,Fast Learner,3,Machine Learning & AI|Music & Arts,4.8,Law & Social Sciences,0.8,82,0.7,1.2
+U1293,Curious Sampler,2,Web Development|Cloud & DevOps,8.0,Science & Engineering,0.3,65,0.6,0.9
+U1294,Steady Learner,1,Health & Medicine|Graphic Design & Media,7.3,Business & Finance,0.65,70,0.5,1.0
+U1295,Steady Learner,1,Law & Social Sciences|Science & Engineering,9.7,Business & Finance,0.65,70,0.5,1.0
+U1296,Steady Learner,3,Cybersecurity,3.6,Data Science & Analytics,0.65,70,0.5,1.0
+U1297,Steady Learner,3,Web Development|Health & Medicine,6.7,Health & Medicine,0.65,70,0.5,1.0
+U1298,Steady Learner,1,Music & Arts,3.3,Music & Arts,0.65,70,0.5,1.0
+U1299,Specialist,1,Business & Finance|Science & Engineering,3.0,Cybersecurity,0.75,78,0.65,1.1
+U1300,Struggling,2,Music & Arts|Law & Social Sciences|Graphic Design & Media,2.4,Music & Arts,0.4,52,0.25,0.75
+U1301,Struggling,1,Machine Learning & AI|Personal Development,12.1,Graphic Design & Media,0.4,52,0.25,0.75
+U1302,Struggling,2,Web Development|Graphic Design & Media,13.9,Health & Medicine,0.4,52,0.25,0.75
+U1303,Curious Sampler,1,Data Science & Analytics,5.5,Business & Finance,0.3,65,0.6,0.9
+U1304,Specialist,2,Cybersecurity|Law & Social Sciences,9.3,Graphic Design & Media,0.75,78,0.65,1.1
+U1305,Steady Learner,2,Graphic Design & Media,14.3,Law & Social Sciences,0.65,70,0.5,1.0
+U1306,Struggling,1,Health & Medicine|Personal Development,9.4,Science & Engineering,0.4,52,0.25,0.75
+U1307,Struggling,2,Business & Finance|Cloud & DevOps,1.7,Machine Learning & AI,0.4,52,0.25,0.75
+U1308,Steady Learner,2,Graphic Design & Media,3.2,Science & Engineering,0.65,70,0.5,1.0
+U1309,Steady Learner,1,Cloud & DevOps|Science & Engineering|Law & Social Sciences,7.4,Business & Finance,0.65,70,0.5,1.0
+U1310,Struggling,1,Programming & Software Dev|Business & Finance,13.1,Cloud & DevOps,0.4,52,0.25,0.75
+U1311,Fast Learner,2,Health & Medicine|Machine Learning & AI,9.2,Data Science & Analytics,0.8,82,0.7,1.2
+U1312,Curious Sampler,1,Web Development,9.8,Cybersecurity,0.3,65,0.6,0.9
+U1313,Specialist,1,Programming & Software Dev,4.8,Science & Engineering,0.75,78,0.65,1.1
+U1314,Curious Sampler,1,Graphic Design & Media|Cloud & DevOps,7.4,Law & Social Sciences,0.3,65,0.6,0.9
+U1315,Steady Learner,2,Personal Development|Data Science & Analytics,4.6,Music & Arts,0.65,70,0.5,1.0
+U1316,Steady Learner,2,Web Development,5.6,Programming & Software Dev,0.65,70,0.5,1.0
+U1317,Struggling,1,Graphic Design & Media,13.5,Programming & Software Dev,0.4,52,0.25,0.75
+U1318,Curious Sampler,3,Machine Learning & AI,10.2,Science & Engineering,0.3,65,0.6,0.9
+U1319,Curious Sampler,2,Science & Engineering|Cybersecurity,6.2,Business & Finance,0.3,65,0.6,0.9
+U1320,Struggling,3,Personal Development,9.2,Personal Development,0.4,52,0.25,0.75
+U1321,Fast Learner,2,Cybersecurity,5.0,Business & Finance,0.8,82,0.7,1.2
+U1322,Steady Learner,3,Cloud & DevOps|Cybersecurity,9.5,Machine Learning & AI,0.65,70,0.5,1.0
+U1323,Steady Learner,2,Programming & Software Dev|Machine Learning & AI,18.1,Web Development,0.65,70,0.5,1.0
+U1324,Struggling,1,Music & Arts|Law & Social Sciences,13.9,Music & Arts,0.4,52,0.25,0.75
+U1325,Curious Sampler,2,Machine Learning & AI,7.0,Business & Finance,0.3,65,0.6,0.9
+U1326,Struggling,1,Cloud & DevOps|Business & Finance,2.8,Science & Engineering,0.4,52,0.25,0.75
+U1327,Steady Learner,3,Science & Engineering|Graphic Design & Media,6.2,Health & Medicine,0.65,70,0.5,1.0
+U1328,Specialist,2,Music & Arts|Cybersecurity,7.4,Web Development,0.75,78,0.65,1.1
+U1329,Struggling,2,Law & Social Sciences|Science & Engineering,4.5,Data Science & Analytics,0.4,52,0.25,0.75
+U1330,Specialist,1,Personal Development,3.9,Data Science & Analytics,0.75,78,0.65,1.1
+U1331,Struggling,1,Law & Social Sciences,4.1,Data Science & Analytics,0.4,52,0.25,0.75
+U1332,Fast Learner,1,Programming & Software Dev|Law & Social Sciences|Cloud & DevOps,6.2,Health & Medicine,0.8,82,0.7,1.2
+U1333,Struggling,1,Health & Medicine,15.9,Cybersecurity,0.4,52,0.25,0.75
+U1334,Fast Learner,2,Health & Medicine|Personal Development,8.8,Business & Finance,0.8,82,0.7,1.2
+U1335,Fast Learner,1,Science & Engineering|Cloud & DevOps,35.5,Law & Social Sciences,0.8,82,0.7,1.2
+U1336,Fast Learner,1,Programming & Software Dev|Science & Engineering,10.0,Cybersecurity,0.8,82,0.7,1.2
+U1337,Curious Sampler,2,Data Science & Analytics,7.8,Law & Social Sciences,0.3,65,0.6,0.9
+U1338,Steady Learner,3,Data Science & Analytics,2.7,Data Science & Analytics,0.65,70,0.5,1.0
+U1339,Curious Sampler,1,Cybersecurity|Law & Social Sciences|Graphic Design & Media,5.1,Law & Social Sciences,0.3,65,0.6,0.9
+U1340,Steady Learner,1,Science & Engineering,5.5,Programming & Software Dev,0.65,70,0.5,1.0
+U1341,Fast Learner,1,Business & Finance|Personal Development,4.7,Web Development,0.8,82,0.7,1.2
+U1342,Curious Sampler,2,Music & Arts|Programming & Software Dev,20.6,Law & Social Sciences,0.3,65,0.6,0.9
+U1343,Struggling,1,Health & Medicine|Music & Arts,15.3,Cybersecurity,0.4,52,0.25,0.75
+U1344,Fast Learner,2,Music & Arts|Science & Engineering,5.4,Machine Learning & AI,0.8,82,0.7,1.2
+U1345,Specialist,2,Business & Finance,2.8,Cybersecurity,0.75,78,0.65,1.1
+U1346,Fast Learner,2,Web Development|Music & Arts|Personal Development,6.2,Cybersecurity,0.8,82,0.7,1.2
+U1347,Steady Learner,2,Cybersecurity,3.8,Cloud & DevOps,0.65,70,0.5,1.0
+U1348,Curious Sampler,1,Law & Social Sciences|Web Development,4.4,Cybersecurity,0.3,65,0.6,0.9
+U1349,Specialist,2,Health & Medicine|Web Development,4.6,Programming & Software Dev,0.75,78,0.65,1.1
+U1350,Fast Learner,2,Programming & Software Dev,10.6,Data Science & Analytics,0.8,82,0.7,1.2
+U1351,Steady Learner,2,Web Development|Law & Social Sciences,10.2,Web Development,0.65,70,0.5,1.0
+U1352,Struggling,1,Data Science & Analytics,5.4,Science & Engineering,0.4,52,0.25,0.75
+U1353,Fast Learner,2,Business & Finance|Programming & Software Dev|Cloud & DevOps,3.0,Science & Engineering,0.8,82,0.7,1.2
+U1354,Steady Learner,1,Cybersecurity|Music & Arts|Machine Learning & AI,6.4,Machine Learning & AI,0.65,70,0.5,1.0
+U1355,Steady Learner,3,Web Development|Health & Medicine,8.4,Law & Social Sciences,0.65,70,0.5,1.0
+U1356,Steady Learner,2,Graphic Design & Media|Web Development,7.4,Graphic Design & Media,0.65,70,0.5,1.0
+U1357,Specialist,2,Music & Arts|Health & Medicine,5.5,Cloud & DevOps,0.75,78,0.65,1.1
+U1358,Steady Learner,1,Science & Engineering,13.2,Personal Development,0.65,70,0.5,1.0
+U1359,Struggling,1,Law & Social Sciences|Health & Medicine,17.4,Cloud & DevOps,0.4,52,0.25,0.75
+U1360,Fast Learner,1,Graphic Design & Media|Programming & Software Dev,3.7,Data Science & Analytics,0.8,82,0.7,1.2
+U1361,Steady Learner,2,Web Development,12.7,Web Development,0.65,70,0.5,1.0
+U1362,Struggling,1,Cybersecurity,4.0,Cybersecurity,0.4,52,0.25,0.75
+U1363,Struggling,1,Web Development|Cybersecurity|Personal Development,9.5,Personal Development,0.4,52,0.25,0.75
+U1364,Struggling,2,Graphic Design & Media|Data Science & Analytics,6.5,Data Science & Analytics,0.4,52,0.25,0.75
+U1365,Fast Learner,2,Health & Medicine|Web Development|Graphic Design & Media,7.2,Programming & Software Dev,0.8,82,0.7,1.2
+U1366,Specialist,1,Personal Development|Programming & Software Dev,4.2,Business & Finance,0.75,78,0.65,1.1
+U1367,Steady Learner,3,Data Science & Analytics|Business & Finance|Graphic Design & Media,7.8,Programming & Software Dev,0.65,70,0.5,1.0
+U1368,Specialist,1,Business & Finance,11.0,Web Development,0.75,78,0.65,1.1
+U1369,Steady Learner,1,Music & Arts,17.2,Programming & Software Dev,0.65,70,0.5,1.0
+U1370,Steady Learner,2,Cloud & DevOps|Cybersecurity|Web Development,2.4,Health & Medicine,0.65,70,0.5,1.0
+U1371,Fast Learner,1,Business & Finance|Personal Development|Cybersecurity,37.4,Law & Social Sciences,0.8,82,0.7,1.2
+U1372,Struggling,2,Music & Arts,4.8,Machine Learning & AI,0.4,52,0.25,0.75
+U1373,Struggling,1,Personal Development|Cybersecurity,1.8,Cybersecurity,0.4,52,0.25,0.75
+U1374,Struggling,1,Web Development|Health & Medicine,8.1,Web Development,0.4,52,0.25,0.75
+U1375,Struggling,2,Data Science & Analytics|Music & Arts,15.8,Programming & Software Dev,0.4,52,0.25,0.75
+U1376,Curious Sampler,2,Personal Development,10.6,Cloud & DevOps,0.3,65,0.6,0.9
+U1377,Struggling,1,Programming & Software Dev|Data Science & Analytics,5.6,Business & Finance,0.4,52,0.25,0.75
+U1378,Curious Sampler,2,Graphic Design & Media,7.2,Health & Medicine,0.3,65,0.6,0.9
+U1379,Steady Learner,1,Web Development|Personal Development|Cybersecurity,6.5,Cybersecurity,0.65,70,0.5,1.0
+U1380,Steady Learner,2,Business & Finance,9.2,Cybersecurity,0.65,70,0.5,1.0
+U1381,Struggling,2,Cybersecurity,10.3,Music & Arts,0.4,52,0.25,0.75
+U1382,Steady Learner,2,Law & Social Sciences,1.3,Business & Finance,0.65,70,0.5,1.0
+U1383,Curious Sampler,2,Graphic Design & Media,5.4,Cloud & DevOps,0.3,65,0.6,0.9
+U1384,Fast Learner,1,Web Development|Graphic Design & Media,12.1,Web Development,0.8,82,0.7,1.2
+U1385,Specialist,3,Cloud & DevOps|Business & Finance,6.1,Law & Social Sciences,0.75,78,0.65,1.1
+U1386,Steady Learner,1,Health & Medicine,6.9,Web Development,0.65,70,0.5,1.0
+U1387,Steady Learner,2,Cybersecurity,15.5,Business & Finance,0.65,70,0.5,1.0
+U1388,Steady Learner,2,Cybersecurity|Web Development|Business & Finance,3.5,Cybersecurity,0.65,70,0.5,1.0
+U1389,Struggling,1,Data Science & Analytics|Programming & Software Dev,3.9,Business & Finance,0.4,52,0.25,0.75
+U1390,Fast Learner,1,Machine Learning & AI,5.4,Science & Engineering,0.8,82,0.7,1.2
+U1391,Steady Learner,2,Science & Engineering,17.1,Science & Engineering,0.65,70,0.5,1.0
+U1392,Struggling,3,Health & Medicine|Data Science & Analytics,1.8,Cybersecurity,0.4,52,0.25,0.75
+U1393,Fast Learner,2,Music & Arts,4.8,Personal Development,0.8,82,0.7,1.2
+U1394,Fast Learner,2,Web Development|Personal Development,7.9,Law & Social Sciences,0.8,82,0.7,1.2
+U1395,Struggling,2,Health & Medicine|Cloud & DevOps,2.6,Music & Arts,0.4,52,0.25,0.75
+U1396,Steady Learner,3,Personal Development|Programming & Software Dev,6.6,Web Development,0.65,70,0.5,1.0
+U1397,Struggling,3,Health & Medicine|Programming & Software Dev|Science & Engineering,2.7,Business & Finance,0.4,52,0.25,0.75
+U1398,Fast Learner,2,Health & Medicine,5.3,Personal Development,0.8,82,0.7,1.2
+U1399,Steady Learner,2,Business & Finance|Data Science & Analytics,1.7,Cybersecurity,0.65,70,0.5,1.0
+U1400,Curious Sampler,3,Law & Social Sciences|Programming & Software Dev,21.3,Music & Arts,0.3,65,0.6,0.9
+U1401,Curious Sampler,3,Web Development,16.6,Music & Arts,0.3,65,0.6,0.9
+U1402,Struggling,3,Personal Development|Machine Learning & AI|Cloud & DevOps,4.7,Health & Medicine,0.4,52,0.25,0.75
+U1403,Struggling,1,Law & Social Sciences,12.4,Health & Medicine,0.4,52,0.25,0.75
+U1404,Struggling,2,Business & Finance|Science & Engineering,7.8,Web Development,0.4,52,0.25,0.75
+U1405,Fast Learner,1,Science & Engineering,9.6,Business & Finance,0.8,82,0.7,1.2
+U1406,Steady Learner,1,Programming & Software Dev,9.7,Programming & Software Dev,0.65,70,0.5,1.0
+U1407,Steady Learner,2,Business & Finance,4.6,Science & Engineering,0.65,70,0.5,1.0
+U1408,Fast Learner,3,Cloud & DevOps,4.9,Data Science & Analytics,0.8,82,0.7,1.2
+U1409,Struggling,1,Law & Social Sciences|Web Development,5.2,Graphic Design & Media,0.4,52,0.25,0.75
+U1410,Struggling,1,Cybersecurity|Health & Medicine|Music & Arts,6.4,Personal Development,0.4,52,0.25,0.75
+U1411,Specialist,1,Graphic Design & Media|Data Science & Analytics,5.9,Law & Social Sciences,0.75,78,0.65,1.1
+U1412,Fast Learner,3,Cloud & DevOps|Music & Arts,6.4,Web Development,0.8,82,0.7,1.2
+U1413,Fast Learner,2,Cybersecurity|Machine Learning & AI|Programming & Software Dev,5.1,Business & Finance,0.8,82,0.7,1.2
+U1414,Steady Learner,2,Law & Social Sciences,19.7,Health & Medicine,0.65,70,0.5,1.0
+U1415,Fast Learner,3,Business & Finance|Graphic Design & Media|Cybersecurity,5.1,Web Development,0.8,82,0.7,1.2
+U1416,Steady Learner,2,Data Science & Analytics|Music & Arts|Programming & Software Dev,8.1,Web Development,0.65,70,0.5,1.0
+U1417,Fast Learner,1,Cybersecurity,4.7,Data Science & Analytics,0.8,82,0.7,1.2
+U1418,Steady Learner,1,Programming & Software Dev|Web Development|Data Science & Analytics,10.3,Data Science & Analytics,0.65,70,0.5,1.0
+U1419,Struggling,1,Cybersecurity|Music & Arts|Law & Social Sciences,4.2,Graphic Design & Media,0.4,52,0.25,0.75
+U1420,Fast Learner,1,Business & Finance|Cloud & DevOps|Machine Learning & AI,5.5,Graphic Design & Media,0.8,82,0.7,1.2
+U1421,Fast Learner,1,Machine Learning & AI,4.2,Web Development,0.8,82,0.7,1.2
+U1422,Specialist,2,Personal Development,6.1,Machine Learning & AI,0.75,78,0.65,1.1
+U1423,Curious Sampler,1,Personal Development,8.2,Graphic Design & Media,0.3,65,0.6,0.9
+U1424,Steady Learner,1,Music & Arts|Science & Engineering,11.4,Law & Social Sciences,0.65,70,0.5,1.0
+U1425,Fast Learner,1,Personal Development,2.5,Law & Social Sciences,0.8,82,0.7,1.2
+U1426,Steady Learner,1,Web Development,3.6,Cybersecurity,0.65,70,0.5,1.0
+U1427,Specialist,1,Cybersecurity,5.0,Music & Arts,0.75,78,0.65,1.1
+U1428,Fast Learner,2,Law & Social Sciences,13.0,Cybersecurity,0.8,82,0.7,1.2
+U1429,Fast Learner,2,Programming & Software Dev,3.7,Graphic Design & Media,0.8,82,0.7,1.2
+U1430,Steady Learner,2,Law & Social Sciences,12.1,Personal Development,0.65,70,0.5,1.0
+U1431,Specialist,1,Business & Finance,4.4,Machine Learning & AI,0.75,78,0.65,1.1
+U1432,Struggling,2,Health & Medicine,3.5,Health & Medicine,0.4,52,0.25,0.75
+U1433,Steady Learner,1,Science & Engineering|Music & Arts|Graphic Design & Media,4.8,Law & Social Sciences,0.65,70,0.5,1.0
+U1434,Struggling,1,Data Science & Analytics,12.2,Law & Social Sciences,0.4,52,0.25,0.75
+U1435,Fast Learner,3,Law & Social Sciences,2.8,Data Science & Analytics,0.8,82,0.7,1.2
+U1436,Steady Learner,2,Web Development|Data Science & Analytics,2.8,Programming & Software Dev,0.65,70,0.5,1.0
+U1437,Struggling,2,Data Science & Analytics|Web Development|Business & Finance,5.7,Health & Medicine,0.4,52,0.25,0.75
+U1438,Fast Learner,3,Cloud & DevOps|Law & Social Sciences|Science & Engineering,8.9,Science & Engineering,0.8,82,0.7,1.2
+U1439,Struggling,2,Graphic Design & Media,15.1,Cybersecurity,0.4,52,0.25,0.75
+U1440,Fast Learner,2,Health & Medicine|Personal Development|Science & Engineering,8.6,Law & Social Sciences,0.8,82,0.7,1.2
+U1441,Curious Sampler,1,Health & Medicine|Business & Finance,7.6,Cloud & DevOps,0.3,65,0.6,0.9
+U1442,Curious Sampler,1,Business & Finance|Law & Social Sciences,11.8,Business & Finance,0.3,65,0.6,0.9
+U1443,Steady Learner,1,Programming & Software Dev,12.4,Programming & Software Dev,0.65,70,0.5,1.0
+U1444,Steady Learner,2,Music & Arts,6.8,Personal Development,0.65,70,0.5,1.0
+U1445,Fast Learner,2,Science & Engineering|Cybersecurity|Music & Arts,9.2,Science & Engineering,0.8,82,0.7,1.2
+U1446,Struggling,3,Law & Social Sciences|Cloud & DevOps,9.0,Programming & Software Dev,0.4,52,0.25,0.75
+U1447,Fast Learner,1,Business & Finance|Science & Engineering|Machine Learning & AI,10.0,Law & Social Sciences,0.8,82,0.7,1.2
+U1448,Fast Learner,1,Cloud & DevOps,14.8,Machine Learning & AI,0.8,82,0.7,1.2
+U1449,Curious Sampler,2,Programming & Software Dev|Business & Finance,1.9,Cybersecurity,0.3,65,0.6,0.9
+U1450,Steady Learner,2,Cybersecurity|Music & Arts|Web Development,15.4,Business & Finance,0.65,70,0.5,1.0
+U1451,Curious Sampler,2,Cloud & DevOps|Programming & Software Dev|Music & Arts,4.1,Business & Finance,0.3,65,0.6,0.9
+U1452,Struggling,1,Graphic Design & Media,20.5,Graphic Design & Media,0.4,52,0.25,0.75
+U1453,Curious Sampler,3,Law & Social Sciences|Data Science & Analytics,12.3,Science & Engineering,0.3,65,0.6,0.9
+U1454,Fast Learner,2,Graphic Design & Media,13.1,Web Development,0.8,82,0.7,1.2
+U1455,Struggling,1,Data Science & Analytics,3.2,Programming & Software Dev,0.4,52,0.25,0.75
+U1456,Steady Learner,2,Science & Engineering,3.6,Music & Arts,0.65,70,0.5,1.0
+U1457,Struggling,2,Programming & Software Dev|Machine Learning & AI,12.8,Health & Medicine,0.4,52,0.25,0.75
+U1458,Fast Learner,2,Web Development|Cloud & DevOps|Health & Medicine,16.1,Personal Development,0.8,82,0.7,1.2
+U1459,Curious Sampler,1,Machine Learning & AI|Cybersecurity|Programming & Software Dev,7.1,Machine Learning & AI,0.3,65,0.6,0.9
+U1460,Curious Sampler,2,Machine Learning & AI,7.8,Data Science & Analytics,0.3,65,0.6,0.9
+U1461,Steady Learner,1,Web Development,15.4,Science & Engineering,0.65,70,0.5,1.0
+U1462,Steady Learner,2,Data Science & Analytics|Health & Medicine|Web Development,6.9,Graphic Design & Media,0.65,70,0.5,1.0
+U1463,Fast Learner,2,Law & Social Sciences,3.7,Cybersecurity,0.8,82,0.7,1.2
+U1464,Curious Sampler,3,Cloud & DevOps|Web Development,8.8,Cloud & DevOps,0.3,65,0.6,0.9
+U1465,Steady Learner,1,Personal Development,21.8,Health & Medicine,0.65,70,0.5,1.0
+U1466,Curious Sampler,2,Graphic Design & Media|Business & Finance|Law & Social Sciences,8.0,Law & Social Sciences,0.3,65,0.6,0.9
+U1467,Fast Learner,1,Law & Social Sciences|Science & Engineering|Health & Medicine,8.5,Health & Medicine,0.8,82,0.7,1.2
+U1468,Steady Learner,3,Web Development,10.5,Machine Learning & AI,0.65,70,0.5,1.0
+U1469,Struggling,1,Music & Arts|Law & Social Sciences|Machine Learning & AI,4.3,Science & Engineering,0.4,52,0.25,0.75
+U1470,Struggling,3,Cloud & DevOps|Cybersecurity|Music & Arts,8.3,Health & Medicine,0.4,52,0.25,0.75
+U1471,Fast Learner,1,Machine Learning & AI,4.2,Personal Development,0.8,82,0.7,1.2
+U1472,Struggling,1,Music & Arts|Data Science & Analytics|Machine Learning & AI,7.4,Web Development,0.4,52,0.25,0.75
+U1473,Curious Sampler,1,Programming & Software Dev|Graphic Design & Media,10.0,Health & Medicine,0.3,65,0.6,0.9
+U1474,Steady Learner,2,Health & Medicine|Data Science & Analytics,12.7,Web Development,0.65,70,0.5,1.0
+U1475,Struggling,1,Graphic Design & Media|Data Science & Analytics|Health & Medicine,8.0,Law & Social Sciences,0.4,52,0.25,0.75
+U1476,Steady Learner,1,Law & Social Sciences,16.3,Law & Social Sciences,0.65,70,0.5,1.0
+U1477,Steady Learner,2,Machine Learning & AI,4.0,Data Science & Analytics,0.65,70,0.5,1.0
+U1478,Steady Learner,1,Cloud & DevOps,11.1,Law & Social Sciences,0.65,70,0.5,1.0
+U1479,Steady Learner,2,Cybersecurity|Science & Engineering,10.3,Cybersecurity,0.65,70,0.5,1.0
+U1480,Fast Learner,1,Machine Learning & AI|Business & Finance,6.2,Music & Arts,0.8,82,0.7,1.2
+U1481,Steady Learner,2,Cybersecurity|Machine Learning & AI,7.9,Cybersecurity,0.65,70,0.5,1.0
+U1482,Struggling,1,Cloud & DevOps|Business & Finance|Science & Engineering,10.7,Business & Finance,0.4,52,0.25,0.75
+U1483,Steady Learner,2,Health & Medicine|Graphic Design & Media,19.8,Science & Engineering,0.65,70,0.5,1.0
+U1484,Struggling,2,Music & Arts|Data Science & Analytics,4.2,Cybersecurity,0.4,52,0.25,0.75
+U1485,Struggling,1,Health & Medicine|Graphic Design & Media,16.8,Business & Finance,0.4,52,0.25,0.75
+U1486,Steady Learner,2,Web Development,13.8,Data Science & Analytics,0.65,70,0.5,1.0
+U1487,Fast Learner,2,Science & Engineering,2.0,Cloud & DevOps,0.8,82,0.7,1.2
+U1488,Specialist,2,Business & Finance,10.0,Programming & Software Dev,0.75,78,0.65,1.1
+U1489,Steady Learner,3,Programming & Software Dev|Health & Medicine,3.5,Music & Arts,0.65,70,0.5,1.0
+U1490,Specialist,1,Law & Social Sciences|Personal Development,8.3,Business & Finance,0.75,78,0.65,1.1
+U1491,Struggling,1,Health & Medicine,7.4,Cybersecurity,0.4,52,0.25,0.75
+U1492,Struggling,2,Cybersecurity,4.8,Data Science & Analytics,0.4,52,0.25,0.75
+U1493,Steady Learner,1,Health & Medicine|Personal Development|Science & Engineering,11.1,Cloud & DevOps,0.65,70,0.5,1.0
+U1494,Steady Learner,1,Music & Arts,6.5,Law & Social Sciences,0.65,70,0.5,1.0
+U1495,Fast Learner,2,Web Development|Machine Learning & AI|Personal Development,7.1,Cybersecurity,0.8,82,0.7,1.2
+U1496,Fast Learner,1,Business & Finance|Health & Medicine,11.1,Music & Arts,0.8,82,0.7,1.2
+U1497,Steady Learner,1,Business & Finance|Graphic Design & Media|Law & Social Sciences,3.4,Law & Social Sciences,0.65,70,0.5,1.0
+U1498,Fast Learner,1,Cybersecurity,8.9,Health & Medicine,0.8,82,0.7,1.2
+U1499,Steady Learner,2,Cybersecurity|Law & Social Sciences,4.9,Personal Development,0.65,70,0.5,1.0
+U1500,Struggling,3,Personal Development,8.9,Cybersecurity,0.4,52,0.25,0.75
+U1501,Steady Learner,1,Web Development|Health & Medicine,16.1,Web Development,0.65,70,0.5,1.0
+U1502,Steady Learner,2,Machine Learning & AI|Personal Development|Music & Arts,16.5,Programming & Software Dev,0.65,70,0.5,1.0
+U1503,Fast Learner,1,Programming & Software Dev|Cloud & DevOps|Science & Engineering,6.5,Law & Social Sciences,0.8,82,0.7,1.2
+U1504,Fast Learner,2,Programming & Software Dev|Science & Engineering,5.1,Graphic Design & Media,0.8,82,0.7,1.2
+U1505,Steady Learner,1,Cybersecurity|Data Science & Analytics,11.0,Personal Development,0.65,70,0.5,1.0
+U1506,Struggling,1,Graphic Design & Media|Data Science & Analytics,15.2,Science & Engineering,0.4,52,0.25,0.75
+U1507,Specialist,1,Music & Arts,11.2,Web Development,0.75,78,0.65,1.1
+U1508,Specialist,1,Music & Arts|Cybersecurity,21.6,Music & Arts,0.75,78,0.65,1.1
+U1509,Steady Learner,3,Web Development|Music & Arts,7.4,Music & Arts,0.65,70,0.5,1.0
+U1510,Curious Sampler,3,Science & Engineering|Personal Development,10.2,Web Development,0.3,65,0.6,0.9
+U1511,Steady Learner,2,Data Science & Analytics,7.3,Web Development,0.65,70,0.5,1.0
+U1512,Curious Sampler,1,Science & Engineering|Web Development,3.8,Law & Social Sciences,0.3,65,0.6,0.9
+U1513,Steady Learner,3,Health & Medicine,10.4,Music & Arts,0.65,70,0.5,1.0
+U1514,Fast Learner,2,Science & Engineering,7.0,Law & Social Sciences,0.8,82,0.7,1.2
+U1515,Fast Learner,2,Web Development|Music & Arts,7.2,Business & Finance,0.8,82,0.7,1.2
+U1516,Fast Learner,3,Business & Finance|Music & Arts,9.9,Machine Learning & AI,0.8,82,0.7,1.2
+U1517,Struggling,3,Graphic Design & Media|Cybersecurity,9.9,Science & Engineering,0.4,52,0.25,0.75
+U1518,Steady Learner,2,Graphic Design & Media,3.8,Law & Social Sciences,0.65,70,0.5,1.0
+U1519,Fast Learner,3,Cloud & DevOps|Science & Engineering,7.8,Science & Engineering,0.8,82,0.7,1.2
+U1520,Steady Learner,1,Cybersecurity,7.6,Science & Engineering,0.65,70,0.5,1.0
+U1521,Steady Learner,1,Law & Social Sciences,11.8,Law & Social Sciences,0.65,70,0.5,1.0
+U1522,Fast Learner,1,Cybersecurity|Science & Engineering,2.9,Business & Finance,0.8,82,0.7,1.2
+U1523,Specialist,2,Science & Engineering,2.8,Music & Arts,0.75,78,0.65,1.1
+U1524,Struggling,3,Machine Learning & AI|Law & Social Sciences|Graphic Design & Media,5.3,Cloud & DevOps,0.4,52,0.25,0.75
+U1525,Steady Learner,1,Health & Medicine,13.2,Data Science & Analytics,0.65,70,0.5,1.0
+U1526,Steady Learner,3,Personal Development,4.6,Law & Social Sciences,0.65,70,0.5,1.0
+U1527,Steady Learner,2,Business & Finance,20.7,Programming & Software Dev,0.65,70,0.5,1.0
+U1528,Fast Learner,1,Machine Learning & AI,5.8,Science & Engineering,0.8,82,0.7,1.2
+U1529,Struggling,1,Machine Learning & AI,3.0,Data Science & Analytics,0.4,52,0.25,0.75
+U1530,Curious Sampler,2,Graphic Design & Media|Personal Development|Cybersecurity,13.5,Web Development,0.3,65,0.6,0.9
+U1531,Fast Learner,2,Business & Finance|Law & Social Sciences,3.7,Graphic Design & Media,0.8,82,0.7,1.2
+U1532,Struggling,1,Science & Engineering,13.0,Science & Engineering,0.4,52,0.25,0.75
+U1533,Struggling,2,Data Science & Analytics|Personal Development|Science & Engineering,14.3,Cybersecurity,0.4,52,0.25,0.75
+U1534,Steady Learner,2,Programming & Software Dev|Graphic Design & Media,7.9,Law & Social Sciences,0.65,70,0.5,1.0
+U1535,Steady Learner,2,Data Science & Analytics,2.4,Personal Development,0.65,70,0.5,1.0
+U1536,Fast Learner,2,Health & Medicine|Web Development,5.6,Programming & Software Dev,0.8,82,0.7,1.2
+U1537,Specialist,1,Personal Development|Law & Social Sciences,4.6,Cloud & DevOps,0.75,78,0.65,1.1
+U1538,Steady Learner,1,Law & Social Sciences|Cloud & DevOps|Science & Engineering,6.9,Web Development,0.65,70,0.5,1.0
+U1539,Specialist,2,Graphic Design & Media|Personal Development|Cloud & DevOps,6.4,Web Development,0.75,78,0.65,1.1
+U1540,Fast Learner,1,Machine Learning & AI,8.5,Data Science & Analytics,0.8,82,0.7,1.2
+U1541,Fast Learner,1,Programming & Software Dev|Health & Medicine,7.7,Business & Finance,0.8,82,0.7,1.2
+U1542,Steady Learner,1,Graphic Design & Media|Health & Medicine,11.4,Science & Engineering,0.65,70,0.5,1.0
+U1543,Struggling,1,Data Science & Analytics,14.8,Music & Arts,0.4,52,0.25,0.75
+U1544,Steady Learner,1,Health & Medicine|Science & Engineering,5.0,Cloud & DevOps,0.65,70,0.5,1.0
+U1545,Specialist,1,Business & Finance|Music & Arts,6.3,Business & Finance,0.75,78,0.65,1.1
+U1546,Steady Learner,1,Web Development,20.5,Personal Development,0.65,70,0.5,1.0
+U1547,Struggling,2,Cloud & DevOps|Science & Engineering,12.0,Data Science & Analytics,0.4,52,0.25,0.75
+U1548,Struggling,2,Personal Development|Graphic Design & Media|Data Science & Analytics,12.0,Law & Social Sciences,0.4,52,0.25,0.75
+U1549,Curious Sampler,2,Law & Social Sciences|Cybersecurity,4.7,Business & Finance,0.3,65,0.6,0.9
+U1550,Struggling,2,Science & Engineering|Programming & Software Dev|Data Science & Analytics,2.9,Programming & Software Dev,0.4,52,0.25,0.75
+U1551,Steady Learner,2,Web Development|Law & Social Sciences,8.3,Web Development,0.65,70,0.5,1.0
+U1552,Struggling,1,Graphic Design & Media,12.2,Graphic Design & Media,0.4,52,0.25,0.75
+U1553,Struggling,1,Cybersecurity,2.5,Business & Finance,0.4,52,0.25,0.75
+U1554,Fast Learner,3,Personal Development,11.8,Health & Medicine,0.8,82,0.7,1.2
+U1555,Specialist,2,Health & Medicine,12.6,Law & Social Sciences,0.75,78,0.65,1.1
+U1556,Struggling,1,Web Development,2.5,Music & Arts,0.4,52,0.25,0.75
+U1557,Fast Learner,3,Business & Finance,4.9,Web Development,0.8,82,0.7,1.2
+U1558,Fast Learner,3,Music & Arts|Law & Social Sciences,12.7,Machine Learning & AI,0.8,82,0.7,1.2
+U1559,Fast Learner,2,Programming & Software Dev,4.5,Programming & Software Dev,0.8,82,0.7,1.2
+U1560,Steady Learner,2,Graphic Design & Media,8.7,Science & Engineering,0.65,70,0.5,1.0
+U1561,Specialist,1,Machine Learning & AI|Law & Social Sciences,4.0,Graphic Design & Media,0.75,78,0.65,1.1
+U1562,Struggling,1,Web Development|Science & Engineering,6.1,Law & Social Sciences,0.4,52,0.25,0.75
+U1563,Fast Learner,2,Science & Engineering|Business & Finance,6.6,Programming & Software Dev,0.8,82,0.7,1.2
+U1564,Curious Sampler,2,Business & Finance,20.6,Machine Learning & AI,0.3,65,0.6,0.9
+U1565,Struggling,3,Science & Engineering|Law & Social Sciences,6.8,Science & Engineering,0.4,52,0.25,0.75
+U1566,Specialist,1,Cybersecurity|Cloud & DevOps,8.0,Cybersecurity,0.75,78,0.65,1.1
+U1567,Struggling,1,Graphic Design & Media,26.0,Machine Learning & AI,0.4,52,0.25,0.75
+U1568,Curious Sampler,2,Music & Arts,11.6,Programming & Software Dev,0.3,65,0.6,0.9
+U1569,Fast Learner,1,Business & Finance|Science & Engineering|Machine Learning & AI,8.8,Science & Engineering,0.8,82,0.7,1.2
+U1570,Steady Learner,1,Business & Finance,9.6,Business & Finance,0.65,70,0.5,1.0
+U1571,Struggling,2,Machine Learning & AI,7.8,Personal Development,0.4,52,0.25,0.75
+U1572,Struggling,1,Personal Development|Health & Medicine|Cloud & DevOps,5.3,Science & Engineering,0.4,52,0.25,0.75
+U1573,Steady Learner,3,Cloud & DevOps,25.6,Cybersecurity,0.65,70,0.5,1.0
+U1574,Curious Sampler,1,Health & Medicine,12.8,Cybersecurity,0.3,65,0.6,0.9
+U1575,Steady Learner,1,Cybersecurity,7.3,Data Science & Analytics,0.65,70,0.5,1.0
+U1576,Specialist,2,Web Development,3.2,Personal Development,0.75,78,0.65,1.1
+U1577,Curious Sampler,1,Web Development|Graphic Design & Media|Cybersecurity,10.8,Personal Development,0.3,65,0.6,0.9
+U1578,Steady Learner,3,Cloud & DevOps,2.8,Health & Medicine,0.65,70,0.5,1.0
+U1579,Steady Learner,3,Data Science & Analytics,7.3,Graphic Design & Media,0.65,70,0.5,1.0
+U1580,Fast Learner,3,Data Science & Analytics|Graphic Design & Media,30.6,Cloud & DevOps,0.8,82,0.7,1.2
+U1581,Fast Learner,2,Health & Medicine,11.4,Cybersecurity,0.8,82,0.7,1.2
+U1582,Curious Sampler,2,Data Science & Analytics,6.0,Personal Development,0.3,65,0.6,0.9
+U1583,Fast Learner,1,Cloud & DevOps,13.3,Cloud & DevOps,0.8,82,0.7,1.2
+U1584,Steady Learner,3,Programming & Software Dev|Data Science & Analytics|Personal Development,8.8,Data Science & Analytics,0.65,70,0.5,1.0
+U1585,Curious Sampler,3,Law & Social Sciences|Machine Learning & AI,38.4,Personal Development,0.3,65,0.6,0.9
+U1586,Fast Learner,1,Health & Medicine|Web Development|Machine Learning & AI,9.8,Science & Engineering,0.8,82,0.7,1.2
+U1587,Fast Learner,1,Graphic Design & Media,6.0,Law & Social Sciences,0.8,82,0.7,1.2
+U1588,Steady Learner,2,Personal Development,7.6,Law & Social Sciences,0.65,70,0.5,1.0
+U1589,Specialist,1,Health & Medicine,2.1,Web Development,0.75,78,0.65,1.1
+U1590,Struggling,1,Cybersecurity|Law & Social Sciences,9.8,Data Science & Analytics,0.4,52,0.25,0.75
+U1591,Curious Sampler,1,Cybersecurity|Cloud & DevOps|Web Development,7.6,Web Development,0.3,65,0.6,0.9
+U1592,Fast Learner,1,Science & Engineering|Machine Learning & AI,11.2,Health & Medicine,0.8,82,0.7,1.2
+U1593,Specialist,1,Cloud & DevOps,7.1,Business & Finance,0.75,78,0.65,1.1
+U1594,Struggling,1,Cloud & DevOps|Science & Engineering,10.0,Science & Engineering,0.4,52,0.25,0.75
+U1595,Specialist,2,Data Science & Analytics,3.9,Cloud & DevOps,0.75,78,0.65,1.1
+U1596,Steady Learner,2,Business & Finance|Science & Engineering|Health & Medicine,12.1,Cybersecurity,0.65,70,0.5,1.0
+U1597,Struggling,3,Machine Learning & AI,4.2,Cybersecurity,0.4,52,0.25,0.75
+U1598,Steady Learner,1,Web Development|Graphic Design & Media,6.0,Web Development,0.65,70,0.5,1.0
+U1599,Steady Learner,1,Cybersecurity,9.0,Data Science & Analytics,0.65,70,0.5,1.0
+U1600,Specialist,2,Music & Arts|Business & Finance,6.1,Cloud & DevOps,0.75,78,0.65,1.1
+U1601,Fast Learner,1,Health & Medicine|Programming & Software Dev|Data Science & Analytics,2.4,Machine Learning & AI,0.8,82,0.7,1.2
+U1602,Struggling,1,Machine Learning & AI|Health & Medicine,8.5,Law & Social Sciences,0.4,52,0.25,0.75
+U1603,Steady Learner,3,Music & Arts|Programming & Software Dev|Personal Development,6.1,Web Development,0.65,70,0.5,1.0
+U1604,Steady Learner,2,Law & Social Sciences|Cybersecurity,2.3,Health & Medicine,0.65,70,0.5,1.0
+U1605,Steady Learner,2,Data Science & Analytics|Machine Learning & AI|Web Development,6.2,Web Development,0.65,70,0.5,1.0
+U1606,Steady Learner,2,Graphic Design & Media,5.3,Cybersecurity,0.65,70,0.5,1.0
+U1607,Steady Learner,3,Cloud & DevOps,8.2,Data Science & Analytics,0.65,70,0.5,1.0
+U1608,Steady Learner,2,Programming & Software Dev|Machine Learning & AI,21.6,Health & Medicine,0.65,70,0.5,1.0
+U1609,Struggling,2,Cybersecurity,11.5,Web Development,0.4,52,0.25,0.75
+U1610,Specialist,2,Business & Finance,14.5,Web Development,0.75,78,0.65,1.1
+U1611,Fast Learner,3,Programming & Software Dev|Data Science & Analytics,7.9,Data Science & Analytics,0.8,82,0.7,1.2
+U1612,Steady Learner,1,Machine Learning & AI|Web Development,5.9,Cloud & DevOps,0.65,70,0.5,1.0
+U1613,Steady Learner,3,Cloud & DevOps|Programming & Software Dev,4.9,Business & Finance,0.65,70,0.5,1.0
+U1614,Curious Sampler,2,Cybersecurity,6.6,Programming & Software Dev,0.3,65,0.6,0.9
+U1615,Curious Sampler,2,Personal Development,4.4,Health & Medicine,0.3,65,0.6,0.9
+U1616,Fast Learner,2,Web Development|Music & Arts,3.9,Science & Engineering,0.8,82,0.7,1.2
+U1617,Curious Sampler,1,Programming & Software Dev,9.8,Law & Social Sciences,0.3,65,0.6,0.9
+U1618,Struggling,1,Business & Finance|Cloud & DevOps|Programming & Software Dev,12.9,Music & Arts,0.4,52,0.25,0.75
+U1619,Steady Learner,1,Personal Development,3.5,Cybersecurity,0.65,70,0.5,1.0
+U1620,Curious Sampler,2,Machine Learning & AI|Data Science & Analytics,5.7,Programming & Software Dev,0.3,65,0.6,0.9
+U1621,Struggling,2,Personal Development,13.2,Web Development,0.4,52,0.25,0.75
+U1622,Specialist,2,Programming & Software Dev,22.6,Business & Finance,0.75,78,0.65,1.1
+U1623,Steady Learner,1,Business & Finance|Cybersecurity,10.4,Law & Social Sciences,0.65,70,0.5,1.0
+U1624,Steady Learner,1,Personal Development|Health & Medicine,6.9,Personal Development,0.65,70,0.5,1.0
+U1625,Curious Sampler,2,Personal Development|Programming & Software Dev|Music & Arts,5.3,Health & Medicine,0.3,65,0.6,0.9
+U1626,Steady Learner,2,Health & Medicine|Music & Arts,10.1,Business & Finance,0.65,70,0.5,1.0
+U1627,Curious Sampler,1,Cloud & DevOps,23.9,Web Development,0.3,65,0.6,0.9
+U1628,Steady Learner,2,Law & Social Sciences|Health & Medicine|Business & Finance,12.2,Cloud & DevOps,0.65,70,0.5,1.0
+U1629,Steady Learner,1,Cybersecurity|Web Development|Law & Social Sciences,7.1,Cybersecurity,0.65,70,0.5,1.0
+U1630,Steady Learner,1,Graphic Design & Media|Business & Finance,4.2,Programming & Software Dev,0.65,70,0.5,1.0
+U1631,Specialist,1,Programming & Software Dev|Cloud & DevOps|Personal Development,21.0,Music & Arts,0.75,78,0.65,1.1
+U1632,Steady Learner,1,Music & Arts|Personal Development|Business & Finance,6.6,Music & Arts,0.65,70,0.5,1.0
+U1633,Steady Learner,1,Personal Development,9.5,Web Development,0.65,70,0.5,1.0
+U1634,Fast Learner,2,Programming & Software Dev,18.8,Science & Engineering,0.8,82,0.7,1.2
+U1635,Struggling,3,Cybersecurity|Science & Engineering|Data Science & Analytics,3.8,Law & Social Sciences,0.4,52,0.25,0.75
+U1636,Struggling,2,Programming & Software Dev,6.2,Machine Learning & AI,0.4,52,0.25,0.75
+U1637,Fast Learner,3,Machine Learning & AI|Health & Medicine|Web Development,4.6,Machine Learning & AI,0.8,82,0.7,1.2
+U1638,Curious Sampler,1,Cybersecurity|Programming & Software Dev|Business & Finance,12.6,Web Development,0.3,65,0.6,0.9
+U1639,Specialist,1,Data Science & Analytics,5.7,Music & Arts,0.75,78,0.65,1.1
+U1640,Curious Sampler,1,Web Development,15.3,Data Science & Analytics,0.3,65,0.6,0.9
+U1641,Steady Learner,2,Business & Finance|Science & Engineering,4.3,Web Development,0.65,70,0.5,1.0
+U1642,Steady Learner,2,Science & Engineering|Data Science & Analytics,6.4,Health & Medicine,0.65,70,0.5,1.0
+U1643,Curious Sampler,2,Business & Finance,9.4,Machine Learning & AI,0.3,65,0.6,0.9
+U1644,Fast Learner,1,Web Development|Graphic Design & Media|Music & Arts,4.5,Graphic Design & Media,0.8,82,0.7,1.2
+U1645,Fast Learner,2,Law & Social Sciences|Cloud & DevOps|Science & Engineering,5.1,Business & Finance,0.8,82,0.7,1.2
+U1646,Fast Learner,1,Law & Social Sciences,3.6,Music & Arts,0.8,82,0.7,1.2
+U1647,Struggling,2,Music & Arts,1.6,Cybersecurity,0.4,52,0.25,0.75
+U1648,Fast Learner,1,Business & Finance,7.0,Cloud & DevOps,0.8,82,0.7,1.2
+U1649,Fast Learner,2,Health & Medicine|Data Science & Analytics,14.2,Data Science & Analytics,0.8,82,0.7,1.2
+U1650,Struggling,2,Music & Arts,4.4,Personal Development,0.4,52,0.25,0.75
+U1651,Fast Learner,1,Graphic Design & Media,11.2,Law & Social Sciences,0.8,82,0.7,1.2
+U1652,Curious Sampler,2,Law & Social Sciences,15.8,Science & Engineering,0.3,65,0.6,0.9
+U1653,Fast Learner,2,Graphic Design & Media|Web Development,5.8,Health & Medicine,0.8,82,0.7,1.2
+U1654,Struggling,1,Graphic Design & Media|Cybersecurity|Science & Engineering,3.2,Cloud & DevOps,0.4,52,0.25,0.75
+U1655,Fast Learner,1,Science & Engineering|Programming & Software Dev,9.5,Law & Social Sciences,0.8,82,0.7,1.2
+U1656,Steady Learner,2,Cloud & DevOps|Personal Development|Law & Social Sciences,9.3,Science & Engineering,0.65,70,0.5,1.0
+U1657,Steady Learner,1,Music & Arts,6.4,Health & Medicine,0.65,70,0.5,1.0
+U1658,Struggling,2,Business & Finance|Web Development,4.6,Graphic Design & Media,0.4,52,0.25,0.75
+U1659,Steady Learner,1,Machine Learning & AI|Graphic Design & Media,10.2,Graphic Design & Media,0.65,70,0.5,1.0
+U1660,Struggling,2,Music & Arts,2.8,Web Development,0.4,52,0.25,0.75
+U1661,Steady Learner,2,Personal Development|Web Development|Cybersecurity,8.4,Personal Development,0.65,70,0.5,1.0
+U1662,Curious Sampler,2,Law & Social Sciences,10.7,Personal Development,0.3,65,0.6,0.9
+U1663,Struggling,2,Graphic Design & Media|Machine Learning & AI,6.6,Cloud & DevOps,0.4,52,0.25,0.75
+U1664,Fast Learner,3,Business & Finance|Web Development,5.1,Programming & Software Dev,0.8,82,0.7,1.2
+U1665,Fast Learner,1,Data Science & Analytics,17.8,Graphic Design & Media,0.8,82,0.7,1.2
+U1666,Struggling,2,Business & Finance,4.6,Data Science & Analytics,0.4,52,0.25,0.75
+U1667,Struggling,1,Data Science & Analytics,11.6,Law & Social Sciences,0.4,52,0.25,0.75
+U1668,Fast Learner,2,Personal Development,13.3,Business & Finance,0.8,82,0.7,1.2
+U1669,Fast Learner,3,Programming & Software Dev|Graphic Design & Media,3.2,Programming & Software Dev,0.8,82,0.7,1.2
+U1670,Fast Learner,1,Law & Social Sciences|Programming & Software Dev,5.2,Health & Medicine,0.8,82,0.7,1.2
+U1671,Steady Learner,2,Cloud & DevOps|Science & Engineering|Programming & Software Dev,2.8,Music & Arts,0.65,70,0.5,1.0
+U1672,Fast Learner,1,Music & Arts|Science & Engineering,9.8,Music & Arts,0.8,82,0.7,1.2
+U1673,Struggling,2,Personal Development,11.5,Cybersecurity,0.4,52,0.25,0.75
+U1674,Struggling,1,Data Science & Analytics|Programming & Software Dev,9.1,Business & Finance,0.4,52,0.25,0.75
+U1675,Steady Learner,1,Machine Learning & AI|Law & Social Sciences|Personal Development,6.2,Business & Finance,0.65,70,0.5,1.0
+U1676,Fast Learner,2,Programming & Software Dev|Web Development,9.1,Music & Arts,0.8,82,0.7,1.2
+U1677,Fast Learner,1,Cybersecurity|Programming & Software Dev|Law & Social Sciences,4.2,Law & Social Sciences,0.8,82,0.7,1.2
+U1678,Steady Learner,1,Machine Learning & AI,5.9,Machine Learning & AI,0.65,70,0.5,1.0
+U1679,Fast Learner,2,Law & Social Sciences|Business & Finance,2.7,Programming & Software Dev,0.8,82,0.7,1.2
+U1680,Struggling,1,Business & Finance|Science & Engineering|Health & Medicine,8.1,Machine Learning & AI,0.4,52,0.25,0.75
+U1681,Fast Learner,1,Law & Social Sciences|Music & Arts,6.7,Health & Medicine,0.8,82,0.7,1.2
+U1682,Struggling,1,Programming & Software Dev|Web Development,4.6,Personal Development,0.4,52,0.25,0.75
+U1683,Steady Learner,1,Graphic Design & Media|Law & Social Sciences,8.1,Law & Social Sciences,0.65,70,0.5,1.0
+U1684,Specialist,2,Cybersecurity|Business & Finance,10.9,Law & Social Sciences,0.75,78,0.65,1.1
+U1685,Curious Sampler,3,Graphic Design & Media|Health & Medicine,22.9,Graphic Design & Media,0.3,65,0.6,0.9
+U1686,Fast Learner,1,Personal Development|Web Development,6.8,Cloud & DevOps,0.8,82,0.7,1.2
+U1687,Steady Learner,3,Business & Finance|Web Development,10.6,Data Science & Analytics,0.65,70,0.5,1.0
+U1688,Struggling,2,Personal Development|Science & Engineering,13.9,Business & Finance,0.4,52,0.25,0.75
+U1689,Curious Sampler,2,Music & Arts|Law & Social Sciences,1.7,Business & Finance,0.3,65,0.6,0.9
+U1690,Fast Learner,2,Graphic Design & Media|Music & Arts,3.5,Machine Learning & AI,0.8,82,0.7,1.2
+U1691,Fast Learner,2,Machine Learning & AI|Data Science & Analytics|Health & Medicine,13.6,Health & Medicine,0.8,82,0.7,1.2
+U1692,Fast Learner,2,Music & Arts,3.5,Cybersecurity,0.8,82,0.7,1.2
+U1693,Struggling,2,Cybersecurity|Cloud & DevOps,26.0,Personal Development,0.4,52,0.25,0.75
+U1694,Specialist,1,Business & Finance|Cloud & DevOps|Science & Engineering,18.4,Graphic Design & Media,0.75,78,0.65,1.1
+U1695,Curious Sampler,1,Data Science & Analytics,6.6,Machine Learning & AI,0.3,65,0.6,0.9
+U1696,Specialist,1,Science & Engineering|Health & Medicine|Music & Arts,15.7,Web Development,0.75,78,0.65,1.1
+U1697,Struggling,1,Personal Development,5.1,Business & Finance,0.4,52,0.25,0.75
+U1698,Fast Learner,2,Data Science & Analytics|Science & Engineering,11.3,Health & Medicine,0.8,82,0.7,1.2
+U1699,Steady Learner,2,Graphic Design & Media|Health & Medicine|Data Science & Analytics,8.6,Personal Development,0.65,70,0.5,1.0
+U1700,Fast Learner,2,Graphic Design & Media,7.5,Cloud & DevOps,0.8,82,0.7,1.2
+U1701,Fast Learner,1,Business & Finance,8.0,Business & Finance,0.8,82,0.7,1.2
+U1702,Steady Learner,1,Cloud & DevOps|Science & Engineering,15.4,Law & Social Sciences,0.65,70,0.5,1.0
+U1703,Fast Learner,2,Science & Engineering,4.6,Web Development,0.8,82,0.7,1.2
+U1704,Curious Sampler,2,Health & Medicine,3.2,Cloud & DevOps,0.3,65,0.6,0.9
+U1705,Steady Learner,2,Personal Development|Business & Finance,11.2,Business & Finance,0.65,70,0.5,1.0
+U1706,Steady Learner,2,Cybersecurity,4.9,Programming & Software Dev,0.65,70,0.5,1.0
+U1707,Steady Learner,2,Music & Arts|Personal Development,13.7,Programming & Software Dev,0.65,70,0.5,1.0
+U1708,Fast Learner,1,Data Science & Analytics|Personal Development,4.2,Cloud & DevOps,0.8,82,0.7,1.2
+U1709,Steady Learner,1,Health & Medicine,4.3,Science & Engineering,0.65,70,0.5,1.0
+U1710,Steady Learner,2,Personal Development|Music & Arts,11.1,Programming & Software Dev,0.65,70,0.5,1.0
+U1711,Steady Learner,2,Graphic Design & Media,10.2,Machine Learning & AI,0.65,70,0.5,1.0
+U1712,Steady Learner,1,Music & Arts|Graphic Design & Media,7.8,Cloud & DevOps,0.65,70,0.5,1.0
+U1713,Steady Learner,2,Health & Medicine,4.4,Cloud & DevOps,0.65,70,0.5,1.0
+U1714,Steady Learner,3,Cybersecurity|Music & Arts,10.8,Data Science & Analytics,0.65,70,0.5,1.0
+U1715,Curious Sampler,2,Data Science & Analytics|Business & Finance,11.0,Law & Social Sciences,0.3,65,0.6,0.9
+U1716,Steady Learner,1,Business & Finance,13.0,Machine Learning & AI,0.65,70,0.5,1.0
+U1717,Struggling,2,Science & Engineering|Business & Finance,20.6,Machine Learning & AI,0.4,52,0.25,0.75
+U1718,Curious Sampler,1,Music & Arts|Health & Medicine,5.7,Programming & Software Dev,0.3,65,0.6,0.9
+U1719,Fast Learner,1,Cybersecurity|Data Science & Analytics,2.7,Business & Finance,0.8,82,0.7,1.2
+U1720,Steady Learner,1,Graphic Design & Media,10.3,Cloud & DevOps,0.65,70,0.5,1.0
+U1721,Steady Learner,2,Data Science & Analytics|Graphic Design & Media,9.8,Data Science & Analytics,0.65,70,0.5,1.0
+U1722,Struggling,2,Cloud & DevOps|Personal Development,3.4,Law & Social Sciences,0.4,52,0.25,0.75
+U1723,Fast Learner,2,Programming & Software Dev|Web Development,5.2,Business & Finance,0.8,82,0.7,1.2
+U1724,Specialist,2,Web Development,8.2,Personal Development,0.75,78,0.65,1.1
+U1725,Steady Learner,2,Programming & Software Dev|Health & Medicine,11.9,Business & Finance,0.65,70,0.5,1.0
+U1726,Curious Sampler,1,Science & Engineering|Law & Social Sciences|Graphic Design & Media,5.7,Web Development,0.3,65,0.6,0.9
+U1727,Fast Learner,2,Data Science & Analytics|Graphic Design & Media,12.9,Machine Learning & AI,0.8,82,0.7,1.2
+U1728,Specialist,2,Data Science & Analytics,6.5,Science & Engineering,0.75,78,0.65,1.1
+U1729,Curious Sampler,1,Health & Medicine|Cybersecurity,4.8,Machine Learning & AI,0.3,65,0.6,0.9
+U1730,Curious Sampler,1,Law & Social Sciences|Data Science & Analytics|Personal Development,2.7,Personal Development,0.3,65,0.6,0.9
+U1731,Fast Learner,2,Machine Learning & AI|Web Development,5.7,Graphic Design & Media,0.8,82,0.7,1.2
+U1732,Steady Learner,2,Graphic Design & Media,11.2,Health & Medicine,0.65,70,0.5,1.0
+U1733,Fast Learner,1,Web Development|Science & Engineering|Machine Learning & AI,8.6,Cybersecurity,0.8,82,0.7,1.2
+U1734,Steady Learner,2,Business & Finance|Web Development|Data Science & Analytics,6.8,Cloud & DevOps,0.65,70,0.5,1.0
+U1735,Specialist,3,Science & Engineering,22.8,Music & Arts,0.75,78,0.65,1.1
+U1736,Specialist,3,Cybersecurity|Data Science & Analytics,6.4,Graphic Design & Media,0.75,78,0.65,1.1
+U1737,Curious Sampler,3,Data Science & Analytics|Machine Learning & AI,7.6,Health & Medicine,0.3,65,0.6,0.9
+U1738,Specialist,2,Law & Social Sciences,3.1,Graphic Design & Media,0.75,78,0.65,1.1
+U1739,Steady Learner,2,Programming & Software Dev,5.6,Data Science & Analytics,0.65,70,0.5,1.0
+U1740,Specialist,1,Data Science & Analytics|Health & Medicine,4.4,Cloud & DevOps,0.75,78,0.65,1.1
+U1741,Curious Sampler,3,Cloud & DevOps|Programming & Software Dev,6.4,Personal Development,0.3,65,0.6,0.9
+U1742,Specialist,1,Business & Finance|Cybersecurity|Data Science & Analytics,8.4,Web Development,0.75,78,0.65,1.1
+U1743,Struggling,2,Cloud & DevOps|Business & Finance|Health & Medicine,14.4,Business & Finance,0.4,52,0.25,0.75
+U1744,Struggling,1,Data Science & Analytics,7.6,Cloud & DevOps,0.4,52,0.25,0.75
+U1745,Struggling,2,Science & Engineering,8.0,Machine Learning & AI,0.4,52,0.25,0.75
+U1746,Fast Learner,1,Health & Medicine|Music & Arts,17.4,Cybersecurity,0.8,82,0.7,1.2
+U1747,Steady Learner,1,Programming & Software Dev,5.6,Cybersecurity,0.65,70,0.5,1.0
+U1748,Fast Learner,1,Music & Arts|Business & Finance|Web Development,3.9,Programming & Software Dev,0.8,82,0.7,1.2
+U1749,Struggling,3,Web Development|Law & Social Sciences,6.6,Personal Development,0.4,52,0.25,0.75
+U1750,Curious Sampler,3,Data Science & Analytics|Business & Finance,3.5,Machine Learning & AI,0.3,65,0.6,0.9
+U1751,Specialist,1,Graphic Design & Media,5.6,Science & Engineering,0.75,78,0.65,1.1
+U1752,Fast Learner,1,Music & Arts,17.7,Cloud & DevOps,0.8,82,0.7,1.2
+U1753,Steady Learner,3,Music & Arts|Personal Development|Cloud & DevOps,8.0,Health & Medicine,0.65,70,0.5,1.0
+U1754,Specialist,1,Machine Learning & AI|Graphic Design & Media,3.5,Graphic Design & Media,0.75,78,0.65,1.1
+U1755,Struggling,2,Graphic Design & Media,3.7,Health & Medicine,0.4,52,0.25,0.75
+U1756,Struggling,2,Graphic Design & Media|Machine Learning & AI|Health & Medicine,8.4,Business & Finance,0.4,52,0.25,0.75
+U1757,Fast Learner,1,Music & Arts|Law & Social Sciences,6.9,Music & Arts,0.8,82,0.7,1.2
+U1758,Steady Learner,2,Cybersecurity|Graphic Design & Media|Law & Social Sciences,7.2,Cloud & DevOps,0.65,70,0.5,1.0
+U1759,Struggling,1,Machine Learning & AI,4.8,Business & Finance,0.4,52,0.25,0.75
+U1760,Steady Learner,3,Music & Arts|Cybersecurity,5.0,Personal Development,0.65,70,0.5,1.0
+U1761,Steady Learner,1,Cybersecurity|Machine Learning & AI|Data Science & Analytics,17.8,Music & Arts,0.65,70,0.5,1.0
+U1762,Struggling,2,Graphic Design & Media,17.7,Graphic Design & Media,0.4,52,0.25,0.75
+U1763,Specialist,1,Data Science & Analytics|Programming & Software Dev|Web Development,11.2,Law & Social Sciences,0.75,78,0.65,1.1
+U1764,Struggling,2,Law & Social Sciences,2.6,Cloud & DevOps,0.4,52,0.25,0.75
+U1765,Specialist,1,Business & Finance|Science & Engineering,9.2,Graphic Design & Media,0.75,78,0.65,1.1
+U1766,Struggling,1,Law & Social Sciences,9.0,Graphic Design & Media,0.4,52,0.25,0.75
+U1767,Steady Learner,2,Business & Finance|Law & Social Sciences,17.8,Music & Arts,0.65,70,0.5,1.0
+U1768,Steady Learner,1,Cybersecurity|Programming & Software Dev,22.5,Personal Development,0.65,70,0.5,1.0
+U1769,Struggling,1,Data Science & Analytics|Cloud & DevOps,7.5,Programming & Software Dev,0.4,52,0.25,0.75
+U1770,Struggling,1,Cloud & DevOps,17.9,Business & Finance,0.4,52,0.25,0.75
+U1771,Steady Learner,2,Graphic Design & Media,5.1,Music & Arts,0.65,70,0.5,1.0
+U1772,Steady Learner,1,Health & Medicine,5.1,Web Development,0.65,70,0.5,1.0
+U1773,Steady Learner,2,Machine Learning & AI|Graphic Design & Media,5.0,Machine Learning & AI,0.65,70,0.5,1.0
+U1774,Steady Learner,1,Business & Finance|Data Science & Analytics,9.5,Business & Finance,0.65,70,0.5,1.0
+U1775,Curious Sampler,2,Web Development|Cloud & DevOps,10.6,Personal Development,0.3,65,0.6,0.9
+U1776,Specialist,1,Law & Social Sciences,7.4,Science & Engineering,0.75,78,0.65,1.1
+U1777,Curious Sampler,1,Music & Arts|Law & Social Sciences|Programming & Software Dev,17.4,Business & Finance,0.3,65,0.6,0.9
+U1778,Struggling,1,Web Development|Machine Learning & AI|Science & Engineering,22.4,Graphic Design & Media,0.4,52,0.25,0.75
+U1779,Fast Learner,1,Music & Arts,13.2,Law & Social Sciences,0.8,82,0.7,1.2
+U1780,Curious Sampler,2,Law & Social Sciences|Graphic Design & Media|Cybersecurity,20.1,Cloud & DevOps,0.3,65,0.6,0.9
+U1781,Steady Learner,3,Machine Learning & AI,4.8,Music & Arts,0.65,70,0.5,1.0
+U1782,Steady Learner,2,Music & Arts|Machine Learning & AI,5.2,Machine Learning & AI,0.65,70,0.5,1.0
+U1783,Steady Learner,2,Personal Development,5.2,Music & Arts,0.65,70,0.5,1.0
+U1784,Struggling,3,Data Science & Analytics|Health & Medicine,26.2,Music & Arts,0.4,52,0.25,0.75
+U1785,Steady Learner,2,Data Science & Analytics|Programming & Software Dev|Web Development,3.5,Health & Medicine,0.65,70,0.5,1.0
+U1786,Struggling,3,Personal Development|Law & Social Sciences,9.0,Cloud & DevOps,0.4,52,0.25,0.75
+U1787,Curious Sampler,1,Machine Learning & AI|Programming & Software Dev,13.0,Data Science & Analytics,0.3,65,0.6,0.9
+U1788,Curious Sampler,1,Cybersecurity,3.2,Programming & Software Dev,0.3,65,0.6,0.9
+U1789,Fast Learner,2,Health & Medicine|Cybersecurity,16.7,Data Science & Analytics,0.8,82,0.7,1.2
+U1790,Steady Learner,1,Web Development,4.6,Programming & Software Dev,0.65,70,0.5,1.0
+U1791,Steady Learner,1,Science & Engineering,11.8,Web Development,0.65,70,0.5,1.0
+U1792,Steady Learner,3,Business & Finance|Machine Learning & AI,6.9,Cybersecurity,0.65,70,0.5,1.0
+U1793,Struggling,3,Graphic Design & Media,11.1,Cloud & DevOps,0.4,52,0.25,0.75
+U1794,Specialist,1,Business & Finance|Cloud & DevOps,12.9,Cloud & DevOps,0.75,78,0.65,1.1
+U1795,Specialist,3,Data Science & Analytics,5.7,Science & Engineering,0.75,78,0.65,1.1
+U1796,Struggling,2,Programming & Software Dev,5.1,Graphic Design & Media,0.4,52,0.25,0.75
+U1797,Struggling,2,Web Development|Music & Arts,12.3,Data Science & Analytics,0.4,52,0.25,0.75
+U1798,Specialist,1,Business & Finance,8.0,Web Development,0.75,78,0.65,1.1
+U1799,Steady Learner,3,Graphic Design & Media|Cloud & DevOps|Music & Arts,2.5,Programming & Software Dev,0.65,70,0.5,1.0
+U1800,Steady Learner,1,Machine Learning & AI|Personal Development,11.2,Data Science & Analytics,0.65,70,0.5,1.0
+U1801,Steady Learner,2,Data Science & Analytics,21.6,Health & Medicine,0.65,70,0.5,1.0
+U1802,Fast Learner,2,Personal Development,6.9,Web Development,0.8,82,0.7,1.2
+U1803,Steady Learner,2,Web Development|Health & Medicine,13.3,Machine Learning & AI,0.65,70,0.5,1.0
+U1804,Struggling,1,Health & Medicine|Personal Development,10.6,Law & Social Sciences,0.4,52,0.25,0.75
+U1805,Steady Learner,1,Cybersecurity|Machine Learning & AI|Science & Engineering,15.2,Business & Finance,0.65,70,0.5,1.0
+U1806,Steady Learner,2,Science & Engineering,29.3,Law & Social Sciences,0.65,70,0.5,1.0
+U1807,Steady Learner,1,Machine Learning & AI,22.0,Health & Medicine,0.65,70,0.5,1.0
+U1808,Fast Learner,1,Machine Learning & AI,4.0,Data Science & Analytics,0.8,82,0.7,1.2
+U1809,Struggling,3,Programming & Software Dev,7.2,Science & Engineering,0.4,52,0.25,0.75
+U1810,Steady Learner,3,Graphic Design & Media,12.1,Graphic Design & Media,0.65,70,0.5,1.0
+U1811,Struggling,1,Health & Medicine|Programming & Software Dev,8.6,Cloud & DevOps,0.4,52,0.25,0.75
+U1812,Fast Learner,1,Business & Finance|Cybersecurity,2.1,Web Development,0.8,82,0.7,1.2
+U1813,Fast Learner,2,Web Development|Business & Finance,9.4,Programming & Software Dev,0.8,82,0.7,1.2
+U1814,Fast Learner,3,Web Development|Programming & Software Dev,10.3,Web Development,0.8,82,0.7,1.2
+U1815,Steady Learner,2,Programming & Software Dev,6.4,Data Science & Analytics,0.65,70,0.5,1.0
+U1816,Curious Sampler,1,Personal Development,12.3,Health & Medicine,0.3,65,0.6,0.9
+U1817,Fast Learner,3,Web Development|Programming & Software Dev,6.1,Cloud & DevOps,0.8,82,0.7,1.2
+U1818,Fast Learner,2,Cloud & DevOps|Machine Learning & AI,10.2,Music & Arts,0.8,82,0.7,1.2
+U1819,Fast Learner,1,Health & Medicine|Cloud & DevOps,7.9,Machine Learning & AI,0.8,82,0.7,1.2
+U1820,Specialist,2,Graphic Design & Media|Cloud & DevOps|Health & Medicine,28.4,Graphic Design & Media,0.75,78,0.65,1.1
+U1821,Steady Learner,2,Health & Medicine,6.4,Machine Learning & AI,0.65,70,0.5,1.0
+U1822,Steady Learner,1,Science & Engineering|Personal Development,7.3,Personal Development,0.65,70,0.5,1.0
+U1823,Fast Learner,2,Science & Engineering|Data Science & Analytics,13.4,Machine Learning & AI,0.8,82,0.7,1.2
+U1824,Fast Learner,3,Web Development|Music & Arts|Business & Finance,11.1,Business & Finance,0.8,82,0.7,1.2
+U1825,Fast Learner,1,Science & Engineering,11.0,Law & Social Sciences,0.8,82,0.7,1.2
+U1826,Struggling,2,Data Science & Analytics,7.2,Programming & Software Dev,0.4,52,0.25,0.75
+U1827,Fast Learner,2,Music & Arts|Graphic Design & Media,3.9,Programming & Software Dev,0.8,82,0.7,1.2
+U1828,Fast Learner,1,Law & Social Sciences,19.9,Personal Development,0.8,82,0.7,1.2
+U1829,Fast Learner,2,Law & Social Sciences|Cloud & DevOps,8.5,Cloud & DevOps,0.8,82,0.7,1.2
+U1830,Steady Learner,2,Law & Social Sciences|Graphic Design & Media|Cybersecurity,3.3,Business & Finance,0.65,70,0.5,1.0
+U1831,Curious Sampler,2,Web Development,6.7,Music & Arts,0.3,65,0.6,0.9
+U1832,Curious Sampler,1,Cloud & DevOps|Personal Development,5.6,Personal Development,0.3,65,0.6,0.9
+U1833,Steady Learner,1,Business & Finance,9.7,Law & Social Sciences,0.65,70,0.5,1.0
+U1834,Specialist,3,Personal Development,11.1,Data Science & Analytics,0.75,78,0.65,1.1
+U1835,Steady Learner,3,Graphic Design & Media,6.2,Science & Engineering,0.65,70,0.5,1.0
+U1836,Steady Learner,3,Health & Medicine,12.7,Health & Medicine,0.65,70,0.5,1.0
+U1837,Struggling,1,Programming & Software Dev|Health & Medicine|Science & Engineering,5.3,Science & Engineering,0.4,52,0.25,0.75
+U1838,Curious Sampler,2,Business & Finance|Law & Social Sciences|Science & Engineering,12.6,Cloud & DevOps,0.3,65,0.6,0.9
+U1839,Steady Learner,2,Health & Medicine|Graphic Design & Media,35.2,Business & Finance,0.65,70,0.5,1.0
+U1840,Fast Learner,3,Machine Learning & AI|Personal Development,15.0,Personal Development,0.8,82,0.7,1.2
+U1841,Steady Learner,1,Web Development,6.7,Cybersecurity,0.65,70,0.5,1.0
+U1842,Curious Sampler,2,Music & Arts|Machine Learning & AI,13.2,Data Science & Analytics,0.3,65,0.6,0.9
+U1843,Steady Learner,2,Programming & Software Dev|Personal Development,9.6,Music & Arts,0.65,70,0.5,1.0
+U1844,Struggling,1,Personal Development|Law & Social Sciences,5.2,Personal Development,0.4,52,0.25,0.75
+U1845,Curious Sampler,1,Data Science & Analytics|Business & Finance|Science & Engineering,3.7,Business & Finance,0.3,65,0.6,0.9
+U1846,Fast Learner,2,Web Development,5.1,Science & Engineering,0.8,82,0.7,1.2
+U1847,Fast Learner,1,Music & Arts|Web Development,6.6,Web Development,0.8,82,0.7,1.2
+U1848,Steady Learner,2,Programming & Software Dev,10.5,Cybersecurity,0.65,70,0.5,1.0
+U1849,Struggling,3,Web Development|Data Science & Analytics|Law & Social Sciences,6.1,Law & Social Sciences,0.4,52,0.25,0.75
+U1850,Curious Sampler,2,Health & Medicine|Web Development,2.7,Web Development,0.3,65,0.6,0.9
+U1851,Curious Sampler,2,Business & Finance,5.2,Web Development,0.3,65,0.6,0.9
+U1852,Fast Learner,1,Health & Medicine|Web Development,7.1,Cybersecurity,0.8,82,0.7,1.2
+U1853,Steady Learner,2,Web Development|Data Science & Analytics|Cybersecurity,12.3,Law & Social Sciences,0.65,70,0.5,1.0
+U1854,Specialist,3,Data Science & Analytics|Machine Learning & AI,11.3,Law & Social Sciences,0.75,78,0.65,1.1
+U1855,Steady Learner,1,Personal Development,2.4,Health & Medicine,0.65,70,0.5,1.0
+U1856,Struggling,3,Cloud & DevOps|Personal Development,14.7,Science & Engineering,0.4,52,0.25,0.75
+U1857,Steady Learner,2,Machine Learning & AI,8.8,Personal Development,0.65,70,0.5,1.0
+U1858,Fast Learner,1,Science & Engineering|Web Development|Health & Medicine,7.9,Cybersecurity,0.8,82,0.7,1.2
+U1859,Steady Learner,2,Business & Finance|Cybersecurity,6.3,Music & Arts,0.65,70,0.5,1.0
+U1860,Struggling,2,Science & Engineering|Health & Medicine,14.5,Health & Medicine,0.4,52,0.25,0.75
+U1861,Curious Sampler,2,Data Science & Analytics,1.7,Business & Finance,0.3,65,0.6,0.9
+U1862,Struggling,1,Machine Learning & AI,3.0,Personal Development,0.4,52,0.25,0.75
+U1863,Struggling,3,Music & Arts|Science & Engineering,4.0,Programming & Software Dev,0.4,52,0.25,0.75
+U1864,Curious Sampler,1,Science & Engineering,5.5,Data Science & Analytics,0.3,65,0.6,0.9
+U1865,Specialist,2,Cloud & DevOps|Web Development|Data Science & Analytics,5.5,Business & Finance,0.75,78,0.65,1.1
+U1866,Fast Learner,1,Machine Learning & AI|Data Science & Analytics,9.6,Machine Learning & AI,0.8,82,0.7,1.2
+U1867,Struggling,1,Business & Finance|Cybersecurity,3.5,Programming & Software Dev,0.4,52,0.25,0.75
+U1868,Steady Learner,1,Music & Arts|Data Science & Analytics|Graphic Design & Media,7.8,Science & Engineering,0.65,70,0.5,1.0
+U1869,Fast Learner,2,Programming & Software Dev,3.8,Cybersecurity,0.8,82,0.7,1.2
+U1870,Struggling,2,Music & Arts,6.4,Machine Learning & AI,0.4,52,0.25,0.75
+U1871,Curious Sampler,1,Music & Arts,5.5,Law & Social Sciences,0.3,65,0.6,0.9
+U1872,Curious Sampler,1,Law & Social Sciences|Cybersecurity,4.5,Cloud & DevOps,0.3,65,0.6,0.9
+U1873,Struggling,3,Graphic Design & Media,2.1,Health & Medicine,0.4,52,0.25,0.75
+U1874,Curious Sampler,2,Cloud & DevOps|Music & Arts,14.3,Music & Arts,0.3,65,0.6,0.9
+U1875,Curious Sampler,2,Health & Medicine|Law & Social Sciences,9.0,Programming & Software Dev,0.3,65,0.6,0.9
+U1876,Fast Learner,3,Machine Learning & AI|Programming & Software Dev|Law & Social Sciences,7.2,Programming & Software Dev,0.8,82,0.7,1.2
+U1877,Steady Learner,2,Cybersecurity|Health & Medicine,9.1,Machine Learning & AI,0.65,70,0.5,1.0
+U1878,Steady Learner,1,Business & Finance,6.2,Web Development,0.65,70,0.5,1.0
+U1879,Fast Learner,3,Music & Arts,6.3,Programming & Software Dev,0.8,82,0.7,1.2
+U1880,Steady Learner,1,Music & Arts,4.8,Graphic Design & Media,0.65,70,0.5,1.0
+U1881,Steady Learner,1,Music & Arts|Science & Engineering|Graphic Design & Media,7.7,Machine Learning & AI,0.65,70,0.5,1.0
+U1882,Fast Learner,1,Health & Medicine,5.1,Health & Medicine,0.8,82,0.7,1.2
+U1883,Fast Learner,2,Science & Engineering,8.2,Music & Arts,0.8,82,0.7,1.2
+U1884,Fast Learner,1,Personal Development,11.6,Personal Development,0.8,82,0.7,1.2
+U1885,Fast Learner,1,Law & Social Sciences|Cloud & DevOps,10.6,Data Science & Analytics,0.8,82,0.7,1.2
+U1886,Fast Learner,2,Cybersecurity,5.3,Science & Engineering,0.8,82,0.7,1.2
+U1887,Struggling,3,Science & Engineering|Personal Development,9.0,Data Science & Analytics,0.4,52,0.25,0.75
+U1888,Fast Learner,2,Science & Engineering|Web Development,12.4,Cloud & DevOps,0.8,82,0.7,1.2
+U1889,Steady Learner,1,Data Science & Analytics|Cloud & DevOps|Cybersecurity,2.3,Data Science & Analytics,0.65,70,0.5,1.0
+U1890,Specialist,2,Music & Arts,9.6,Machine Learning & AI,0.75,78,0.65,1.1
+U1891,Fast Learner,1,Cybersecurity,13.4,Data Science & Analytics,0.8,82,0.7,1.2
+U1892,Curious Sampler,1,Music & Arts|Business & Finance|Cloud & DevOps,8.2,Personal Development,0.3,65,0.6,0.9
+U1893,Fast Learner,1,Science & Engineering|Music & Arts|Data Science & Analytics,13.1,Personal Development,0.8,82,0.7,1.2
+U1894,Fast Learner,2,Machine Learning & AI,1.7,Business & Finance,0.8,82,0.7,1.2
+U1895,Steady Learner,3,Business & Finance|Cybersecurity,4.4,Law & Social Sciences,0.65,70,0.5,1.0
+U1896,Fast Learner,3,Graphic Design & Media|Health & Medicine,3.7,Graphic Design & Media,0.8,82,0.7,1.2
+U1897,Curious Sampler,1,Data Science & Analytics,8.9,Health & Medicine,0.3,65,0.6,0.9
+U1898,Fast Learner,1,Graphic Design & Media|Cybersecurity|Programming & Software Dev,2.2,Graphic Design & Media,0.8,82,0.7,1.2
+U1899,Fast Learner,2,Web Development|Machine Learning & AI,13.6,Web Development,0.8,82,0.7,1.2
+U1900,Struggling,3,Cybersecurity|Business & Finance,7.6,Data Science & Analytics,0.4,52,0.25,0.75
+U1901,Steady Learner,2,Law & Social Sciences,11.5,Music & Arts,0.65,70,0.5,1.0
+U1902,Struggling,3,Music & Arts|Health & Medicine,10.9,Science & Engineering,0.4,52,0.25,0.75
+U1903,Fast Learner,2,Cybersecurity,11.8,Law & Social Sciences,0.8,82,0.7,1.2
+U1904,Struggling,3,Web Development|Data Science & Analytics,9.9,Health & Medicine,0.4,52,0.25,0.75
+U1905,Specialist,1,Science & Engineering|Personal Development,2.5,Science & Engineering,0.75,78,0.65,1.1
+U1906,Struggling,1,Graphic Design & Media|Web Development,6.1,Machine Learning & AI,0.4,52,0.25,0.75
+U1907,Steady Learner,3,Cloud & DevOps,3.1,Health & Medicine,0.65,70,0.5,1.0
+U1908,Specialist,3,Personal Development|Web Development,8.2,Graphic Design & Media,0.75,78,0.65,1.1
+U1909,Specialist,1,Cybersecurity,7.0,Machine Learning & AI,0.75,78,0.65,1.1
+U1910,Fast Learner,1,Health & Medicine|Personal Development,10.0,Cybersecurity,0.8,82,0.7,1.2
+U1911,Struggling,1,Health & Medicine|Business & Finance,5.4,Web Development,0.4,52,0.25,0.75
+U1912,Struggling,2,Web Development|Science & Engineering,4.1,Cloud & DevOps,0.4,52,0.25,0.75
+U1913,Struggling,1,Music & Arts,11.1,Data Science & Analytics,0.4,52,0.25,0.75
+U1914,Struggling,3,Cloud & DevOps,3.4,Health & Medicine,0.4,52,0.25,0.75
+U1915,Fast Learner,2,Graphic Design & Media|Cloud & DevOps,8.6,Music & Arts,0.8,82,0.7,1.2
+U1916,Curious Sampler,3,Business & Finance|Science & Engineering|Personal Development,5.4,Health & Medicine,0.3,65,0.6,0.9
+U1917,Specialist,1,Music & Arts,14.5,Personal Development,0.75,78,0.65,1.1
+U1918,Struggling,2,Health & Medicine,12.9,Science & Engineering,0.4,52,0.25,0.75
+U1919,Specialist,3,Personal Development|Cloud & DevOps,1.4,Graphic Design & Media,0.75,78,0.65,1.1
+U1920,Curious Sampler,1,Machine Learning & AI|Business & Finance,3.8,Programming & Software Dev,0.3,65,0.6,0.9
+U1921,Steady Learner,1,Cybersecurity|Web Development,7.8,Health & Medicine,0.65,70,0.5,1.0
+U1922,Steady Learner,1,Science & Engineering|Data Science & Analytics,9.7,Web Development,0.65,70,0.5,1.0
+U1923,Struggling,2,Web Development|Law & Social Sciences,10.3,Cybersecurity,0.4,52,0.25,0.75
+U1924,Specialist,2,Business & Finance|Web Development,12.2,Health & Medicine,0.75,78,0.65,1.1
+U1925,Fast Learner,1,Health & Medicine,7.4,Cybersecurity,0.8,82,0.7,1.2
+U1926,Fast Learner,1,Programming & Software Dev|Web Development,4.4,Personal Development,0.8,82,0.7,1.2
+U1927,Fast Learner,3,Graphic Design & Media,8.7,Music & Arts,0.8,82,0.7,1.2
+U1928,Struggling,2,Business & Finance,10.2,Health & Medicine,0.4,52,0.25,0.75
+U1929,Struggling,3,Science & Engineering|Personal Development,7.2,Programming & Software Dev,0.4,52,0.25,0.75
+U1930,Fast Learner,3,Web Development|Business & Finance|Personal Development,10.6,Cybersecurity,0.8,82,0.7,1.2
+U1931,Struggling,1,Web Development|Business & Finance,7.2,Machine Learning & AI,0.4,52,0.25,0.75
+U1932,Curious Sampler,2,Business & Finance|Health & Medicine|Law & Social Sciences,8.7,Web Development,0.3,65,0.6,0.9
+U1933,Steady Learner,2,Law & Social Sciences|Programming & Software Dev,1.7,Cloud & DevOps,0.65,70,0.5,1.0
+U1934,Steady Learner,2,Graphic Design & Media|Programming & Software Dev,7.8,Music & Arts,0.65,70,0.5,1.0
+U1935,Steady Learner,2,Science & Engineering|Data Science & Analytics,9.8,Cloud & DevOps,0.65,70,0.5,1.0
+U1936,Steady Learner,2,Web Development|Cybersecurity,10.1,Music & Arts,0.65,70,0.5,1.0
+U1937,Steady Learner,1,Business & Finance|Data Science & Analytics,5.6,Personal Development,0.65,70,0.5,1.0
+U1938,Steady Learner,1,Music & Arts|Science & Engineering,5.6,Law & Social Sciences,0.65,70,0.5,1.0
+U1939,Fast Learner,1,Business & Finance|Personal Development,8.3,Graphic Design & Media,0.8,82,0.7,1.2
+U1940,Steady Learner,1,Graphic Design & Media|Programming & Software Dev|Science & Engineering,14.1,Music & Arts,0.65,70,0.5,1.0
+U1941,Steady Learner,2,Data Science & Analytics|Programming & Software Dev,7.9,Cloud & DevOps,0.65,70,0.5,1.0
+U1942,Steady Learner,2,Cloud & DevOps|Business & Finance,7.6,Health & Medicine,0.65,70,0.5,1.0
+U1943,Fast Learner,1,Web Development,4.2,Personal Development,0.8,82,0.7,1.2
+U1944,Steady Learner,1,Law & Social Sciences|Science & Engineering|Programming & Software Dev,6.4,Health & Medicine,0.65,70,0.5,1.0
+U1945,Struggling,1,Cybersecurity|Web Development,15.9,Data Science & Analytics,0.4,52,0.25,0.75
+U1946,Fast Learner,1,Science & Engineering,4.4,Machine Learning & AI,0.8,82,0.7,1.2
+U1947,Steady Learner,3,Machine Learning & AI|Programming & Software Dev,8.7,Graphic Design & Media,0.65,70,0.5,1.0
+U1948,Steady Learner,1,Programming & Software Dev,10.4,Personal Development,0.65,70,0.5,1.0
+U1949,Steady Learner,3,Cybersecurity,12.0,Business & Finance,0.65,70,0.5,1.0
+U1950,Fast Learner,1,Business & Finance|Graphic Design & Media|Cloud & DevOps,11.0,Science & Engineering,0.8,82,0.7,1.2
+U1951,Struggling,2,Personal Development|Cloud & DevOps,9.9,Graphic Design & Media,0.4,52,0.25,0.75
+U1952,Steady Learner,2,Data Science & Analytics|Personal Development,2.1,Cybersecurity,0.65,70,0.5,1.0
+U1953,Struggling,1,Data Science & Analytics,7.5,Science & Engineering,0.4,52,0.25,0.75
+U1954,Specialist,1,Personal Development,3.4,Cloud & DevOps,0.75,78,0.65,1.1
+U1955,Struggling,3,Law & Social Sciences,4.0,Personal Development,0.4,52,0.25,0.75
+U1956,Steady Learner,1,Business & Finance|Machine Learning & AI,2.8,Health & Medicine,0.65,70,0.5,1.0
+U1957,Struggling,2,Programming & Software Dev|Machine Learning & AI,6.1,Programming & Software Dev,0.4,52,0.25,0.75
+U1958,Curious Sampler,1,Cybersecurity,6.6,Personal Development,0.3,65,0.6,0.9
+U1959,Steady Learner,1,Machine Learning & AI,4.3,Web Development,0.65,70,0.5,1.0
+U1960,Struggling,3,Health & Medicine|Cybersecurity,8.3,Music & Arts,0.4,52,0.25,0.75
+U1961,Steady Learner,1,Personal Development|Cloud & DevOps|Machine Learning & AI,9.0,Data Science & Analytics,0.65,70,0.5,1.0
+U1962,Steady Learner,1,Web Development,5.6,Graphic Design & Media,0.65,70,0.5,1.0
+U1963,Steady Learner,2,Business & Finance|Machine Learning & AI|Law & Social Sciences,3.9,Machine Learning & AI,0.65,70,0.5,1.0
+U1964,Struggling,1,Music & Arts|Personal Development,7.6,Graphic Design & Media,0.4,52,0.25,0.75
+U1965,Curious Sampler,1,Cloud & DevOps|Music & Arts|Science & Engineering,5.3,Graphic Design & Media,0.3,65,0.6,0.9
+U1966,Specialist,3,Health & Medicine|Music & Arts|Personal Development,4.0,Personal Development,0.75,78,0.65,1.1
+U1967,Specialist,2,Health & Medicine|Machine Learning & AI|Programming & Software Dev,8.4,Graphic Design & Media,0.75,78,0.65,1.1
+U1968,Struggling,2,Music & Arts|Programming & Software Dev,9.9,Cloud & DevOps,0.4,52,0.25,0.75
+U1969,Steady Learner,2,Cloud & DevOps,11.0,Business & Finance,0.65,70,0.5,1.0
+U1970,Steady Learner,1,Music & Arts|Machine Learning & AI,9.3,Music & Arts,0.65,70,0.5,1.0
+U1971,Fast Learner,2,Web Development|Law & Social Sciences,15.7,Cybersecurity,0.8,82,0.7,1.2
+U1972,Steady Learner,2,Programming & Software Dev|Music & Arts,4.8,Data Science & Analytics,0.65,70,0.5,1.0
+U1973,Struggling,2,Law & Social Sciences|Graphic Design & Media|Data Science & Analytics,4.8,Graphic Design & Media,0.4,52,0.25,0.75
+U1974,Steady Learner,1,Data Science & Analytics,16.9,Cloud & DevOps,0.65,70,0.5,1.0
+U1975,Curious Sampler,1,Business & Finance|Machine Learning & AI,3.4,Cloud & DevOps,0.3,65,0.6,0.9
+U1976,Steady Learner,1,Music & Arts,11.6,Web Development,0.65,70,0.5,1.0
+U1977,Struggling,2,Data Science & Analytics|Personal Development,5.2,Graphic Design & Media,0.4,52,0.25,0.75
+U1978,Fast Learner,2,Science & Engineering|Cloud & DevOps|Web Development,5.7,Business & Finance,0.8,82,0.7,1.2
+U1979,Struggling,1,Data Science & Analytics|Law & Social Sciences,4.6,Machine Learning & AI,0.4,52,0.25,0.75
+U1980,Specialist,2,Health & Medicine|Data Science & Analytics,5.6,Machine Learning & AI,0.75,78,0.65,1.1
+U1981,Struggling,2,Data Science & Analytics|Personal Development|Science & Engineering,4.1,Machine Learning & AI,0.4,52,0.25,0.75
+U1982,Struggling,2,Health & Medicine|Business & Finance,10.7,Web Development,0.4,52,0.25,0.75
+U1983,Struggling,3,Graphic Design & Media,6.7,Web Development,0.4,52,0.25,0.75
+U1984,Fast Learner,2,Machine Learning & AI,10.0,Law & Social Sciences,0.8,82,0.7,1.2
+U1985,Steady Learner,2,Music & Arts,5.1,Machine Learning & AI,0.65,70,0.5,1.0
+U1986,Steady Learner,1,Music & Arts|Personal Development|Data Science & Analytics,19.7,Cybersecurity,0.65,70,0.5,1.0
+U1987,Steady Learner,2,Personal Development,11.4,Business & Finance,0.65,70,0.5,1.0
+U1988,Fast Learner,1,Health & Medicine|Web Development|Cloud & DevOps,2.6,Health & Medicine,0.8,82,0.7,1.2
+U1989,Fast Learner,2,Web Development|Graphic Design & Media,2.6,Data Science & Analytics,0.8,82,0.7,1.2
+U1990,Curious Sampler,2,Cybersecurity,1.8,Machine Learning & AI,0.3,65,0.6,0.9
+U1991,Steady Learner,2,Business & Finance|Data Science & Analytics,3.2,Cybersecurity,0.65,70,0.5,1.0
+U1992,Fast Learner,3,Science & Engineering,5.4,Cybersecurity,0.8,82,0.7,1.2
+U1993,Steady Learner,1,Cloud & DevOps,9.4,Personal Development,0.65,70,0.5,1.0
+U1994,Fast Learner,2,Web Development|Law & Social Sciences,7.4,Data Science & Analytics,0.8,82,0.7,1.2
+U1995,Steady Learner,1,Programming & Software Dev,28.9,Data Science & Analytics,0.65,70,0.5,1.0
+U1996,Curious Sampler,1,Cloud & DevOps|Data Science & Analytics|Law & Social Sciences,3.7,Cybersecurity,0.3,65,0.6,0.9
+U1997,Curious Sampler,1,Personal Development|Cloud & DevOps|Science & Engineering,3.7,Business & Finance,0.3,65,0.6,0.9
+U1998,Fast Learner,2,Science & Engineering,5.2,Business & Finance,0.8,82,0.7,1.2
+U1999,Steady Learner,1,Data Science & Analytics|Personal Development,6.3,Web Development,0.65,70,0.5,1.0

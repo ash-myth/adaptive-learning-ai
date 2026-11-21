@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdaptLearn — My Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ── Design tokens — identical to index.html ────────────────────────────── */
+:root {
+  --bg:        #06060f;
+  --bg1:       #0c0c1a;
+  --bg2:       #111128;
+  --bg3:       #16162e;
+  --border:    rgba(255,255,255,0.06);
+  --border2:   rgba(255,255,255,0.1);
+  --text:      #e8e8f0;
+  --muted:     #5a5a7a;
+  --muted2:    #3a3a58;
+  --accent:    #7b6ff0;
+  --accent2:   #9d8ff5;
+  --accent-bg: rgba(123,111,240,0.08);
+  --green:     #34d399;
+  --amber:     #fbbf24;
+  --red:       #f87171;
+  --cyan:      #22d3ee;
+  --pink:      #f472b6;
+  --sidebar-w: 230px;
+  --radius:    12px;
+  --font:      'Space Grotesk', 'Inter', sans-serif;
+  --mono:      'DM Mono', monospace;
+  --display:   'Space Grotesk', sans-serif;
+}
+html.light {
+  --bg:        #f4f4fa;
+  --bg1:       #ffffff;
+  --bg2:       #eeeef8;
+  --bg3:       #e6e6f4;
+  --border:    rgba(0,0,0,0.07);
+  --border2:   rgba(0,0,0,0.12);
+  --text:      #1a1a2e;
+  --muted:     #6b6b8a;
+  --muted2:    #9898b8;
+  --accent:    #6355e0;
+  --accent2:   #7b6ff0;
+  --accent-bg: rgba(99,85,224,0.08);
+  --green:     #059669;
+  --amber:     #d97706;
+  --red:       #dc2626;
+  --cyan:      #0891b2;
+  --pink:      #db2777;
+}
+
+/* ── Reset + base ────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,h2,h3,h4,h5 { font-family: var(--display); letter-spacing: -0.02em; font-weight: 600; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; font-family: var(--font); }
+input, select, textarea { font-family: var(--font); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--muted2); border-radius: 4px; }
+
+/* ── Sidebar ─────────────────────────────────────────────────────────────── */
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  background: var(--bg1);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+.sb-brand {
+  padding: 24px 18px 18px;
+  border-bottom: 1px solid var(--border);
+}
+.sb-logo {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent2), #c4b5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+.sb-tagline {
+  font-size: 9px;
+  color: var(--muted2);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 3px;
+}
+.sb-nav {
+  flex: 1;
+  padding: 10px 8px;
+  overflow-y: auto;
+}
+.nav-section-label {
+  font-size: 9px;
+  color: var(--muted2);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 10px 12px 4px;
+}
+.nav-divider { height: 1px; background: var(--border); margin: 6px 10px; }
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 9px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border: 1px solid transparent;
+  position: relative;
+  user-select: none;
+}
+.nav-item:hover { background: var(--bg2); }
+.nav-item.active {
+  background: var(--accent-bg);
+  border-color: rgba(123,111,240,0.2);
+}
+.nav-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 50%;
+  transform: translateY(-50%);
+  width: 3px; height: 55%;
+  background: var(--accent);
+  border-radius: 0 3px 3px 0;
+}
+.nav-icon { width: 16px; height: 16px; flex-shrink: 0; opacity: 0.45; transition: opacity 0.15s; }
+.nav-item.active .nav-icon, .nav-item:hover .nav-icon { opacity: 1; }
+.nav-icon svg { width: 16px; height: 16px; }
+.nav-label { font-size: 13px; font-weight: 500; color: var(--muted); transition: color 0.15s; white-space: nowrap; }
+.nav-item.active .nav-label { color: var(--accent2); font-weight: 600; }
+.nav-item:hover .nav-label  { color: var(--text); }
+
+/* Sidebar footer — user info */
+.sb-footer {
+  padding: 12px 14px 16px;
+  border-top: 1px solid var(--border);
+}
+.sb-user-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 4px;
+}
+.sb-avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #c4b5fd);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; color: #fff;
+  flex-shrink: 0;
+}
+.sb-user-name { font-size: 13px; font-weight: 600; color: var(--text); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sb-user-role { font-size: 9px; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.08em; }
+.sb-logout-btn {
+  background: none; border: none; cursor: pointer;
+  color: var(--muted2); padding: 4px; border-radius: 4px; font-size: 13px;
+  transition: color 0.2s;
+}
+.sb-logout-btn:hover { color: var(--red); }
+
+/* Streak chip in sidebar */
+.streak-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(251,191,36,0.07);
+  border: 1px solid rgba(251,191,36,0.15);
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--amber);
+}
+.streak-chip .xp-part { color: var(--accent2); font-size: 11px; font-weight: 500; margin-left: auto; }
+
+/* ── Topbar ──────────────────────────────────────────────────────────────── */
+.main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.topbar {
+  height: 52px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  gap: 12px;
+  flex-shrink: 0;
+  background: var(--bg);
+}
+.topbar-title { font-family: var(--display); font-size: 15px; font-weight: 700; color: var(--text); }
+.topbar-sub { font-size: 12px; color: var(--muted); margin-left: 4px; }
+.topbar-right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.theme-toggle {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--bg2); border: 1px solid var(--border2);
+  border-radius: 20px; padding: 5px 12px 5px 8px;
+  cursor: pointer; font-size: 12px; font-family: var(--font);
+  color: var(--muted); font-weight: 500;
+  transition: border-color 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--text); }
+
+/* ── Content ─────────────────────────────────────────────────────────────── */
+.content { flex: 1; overflow-y: auto; padding: 28px; }
+.page { display: none; animation: fadeUp 0.2s ease; }
+.page.active { display: block; }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Typography helpers ──────────────────────────────────────────────────── */
+.section-title {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 20px;
+  letter-spacing: -0.3px;
+}
+.section-sub { font-size: 13px; color: var(--muted); margin-top: -14px; margin-bottom: 20px; }
+
+/* ── Grid helpers ────────────────────────────────────────────────────────── */
+.two-col   { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.four-col  { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+
+/* ── Cards ───────────────────────────────────────────────────────────────── */
+.card {
+  background: var(--bg1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+.card-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+
+/* ── Stat cards ──────────────────────────────────────────────────────────── */
+.stat-card {
+  background: var(--bg1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+.stat-card:hover { border-color: var(--border2); }
+.stat-val { font-family: var(--mono); font-size: 1.7rem; font-weight: 500; color: var(--accent2); display: block; }
+.stat-lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+
+/* ── Hero ────────────────────────────────────────────────────────────────── */
+.hero {
+  background: linear-gradient(135deg, #12103a 0%, #1a1650 45%, #0f2040 100%);
+  border: 1px solid rgba(123,111,240,0.2);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 240px; height: 240px;
+  background: radial-gradient(circle, rgba(123,111,240,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero h1 { font-family: var(--display); font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 4px; letter-spacing: -0.5px; }
+.hero p { color: #a5b4fc; font-size: 13px; margin-bottom: 16px; }
+.hero-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font);
+  border: 1px solid var(--border2);
+  background: transparent;
+  color: var(--text);
+  transition: all 0.18s;
+  cursor: pointer;
+}
+.btn:hover { background: var(--bg2); border-color: var(--accent); }
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+.btn-primary:hover { opacity: 0.88; background: var(--accent); }
+
+/* ── Course cards ────────────────────────────────────────────────────────── */
+.course-card {
+  background: var(--bg1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.15s;
+}
+.course-card:hover { border-color: var(--border2); transform: translateY(-1px); }
+.course-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+}
+.src-coursera::before    { background: #0056d2; }
+.src-udemy::before       { background: #a435f0; }
+.src-edx::before         { background: #e53e3e; }
+.src-udacity::before     { background: #02b3e4; }
+.src-future_learn::before{ background: #de2954; }
+.src-simplilearn::before { background: #f97316; }
+.course-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; margin-bottom: 8px; }
+.course-meta  { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+.course-subject { font-size: 11px; color: var(--muted); margin-top: 4px; }
+.course-actions { display: flex; gap: 8px; margin-top: 12px; }
+.pill {
+  display: inline-flex; align-items: center;
+  padding: 2px 9px; border-radius: 20px;
+  font-size: 10px; font-weight: 600; letter-spacing: 0.02em;
+}
+.pill-beginner     { background: rgba(52,211,153,0.1);  color: #34d399; border: 1px solid rgba(52,211,153,0.2); }
+.pill-intermediate { background: rgba(251,191,36,0.1);  color: #fbbf24; border: 1px solid rgba(251,191,36,0.2); }
+.pill-advanced     { background: rgba(248,113,113,0.1); color: #f87171; border: 1px solid rgba(248,113,113,0.2); }
+.pill-src { background: var(--bg2); color: var(--muted); border: 1px solid var(--border); }
+.pill-outcome-excel    { background: rgba(52,211,153,0.12); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+.pill-outcome-match    { background: rgba(99,102,241,0.12); color: #818cf8; border: 1px solid rgba(99,102,241,0.3); }
+.pill-outcome-struggle { background: rgba(245,158,11,0.12); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+.pill-risk-low         { background: rgba(16,185,129,0.12); color: #10b981; border: 1px solid rgba(16,185,129,0.3); }
+.pill-risk-medium      { background: rgba(245,158,11,0.12); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
+.pill-risk-high        { background: rgba(239,68,68,0.12); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+.course-link {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 5px 12px;
+  background: transparent; border: 1px solid var(--border2); border-radius: 7px;
+  color: var(--muted); font-size: 11px; font-weight: 500;
+  transition: all 0.2s; text-decoration: none;
+}
+.course-link:hover { border-color: var(--accent); color: var(--accent2); background: var(--accent-bg); }
+
+/* ── Progress bar ────────────────────────────────────────────────────────── */
+.progress-bar-wrap {
+  background: var(--bg2);
+  border-radius: 6px;
+  height: 6px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 6px;
+  transition: width 0.6s ease;
+}
+
+/* ── XP bar ──────────────────────────────────────────────────────────────── */
+.xp-bar-wrap {
+  background: var(--bg2);
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.xp-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #7b6ff0, #c4b5fd);
+  border-radius: 10px;
+  transition: width 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ── Streak calendar ─────────────────────────────────────────────────────── */
+.streak-calendar {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.streak-day {
+  width: 24px; height: 24px;
+  border-radius: 5px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 8px;
+  color: var(--muted2);
+  transition: all 0.2s;
+}
+.streak-day.active { background: rgba(52,211,153,0.15); border-color: rgba(52,211,153,0.3); color: var(--green); }
+.streak-day.today  { border-color: var(--accent); color: var(--accent2); }
+
+/* ── Subject heatmap ─────────────────────────────────────────────────────── */
+.heatmap-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.heatmap-label { font-size: 11px; color: var(--muted); width: 160px; flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.heatmap-track { flex: 1; height: 6px; background: var(--bg2); border-radius: 4px; overflow: hidden; }
+.heatmap-fill  { height: 100%; border-radius: 4px; transition: width 0.6s ease; }
+.heatmap-val   { font-size: 10px; color: var(--muted2); font-family: var(--mono); width: 32px; text-align: right; }
+
+/* ── Form controls ───────────────────────────────────────────────────────── */
+.form-row { display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-end; }
+.form-group { display: flex; flex-direction: column; gap: 5px; flex: 1; }
+.form-label { font-size: 11px; color: var(--muted); font-weight: 500; letter-spacing: 0.04em; }
+.form-input {
+  background: var(--bg1);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 9px 12px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.form-input:focus { border-color: var(--accent); }
+.form-input::placeholder { color: var(--muted2); }
+.form-select {
+  background: var(--bg1);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 9px 12px;
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* ── Career goal chips (recommendations page) ────────────────────────────── */
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.career-card {
+  background: var(--bg1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.18s;
+  user-select: none;
+}
+.career-card:hover { border-color: var(--border2); background: var(--bg2); }
+.career-card.active { border-color: var(--accent); background: var(--accent-bg); }
+.career-card .cc-icon { font-size: 22px; margin-bottom: 7px; }
+.career-card .cc-label { font-size: 11px; font-weight: 600; color: var(--muted); }
+.career-card.active .cc-label { color: var(--accent2); }
+
+/* ── Range slider ────────────────────────────────────────────────────────── */
+.range-wrap { padding: 4px 0; }
+input[type=range] {
+  width: 100%; height: 4px;
+  -webkit-appearance: none;
+  background: var(--border2); border-radius: 2px; outline: none; cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px; height: 16px;
+  background: var(--accent); border-radius: 50%;
+  border: 2px solid var(--bg1); cursor: pointer;
+}
+
+/* ── Callout ─────────────────────────────────────────────────────────────── */
+.callout {
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 9px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.callout-success { border-color: rgba(52,211,153,0.25); background: rgba(52,211,153,0.05); color: var(--green); }
+
+/* ── Tabs ────────────────────────────────────────────────────────────────── */
+.tabs { display: flex; gap: 4px; margin-bottom: 18px; }
+.tab-btn {
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.tab-btn:hover { background: var(--bg2); color: var(--text); }
+.tab-btn.active { background: var(--accent-bg); border-color: rgba(123,111,240,0.2); color: var(--accent2); font-weight: 600; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ── Learning path stages ────────────────────────────────────────────────── */
+.path-stage {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.path-stage-header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 18px;
+  cursor: pointer;
+  background: var(--bg1);
+  transition: background 0.15s;
+}
+.path-stage-header:hover { background: var(--bg2); }
+.path-stage-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.path-stage-title { font-size: 13px; font-weight: 600; flex: 1; }
+.path-stage-badge {
+  font-size: 10px; color: var(--muted); background: var(--bg2);
+  border: 1px solid var(--border); border-radius: 20px; padding: 2px 9px;
+}
+.path-stage-arrow { color: var(--muted2); font-size: 12px; transition: transform 0.2s; }
+.path-stage.open .path-stage-arrow { transform: rotate(180deg); }
+.path-stage-body { display: none; padding: 14px 18px; border-top: 1px solid var(--border); background: var(--bg); }
+.path-stage.open .path-stage-body { display: block; }
+
+/* ── Loading / empty states ──────────────────────────────────────────────── */
+.loading-state {
+  display: flex; align-items: center; gap: 10px;
+  padding: 32px; color: var(--muted); font-size: 13px;
+  justify-content: center;
+}
+.empty-state {
+  text-align: center; padding: 40px 20px;
+  color: var(--muted); font-size: 13px;
+}
+.empty-state-icon { font-size: 32px; margin-bottom: 10px; }
+.spinner {
+  width: 16px; height: 16px;
+  border: 2px solid rgba(123,111,240,0.25);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Toast ───────────────────────────────────────────────────────────────── */
+#toast {
+  position: fixed; bottom: 24px; left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--bg1); border: 1px solid var(--border2);
+  border-radius: 10px; padding: 10px 18px;
+  font-size: 13px; color: var(--text);
+  opacity: 0; pointer-events: none;
+  transition: all 0.28s; z-index: 999; white-space: nowrap;
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+#toast.error   { border-color: rgba(248,113,113,0.4); color: var(--red); }
+#toast.success { border-color: rgba(52,211,153,0.4); color: var(--green); }
+
+/* ── My Learning — in-progress card ─────────────────────────────────────── */
+.inprogress-card {
+  background: var(--bg1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin-bottom: 10px;
+  transition: border-color 0.2s;
+}
+.inprogress-card:hover { border-color: var(--border2); }
+.inprogress-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.inprogress-meta  { font-size: 11px; color: var(--muted); margin-bottom: 10px; }
+.inprogress-progress-label { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+
+/* ── Achievement badges ──────────────────────────────────────────────────── */
+.badge-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.badge-item {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 12px 14px;
+  font-size: 10px; color: var(--muted); text-align: center; width: 80px;
+}
+.badge-item.earned { border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.05); color: var(--amber); }
+.badge-icon { font-size: 22px; margin-bottom: 2px; }
+
+/* ── DYM banner ──────────────────────────────────────────────────────────── */
+.dym-banner {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  background: var(--bg2); border: 1px solid var(--border2);
+  border-left: 3px solid var(--accent); border-radius: var(--radius);
+  padding: 10px 16px; margin-bottom: 14px;
+  font-size: 13px; color: var(--muted);
+}
+.dym-suggestion { color: var(--accent2); font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.dym-original   { color: var(--muted); cursor: pointer; font-size: 12px; }
+.dym-original:hover, .dym-suggestion:hover { color: var(--text); }
+
+/* ── No-results box ──────────────────────────────────────────────────────── */
+.no-results-box {
+  background: var(--bg1); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 32px 24px; text-align: center;
+}
+.no-results-icon  { font-size: 32px; margin-bottom: 12px; }
+.no-results-title { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+.no-results-sub   { font-size: 12px; color: var(--muted); margin-bottom: 18px; line-height: 1.5; }
+
+/* Platform links */
+.platform-links-title { font-size: 11px; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+.platform-links-grid  { display: grid; grid-template-columns: repeat(auto-fit,minmax(100px,1fr)); gap: 8px; }
+.platform-link-card {
+  display: flex; align-items: center; gap: 7px;
+  background: var(--bg2); border: 1px solid var(--border2);
+  border-radius: 8px; padding: 8px 10px;
+  font-size: 12px; color: var(--muted);
+  transition: all 0.15s; text-decoration: none;
+}
+.platform-link-card:hover { border-color: var(--accent); color: var(--text); }
+.platform-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.platform-arrow { margin-left: auto; font-size: 11px; color: var(--muted2); }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════ SIDEBAR ═══════════════════════ -->
+<aside class="sidebar">
+  <div class="sb-brand">
+    <div class="sb-logo" onclick="navigate('home')">AdaptLearn</div>
+    <div class="sb-tagline">My Learning Hub</div>
+  </div>
+
+  <nav class="sb-nav">
+    <div class="nav-section-label">Overview</div>
+    <div class="nav-item active" data-page="home" onclick="navigate('home')">
+      <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <span class="nav-label">Dashboard</span>
+    </div>
+    <div class="nav-item" data-page="my-learning" onclick="navigate('my-learning')">
+      <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+      <span class="nav-label">My Learning</span>
+    </div>
+    <div class="nav-item" data-page="progress" onclick="navigate('progress')">
+      <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+      <span class="nav-label">My Progress</span>
+    </div>
+
+    <div class="nav-divider"></div>
+    <div class="nav-item" data-page="analytics" onclick="navigate('analytics')">
+      <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>
+      <span class="nav-label">My Analytics</span>
+    </div>
+    <div class="nav-divider"></div>
+    <div class="nav-section-label">Discover</div>
+
+    <div class="nav-item" data-page="recommendations" onclick="navigate('recommendations')">
+      <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <span class="nav-label">For You</span>
+    </div>
+    <div class="nav-item" data-page="learning-path" onclick="navigate('learning-path')">
+      <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+      <span class="nav-label">Learning Path</span>
+    </div>
+    <div class="nav-item" data-page="skill-gap" onclick="navigate('skill-gap')">
+      <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+      <span class="nav-label">Skill Gap</span>
+    </div>
+    <div class="nav-item" data-page="search" onclick="navigate('search')">
+      <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg></span>
+      <span class="nav-label">Search Courses</span>
+    </div>
+  </nav>
+
+  <div class="sb-footer">
+    <!-- Streak chip -->
+    <div class="streak-chip">
+      <span>🔥</span>
+      <span id="sbStreakVal">0 day streak</span>
+      <span class="xp-part" id="sbXpVal">0 XP</span>
+    </div>
+    <!-- User info -->
+    <div class="sb-user-row" style="margin-top:10px">
+      <div class="sb-avatar" id="sbAvatar">?</div>
+      <div style="flex:1;min-width:0">
+        <div class="sb-user-name" id="sbUserName">Loading…</div>
+        <div class="sb-user-role" id="sbUserRole">Learner</div>
+      </div>
+      <button class="sb-logout-btn" onclick="logout()" title="Sign out">⏻</button>
+    </div>
+  </div>
+</aside>
+
+<!-- ═══════════════════════ MAIN ═══════════════════════ -->
+<div class="main">
+  <div class="topbar">
+    <div class="topbar-title" id="topbarTitle">Dashboard</div>
+    <div class="topbar-sub" id="topbarSub"></div>
+    <div class="topbar-right">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
+        <span id="themeIcon">☀️</span>
+        <span id="themeLabel">Light mode</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- ══ HOME / DASHBOARD ══ -->
+    <div class="page active" id="page-home">
+      <div class="hero">
+        <h1 id="heroGreet">Welcome back! 👋</h1>
+        <p id="heroSub">Your personalised learning journey continues…</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="navigate('recommendations')">✦ Get Recommendations</button>
+          <button class="btn" onclick="navigate('my-learning')">📚 My Learning</button>
+          <button class="btn" onclick="navigate('skill-gap')">🎯 Check Skill Gaps</button>
+        </div>
+      </div>
+
+      <!-- Stats row -->
+      <div class="four-col" style="margin-bottom:20px">
+        <div class="stat-card">
+          <span class="stat-val" id="statStreak">0</span>
+          <div class="stat-lbl">🔥 Day Streak</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-val" id="statXP">0</span>
+          <div class="stat-lbl">⚡ Total XP</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-val" id="statCompleted">0</span>
+          <div class="stat-lbl">✓ Completed</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-val" id="statAvgScore">—</span>
+          <div class="stat-lbl">📊 Avg Score</div>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <!-- Left: continue learning -->
+        <div>
+          <div class="section-title" style="font-size:16px;margin-bottom:12px">Continue learning</div>
+          <div id="continueLearning">
+            <div class="loading-state"><div class="spinner"></div>Loading…</div>
+          </div>
+        </div>
+        <!-- Right: weekly streak + XP level -->
+        <div>
+          <div class="card" style="margin-bottom:12px">
+            <div class="card-title" style="margin-bottom:12px">This week's activity</div>
+            <div class="streak-calendar" id="weekCalendar"></div>
+          </div>
+          <div class="card">
+            <div class="card-title" style="margin-bottom:4px">Level progress</div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin:10px 0 6px">
+              <span id="levelLabel" style="font-size:13px;font-weight:600;color:var(--accent2)">Level 1</span>
+              <span id="xpToNext" style="font-size:11px;color:var(--muted)">0 / 100 XP</span>
+            </div>
+            <div class="xp-bar-wrap">
+              <div class="xp-bar-fill" id="xpBarFill" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ MY LEARNING ══ -->
+    <div class="page" id="page-my-learning">
+      <div class="section-title">My Learning</div>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('ml','inprogress',this)">In Progress</button>
+        <button class="tab-btn" onclick="switchTab('ml','saved',this)">Saved</button>
+        <button class="tab-btn" onclick="switchTab('ml','completed',this)">Completed</button>
+      </div>
+      <div class="tab-panel active" id="ml-tab-inprogress">
+        <div id="inprogressList"><div class="loading-state"><div class="spinner"></div>Loading…</div></div>
+      </div>
+      <div class="tab-panel" id="ml-tab-saved">
+        <div id="savedList"><div class="loading-state"><div class="spinner"></div>Loading…</div></div>
+      </div>
+      <div class="tab-panel" id="ml-tab-completed">
+        <div id="completedList"><div class="loading-state"><div class="spinner"></div>Loading…</div></div>
+      </div>
+    </div>
+
+    <!-- ══ MY PROGRESS ══ -->
+    <div class="page" id="page-progress">
+      <div class="section-title">My Progress</div>
+      <div class="two-col" style="margin-bottom:20px">
+        <!-- Streak calendar full -->
+        <div class="card">
+          <div class="card-title" style="margin-bottom:12px">30-day activity</div>
+          <div class="streak-calendar" id="fullCalendar" style="gap:4px"></div>
+        </div>
+        <!-- Achievements -->
+        <div class="card">
+          <div class="card-title" style="margin-bottom:12px">Achievements</div>
+          <div class="badge-grid" id="badgeGrid"></div>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <!-- Subject heatmap -->
+        <div class="card">
+          <div class="card-title" style="margin-bottom:14px">Strength by subject</div>
+          <div id="subjectHeatmap"></div>
+        </div>
+        <!-- Learning velocity -->
+        <div class="card">
+          <div class="card-title" style="margin-bottom:12px">Learning stats</div>
+          <div id="learningStats"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ RECOMMENDATIONS / FOR YOU ══ -->
+    <div class="page" id="page-recommendations">
+      <div class="section-title">For You</div>
+      <div class="career-grid" id="careerGrid"></div>
+      <div class="form-row">
+        <div class="form-group" style="flex:3">
+          <label class="form-label">What do you want to learn?</label>
+          <input type="text" id="recGoal" class="form-input" placeholder="e.g. backend development, machine learning, docker…"
+                 onkeydown="if(event.key==='Enter') fetchRecommendations()">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Results: <span id="recTopNVal">8</span></label>
+          <div class="range-wrap">
+            <input type="range" min="3" max="16" value="8" id="recTopN"
+                   oninput="document.getElementById('recTopNVal').textContent=this.value">
+          </div>
+        </div>
+        <button class="btn btn-primary" onclick="fetchRecommendations()">✦ Get Recommendations</button>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Level</label>
+          <select class="form-select" id="recLevel">
+            <option value="">Any level</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Platform</label>
+          <select class="form-select" id="recSource">
+            <option value="">All platforms</option>
+            <option value="coursera">Coursera</option>
+            <option value="udemy">Udemy</option>
+            <option value="edx">EdX</option>
+            <option value="udacity">Udacity</option>
+            <option value="future_learn">FutureLearn</option>
+            <option value="simplilearn">Simplilearn</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Max duration</label>
+          <select class="form-select" id="recDur">
+            <option value="">Any length</option>
+            <option value="60">Under 1 hour</option>
+            <option value="180">Under 3 hours</option>
+            <option value="300">Under 5 hours</option>
+            <option value="600">Under 10 hours</option>
+          </select>
+        </div>
+      </div>
+      <div id="recMeta"></div>
+      <div id="recResults"></div>
+    </div>
+
+    <!-- ══ LEARNING PATH ══ -->
+    <div class="page" id="page-learning-path">
+      <div class="section-title">Learning Path</div>
+      <div class="callout">Build a structured path from Beginner to Advanced for any subject.</div>
+      <div class="form-row">
+        <div class="form-group" style="flex:3">
+          <label class="form-label">Subject</label>
+          <select id="pathSubject" class="form-select">
+            <option value="">Select a subject…</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" style="align-self:flex-end" onclick="fetchLearningPath()">Generate Path</button>
+      </div>
+      <div id="pathMeta"></div>
+      <div id="pathStages"></div>
+    </div>
+
+    <!-- ══ SKILL GAP ══ -->
+    <div class="page" id="page-skill-gap">
+      <div class="section-title">Skill Gap Analysis</div>
+      <div class="callout">Enter a topic you want to learn — we'll identify what you need to know first.</div>
+      <div class="form-row">
+        <div class="form-group" style="flex:3">
+          <label class="form-label">Your learning goal</label>
+          <input type="text" id="gapGoal" class="form-input"
+                 placeholder="e.g. machine learning, docker, rag model…"
+                 onkeydown="if(event.key==='Enter') fetchSkillGap()">
+        </div>
+        <button class="btn btn-primary" style="align-self:flex-end" onclick="fetchSkillGap()">Detect Gaps</button>
+      </div>
+      <div id="gapResults"></div>
+    </div>
+
+    <!-- ══ SEARCH ══ -->
+    <div class="page" id="page-search">
+      <div class="section-title">Search Courses</div>
+      <div class="callout">AI-powered search — semantic understanding + keyword matching across 13,600+ courses.</div>
+      <div class="form-row">
+        <div class="form-group" style="flex:4">
+          <label class="form-label">Search query</label>
+          <input type="text" id="searchQuery" class="form-input"
+                 placeholder="e.g. python machine learning, react hooks, docker containers…"
+                 onkeydown="if(event.key==='Enter') fetchSearch()">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Results: <span id="searchNVal">8</span></label>
+          <div class="range-wrap">
+            <input type="range" min="3" max="20" value="8" id="searchN"
+                   oninput="document.getElementById('searchNVal').textContent=this.value">
+          </div>
+        </div>
+        <button class="btn btn-primary" style="align-self:flex-end" onclick="fetchSearch()">Search</button>
+      </div>
+      <div id="searchResults"></div>
+    </div>
+
+    <!-- ══ MY ANALYTICS ══ -->
+    <div class="page" id="page-analytics">
+      <div class="section-title">My Analytics</div>
+      <div class="section-sub" id="analyticsSub">Your personal learning data, visualised.</div>
+
+      <!-- Top KPI row -->
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:20px" id="analyticsKpi">
+        <div class="stat-card"><span class="stat-val" id="aKpiCourses">—</span><div class="stat-lbl">Courses</div></div>
+        <div class="stat-card"><span class="stat-val" id="aKpiAvgScore">—</span><div class="stat-lbl">Avg Quiz</div></div>
+        <div class="stat-card"><span class="stat-val" id="aKpiBest">—</span><div class="stat-lbl">Best Score</div></div>
+        <div class="stat-card"><span class="stat-val" id="aKpiHours">—</span><div class="stat-lbl">Hours Spent</div></div>
+        <div class="stat-card"><span class="stat-val" id="aKpiRate">—</span><div class="stat-lbl">Completion</div></div>
+      </div>
+
+      <div class="two-col" style="margin-bottom:16px">
+        <!-- Quiz score trend -->
+        <div class="card">
+          <div class="card-title" style="margin-bottom:4px">Quiz score trend</div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:14px" id="aTrendSub">Last 20 courses</div>
+          <div id="aTrendChart" style="height:160px;position:relative"></div>
+          <div id="aTrendMeta" style="display:flex;gap:16px;margin-top:12px;font-size:11px;color:var(--muted)"></div>
+        </div>
+
+        <!-- Completion funnel -->
+        <div class="card">
+          <div class="card-title" style="margin-bottom:14px">Completion breakdown</div>
+          <div id="aFunnel"></div>
+          <div style="margin-top:16px">
+            <div class="card-title" style="margin-bottom:10px;font-size:12px">Score distribution</div>
+            <div id="aScoreDist"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-bottom:16px">
+        <!-- Subject strength heatmap -->
+        <div class="card">
+          <div class="card-title" style="margin-bottom:14px">Subject performance</div>
+          <div id="aSubjectMap"></div>
+        </div>
+
+        <!-- Difficulty breakdown + progression -->
+        <div class="card">
+          <div class="card-title" style="margin-bottom:14px">Difficulty distribution</div>
+          <div id="aDiffDist"></div>
+          <div class="card-title" style="margin-bottom:10px;margin-top:16px;font-size:12px">Recent difficulty trend</div>
+          <div id="aDiffProg" style="display:flex;align-items:flex-end;gap:4px;height:48px"></div>
+          <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--muted2);margin-top:4px">
+            <span>Oldest</span><span>Most recent</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <!-- Time investment -->
+        <div class="card">
+          <div class="card-title" style="margin-bottom:14px">Time investment</div>
+          <div id="aTimeStat"></div>
+        </div>
+
+        <!-- Velocity + persona insight -->
+        <div class="card">
+          <div class="card-title" style="margin-bottom:14px">Learning insights</div>
+          <div id="aInsights"></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+</div><!-- /main -->
+
+<div id="toast"></div>
+
+<script>
+const API = (window.location.origin && window.location.origin.startsWith('http') && !['5500', '5501'].includes(window.location.port))
+  ? window.location.origin
+  : 'http://localhost:8012';
+
+/* ══ Auth guard ════════════════════════════════════════════════════════════ */
+const _token = localStorage.getItem('al_token');
+const _user  = (() => { try { return JSON.parse(localStorage.getItem('al_user')); } catch(e) { return null; } })();
+if (!_token || !_user) { window.location.href = '/auth.html'; }
+if (_user && _user.is_admin) { window.location.href = '/index.html'; }
+if (_user && !_user.is_onboarded) { window.location.href = '/onboarding.html'; }
+
+let currentUser = _user?.id || _user?.user_id || '';
+let currentUserObj = _user || {};
+
+/* ══ Theme ═════════════════════════════════════════════════════════════════ */
+function toggleTheme() {
+  const isLight = document.documentElement.classList.toggle('light');
+  document.getElementById('themeIcon').textContent  = isLight ? '🌙' : '☀️';
+  document.getElementById('themeLabel').textContent = isLight ? 'Dark mode' : 'Light mode';
+  try { localStorage.setItem('adaptlearn-theme', isLight ? 'light' : 'dark'); } catch(e) {}
+}
+(function() {
+  let saved = 'dark';
+  try { saved = localStorage.getItem('adaptlearn-theme') || 'dark'; } catch(e) {}
+  if (saved === 'light') {
+    document.documentElement.classList.add('light');
+    document.getElementById('themeIcon').textContent  = '🌙';
+    document.getElementById('themeLabel').textContent = 'Dark mode';
+  }
+})();
+
+/* ══ Utils ═════════════════════════════════════════════════════════════════ */
+async function api(path) {
+  const r = await fetch(API + path, {
+    headers: { 'Authorization': `Bearer ${_token}` }
+  });
+  if (!r.ok) throw new Error(await r.text());
+  return r.json();
+}
+async function post(path, body) {
+  const r = await fetch(API + path, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${_token}` },
+    body: JSON.stringify(body),
+  });
+  if (!r.ok) throw new Error(await r.text());
+  return r.json();
+}
+
+// Fetch fresh user profile from auth and update local state
+async function refreshUserFromAuth() {
+  try {
+    const u = await api('/api/auth/me');
+    currentUserObj = u;
+    currentUser = u.id;
+    localStorage.setItem('al_user', JSON.stringify(u));
+    return u;
+  } catch(e) { return currentUserObj; }
+}
+
+function showToast(msg, type = 'success') {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.className = `show ${type}`;
+  setTimeout(() => t.className = '', 3000);
+}
+function fmtNum(n) { return n >= 1000 ? (n/1000).toFixed(1) + 'k' : String(n); }
+function loading(id) {
+  document.getElementById(id).innerHTML = '<div class="loading-state"><div class="spinner"></div>Loading…</div>';
+}
+function empty(id, msg = 'No results found') {
+  document.getElementById(id).innerHTML = `<div class="empty-state"><div class="empty-state-icon">🔍</div><div>${msg}</div></div>`;
+}
+
+/* ══ Logout ════════════════════════════════════════════════════════════════ */
+function logout() {
+  localStorage.removeItem('al_token');
+  localStorage.removeItem('al_user');
+  window.location.href = '/auth.html';
+}
+
+/* ══ Navigation ════════════════════════════════════════════════════════════ */
+const PAGE_TITLES = {
+  'home':            ['Dashboard', 'Your learning overview'],
+  'my-learning':     ['My Learning', 'In progress, saved & completed'],
+  'progress':        ['My Progress', 'Streak, XP & subject strength'],
+  'recommendations': ['For You', 'AI-powered course matching'],
+  'learning-path':   ['Learning Path', 'Structured progression'],
+  'skill-gap':       ['Skill Gap', 'Prerequisite analysis'],
+  'search':          ['Search Courses', 'Semantic + keyword search'],
+  'analytics':       ['My Analytics', 'Quiz trends, subject strength & time investment'],
+};
+
+function navigate(page) {
+  document.querySelectorAll('.nav-item').forEach(el =>
+    el.classList.toggle('active', el.dataset.page === page));
+  document.querySelectorAll('.page').forEach(el =>
+    el.classList.toggle('active', el.id === 'page-' + page));
+  const [title, sub] = PAGE_TITLES[page] || [page, ''];
+  document.getElementById('topbarTitle').textContent = title;
+  document.getElementById('topbarSub').textContent   = sub;
+
+  if (page === 'my-learning')     loadMyLearning();
+  if (page === 'progress')        loadProgress();
+  if (page === 'learning-path')   loadSubjects();
+  if (page === 'analytics')        loadAnalytics();
+}
+
+function switchTab(page, tab, btn) {
+  // Walk up from the button to find the enclosing .page container
+  const container = btn.closest('.page') || document;
+  container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  container.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(`${page}-tab-${tab}`).classList.add('active');
+}
+
+/* ══ Sidebar user info ═════════════════════════════════════════════════════ */
+function initUserUI() {
+  const u = currentUserObj;
+  const name = u.display_name || u.email || 'Learner';
+  const initials = name.split(' ').map(w => w[0]).join('').toUpperCase().slice(0,2);
+  document.getElementById('sbAvatar').textContent   = initials;
+  document.getElementById('sbUserName').textContent = name;
+  document.getElementById('sbUserRole').textContent = u.archetype || 'Learner';
+  document.getElementById('heroGreet').textContent  = `Welcome back, ${name.split(' ')[0]}! 👋`;
+  document.getElementById('heroSub').textContent    =
+    `${u.archetype || 'Learner'} · ${u.weekly_hours || 5} hrs/week · Goal: ${u.goal || 'Learning'}`;
+}
+
+/* ══ XP & streak helpers ═══════════════════════════════════════════════════ */
+function getXPLevel(xp) {
+  const levels = [0,100,250,500,900,1400,2100,3000,4200,6000];
+  let level = 1;
+  for (let i = 1; i < levels.length; i++) { if (xp >= levels[i]) level = i + 1; else break; }
+  const base = levels[Math.min(level-1, levels.length-1)];
+  const next = levels[Math.min(level, levels.length-1)];
+  const pct  = next > base ? Math.round((xp - base) / (next - base) * 100) : 100;
+  return { level, base, next, pct, xp };
+}
+
+function renderStreakCalendar(containerId, days, activeDays) {
+  const el = document.getElementById(containerId);
+  const today = new Date();
+  let html = '';
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(today); d.setDate(today.getDate() - i);
+    const key = d.toISOString().slice(0,10);
+    const isToday  = i === 0;
+    const isActive = activeDays.has(key);
+    const label = d.toLocaleDateString('en', {weekday:'short'}).slice(0,1);
+    html += `<div class="streak-day${isActive?' active':''}${isToday?' today':''}" title="${key}">${label}</div>`;
+  }
+  el.innerHTML = html;
+}
+
+/* ══ Dashboard home data ═══════════════════════════════════════════════════ */
+async function loadDashboard() {
+  try {
+    let profile = {};
+    try {
+      profile = await api(`/api/users/${currentUser}/profile`);
+    } catch(e) {
+      // Real auth user not yet in simulator CSV — use defaults
+      profile = {
+        n_interactions: 0, avg_quiz_score: 0, streak: 0,
+        skill_level: currentUserObj.skill_level || 1,
+        weekly_hours: currentUserObj.weekly_hours || 5,
+        goal: currentUserObj.goal || 'Learning',
+        strength_subject: currentUserObj.preferred_subjects?.[0] || '—',
+        weakness_subject: '—', learning_velocity: 0, recent_history: [],
+      };
+    }
+
+    // Stats
+    const xpTotal   = (profile.n_interactions || 0) * 15 + Math.round((profile.avg_quiz_score || 0) * 0.5);
+    const streak    = profile.streak || Math.min(profile.n_interactions || 0, 7);
+    const completed = profile.n_interactions || 0;
+    const avgScore  = profile.avg_quiz_score ? Math.round(profile.avg_quiz_score) + '%' : '—';
+
+    document.getElementById('statStreak').textContent    = streak;
+    document.getElementById('statXP').textContent        = fmtNum(xpTotal);
+    document.getElementById('statCompleted').textContent = completed;
+    document.getElementById('statAvgScore').textContent  = avgScore;
+
+    // Sidebar streak
+    document.getElementById('sbStreakVal').textContent = `${streak} day streak`;
+    document.getElementById('sbXpVal').textContent     = fmtNum(xpTotal) + ' XP';
+
+    // XP level bar
+    const lvl = getXPLevel(xpTotal);
+    document.getElementById('levelLabel').textContent  = `Level ${lvl.level}`;
+    document.getElementById('xpToNext').textContent   = `${lvl.xp} / ${lvl.next} XP`;
+    document.getElementById('xpBarFill').style.width  = lvl.pct + '%';
+
+    // Week calendar (last 7 days) — simulate from interaction count
+    const activeDays = new Set();
+    const today = new Date();
+    for (let i = 0; i < Math.min(streak, 7); i++) {
+      const d = new Date(today); d.setDate(today.getDate() - i);
+      activeDays.add(d.toISOString().slice(0,10));
+    }
+    renderStreakCalendar('weekCalendar', 7, activeDays);
+
+    // Continue learning — fetch recent recommendations
+    loadContinueLearning();
+  } catch(e) {
+    document.getElementById('continueLearning').innerHTML =
+      '<div class="callout">Could not load dashboard data.</div>';
+  }
+}
+
+async function loadContinueLearning() {
+  const goal = currentUserObj.goal || 'machine learning';
+  try {
+    let courses = [];
+    // Try personalized recommend first, fall back to cold-start search
+    try {
+      const d = await api(`/api/recommend?user_id=${encodeURIComponent(currentUser)}&goal=${encodeURIComponent(goal)}&top_n=3`);
+      courses = d.courses || [];
+    } catch(e) {
+      const d = await api(`/api/search?q=${encodeURIComponent(goal)}&top_n=3`);
+      courses = d.courses || [];
+    }
+    const html = courses.slice(0,3).map(c => renderCourseCard(c, false)).join('');
+    document.getElementById('continueLearning').innerHTML = html ||
+      '<div class="callout">Complete your profile to get personalised recommendations.</div>';
+  } catch(e) {
+    document.getElementById('continueLearning').innerHTML =
+      '<div class="callout">Could not load recommendations.</div>';
+  }
+}
+
+/* ══ My Learning ═══════════════════════════════════════════════════════════ */
+async function loadMyLearning() {
+  loading('inprogressList');
+  loading('savedList');
+  loading('completedList');
+
+  // ── History (in-progress + completed) ────────────────────────────────────
+  try {
+    let history = [];
+    try {
+      const profile = await api(`/api/users/${encodeURIComponent(currentUser)}/profile`);
+      history = profile.recent_history || [];
+    } catch(e) { /* new user — no history yet */ }
+
+    const completed  = history.filter(h => h.completed);
+    const inprogress = history.filter(h => !h.completed);
+
+    const renderHistory = (items) => items.length
+      ? items.map(h => `
+        <div class="inprogress-card">
+          <div class="inprogress-title">${h.title || 'Untitled course'}</div>
+          <div class="inprogress-meta">${h.difficulty || ''} · Quiz: ${h.quiz_score ? Math.round(h.quiz_score) + '%' : 'Not taken'}</div>
+          ${h.completed ? `<span class="pill pill-beginner" style="font-size:11px">✓ Completed</span>` : `
+            <div class="inprogress-progress-label">
+              <span>In progress</span><span>${h.quiz_score ? Math.round(h.quiz_score) + '%' : '0%'}</span>
+            </div>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill" style="width:${h.quiz_score || 0}%"></div>
+            </div>`}
+        </div>`).join('')
+      : '<div class="empty-state"><div class="empty-state-icon">📭</div><div>Nothing here yet</div></div>';
+
+    document.getElementById('inprogressList').innerHTML = inprogress.length
+      ? renderHistory(inprogress)
+      : '<div class="empty-state"><div class="empty-state-icon">📚</div><div>No courses in progress yet — get a recommendation to start!</div></div>';
+
+    document.getElementById('completedList').innerHTML = completed.length
+      ? renderHistory(completed)
+      : '<div class="empty-state"><div class="empty-state-icon">🏁</div><div>No completed courses yet.</div></div>';
+
+  } catch(e) {
+    empty('inprogressList', 'Could not load learning history.');
+    empty('completedList', 'Could not load learning history.');
+  }
+
+  // ── Saved courses — always loads independently of history ─────────────────
+  try {
+    const saved      = await api('/api/auth/saved-courses');
+    const savedItems = saved.courses || [];
+    if (!savedItems.length) {
+      document.getElementById('savedList').innerHTML =
+        '<div class="empty-state"><div class="empty-state-icon">🔖</div><div>No saved courses yet — hit <strong>🔖 Save</strong> on any course to bookmark it here.</div></div>';
+    } else {
+      document.getElementById('savedList').innerHTML = savedItems.map(s => `
+        <div class="inprogress-card">
+          <div class="inprogress-title">${s.title}</div>
+          <div class="inprogress-meta">
+            ${[s.subject, s.difficulty, s.source].filter(Boolean).join(' · ')}
+            ${s.rating ? ` · ⭐ ${Number(s.rating).toFixed(1)}` : ''}
+          </div>
+          <div style="display:flex;gap:8px;margin-top:10px;align-items:center;flex-wrap:wrap">
+            ${s.link ? `<a class="course-link" href="${s.link}" target="_blank" style="font-size:11px">↗ Open course</a>` : ''}
+            <button class="btn" style="font-size:11px;padding:3px 9px;color:var(--red);border-color:rgba(248,113,113,0.3)"
+                    onclick="unsaveFromList('${s.course_id}', this.closest('.inprogress-card'))">✕ Remove</button>
+          </div>
+        </div>`).join('');
+    }
+  } catch(e) {
+    document.getElementById('savedList').innerHTML =
+      '<div class="callout">Could not load saved courses.</div>';
+  }
+}
+
+/* ══ My Progress ═══════════════════════════════════════════════════════════ */
+async function loadProgress() {
+  try {
+    let profile = {};
+    try {
+      profile = await api(`/api/users/${encodeURIComponent(currentUser)}/profile`);
+    } catch(e) {
+      profile = {
+        n_interactions: 0, avg_quiz_score: 0, streak: 0,
+        skill_level: currentUserObj.skill_level || 1,
+        weekly_hours: currentUserObj.weekly_hours || 5,
+        strength_subject: currentUserObj.preferred_subjects?.[0] || '—',
+        weakness_subject: '—', learning_velocity: 0,
+      };
+    }
+
+    // 30-day calendar
+    const xpTotal = (profile.n_interactions || 0) * 15;
+    const streak  = profile.streak || Math.min(profile.n_interactions || 0, 7);
+    const activeDays = new Set();
+    const today = new Date();
+    for (let i = 0; i < Math.min(streak, 30); i++) {
+      const d = new Date(today); d.setDate(today.getDate() - i);
+      activeDays.add(d.toISOString().slice(0,10));
+    }
+    renderStreakCalendar('fullCalendar', 30, activeDays);
+
+    // Achievements
+    const badges = [
+      { emoji:'🌱', label:'First Step',   earned: (profile.n_interactions || 0) >= 1 },
+      { emoji:'📚', label:'5 Courses',    earned: (profile.n_interactions || 0) >= 5 },
+      { emoji:'🔥', label:'3-Day Streak', earned: streak >= 3 },
+      { emoji:'⭐', label:'High Scorer',  earned: (profile.avg_quiz_score || 0) >= 80 },
+      { emoji:'🚀', label:'10 Courses',   earned: (profile.n_interactions || 0) >= 10 },
+      { emoji:'🏆', label:'Expert',       earned: (profile.n_interactions || 0) >= 25 },
+    ];
+    document.getElementById('badgeGrid').innerHTML = badges.map(b => `
+      <div class="badge-item ${b.earned ? 'earned' : ''}">
+        <div class="badge-icon">${b.emoji}</div>
+        <div>${b.label}</div>
+      </div>`).join('');
+
+    // Subject heatmap
+    const subjectData = {
+      [profile.strength_subject || 'Machine Learning & AI']: Math.min(100, (profile.avg_quiz_score || 50) + 20),
+      [profile.weakness_subject || 'Data Science']:          Math.max(10, (profile.avg_quiz_score || 50) - 20),
+      'Programming & Software Dev': profile.avg_quiz_score || 50,
+    };
+    const colors = ['#7b6ff0','#34d399','#22d3ee','#fbbf24','#f472b6','#f87171'];
+    const maxVal = Math.max(...Object.values(subjectData));
+    document.getElementById('subjectHeatmap').innerHTML =
+      Object.entries(subjectData).map(([subj, val], i) => `
+        <div class="heatmap-bar">
+          <div class="heatmap-label" title="${subj}">${subj}</div>
+          <div class="heatmap-track">
+            <div class="heatmap-fill" style="width:${Math.round(val/maxVal*100)}%;background:${colors[i%colors.length]}"></div>
+          </div>
+          <div class="heatmap-val">${Math.round(val)}</div>
+        </div>`).join('');
+
+    // Learning stats
+    const vel = profile.learning_velocity || 0;
+    document.getElementById('learningStats').innerHTML = [
+      ['Skill level',       ['Beginner','Intermediate','Advanced'][Math.min((profile.skill_level||1)-1, 2)]],
+      ['Courses completed', profile.n_interactions || 0],
+      ['Avg quiz score',    profile.avg_quiz_score ? Math.round(profile.avg_quiz_score) + '%' : '—'],
+      ['Learning velocity', vel > 3 ? '📈 Rapid' : vel > 0 ? '📈 Improving' : '➡️ Stable'],
+      ['Strong subject',    profile.strength_subject || '—'],
+      ['Focus area',        profile.weakness_subject || '—'],
+      ['Weekly hours',      (profile.weekly_hours || 5) + ' hrs'],
+      ['Total XP',          fmtNum(xpTotal)],
+    ].map(([k,v]) => `
+      <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:12px">
+        <span style="color:var(--muted)">${k}</span>
+        <span style="font-weight:500">${v}</span>
+      </div>`).join('');
+  } catch(e) {
+    showToast('Could not load progress data', 'error');
+  }
+}
+
+/* ══ Course card renderer ══════════════════════════════════════════════════ */
+const DIFF_PILL = { Beginner:'pill-beginner', Intermediate:'pill-intermediate', Advanced:'pill-advanced', Mixed:'pill-mixed' };
+
+/* ══ Course registry — keyed by course_id for save lookups ════════════════ */
+const _courseRegistry  = {};
+const _savedCourseIds  = new Set();
+
+function renderCourseCard(c, showRank = false) {
+  _courseRegistry[c.course_id] = c;
+  const diff    = c.difficulty || 'Mixed';
+  const pillCls = DIFF_PILL[diff] || 'pill-mixed';
+  const rankHtml = showRank && c._rank ? `<span style="font-family:var(--mono);font-size:10px;color:var(--muted2)">#${String(c._rank).padStart(2,'0')} </span>` : '';
+  const isSaved  = _savedCourseIds.has(c.course_id);
+  const outcome = c.predicted_outcome;
+  const risk = c.dropout_risk;
+  let mlBadgesHtml = '';
+  if (outcome || risk) {
+    const outcomeCls = outcome ? `pill-outcome-${outcome.toLowerCase()}` : '';
+    const riskCls = risk ? `pill-risk-${risk.toLowerCase()}` : '';
+    const outcomeIcon = outcome === 'Excel' ? '✨' : (outcome === 'Struggle' ? '⚠️' : '🎯');
+    const riskIcon = risk === 'High' ? '🚨' : (risk === 'Medium' ? '⚠️' : '🛡️');
+    mlBadgesHtml = `
+      <div class="course-ml-badges" style="display:flex;gap:6px;align-items:center;margin-top:6px;flex-wrap:wrap">
+        ${outcome ? `<span class="pill ${outcomeCls}" title="Cognitive Fit Model: Match=${Math.round((c.match_prob||0)*100)}%, Excel=${Math.round((c.excel_prob||0)*100)}%, Struggle=${Math.round((c.struggle_prob||0)*100)}%">${outcomeIcon} Fit: ${outcome}</span>` : ''}
+        ${risk ? `<span class="pill ${riskCls}" title="Dropout Predictor: ${Math.round((c.dropout_probability||0)*100)}% attrition risk">${riskIcon} Risk: ${risk}</span>` : ''}
+      </div>`;
+  }
+  return `
+    <div class="course-card src-${c.source}" id="card-${c.course_id}">
+      <div class="course-title">${rankHtml}${c.title}</div>
+      <div class="course-meta">
+        <span class="pill ${pillCls}">${diff}</span>
+        <span class="pill pill-src">${c.source_label || c.source}</span>
+        <span style="font-size:11px;color:var(--muted)">⭐ ${Number(c.rating||0).toFixed(1)}</span>
+        ${c.duration ? `<span style="font-size:11px;color:var(--muted)">⏱ ${c.duration}</span>` : ''}
+      </div>
+      ${mlBadgesHtml}
+      <div class="course-subject">${c.subject}</div>
+      ${c.path_note ? `<div style="font-size:12px;color:var(--accent2);margin-top:5px">⭐ ${c.path_note}</div>` : ''}
+      <div class="course-actions">
+        <a class="course-link" href="${c.link}" target="_blank">↗ Open on ${c.source_label || c.source}</a>
+        <button class="btn" style="font-size:11px;padding:4px 10px;${isSaved?'color:var(--accent2);border-color:var(--accent)':''}"
+                id="save-btn-${c.course_id}"
+                onclick="toggleSave('${c.course_id}')">
+          ${isSaved ? '🔖 Saved' : '🔖 Save'}
+        </button>
+      </div>
+    </div>`;
+}
+
+/* ══ DYM banner ════════════════════════════════════════════════════════════ */
+function renderDidYouMean(original, corrected, onAccept, onOriginal) {
+  return `
+    <div class="dym-banner">
+      <span>🔍 Showing results for</span>
+      <span class="dym-suggestion" onclick="(${onAccept})()">${corrected}</span>
+      <span style="color:var(--muted2)">·</span>
+      <span class="dym-original" onclick="(${onOriginal})()">Search instead for: <u>${original}</u></span>
+    </div>`;
+}
+
+/* ══ Platform links helper ═════════════════════════════════════════════════ */
+function platformLinks(q) {
+  const enc = encodeURIComponent(q);
+  return [
+    {platform:'Coursera',  color:'#0056d2', url:`https://www.coursera.org/search?query=${enc}`},
+    {platform:'Udemy',     color:'#a435f0', url:`https://www.udemy.com/courses/search/?q=${enc}`},
+    {platform:'EdX',       color:'#e53e3e', url:`https://www.edx.org/search?q=${enc}`},
+    {platform:'Udacity',   color:'#02b3e4', url:`https://www.udacity.com/catalog?search=${enc}`},
+    {platform:'FutureLearn',color:'#de2954',url:`https://www.futurelearn.com/search?q=${enc}`},
+    {platform:'Simplilearn',color:'#f97316',url:`https://www.simplilearn.com/search?q=${enc}`},
+  ];
+}
+function renderPlatformLinks(q) {
+  return `
+    <div class="no-results-box">
+      <div class="no-results-icon">🔍</div>
+      <div class="no-results-title">"${q}" — not in our catalogue</div>
+      <div class="no-results-sub">This topic isn't in our dataset. Search directly on the platforms:</div>
+      <div class="platform-links-title">Search on all platforms</div>
+      <div class="platform-links-grid">
+        ${platformLinks(q).map(l => `
+          <a class="platform-link-card" href="${l.url}" target="_blank">
+            <div class="platform-dot" style="background:${l.color}"></div>
+            <span>${l.platform}</span><span class="platform-arrow">↗</span>
+          </a>`).join('')}
+      </div>
+    </div>`;
+}
+
+/* ══ Career goal chips ═════════════════════════════════════════════════════ */
+const CAREERS = [
+  {icon:'🤖',label:'Data Scientist',   goal:'data science and machine learning'},
+  {icon:'🧠',label:'ML Engineer',      goal:'machine learning engineering'},
+  {icon:'🌐',label:'Web Developer',    goal:'full stack web development'},
+  {icon:'☁️',label:'Cloud Engineer',   goal:'cloud computing and devops'},
+  {icon:'🔐',label:'Cyber Analyst',    goal:'cybersecurity'},
+  {icon:'📊',label:'Biz Analyst',      goal:'business analytics'},
+];
+function initCareerGrid() {
+  document.getElementById('careerGrid').innerHTML = CAREERS.map(c => `
+    <div class="career-card" onclick="selectCareer(this,'${c.goal}')">
+      <div class="cc-icon">${c.icon}</div>
+      <div class="cc-label">${c.label}</div>
+    </div>`).join('');
+}
+function selectCareer(el, goal) {
+  document.querySelectorAll('.career-card').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('recGoal').value = goal;
+}
+
+/* ══ Recommendations ═══════════════════════════════════════════════════════ */
+async function fetchRecommendations(noCorrect = false) {
+  const goal   = document.getElementById('recGoal').value.trim();
+  const topN   = document.getElementById('recTopN').value;
+  const level  = document.getElementById('recLevel').value;
+  const source = document.getElementById('recSource').value;
+  const dur    = document.getElementById('recDur').value;
+  if (!goal) return showToast('Enter a learning goal', 'error');
+
+  loading('recResults');
+  document.getElementById('recMeta').innerHTML = '';
+  try {
+    let url = `/api/recommend?user_id=${encodeURIComponent(currentUser)}&goal=${encodeURIComponent(goal)}&top_n=${topN}`;
+    if (level)     url += `&level=${encodeURIComponent(level)}`;
+    if (source)    url += `&source=${encodeURIComponent(source)}`;
+    if (dur)       url += `&max_dur=${dur}`;
+    if (noCorrect) url += `&no_correct=true`;
+    const d = await api(url);
+
+    const filterPills = (d.filters_applied || []).map(f =>
+      `<span style="display:inline-block;background:var(--accent-bg);border:1px solid rgba(123,111,240,0.3);border-radius:6px;padding:2px 9px;font-size:11px;color:var(--accent2);margin-left:6px">${f}</span>`
+    ).join('');
+
+    document.getElementById('recMeta').innerHTML = `
+      <div class="callout" style="margin-bottom:14px">
+        <strong style="color:${d.no_filter_results ? 'var(--red)' : 'var(--green)'}">${d.count} results</strong>
+        · Level: <strong>${d.level}</strong> · Mode: <strong>${d.mode}</strong>
+        ${filterPills}
+      </div>`;
+
+    let html = '';
+    if (d.did_you_mean && d.did_you_mean !== goal) {
+      html += renderDidYouMean(
+        goal, d.did_you_mean,
+        `function(){ document.getElementById('recGoal').value=${JSON.stringify(d.did_you_mean)}; fetchRecommendations(false); }`,
+        `function(){ fetchRecommendations(true); }`
+      );
+    }
+    if (d.no_filter_results) {
+      html += `<div class="callout" style="border-color:var(--amber);text-align:center;padding:28px">
+        <div style="font-size:24px;margin-bottom:8px">🔍</div>
+        <div style="font-weight:600;margin-bottom:6px">No courses match your filters</div>
+        <div style="color:var(--muted);font-size:12px;margin-bottom:14px">Try relaxing the level, platform or duration filters.</div>
+        <button class="btn" onclick="document.getElementById('recLevel').value='';document.getElementById('recSource').value='';document.getElementById('recDur').value='';fetchRecommendations()">Clear filters & retry</button>
+      </div>`;
+    } else {
+      html += d.courses.map((c,i) => { c._rank = i+1; return renderCourseCard(c, true); }).join('');
+    }
+    document.getElementById('recResults').innerHTML = html;
+  } catch(e) {
+    empty('recResults', 'Failed to load recommendations');
+  }
+}
+
+/* ══ Learning Path ═════════════════════════════════════════════════════════ */
+async function loadSubjects() {
+  try {
+    const d = await api('/api/courses/subjects');
+    const sel = document.getElementById('pathSubject');
+    sel.innerHTML = '<option value="">Select a subject…</option>' +
+      d.subjects.map(s => `<option value="${s}">${s}</option>`).join('');
+    // Pre-select user's preferred subject
+    const pref = currentUserObj.preferred_subjects?.[0];
+    if (pref) { sel.value = pref; }
+  } catch(e) {}
+}
+
+async function fetchLearningPath() {
+  const subject = document.getElementById('pathSubject').value;
+  if (!subject) return showToast('Select a subject first', 'error');
+  loading('pathStages');
+  document.getElementById('pathMeta').innerHTML = '';
+  try {
+    const d = await api(`/api/learning-path?user_id=${encodeURIComponent(currentUser)}&subject=${encodeURIComponent(subject)}`);
+    document.getElementById('pathMeta').innerHTML = `
+      <div class="callout" style="margin-bottom:14px">
+        Recommended starting point: <strong style="color:var(--green)">${d.recommended_start}</strong>
+        · Total: <strong>${d.total_hours} hrs</strong>
+        · Est. <strong>${d.est_weeks} weeks</strong> at ${d.weekly_hours} hrs/week
+      </div>`;
+
+    const COLORS = { Beginner:'#34d399', Intermediate:'#fbbf24', Advanced:'#f87171' };
+    let html = '';
+    for (const [stage, data] of Object.entries(d.stages)) {
+      const isStart = stage === d.recommended_start;
+      const col = COLORS[stage] || 'var(--accent)';
+      const courses = data.courses || [];
+      html += `
+        <div class="path-stage ${isStart ? 'open' : ''}">
+          <div class="path-stage-header" onclick="this.parentElement.classList.toggle('open')">
+            <div class="path-stage-dot" style="background:${col}"></div>
+            <div class="path-stage-title">${stage}${isStart ? ' — Start here' : ''}</div>
+            <div class="path-stage-badge">${courses.length} courses</div>
+            <div class="path-stage-arrow">▾</div>
+          </div>
+          <div class="path-stage-body">
+            ${courses.length ? courses.map(c => renderCourseCard(c)).join('') :
+              '<div class="callout">No courses at this level.</div>'}
+          </div>
+        </div>`;
+    }
+    document.getElementById('pathStages').innerHTML = html;
+  } catch(e) { empty('pathStages', 'Failed to load learning path'); }
+}
+
+/* ══ Skill Gap ═════════════════════════════════════════════════════════════ */
+async function fetchSkillGap(noCorrect = false) {
+  const goal = document.getElementById('gapGoal').value.trim();
+  if (!goal) return showToast('Enter a goal', 'error');
+  loading('gapResults');
+  try {
+    let url = `/api/skill-gap?user_id=${encodeURIComponent(currentUser)}&goal=${encodeURIComponent(goal)}`;
+    if (noCorrect) url += `&no_correct=true`;
+    const d = await api(url);
+    const p = d.profile;
+
+    let dymHtml = '';
+    if (d.did_you_mean && d.did_you_mean !== goal) {
+      dymHtml = renderDidYouMean(
+        goal, d.did_you_mean,
+        `function(){ document.getElementById('gapGoal').value=${JSON.stringify(d.did_you_mean)}; fetchSkillGap(false); }`,
+        `function(){ fetchSkillGap(true); }`
+      );
+    }
+
+    if (d.not_found || d.status === 'not_found') {
+      document.getElementById('gapResults').innerHTML = dymHtml + renderPlatformLinks(d.searched_for || goal);
+      return;
+    }
+
+    const displayGoal = d.searched_for || goal;
+    let html = dymHtml + `
+      <div class="section-title" style="font-size:16px;margin-bottom:14px">Prerequisites for: ${displayGoal}</div>`;
+
+    if (!d.gaps?.length) {
+      html += `<div class="callout callout-success">
+        ✓ No prerequisite gaps found — you may be ready to start directly!
+        <div style="margin-top:12px;font-size:11px">Also explore on platforms:</div>
+        <div class="platform-links-grid" style="margin-top:8px">
+          ${platformLinks(displayGoal).map(l => `
+            <a class="platform-link-card" href="${l.url}" target="_blank">
+              <div class="platform-dot" style="background:${l.color}"></div>
+              <span>${l.platform}</span><span class="platform-arrow">↗</span>
+            </a>`).join('')}
+        </div>
+      </div>`;
+    } else {
+      html += d.gaps.map(c => renderCourseCard(c)).join('');
+      html += `<div style="margin-top:16px">
+        <div class="platform-links-title" style="text-align:center">Also explore on platforms</div>
+        <div class="platform-links-grid">
+          ${platformLinks(displayGoal).map(l => `
+            <a class="platform-link-card" href="${l.url}" target="_blank">
+              <div class="platform-dot" style="background:${l.color}"></div>
+              <span>${l.platform}</span><span class="platform-arrow">↗</span>
+            </a>`).join('')}
+        </div>
+      </div>`;
+    }
+    document.getElementById('gapResults').innerHTML = html;
+  } catch(e) { empty('gapResults', 'Failed to analyse skill gaps'); }
+}
+
+/* ══ Search ════════════════════════════════════════════════════════════════ */
+async function fetchSearch(noCorrect = false) {
+  const q    = document.getElementById('searchQuery').value.trim();
+  const topN = document.getElementById('searchN').value;
+  if (!q) return showToast('Enter a search query', 'error');
+  loading('searchResults');
+  try {
+    let url = `/api/search?q=${encodeURIComponent(q)}&top_n=${topN}`;
+    if (noCorrect) url += `&no_correct=true`;
+    const d = await api(url);
+
+    let html = '';
+    if (d.did_you_mean && d.did_you_mean !== q) {
+      html += renderDidYouMean(
+        q, d.did_you_mean,
+        `function(){ document.getElementById('searchQuery').value=${JSON.stringify(d.did_you_mean)}; fetchSearch(false); }`,
+        `function(){ fetchSearch(true); }`
+      );
+    }
+
+    if (d.low_relevance || !d.courses?.length) {
+      html += renderPlatformLinks(d.search_query || q);
+    } else {
+      html += `<div class="callout" style="margin-bottom:14px">${d.count} results for "<strong>${d.search_query || q}</strong>"</div>`;
+      html += d.courses.map((c,i) => { c._rank = i+1; return renderCourseCard(c, true); }).join('');
+      html += `<div style="margin-top:20px">
+        <div class="platform-links-title" style="text-align:center">Also search directly on platforms</div>
+        <div class="platform-links-grid">
+          ${platformLinks(q).map(l => `
+            <a class="platform-link-card" href="${l.url}" target="_blank">
+              <div class="platform-dot" style="background:${l.color}"></div>
+              <span>${l.platform}</span><span class="platform-arrow">↗</span>
+            </a>`).join('')}
+        </div>
+      </div>`;
+    }
+    document.getElementById('searchResults').innerHTML = html;
+  } catch(e) { empty('searchResults', 'Search failed'); }
+}
+
+/* ══ Remove saved course directly from the saved list ══════════════════════ */
+async function unsaveFromList(courseId, cardEl) {
+  try {
+    await fetch(`${API}/api/auth/saved-courses/${encodeURIComponent(courseId)}`, {
+      method: 'DELETE',
+      headers: { 'Authorization': `Bearer ${_token}` },
+    });
+    _savedCourseIds.delete(courseId);
+    cardEl.remove();
+    // Update save button if still visible on page
+    const btn = document.getElementById(`save-btn-${courseId}`);
+    if (btn) { btn.textContent = '🔖 Save'; btn.style.color = ''; btn.style.borderColor = ''; }
+    showToast('Course removed', 'success');
+  } catch(e) { showToast('Could not remove course', 'error'); }
+}
+
+/* ══ Save / unsave a course ════════════════════════════════════════════════ */
+async function toggleSave(courseId) {
+  const c   = _courseRegistry[courseId];
+  const btn = document.getElementById(`save-btn-${courseId}`);
+  if (!c || !btn) return;
+
+  const isSaved = _savedCourseIds.has(courseId);
+
+  try {
+    if (isSaved) {
+      await fetch(`${API}/api/auth/saved-courses/${encodeURIComponent(courseId)}`, {
+        method: 'DELETE',
+        headers: { 'Authorization': `Bearer ${_token}` },
+      });
+      _savedCourseIds.delete(courseId);
+      btn.textContent = '🔖 Save';
+      btn.style.color = '';
+      btn.style.borderColor = '';
+      showToast('Course removed from saved', 'success');
+    } else {
+      await post('/api/auth/saved-courses', {
+        course_id:  c.course_id,
+        title:      c.title,
+        subject:    c.subject     || '',
+        difficulty: c.difficulty  || '',
+        source:     c.source      || '',
+        rating:     c.rating      || 0,
+        duration:   c.duration    || '',
+        link:       c.link        || '',
+      });
+      _savedCourseIds.add(courseId);
+      btn.textContent = '🔖 Saved';
+      btn.style.color = 'var(--accent2)';
+      btn.style.borderColor = 'var(--accent)';
+      showToast('Course saved! ✓', 'success');
+    }
+  } catch(e) {
+    showToast('Could not save course', 'error');
+  }
+}
+
+/* ══ Load saved course IDs on boot (for button state) ═════════════════════ */
+async function loadSavedCourseIds() {
+  try {
+    const d = await api('/api/auth/saved-courses');
+    (d.courses || []).forEach(s => _savedCourseIds.add(s.course_id));
+  } catch(e) { /* not critical */ }
+}
+
+/* ══ My Analytics ═════════════════════════════════════════════════════════ */
+async function loadAnalytics() {
+  try {
+    const d = await api(`/api/users/${encodeURIComponent(currentUser)}/analytics`);
+    const vel = d.velocity;
+
+    // ── KPI row ────────────────────────────────────────────────────────────
+    document.getElementById('aKpiCourses').textContent  = d.n_interactions;
+    document.getElementById('aKpiAvgScore').textContent = d.avg_quiz_score ? Math.round(d.avg_quiz_score) + '%' : '—';
+    document.getElementById('aKpiBest').textContent     = d.best_score ? Math.round(d.best_score) + '%' : '—';
+    document.getElementById('aKpiHours').textContent    = d.time_investment.total_hours + 'h';
+    document.getElementById('aKpiRate').textContent     = d.completion_funnel.rate ? Math.round(d.completion_funnel.rate * 100) + '%' : '—';
+    document.getElementById('analyticsSub').textContent =
+      `${d.n_interactions} courses · ${d.time_investment.total_hours}h invested · ` +
+      `Velocity: ${vel > 3 ? '📈 Rapid' : vel > 0 ? '📈 Improving' : vel < -3 ? '📉 Declining' : '➡️ Stable'}`;
+
+    // ── Quiz score trend sparkline ─────────────────────────────────────────
+    const trend = d.quiz_trend;
+    if (trend.length < 2) {
+      document.getElementById('aTrendChart').innerHTML =
+        '<div style="height:100%;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px">Complete more courses to see your trend</div>';
+    } else {
+      const scores = trend.map(t => t.score);
+      const minS = Math.min(...scores), maxS = Math.max(...scores), range = maxS - minS || 1;
+      const W = 100 / (scores.length - 1);
+      const pts = scores.map((s, i) => `${i*W},${100 - ((s-minS)/range*80+10)}`).join(' ');
+      const areapts = `0,100 ${pts} ${(scores.length-1)*W},100`;
+      const lineColor = vel >= 0 ? 'var(--green)' : 'var(--red)';
+      const dotC = s => s >= 75 ? 'var(--green)' : s >= 50 ? 'var(--amber)' : 'var(--red)';
+      const dots = scores.map((s, i) => {
+        const x = i*W, y = 100-((s-minS)/range*80+10);
+        return `<circle cx="${x}%" cy="${y}%" r="3" fill="${dotC(s)}" stroke="var(--bg1)" stroke-width="1.5"><title>${trend[i].label} — ${s}%</title></circle>`;
+      }).join('');
+      document.getElementById('aTrendChart').innerHTML = `
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="width:100%;height:100%;overflow:visible">
+          <defs><linearGradient id="tGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="${lineColor}" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="${lineColor}" stop-opacity="0"/>
+          </linearGradient></defs>
+          <polygon points="${areapts}" fill="url(#tGrad)"/>
+          <polyline points="${pts}" fill="none" stroke="${lineColor}" stroke-width="1.5" stroke-linejoin="round"/>
+          ${dots}
+        </svg>`;
+      const half = Math.max(1, Math.floor(scores.length/2));
+      const f5avg = Math.round(scores.slice(0,half).reduce((a,b)=>a+b,0)/half);
+      const l5avg = Math.round(scores.slice(-half).reduce((a,b)=>a+b,0)/half);
+      const delta = l5avg - f5avg;
+      document.getElementById('aTrendMeta').innerHTML = `
+        <span>First avg: <strong>${f5avg}%</strong></span>
+        <span>Recent avg: <strong>${l5avg}%</strong></span>
+        <span style="color:${delta>=0?'var(--green)':'var(--red)'}">${delta>=0?'▲':'▼'} ${Math.abs(delta)}pp</span>`;
+      document.getElementById('aTrendSub').textContent = `Last ${trend.length} courses · min ${Math.round(minS)}% · max ${Math.round(maxS)}%`;
+    }
+
+    // ── Completion funnel ──────────────────────────────────────────────────
+    const f = d.completion_funnel;
+    const barW = n => f.total > 0 ? Math.round(n/f.total*100) : 0;
+    document.getElementById('aFunnel').innerHTML = [
+      ['Started',   f.total,     'var(--accent)'],
+      ['Completed', f.completed, 'var(--green)'],
+      ['Dropped',   f.dropped,   'var(--red)'],
+    ].map(([lbl,val,col]) => `
+      <div style="margin-bottom:10px">
+        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px">
+          <span style="color:var(--muted)">${lbl}</span>
+          <span style="font-weight:500;color:${col}">${val} <span style="color:var(--muted2);font-size:10px">(${barW(val)}%)</span></span>
+        </div>
+        <div style="background:var(--bg3);border-radius:4px;height:6px">
+          <div style="width:${barW(val)}%;height:6px;background:${col};border-radius:4px"></div>
+        </div>
+      </div>`).join('');
+
+    // ── Score distribution ─────────────────────────────────────────────────
+    const sd = d.score_distribution || {}, sdMax = Math.max(...Object.values(sd), 1);
+    const sdC = {'0-40':'var(--red)','40-60':'var(--amber)','60-75':'var(--cyan)','75-90':'var(--accent2)','90-100':'var(--green)'};
+    document.getElementById('aScoreDist').innerHTML = Object.entries(sd).map(([r,c]) => `
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px;font-size:11px">
+        <span style="width:48px;color:var(--muted);flex-shrink:0">${r}%</span>
+        <div style="flex:1;background:var(--bg3);border-radius:3px;height:5px">
+          <div style="width:${Math.round(c/sdMax*100)}%;height:5px;background:${sdC[r]||'var(--accent)'};border-radius:3px"></div>
+        </div>
+        <span style="width:20px;text-align:right;color:var(--muted2)">${c}</span>
+      </div>`).join('');
+
+    // ── Subject performance ────────────────────────────────────────────────
+    const ss = d.subject_scores || {}, ssMax = Math.max(...Object.values(ss).map(v=>v.avg_score), 1);
+    const sC = ['var(--accent2)','var(--green)','var(--cyan)','var(--amber)','var(--pink)','var(--red)'];
+    document.getElementById('aSubjectMap').innerHTML = Object.entries(ss).slice(0,8).length
+      ? Object.entries(ss).slice(0,8).map(([subj,v],i) => `
+        <div style="margin-bottom:10px">
+          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px">
+            <span style="color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:175px" title="${subj}">${subj}</span>
+            <span style="font-weight:500;color:${sC[i%sC.length]};flex-shrink:0;margin-left:8px">${v.avg_score}% <span style="color:var(--muted2);font-weight:400">(${v.n_courses})</span></span>
+          </div>
+          <div style="background:var(--bg3);border-radius:4px;height:6px">
+            <div style="width:${Math.round(v.avg_score/ssMax*100)}%;height:6px;background:${sC[i%sC.length]};border-radius:4px"></div>
+          </div>
+        </div>`).join('')
+      : '<div style="color:var(--muted);font-size:12px">No subject data yet</div>';
+
+    // ── Difficulty distribution ────────────────────────────────────────────
+    const dd = d.difficulty_dist || {}, ddC = {Beginner:'var(--green)',Mixed:'var(--cyan)',Intermediate:'var(--amber)',Advanced:'var(--red)'};
+    const ddTotal = Object.values(dd).reduce((s,v)=>s+v.count,0)||1;
+    document.getElementById('aDiffDist').innerHTML = Object.entries(dd).length
+      ? Object.entries(dd).map(([diff,v]) => `
+        <div style="margin-bottom:10px">
+          <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px">
+            <span style="color:var(--muted)">${diff}</span>
+            <span style="font-weight:500;color:${ddC[diff]||'var(--accent2)'}">${v.count} · avg ${v.avg_score}%</span>
+          </div>
+          <div style="background:var(--bg3);border-radius:4px;height:6px">
+            <div style="width:${Math.round(v.count/ddTotal*100)}%;height:6px;background:${ddC[diff]||'var(--accent)'};border-radius:4px"></div>
+          </div>
+        </div>`).join('')
+      : '<div style="color:var(--muted);font-size:12px">No difficulty data yet</div>';
+
+    // ── Difficulty progression mini-bars ───────────────────────────────────
+    const dp = d.difficulty_progression || [];
+    const dpH = {0:12,1:20,2:35,3:48}, dpC = {0:'var(--cyan)',1:'var(--green)',2:'var(--amber)',3:'var(--red)'};
+    document.getElementById('aDiffProg').innerHTML = dp.length
+      ? dp.map((v,i) => `
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">
+          <div style="width:100%;background:${dpC[v]||'var(--accent)'};border-radius:2px 2px 0 0;height:${dpH[v]||12}px;opacity:${0.45+i/dp.length*0.55}"></div>
+          <span style="font-size:8px;color:var(--muted2)">${['Mix','Beg','Int','Adv'][v]||''}</span>
+        </div>`).join('')
+      : '<div style="color:var(--muted);font-size:12px">No data</div>';
+
+    // ── Time investment ────────────────────────────────────────────────────
+    const ti = d.time_investment;
+    document.getElementById('aTimeStat').innerHTML = [
+      ['Total invested',    ti.total_hours + ' hours'],
+      ['Avg per course',    Math.round(ti.avg_mins_per_course) + ' mins'],
+      ['Completed',         d.completion_funnel.completed],
+      ['Dropped',           d.completion_funnel.dropped],
+      ['Completion rate',   Math.round(d.completion_funnel.rate*100) + '%'],
+    ].map(([k,v]) => `
+      <div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:12px">
+        <span style="color:var(--muted)">${k}</span><span style="font-weight:500">${v}</span>
+      </div>`).join('');
+
+    // ── Personalised insights ──────────────────────────────────────────────
+    const avg = d.avg_quiz_score || 0, rate = d.completion_funnel.rate, vn = d.velocity;
+    const insights = [];
+    if (avg >= 80)       insights.push({i:'🌟',t:`Scoring ${Math.round(avg)}% avg — high performer. Ready for Advanced content.`, c:'var(--green)'});
+    else if (avg >= 60)  insights.push({i:'📈',t:`${Math.round(avg)}% average. Solid foundation — target your weaker subjects.`, c:'var(--accent2)'});
+    else                 insights.push({i:'💡',t:'Scores suggest the material may be above your current level. Try Beginner courses first.', c:'var(--amber)'});
+    if (rate >= 0.7)     insights.push({i:'✅',t:`${Math.round(rate*100)}% completion — excellent discipline.`, c:'var(--green)'});
+    else if (rate >= 0.4)insights.push({i:'⚡',t:`${Math.round(rate*100)}% completion. Try shorter courses to build finishing momentum.`, c:'var(--amber)'});
+    else                 insights.push({i:'🎯',t:'Low completion. Pick one course and finish it fully before starting another.', c:'var(--red)'});
+    if (vn > 3)          insights.push({i:'🚀',t:'Rapid improvement in recent sessions — keep it up!', c:'var(--green)'});
+    else if (vn > 0)     insights.push({i:'📊',t:'Steady upward trend. Consistency is your edge.', c:'var(--cyan)'});
+    else if (vn < -3)    insights.push({i:'🔄',t:'Recent scores dipping. Revisiting fundamentals may help.', c:'var(--red)'});
+    const top  = d.top_subjects?.[0], weak = d.top_subjects?.[d.top_subjects.length-1];
+    if (top  && d.subject_scores[top])  insights.push({i:'💪',t:`Strongest in ${top} (${d.subject_scores[top].avg_score}%).`, c:'var(--green)'});
+    if (weak && weak !== top && d.subject_scores[weak]) insights.push({i:'⚠️',t:`Needs work: ${weak} (${d.subject_scores[weak].avg_score}%). Try a Beginner course.`, c:'var(--amber)'});
+
+    document.getElementById('aInsights').innerHTML = insights.map(ins => `
+      <div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px;line-height:1.5;align-items:flex-start">
+        <span style="font-size:15px;flex-shrink:0">${ins.i}</span>
+        <span style="color:var(--muted)">${ins.t}</span>
+      </div>`).join('');
+
+  } catch(e) {
+    showToast('Could not load analytics', 'error');
+    console.error(e);
+  }
+}
+
+/* ══ Boot ══════════════════════════════════════════════════════════════════ */
+(async function boot() {
+  await refreshUserFromAuth();
+  await loadSavedCourseIds();
+  initUserUI();
+  initCareerGrid();
+  loadDashboard();
+  loadSubjects();
+})();
+</script>
+</body>
+</html>

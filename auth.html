@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdaptLearn — Sign in</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ── Design tokens — identical to index.html ───────────────────────────── */
+:root {
+  --bg:        #06060f;
+  --bg1:       #0c0c1a;
+  --bg2:       #111128;
+  --bg3:       #16162e;
+  --border:    rgba(255,255,255,0.06);
+  --border2:   rgba(255,255,255,0.1);
+  --text:      #e8e8f0;
+  --muted:     #5a5a7a;
+  --muted2:    #3a3a58;
+  --accent:    #7b6ff0;
+  --accent2:   #9d8ff5;
+  --accent-bg: rgba(123,111,240,0.08);
+  --green:     #34d399;
+  --amber:     #fbbf24;
+  --red:       #f87171;
+  --radius:    12px;
+  --font:      'Space Grotesk', 'Inter', sans-serif;
+  --display:   'Space Grotesk', sans-serif;
+}
+html.light {
+  --bg:        #f4f4fa;
+  --bg1:       #ffffff;
+  --bg2:       #eeeef8;
+  --bg3:       #e6e6f4;
+  --border:    rgba(0,0,0,0.07);
+  --border2:   rgba(0,0,0,0.12);
+  --text:      #1a1a2e;
+  --muted:     #6b6b8a;
+  --muted2:    #9898b8;
+  --accent:    #6355e0;
+  --accent2:   #7b6ff0;
+  --accent-bg: rgba(99,85,224,0.08);
+  --green:     #059669;
+  --red:       #dc2626;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(123,111,240,0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+/* ── Layout ─────────────────────────────────────────────────────────────── */
+.page-wrap {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  min-height: 560px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border2);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+}
+
+/* ── Left panel ─────────────────────────────────────────────────────────── */
+.left-panel {
+  flex: 1;
+  background: linear-gradient(145deg, #0d0b22 0%, #12103a 50%, #0f1f3d 100%);
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.left-panel::after {
+  content: '';
+  position: absolute;
+  bottom: -80px; right: -80px;
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(123,111,240,0.14) 0%, transparent 65%);
+  pointer-events: none;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+.brand-logo {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #9d8ff5, #c4b5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+.brand-tag {
+  font-size: 9px;
+  color: rgba(255,255,255,0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.left-headline {
+  font-family: var(--display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  margin-bottom: 16px;
+}
+.left-sub {
+  font-size: 13px;
+  color: rgba(165,180,252,0.8);
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+.feature-list { display: flex; flex-direction: column; gap: 12px; }
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+}
+.feature-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent2);
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+.left-stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+}
+.left-stat-val {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+.left-stat-lbl {
+  font-size: 10px;
+  color: rgba(255,255,255,0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
+
+/* ── Right panel ────────────────────────────────────────────────────────── */
+.right-panel {
+  width: 400px;
+  flex-shrink: 0;
+  background: var(--bg1);
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-head {
+  margin-bottom: 28px;
+}
+.form-title {
+  font-family: var(--display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+.form-sub {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ── Tab toggle ─────────────────────────────────────────────────────────── */
+.auth-tabs {
+  display: flex;
+  background: var(--bg2);
+  border-radius: 10px;
+  padding: 3px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+}
+.auth-tab {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.auth-tab.active {
+  background: var(--bg1);
+  color: var(--text);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+/* ── Form fields ────────────────────────────────────────────────────────── */
+.field { margin-bottom: 14px; }
+.field-label {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+.field-input {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 9px;
+  color: var(--text);
+  padding: 10px 13px;
+  font-size: 13px;
+  font-family: var(--font);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.field-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(123,111,240,0.1);
+}
+.field-input::placeholder { color: var(--muted2); }
+.field-input.error { border-color: var(--red); }
+
+.field-row { display: flex; gap: 10px; }
+.field-row .field { flex: 1; }
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+.btn-primary {
+  width: 100%;
+  padding: 11px;
+  background: var(--accent);
+  border: none;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-primary:hover { opacity: 0.9; }
+.btn-primary:active { transform: scale(0.98); }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-google {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid var(--border2);
+  border-radius: 9px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: background 0.18s, border-color 0.18s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.btn-google:hover { background: var(--bg2); border-color: var(--border2); }
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: var(--muted2);
+  font-size: 11px;
+}
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border2);
+}
+
+/* ── Role selector ──────────────────────────────────────────────────────── */
+.role-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+.role-card {
+  flex: 1;
+  padding: 14px 10px;
+  border-radius: 11px;
+  border: 1.5px solid var(--border2);
+  background: var(--bg2);
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.18s, background 0.18s, transform 0.12s;
+  user-select: none;
+}
+.role-card:hover { border-color: var(--accent); background: var(--bg3); }
+.role-card.active {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  box-shadow: 0 0 0 3px rgba(123,111,240,0.1);
+}
+.role-card:active { transform: scale(0.97); }
+.role-icon { font-size: 22px; margin-bottom: 6px; }
+.role-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  font-family: var(--font);
+}
+.role-sub {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.role-card.active .role-label { color: var(--accent2); }
+
+/* ── Admin pin field ────────────────────────────────────────────────────── */
+.admin-note {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(251,191,36,0.06);
+  border: 1px solid rgba(251,191,36,0.2);
+  border-radius: 8px;
+  padding: 8px 11px;
+  font-size: 11px;
+  color: var(--amber);
+  margin-bottom: 14px;
+}
+
+/* ── Errors & toast ─────────────────────────────────────────────────────── */
+.error-msg {
+  font-size: 11px;
+  color: var(--red);
+  margin-top: 4px;
+  display: none;
+}
+.error-msg.show { display: block; }
+
+.toast {
+  position: fixed;
+  bottom: 24px; left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--bg1);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 13px;
+  color: var(--text);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.28s;
+  z-index: 999;
+  white-space: nowrap;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.toast.error { border-color: rgba(248,113,113,0.4); color: var(--red); }
+.toast.success { border-color: rgba(52,211,153,0.4); color: var(--green); }
+
+/* Spinner */
+.spinner {
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Theme toggle ───────────────────────────────────────────────────────── */
+.theme-btn {
+  position: fixed;
+  top: 20px; right: 20px;
+  background: var(--bg1);
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  padding: 6px 14px 6px 10px;
+  font-size: 12px;
+  color: var(--muted);
+  font-family: var(--font);
+  cursor: pointer;
+  display: flex; align-items: center; gap: 6px;
+  transition: border-color 0.2s;
+  z-index: 10;
+}
+.theme-btn:hover { border-color: var(--accent); color: var(--text); }
+
+@media (max-width: 700px) {
+  .page-wrap { flex-direction: column; max-width: 420px; }
+  .left-panel { display: none; }
+  .right-panel { width: 100%; padding: 36px 28px; }
+}
+</style>
+</head>
+<body>
+
+<button class="theme-btn" onclick="toggleTheme()">
+  <span id="themeIcon">☀️</span>
+  <span id="themeLabel">Light mode</span>
+</button>
+
+<div class="page-wrap">
+  <!-- Left branding panel -->
+  <div class="left-panel">
+    <div>
+      <div class="brand">
+        <div>
+          <div class="brand-logo">AdaptLearn</div>
+          <div class="brand-tag">AI Learning Intelligence</div>
+        </div>
+      </div>
+      <div class="left-headline">Learn smarter,<br>not harder.</div>
+      <div class="left-sub">
+        AdaptLearn's AI engine builds a personalised curriculum around your
+        skill level, schedule and goals — no two learners see the same path.
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-dot"></div>Hybrid ML recommender — semantic + BM25 + collaborative filtering</div>
+        <div class="feature-item"><div class="feature-dot"></div>5-question onboarding quiz replaces cold-start with a warm AI profile</div>
+        <div class="feature-item"><div class="feature-dot"></div>Skill gap analysis maps prerequisites before you start any topic</div>
+        <div class="feature-item"><div class="feature-dot"></div>Daily streak & XP keep momentum going week after week</div>
+      </div>
+    </div>
+    <div class="left-stats">
+      <div>
+        <div class="left-stat-val">13.6k</div>
+        <div class="left-stat-lbl">Courses</div>
+      </div>
+      <div>
+        <div class="left-stat-val">6</div>
+        <div class="left-stat-lbl">Platforms</div>
+      </div>
+      <div>
+        <div class="left-stat-val">2k+</div>
+        <div class="left-stat-lbl">Learners</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right auth panel -->
+  <div class="right-panel">
+    <div class="form-head">
+      <div class="form-title" id="formTitle">Welcome back</div>
+      <div class="form-sub" id="formSub">Who are you signing in as?</div>
+    </div>
+
+    <!-- Role selector — sign-in only -->
+    <div id="role-step">
+      <div class="role-selector">
+        <div class="role-card active" id="role-learner" onclick="selectRole('learner')">
+          <div class="role-icon">🎓</div>
+          <div class="role-label">Learner</div>
+          <div class="role-sub">Student dashboard</div>
+        </div>
+        <div class="role-card" id="role-admin" onclick="selectRole('admin')">
+          <div class="role-icon">⚙️</div>
+          <div class="role-label">Admin</div>
+          <div class="role-sub">Platform dashboard</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab toggle -->
+    <div class="auth-tabs">
+      <button class="auth-tab active" id="tab-signin" onclick="switchTab('signin')">Sign in</button>
+      <button class="auth-tab" id="tab-signup" onclick="switchTab('signup')">Create account</button>
+    </div>
+
+    <!-- Sign In form -->
+    <div id="signin-form">
+      <div class="admin-note" id="admin-note" style="display:none">
+        ⚙️ Signing in as <strong>Admin</strong> — platform & model access
+      </div>
+      <div class="field">
+        <label class="field-label">Email</label>
+        <input type="email" class="field-input" id="si-email" placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label class="field-label">Password</label>
+        <input type="password" class="field-input" id="si-password" placeholder="Your password" autocomplete="current-password"
+               onkeydown="if(event.key==='Enter') submitSignIn()">
+      </div>
+      <div class="error-msg" id="si-error"></div>
+      <button class="btn-primary" id="si-btn" onclick="submitSignIn()">Sign in →</button>
+    </div>
+
+    <!-- Sign Up form -->
+    <div id="signup-form" style="display:none">
+      <div class="field-row">
+        <div class="field">
+          <label class="field-label">First name</label>
+          <input type="text" class="field-input" id="su-first" placeholder="Ada" autocomplete="given-name">
+        </div>
+        <div class="field">
+          <label class="field-label">Last name</label>
+          <input type="text" class="field-input" id="su-last" placeholder="Lovelace" autocomplete="family-name">
+        </div>
+      </div>
+      <div class="field">
+        <label class="field-label">Email</label>
+        <input type="email" class="field-input" id="su-email" placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label class="field-label">Password</label>
+        <input type="password" class="field-input" id="su-password" placeholder="Min 8 characters" autocomplete="new-password"
+               onkeydown="if(event.key==='Enter') submitSignUp()">
+      </div>
+      <div class="error-msg" id="su-error"></div>
+      <button class="btn-primary" id="su-btn" onclick="submitSignUp()">Create account →</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const API = (window.location.origin && window.location.origin.startsWith('http') && !['5500', '5501'].includes(window.location.port))
+  ? window.location.origin
+  : 'http://localhost:8012';
+let selectedRole = 'learner';
+
+/* ── Theme ─────────────────────────────────────────────────────────────── */
+function toggleTheme() {
+  const isLight = document.documentElement.classList.toggle('light');
+  document.getElementById('themeIcon').textContent  = isLight ? '🌙' : '☀️';
+  document.getElementById('themeLabel').textContent = isLight ? 'Dark mode' : 'Light mode';
+  try { localStorage.setItem('adaptlearn-theme', isLight ? 'light' : 'dark'); } catch(e) {}
+}
+(function() {
+  let saved = 'dark';
+  try { saved = localStorage.getItem('adaptlearn-theme') || 'dark'; } catch(e) {}
+  if (saved === 'light') {
+    document.documentElement.classList.add('light');
+    document.getElementById('themeIcon').textContent  = '🌙';
+    document.getElementById('themeLabel').textContent = 'Dark mode';
+  }
+})();
+
+/* ── Role selector ──────────────────────────────────────────────────────── */
+function selectRole(role) {
+  selectedRole = role;
+  document.getElementById('role-learner').classList.toggle('active', role === 'learner');
+  document.getElementById('role-admin').classList.toggle('active',   role === 'admin');
+  document.getElementById('admin-note').style.display = role === 'admin' ? 'flex' : 'none';
+
+  if (role === 'admin') {
+    document.getElementById('formTitle').textContent = 'Admin sign in';
+    document.getElementById('formSub').textContent   = 'Platform & model management access.';
+    document.getElementById('tab-signup').style.display = 'none';
+    switchTab('signin');
+  } else {
+    document.getElementById('formTitle').textContent = 'Welcome back';
+    document.getElementById('formSub').textContent   = 'Sign in to continue your learning journey.';
+    document.getElementById('tab-signup').style.display = '';
+  }
+}
+
+/* ── Tab switch ─────────────────────────────────────────────────────────── */
+function switchTab(tab) {
+  const isSignIn = tab === 'signin';
+  document.getElementById('tab-signin').classList.toggle('active', isSignIn);
+  document.getElementById('tab-signup').classList.toggle('active', !isSignIn);
+  document.getElementById('signin-form').style.display = isSignIn ? '' : 'none';
+  document.getElementById('signup-form').style.display = isSignIn ? 'none' : '';
+  document.getElementById('role-step').style.display   = isSignIn ? '' : 'none';
+  if (!isSignIn) {
+    document.getElementById('formTitle').textContent = 'Create your account';
+    document.getElementById('formSub').textContent   = 'Start learning in minutes — free forever.';
+  } else {
+    selectRole(selectedRole);
+  }
+}
+
+/* ── Toast ──────────────────────────────────────────────────────────────── */
+function toast(msg, type = 'success') {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = `toast show ${type}`;
+  setTimeout(() => el.className = 'toast', 3000);
+}
+
+/* ── Auth helpers ───────────────────────────────────────────────────────── */
+function setLoading(btnId, loading) {
+  const btn = document.getElementById(btnId);
+  btn.disabled = loading;
+  btn.innerHTML = loading
+    ? '<div class="spinner"></div>'
+    : (btnId === 'si-btn' ? 'Sign in →' : 'Create account →');
+}
+function showError(id, msg) {
+  const el = document.getElementById(id);
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 4000);
+}
+
+/* ── Sign in ────────────────────────────────────────────────────────────── */
+async function submitSignIn() {
+  const email    = document.getElementById('si-email').value.trim();
+  const password = document.getElementById('si-password').value;
+  if (!email || !password) return showError('si-error', 'Please fill in all fields.');
+
+  if (selectedRole === 'admin' && email.toLowerCase() !== 'adaptlearnai.official@gmail.com') {
+    return showError('si-error', 'That email is not authorised for admin access.');
+  }
+
+  setLoading('si-btn', true);
+  try {
+    const res = await fetch(`${API}/api/auth/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password }),
+    });
+    const data = await res.json();
+    if (!res.ok) { showError('si-error', data.detail || 'Invalid credentials.'); return; }
+
+    if (selectedRole === 'learner' && data.user.is_admin) {
+      showError('si-error', 'Please select the Admin role to sign in with this account.');
+      return;
+    }
+
+    localStorage.setItem('al_token', data.token);
+    localStorage.setItem('al_user',  JSON.stringify(data.user));
+    window.location.href = data.next;
+  } catch(e) {
+    showError('si-error', 'Cannot reach server. Is FastAPI running?');
+  } finally {
+    setLoading('si-btn', false);
+  }
+}
+
+/* ── Sign up ────────────────────────────────────────────────────────────── */
+async function submitSignUp() {
+  const first    = document.getElementById('su-first').value.trim();
+  const last     = document.getElementById('su-last').value.trim();
+  const email    = document.getElementById('su-email').value.trim();
+  const password = document.getElementById('su-password').value;
+
+  if (!first || !email || !password) return showError('su-error', 'Please fill in all fields.');
+  if (password.length < 8)           return showError('su-error', 'Password must be at least 8 characters.');
+
+  setLoading('su-btn', true);
+  try {
+    const res = await fetch(`${API}/api/auth/signup`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password, display_name: `${first} ${last}`.trim() }),
+    });
+    const data = await res.json();
+    if (!res.ok) { showError('su-error', data.detail || 'Registration failed.'); return; }
+
+    localStorage.setItem('al_token', data.token);
+    localStorage.setItem('al_user',  JSON.stringify(data.user));
+    window.location.href = data.next || '/onboarding.html';
+  } catch(e) {
+    showError('su-error', 'Cannot reach server. Is FastAPI running?');
+  } finally {
+    setLoading('su-btn', false);
+  }
+}
+
+/* ── Google OAuth placeholder ───────────────────────────────────────────── */
+function googleAuth() { window.location.href = `${API}/api/auth/google`; }
+
+/* ── Redirect if already logged in ─────────────────────────────────────── */
+(function() {
+  const token = localStorage.getItem('al_token');
+  const user  = localStorage.getItem('al_user');
+  if (token && user) {
+    try {
+      const u = JSON.parse(user);
+      if (u.is_admin)           window.location.href = '/index.html';
+      else if (!u.is_onboarded) window.location.href = '/onboarding.html';
+      else                      window.location.href = '/dashboard.html';
+    } catch(e) {}
+  }
+})();
+</script>
+</body>
+</html>

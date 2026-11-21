@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdaptLearn — Set up your profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:     #09090f;
+  --bg1:    #0f0f18;
+  --bg2:    #141420;
+  --border: rgba(255,255,255,0.07);
+  --border2:rgba(255,255,255,0.12);
+  --text:   #f0f0f5;
+  --muted:  #5a5a70;
+  --muted2: #3a3a50;
+  --accent: #7c6fef;
+  --accent2:#a597f7;
+  --glow:   rgba(124,111,239,0.16);
+  --green:  #34d399;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; }
+body {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content:'';
+  position:fixed; inset:0;
+  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(124,111,239,0.09) 0%, transparent 70%);
+  pointer-events:none;
+}
+
+/* ── Progress bar ───────────────────────────────────────────────────────── */
+.progress-wrap {
+  width: 100%;
+  max-width: 540px;
+  margin-bottom: 40px;
+}
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.progress-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.progress-count {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  color: var(--muted2);
+}
+.progress-track {
+  height: 3px;
+  background: var(--border2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6c5ef0, #a597f7);
+  border-radius: 2px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Card ────────────────────────────────────────────────────────────────── */
+.card {
+  width: 100%;
+  max-width: 540px;
+  background: var(--bg1);
+  border: 1px solid var(--border2);
+  border-radius: 18px;
+  padding: 40px 44px;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content:'';
+  position:absolute;
+  top:-60px; right:-60px;
+  width:240px; height:240px;
+  background: radial-gradient(circle, rgba(124,111,239,0.08) 0%, transparent 70%);
+  pointer-events:none;
+}
+
+/* Step icon */
+.step-icon {
+  width: 48px; height: 48px;
+  background: rgba(124,111,239,0.12);
+  border: 1px solid rgba(124,111,239,0.2);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.step-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  margin-bottom: 7px;
+}
+.step-sub {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+/* ── Option grid ────────────────────────────────────────────────────────── */
+.options-grid {
+  display: grid;
+  gap: 10px;
+}
+.options-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.options-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+.options-grid.cols-1 { grid-template-columns: 1fr; }
+
+.option {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all 0.18s;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  user-select: none;
+}
+.option:hover {
+  border-color: var(--border2);
+  background: #1a1a28;
+}
+.option.selected {
+  border-color: var(--accent);
+  background: rgba(124,111,239,0.08);
+  box-shadow: 0 0 0 1px rgba(124,111,239,0.3);
+}
+.opt-emoji { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+.opt-body  { flex: 1; }
+.opt-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+.opt-desc {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.opt-check {
+  width: 18px; height: 18px;
+  border: 1.5px solid var(--muted2);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: all 0.18s;
+  display: flex; align-items: center; justify-content: center;
+}
+.option.selected .opt-check {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.option.selected .opt-check::after {
+  content: '';
+  width: 6px; height: 6px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* Multi-select chip grid */
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  padding: 8px 14px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.18s;
+  user-select: none;
+  display: flex; align-items: center; gap: 6px;
+}
+.chip:hover { border-color: var(--border2); color: var(--text); }
+.chip.selected {
+  background: rgba(124,111,239,0.1);
+  border-color: var(--accent);
+  color: var(--accent2);
+}
+.chip .chip-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: none;
+}
+.chip.selected .chip-dot { display: block; }
+
+/* Hours slider */
+.slider-wrap { padding: 8px 0 24px; }
+.slider-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--accent2);
+  letter-spacing: -1.5px;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+.slider-value span {
+  font-size: 1rem;
+  color: var(--muted);
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 4px;
+}
+input[type=range] {
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+  background: var(--border2);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; height: 20px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 2px solid var(--bg1);
+  cursor: pointer;
+  box-shadow: 0 0 0 4px var(--glow);
+}
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--muted2);
+  margin-top: 8px;
+}
+
+/* Goal input */
+.goal-input-wrap {
+  position: relative;
+}
+.goal-input-wrap input {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  color: var(--text);
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.goal-input-wrap input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--glow);
+}
+.goal-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.goal-suggest {
+  padding: 5px 12px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 11px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.goal-suggest:hover {
+  border-color: var(--accent);
+  color: var(--accent2);
+}
+
+/* Navigation */
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 28px;
+  gap: 12px;
+}
+.btn-back {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid var(--border2);
+  border-radius: 9px;
+  color: var(--muted);
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.btn-back:hover { border-color: var(--border2); color: var(--text); }
+.btn-next {
+  flex: 1;
+  padding: 11px 20px;
+  background: linear-gradient(135deg, #6c5ef0, #8b7df5);
+  border: none;
+  border-radius: 9px;
+  color: #fff;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-next:hover { opacity: 0.9; transform: translateY(-1px); }
+.btn-next:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+/* Skip link */
+.skip-link {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--muted2);
+}
+.skip-link a {
+  color: var(--muted);
+  cursor: pointer;
+  text-decoration: none;
+}
+.skip-link a:hover { color: var(--text); text-decoration: underline; }
+
+/* Completion screen */
+.complete-screen {
+  text-align: center;
+}
+.complete-icon {
+  width: 72px; height: 72px;
+  background: rgba(52,211,153,0.1);
+  border: 1px solid rgba(52,211,153,0.2);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 24px;
+  animation: pop 0.5s cubic-bezier(0.34,1.56,0.64,1);
+}
+@keyframes pop {
+  from { transform:scale(0); opacity:0; }
+  to   { transform:scale(1); opacity:1; }
+}
+.complete-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  margin-bottom: 10px;
+}
+.complete-sub {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 360px;
+  margin: 0 auto 28px;
+}
+.profile-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12px;
+  color: var(--accent2);
+  font-weight: 500;
+  margin: 4px;
+}
+.pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 28px;
+}
+.spinner {
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Step animation */
+.step { animation: fadeUp 0.3s ease; }
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(10px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<div class="progress-wrap" id="progress-wrap">
+  <div class="progress-meta">
+    <span class="progress-label" id="progress-label">Step 1 of 5</span>
+    <span class="progress-count" id="progress-count">Profile setup</span>
+  </div>
+  <div class="progress-track">
+    <div class="progress-fill" id="progress-fill" style="width:20%"></div>
+  </div>
+</div>
+
+<div class="card" id="card">
+  <!-- Steps rendered by JS -->
+</div>
+
+<script>
+const API = (window.location.origin && window.location.origin.startsWith('http') && !['5500', '5501'].includes(window.location.port))
+  ? window.location.origin
+  : 'http://localhost:8012';
+const token = localStorage.getItem('al_token');
+const user  = JSON.parse(localStorage.getItem('al_user') || 'null');
+
+// Redirect to login if not authenticated
+if (!token || !user) {
+  window.location.href = '/auth.html';
+}
+// Redirect to dashboard if already onboarded
+if (user && user.is_onboarded) {
+  window.location.href = '/dashboard.html';
+}
+
+// ── State ─────────────────────────────────────────────────────────────────
+const state = {
+  step:     1,
+  total:    5,
+  answers: {
+    skill_level:        null,   // 1/2/3
+    weekly_hours:       7,
+    goal:               '',
+    preferred_subjects: [],
+    archetype:          '',     // derived
+  },
+};
+
+const STEPS = [
+  {
+    id: 'skill',
+    icon: '🎯',
+    title: 'What\'s your current level?',
+    sub: 'Be honest — we calibrate your entire recommendation engine from this.',
+    label: 'Skill level',
+  },
+  {
+    id: 'time',
+    icon: '⏰',
+    title: 'How much time can you commit?',
+    sub: 'We\'ll pace your learning path to fit your schedule.',
+    label: 'Weekly commitment',
+  },
+  {
+    id: 'subjects',
+    icon: '📚',
+    title: 'What interests you?',
+    sub: 'Pick up to 3 subjects. This shapes your collaborative filter.',
+    label: 'Subject preferences',
+  },
+  {
+    id: 'goal',
+    icon: '🚀',
+    title: 'What\'s your main learning goal?',
+    sub: 'Be specific — the more precise, the better your skill gap analysis.',
+    label: 'Primary goal',
+  },
+  {
+    id: 'style',
+    icon: '💡',
+    title: 'How do you learn best?',
+    sub: 'This sets your learner archetype for the adaptive difficulty engine.',
+    label: 'Learning style',
+  },
+];
+
+const SKILL_OPTIONS = [
+  { emoji:'🌱', title:'Beginner',     desc:'New to most topics — building fundamentals',      val:1 },
+  { emoji:'🌿', title:'Intermediate', desc:'Some experience — filling gaps and levelling up',  val:2 },
+  { emoji:'🌳', title:'Advanced',     desc:'Solid foundation — mastering and specialising',    val:3 },
+];
+
+const SUBJECTS = [
+  'Machine Learning & AI', 'Data Science & Analytics', 'Programming & Software Dev',
+  'Web Development', 'Cloud & DevOps', 'Cybersecurity', 'Business & Finance',
+  'Graphic Design & Media', 'Health & Medicine', 'Personal Development',
+  'Science & Engineering', 'Law & Social Sciences', 'Music & Arts',
+];
+
+const GOAL_SUGGESTIONS = [
+  'Machine Learning & AI', 'Full Stack Web Development', 'Data Science',
+  'Cloud Architecture', 'Cybersecurity', 'Python Programming',
+  'UI/UX Design', 'Business Analytics',
+];
+
+const STYLE_OPTIONS = [
+  {
+    emoji:'⚡', title:'Fast Learner',
+    desc:'I power through content, take on hard challenges, and prioritise completion.',
+    val:'Fast Learner',
+  },
+  {
+    emoji:'📐', title:'Steady & Consistent',
+    desc:'I prefer a balanced pace — consistent effort, week by week.',
+    val:'Steady Learner',
+  },
+  {
+    emoji:'🔬', title:'Curious Explorer',
+    desc:'I jump between topics that interest me and dive deep into rabbit holes.',
+    val:'Curious Sampler',
+  },
+  {
+    emoji:'🎯', title:'Deep Specialist',
+    desc:'I focus on mastering one subject at a time before moving on.',
+    val:'Specialist',
+  },
+];
+
+// ── Render ────────────────────────────────────────────────────────────────
+function render() {
+  const s = STEPS[state.step - 1];
+  updateProgress();
+
+  let body = '';
+  switch(s.id) {
+    case 'skill':   body = renderSkill();    break;
+    case 'time':    body = renderTime();     break;
+    case 'subjects':body = renderSubjects(); break;
+    case 'goal':    body = renderGoal();     break;
+    case 'style':   body = renderStyle();    break;
+  }
+
+  document.getElementById('card').innerHTML = `
+    <div class="step">
+      <div class="step-icon">${s.icon}</div>
+      <div class="step-title">${s.title}</div>
+      <p class="step-sub">${s.sub}</p>
+      ${body}
+      <div class="nav-row">
+        ${state.step > 1 ? '<button class="btn-back" onclick="prevStep()">← Back</button>' : '<div></div>'}
+        <button class="btn-next" id="btn-next" onclick="nextStep()">
+          ${state.step === state.total ? 'Finish setup' : 'Continue →'}
+        </button>
+      </div>
+      ${state.step === 1 ? `<div class="skip-link"><a onclick="skipOnboarding()">Skip for now — I\'ll set this up later</a></div>` : ''}
+    </div>
+  `;
+  validateStep();
+}
+
+function updateProgress() {
+  const pct = (state.step / state.total) * 100;
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-label').textContent = `Step ${state.step} of ${state.total}`;
+  const labels = ['Skill level','Weekly time','Subjects','Your goal','Learning style'];
+  document.getElementById('progress-count').textContent = labels[state.step-1] || '';
+}
+
+// ── Step renderers ────────────────────────────────────────────────────────
+function renderSkill() {
+  return `<div class="options-grid cols-1">${SKILL_OPTIONS.map(o => `
+    <div class="option ${state.answers.skill_level===o.val?'selected':''}"
+         onclick="selectSkill(${o.val})">
+      <span class="opt-emoji">${o.emoji}</span>
+      <div class="opt-body">
+        <div class="opt-title">${o.title}</div>
+        <div class="opt-desc">${o.desc}</div>
+      </div>
+      <div class="opt-check"></div>
+    </div>`).join('')}
+  </div>`;
+}
+
+function renderTime() {
+  const hrs = state.answers.weekly_hours;
+  return `
+    <div class="slider-wrap">
+      <div class="slider-value" id="hrs-display">
+        ${hrs}<span>hrs / week</span>
+      </div>
+      <input type="range" min="1" max="40" step="1" value="${hrs}"
+             oninput="updateHours(this.value)">
+      <div class="slider-labels"><span>1 hr</span><span>20 hrs</span><span>40 hrs</span></div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+      ${[3,5,7,10,15,20].map(n=>`
+        <div class="goal-suggest" onclick="setHours(${n})">${n} hrs</div>
+      `).join('')}
+    </div>`;
+}
+
+function renderSubjects() {
+  return `<div class="chip-grid">${SUBJECTS.map(s => `
+    <div class="chip ${state.answers.preferred_subjects.includes(s)?'selected':''}"
+         onclick="toggleSubject('${s}')">
+      <span class="chip-dot"></span>${s}
+    </div>`).join('')}
+  </div>
+  <div style="font-size:11px;color:var(--muted2);margin-top:10px">
+    ${state.answers.preferred_subjects.length}/3 selected
+  </div>`;
+}
+
+function renderGoal() {
+  return `
+    <div class="goal-input-wrap">
+      <input type="text" id="goal-input" value="${state.answers.goal}"
+             placeholder="e.g. Machine Learning, Full Stack Development, Data Science"
+             oninput="state.answers.goal=this.value; validateStep()">
+    </div>
+    <div class="goal-suggestions">
+      ${GOAL_SUGGESTIONS.map(g=>`
+        <div class="goal-suggest" onclick="setGoal('${g}')">${g}</div>
+      `).join('')}
+    </div>`;
+}
+
+function renderStyle() {
+  return `<div class="options-grid cols-2">${STYLE_OPTIONS.map(o => `
+    <div class="option ${state.answers.archetype===o.val?'selected':''}"
+         onclick="selectStyle('${o.val}')">
+      <span class="opt-emoji">${o.emoji}</span>
+      <div class="opt-body">
+        <div class="opt-title">${o.title}</div>
+        <div class="opt-desc">${o.desc}</div>
+      </div>
+    </div>`).join('')}
+  </div>`;
+}
+
+// ── Input handlers ────────────────────────────────────────────────────────
+function selectSkill(val) {
+  state.answers.skill_level = val;
+  render();
+}
+function updateHours(val) {
+  state.answers.weekly_hours = parseInt(val);
+  document.getElementById('hrs-display').innerHTML =
+    `${val}<span>hrs / week</span>`;
+  validateStep();
+}
+function setHours(n) {
+  state.answers.weekly_hours = n;
+  render();
+}
+function toggleSubject(s) {
+  const arr = state.answers.preferred_subjects;
+  const idx = arr.indexOf(s);
+  if (idx >= 0) arr.splice(idx,1);
+  else if (arr.length < 3) arr.push(s);
+  render();
+}
+function setGoal(g) {
+  state.answers.goal = g;
+  render();
+}
+function selectStyle(val) {
+  state.answers.archetype = val;
+  render();
+}
+
+// ── Validation ────────────────────────────────────────────────────────────
+function validateStep() {
+  const btn = document.getElementById('btn-next');
+  if (!btn) return;
+  const s = STEPS[state.step - 1];
+  let ok = false;
+  switch(s.id) {
+    case 'skill':    ok = state.answers.skill_level !== null; break;
+    case 'time':     ok = state.answers.weekly_hours > 0; break;
+    case 'subjects': ok = state.answers.preferred_subjects.length > 0; break;
+    case 'goal':     ok = state.answers.goal.trim().length > 2; break;
+    case 'style':    ok = state.answers.archetype !== ''; break;
+  }
+  btn.disabled = !ok;
+}
+
+// ── Navigation ────────────────────────────────────────────────────────────
+function nextStep() {
+  if (state.step < state.total) {
+    state.step++;
+    render();
+  } else {
+    submitOnboarding();
+  }
+}
+function prevStep() {
+  if (state.step > 1) { state.step--; render(); }
+}
+
+// ── Submit ────────────────────────────────────────────────────────────────
+async function submitOnboarding() {
+  const btn = document.getElementById('btn-next');
+  btn.disabled = true;
+  btn.innerHTML = '<div class="spinner"></div>';
+
+  try {
+    const payload = {
+      skill_level:        state.answers.skill_level,
+      weekly_hours:       state.answers.weekly_hours,
+      goal:               state.answers.goal.trim(),
+      preferred_subjects: state.answers.preferred_subjects,
+      archetype:          state.answers.archetype,
+    };
+    const res = await fetch(`${API}/api/auth/onboarding`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`,
+      },
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || 'Failed to save profile');
+
+    // Update local user cache
+    localStorage.setItem('al_user', JSON.stringify(data.user));
+
+    // Show completion screen
+    showComplete(data.user);
+  } catch(e) {
+    btn.disabled = false;
+    btn.innerHTML = 'Finish setup';
+    alert('Error: ' + e.message);
+  }
+}
+
+// ── Skip ──────────────────────────────────────────────────────────────────
+async function skipOnboarding() {
+  // Use defaults
+  const payload = {
+    skill_level:        1,
+    weekly_hours:       5,
+    goal:               'Machine Learning & AI',
+    preferred_subjects: ['Programming & Software Dev'],
+    archetype:          'Steady Learner',
+  };
+  try {
+    const res = await fetch(`${API}/api/auth/onboarding`, {
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'Authorization':`Bearer ${token}`,
+      },
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json();
+    if (res.ok) localStorage.setItem('al_user', JSON.stringify(data.user));
+  } catch(e) {}
+  window.location.href = '/dashboard.html';
+}
+
+// ── Completion screen ─────────────────────────────────────────────────────
+function showComplete(u) {
+  document.getElementById('progress-wrap').style.display = 'none';
+
+  const skillLabel = {1:'Beginner',2:'Intermediate',3:'Advanced'}[u.skill_level]||'Beginner';
+  const subjects   = (u.preferred_subjects||[]).slice(0,3);
+
+  document.getElementById('card').innerHTML = `
+    <div class="step complete-screen">
+      <div class="complete-icon">✓</div>
+      <div class="complete-title">You're all set, ${u.display_name.split(' ')[0]}!</div>
+      <p class="complete-sub">
+        Your AI learning profile is ready. We've calibrated the recommendation
+        engine to your skill level, pace, and goals.
+      </p>
+      <div class="pills-row">
+        <span class="profile-pill">🎯 ${skillLabel}</span>
+        <span class="profile-pill">⏰ ${u.weekly_hours} hrs/week</span>
+        ${subjects.map(s=>`<span class="profile-pill">📚 ${s}</span>`).join('')}
+        <span class="profile-pill">💡 ${u.archetype}</span>
+      </div>
+      <button class="btn-next" style="width:100%;justify-content:center"
+              onclick="window.location.href='/dashboard.html'">
+        Go to my dashboard →
+      </button>
+    </div>`;
+}
+
+// ── Init ─────────────────────────────────────────────────────────────────
+render();
+</script>
+</body>
+</html>

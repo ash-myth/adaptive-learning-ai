@@ -1,0 +1,69 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# ── Virtual environment ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── Environment variables ────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Database (local user state & passwords — never track in Git) ─────────────
+*.db
+*.sqlite
+*.sqlite3
+data/adaptlearn.db
+
+# ── Raw scrape datasets (processed into data/courses.csv) ───────────────────
+dataset/
+data/combined_simplilearn_coursera.csv
+data/comined_edx_udacity_coursera.csv
+data/coursea_data.csv
+data/coursera_1000_Courses.csv
+data/Coursera_courses_catalog.csv
+data/Udemy Courses.csv
+data/udemy_courses.csv
+
+# ── Redundant root copy of courses.csv (canonical is data/courses.csv) ──────
+/courses.csv
+
+# ── Scratch & throwaway scripts ──────────────────────────────────────────────
+scratch_*.py
+PROJECT_DEMONSTRATION_AND_CORE_AI_SPECIFICATION.md
+
+# ── Logs & local reports ─────────────────────────────────────────────────────
+*.log
+preprocessing_report.txt
+data/preprocessing_report.txt
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── OS & IDE ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.iml
+
+# ── HuggingFace / Pytest cache ───────────────────────────────────────────────
+.cache/
+.pytest_cache/
+huggingface/
+sentence_transformers/
