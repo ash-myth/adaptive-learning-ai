@@ -34,25 +34,33 @@ app.add_middleware(
 app.include_router(auth_router, prefix="/api/auth", tags=["auth"])
 
 # ── Static HTML pages ─────────────────────────────────────────────────────────
+FRONTEND_DIR = os.path.join(os.path.dirname(__file__), "frontend")
+
+def _page(name: str) -> FileResponse:
+    target = os.path.join(FRONTEND_DIR, name)
+    if not os.path.exists(target):
+        target = name
+    return FileResponse(target)
+
 @app.get("/")
 def root():
-    return FileResponse("auth.html")
+    return _page("auth.html")
 
 @app.get("/auth.html")
 def serve_auth():
-    return FileResponse("auth.html")
+    return _page("auth.html")
 
 @app.get("/onboarding.html")
 def serve_onboarding():
-    return FileResponse("onboarding.html")
+    return _page("onboarding.html")
 
 @app.get("/index.html")
 def serve_admin():
-    return FileResponse("index.html")
+    return _page("index.html")
 
 @app.get("/dashboard.html")
 def serve_user_dashboard():
-    return FileResponse("dashboard.html")
+    return _page("dashboard.html")
 
 
 # ════════════════════════════════════════════════════════════════════════════

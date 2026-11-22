@@ -43,6 +43,11 @@ from __future__ import annotations
 import json
 import logging
 import os
+import sys
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+os.chdir(ROOT_DIR)
 import time
 from pathlib import Path
 from typing import Any

@@ -245,25 +245,40 @@ Stratification (`stratify=y`) is applied on both the difficulty and dropout spli
 ```
 adaptive-learning-ai/
 │
-├── main.py                   # FastAPI app, API routes, typo correction, static serving
-├── hybrid_recommender.py     # 3-layer hybrid engine, α-ramp, NMF-CF, DAG gate
-├── adaptive_engine.py        # HistGBM+MLP, Logistic Regression, K-Means profiler
-├── embeddings.py             # SBERT (all-MiniLM-L6-v2) + BM25 dual-retrieval engine
-├── knowledge_graph.py        # Prerequisite DAG, topological sort, bridge injection
-├── auth.py                   # Authentication router, SQLite database interface
+├── main.py                   # FastAPI application entrypoint & API routes
+├── hybrid_recommender.py     # 3-layer hybrid engine (SBERT/BM25 + NMF-CF + DAG gate)
+├── adaptive_engine.py        # HistGBM+MLP classifier, Logistic Regression & KMeans
+├── embeddings.py             # SBERT dense encoder & BM25 dual-retrieval engine
+├── knowledge_graph.py        # Prerequisite DAG, topological sort & bridge course injection
+├── auth.py                   # User authentication router & SQLite interface
 │
-├── auth.html                 # Authentication & login UI
-├── onboarding.html           # Student onboarding & archetype survey UI
-├── index.html                # Main discovery & recommendation interface
-├── dashboard.html            # Learning analytics dashboard UI
+├── frontend/                 # Client UI interfaces & single-page application shells
+│   ├── auth.html             # Authentication & user login gateway
+│   ├── onboarding.html       # Student onboarding questionnaire & archetype calibration
+│   ├── index.html            # Course discovery & adaptive recommendation view
+│   └── dashboard.html        # Student analytics & model performance dashboard
 │
-├── images/                   # High-resolution UI screenshots & system walkthrough
+├── tests/                    # Verification suites & offline evaluation harnesses
+│   ├── test_all_requirements.py # 5-test automated verification suite
+│   ├── test_ramp_eval.py     # Alpha ramp transition validation
+│   ├── test_ranking_configs.py  # Session context & ranking configuration tests
+│   ├── evaluate_ranking.py   # Ranking quality evaluator
+│   └── evaluation_harness.py # Replay simulation & offline NDCG/MAP harness
+│
+├── scripts/                  # Data engineering, simulation & scheduled retraining
+│   ├── data_preprocessing.py # Multi-platform raw dataset merging & cleaning
+│   ├── migrate_to_db.py      # SQLite migration for synthetic users & interactions
+│   ├── retraining_pipeline.py# Automated retraining & drift monitoring service
+│   ├── user_simulator.py     # Synthetic learner interaction generator
+│   └── recommender.py        # Baseline recommender implementation
+│
+├── images/                   # UI screenshots & architectural diagrams for documentation
 │   ├── model_evaluation.png  # Live model metrics & evaluation dashboard
 │   ├── learning_path.png     # 3-stage adaptive pathway & cognitive fit tags
 │   ├── skill_gap_analysis.png# Prerequisite knowledge graph gating
 │   └── hybrid_search.png     # Calibrated semantic + keyword dual retrieval
 │
-├── data/
+├── data/                     # Unified catalog, interaction matrices & model weights
 │   ├── courses.csv           # 13,618 courses across 6 platforms, 23 attributes
 │   ├── interactions.csv      # 118,506 interaction records (user, course, rating, time)
 │   ├── users.csv             # 2,000 synthetic baseline user profiles
@@ -272,8 +287,8 @@ adaptive-learning-ai/
 │   ├── cf_model.pkl          # Pre-fitted NMF Collaborative Filtering matrices
 │   └── embeddings.pkl        # Precomputed SBERT (384-dim) + BM25 indices
 │
-├── test_all_requirements.py  # 5-test automated verification suite
-├── requirements.txt          # Python dependencies
+├── .gitignore
+├── requirements.txt          # Production dependencies
 └── README.md
 ```
 

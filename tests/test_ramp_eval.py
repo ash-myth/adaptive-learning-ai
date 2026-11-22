@@ -12,7 +12,10 @@ import numpy as np
 import pandas as pd
 import torch
 
-sys.path.insert(0, r"d:\adaptive-learning-ai")
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+os.chdir(ROOT_DIR)
 from hybrid_recommender import HybridRecommender, WEIGHTS_COLD, WEIGHTS_WARM, COLD_THRESHOLD
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

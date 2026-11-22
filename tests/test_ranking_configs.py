@@ -1,6 +1,13 @@
 """
 Test ranking evaluation with session/subject topic context for held-out interaction.
 """
+import os
+import sys
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+os.chdir(ROOT_DIR)
+
 import time
 import numpy as np
 import pandas as pd

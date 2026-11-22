@@ -15,7 +15,10 @@ import json
 import pandas as pd
 import numpy as np
 
-sys.path.insert(0, r"d:\adaptive-learning-ai")
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+os.chdir(ROOT_DIR)
 from hybrid_recommender import HybridRecommender, WEIGHTS_COLD, WEIGHTS_WARM, COLD_THRESHOLD
 from knowledge_graph import PREREQ_MAP, SUBJECT_PREREQ_MAP, get_prerequisites
 from main import row_to_course
