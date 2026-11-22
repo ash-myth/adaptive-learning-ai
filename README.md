@@ -14,13 +14,14 @@
 
 1. [Why This Exists](#1-why-this-exists)
 2. [What Makes It Different](#2-what-makes-it-different)
-3. [System Architecture](#3-system-architecture)
-4. [Machine Learning Pipeline](#4-machine-learning-pipeline)
-5. [Performance Metrics](#5-performance-metrics)
-6. [Data Splits & Training Strategy](#6-data-splits--training-strategy)
-7. [Project Structure](#7-project-structure)
-8. [Setup & Installation](#8-setup--installation)
-9. [API Reference](#9-api-reference)
+3. [Platform Walkthrough & Interface](#3-platform-walkthrough--interface)
+4. [System Architecture](#4-system-architecture)
+5. [Machine Learning Pipeline](#5-machine-learning-pipeline)
+6. [Performance Metrics](#6-performance-metrics)
+7. [Data Splits & Training Strategy](#7-data-splits--training-strategy)
+8. [Project Structure](#8-project-structure)
+9. [Setup & Installation](#9-setup--installation)
+10. [API Reference](#10-api-reference)
 ---
 
 ## 1. Why This Exists
@@ -54,7 +55,41 @@ The smooth warm-up ramp is worth highlighting: instead of flipping from "content
 
 ---
 
-## 3. System Architecture
+## 3. Platform Walkthrough & Interface
+
+### Model Evaluation & Diagnostic Analytics
+The built-in evaluation interface surfaces live offline-evaluation benchmarks across 118,506 interactions (94,804 train / 23,701 test). It displays 3-class precision/recall/F1 distributions for the HistGBM + MLP ensemble, along with causal non-leaked feature coefficients for the logistic regression dropout model.
+
+![Model Evaluation Dashboard](images/model_evaluation.png)
+*Figure 1: Live Model Evaluation Dashboard displaying 64.6% ensemble difficulty accuracy, 71.8% dropout prediction accuracy, CF RMSE (0.5761), and feature coefficient weights.*
+
+---
+
+### Adaptive Learning Path (Multi-Stage Progression)
+Generates personalized 3-stage learning curricula (`Beginner → Intermediate → Advanced`) matching the student's evaluated baseline mastery. Each course card integrates real-time cognitive outcome predictions (`Fit: Match/Excel/Struggle`) and proactive dropout risk alerts (`Risk: Low/Medium/High`).
+
+![Adaptive Learning Path](images/learning_path.png)
+*Figure 2: Personalized 3-stage progression path generated for learner `U0005` in Health & Medicine, displaying baseline calibration and automated fit diagnostic tags.*
+
+---
+
+### Skill Gap Analysis & Prerequisite Gating
+Maps target learning goals against a curated topological knowledge graph of 60+ fundamental topics. When gaps are detected, the system automatically retrieves beginner bridge courses via BM25 lexical ranking before recommending advanced enrollments.
+
+![Skill Gap Analysis](images/skill_gap_analysis.png)
+*Figure 3: Prerequisite diagnostic for "Machine Learning", identifying prerequisite requirements and surfacing beginner bridge modules.*
+
+---
+
+### Dual-Retrieval Semantic & Keyword Search
+Real-time hybrid search blending SBERT dense vector retrieval (`all-MiniLM-L6-v2`, 384 dimensions) with Okapi BM25 keyword matching, with dynamic scoring calibration to prevent keyword saturation.
+
+![Semantic and Keyword Hybrid Search](images/hybrid_search.png)
+*Figure 4: Hybrid search execution displaying query-time calibrated blend scores (`blended`, `sem`, `kw`) across 13,618 unified courses.*
+
+---
+
+## 4. System Architecture
 
 The pipeline has three layers that execute sequentially per recommendation request:
 
@@ -119,7 +154,7 @@ REQUEST
 
 ---
 
-## 4. Machine Learning Pipeline
+## 5. Machine Learning Pipeline
 
 ### 4.1 Difficulty Predictor — HistGBM + MLP Ensemble
 
@@ -175,7 +210,7 @@ The five personas guide cold-start weight tuning and UI badge display:
 
 ---
 
-## 5. Performance Metrics
+## 6. Performance Metrics
 
 | Model | Task | Metric | Value | Notes |
 |---|---|---|---|---|
@@ -190,7 +225,7 @@ The 64.6% difficulty accuracy is respectable for a 3-class problem over learner-
 
 ---
 
-## 6. Data Splits & Training Strategy
+## 7. Data Splits & Training Strategy
 
 | Model | Split | Train Samples | Test Samples | Strategy |
 |---|---|---|---|---|
@@ -205,7 +240,7 @@ Stratification (`stratify=y`) is applied on both the difficulty and dropout spli
 
 ---
 
-## 7. Project Structure
+## 8. Project Structure
 
 ```
 adaptive-learning-ai/
@@ -221,6 +256,12 @@ adaptive-learning-ai/
 ├── onboarding.html           # Student onboarding & archetype survey UI
 ├── index.html                # Main discovery & recommendation interface
 ├── dashboard.html            # Learning analytics dashboard UI
+│
+├── images/                   # High-resolution UI screenshots & system walkthrough
+│   ├── model_evaluation.png  # Live model metrics & evaluation dashboard
+│   ├── learning_path.png     # 3-stage adaptive pathway & cognitive fit tags
+│   ├── skill_gap_analysis.png# Prerequisite knowledge graph gating
+│   └── hybrid_search.png     # Calibrated semantic + keyword dual retrieval
 │
 ├── data/
 │   ├── courses.csv           # 13,618 courses across 6 platforms, 23 attributes
@@ -238,7 +279,7 @@ adaptive-learning-ai/
 
 ---
 
-## 8. Setup & Installation
+## 9. Setup & Installation
 
 **Requirements:** Python 3.10+ (tested on 3.14.4), pip
 
@@ -269,7 +310,7 @@ Open `http://localhost:8012` in a browser.
 
 ---
 
-## 9. API Reference
+## 10. API Reference
 
 All endpoints return JSON. Base URL: `http://localhost:8012`
 
